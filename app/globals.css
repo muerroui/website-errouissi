@@ -1,0 +1,30 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/noto-naskh-arabic/400.css";
+@import "@fontsource/noto-naskh-arabic/600.css";
+@import "@fontsource/noto-naskh-arabic/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #f9f7f1;
+  color: #101b18;
+  font-family: Inter, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[lang^="ar"] body { font-family: "Noto Naskh Arabic", Tahoma, serif; }
+html[lang^="ar"] .font-display { font-family: "Noto Naskh Arabic", Tahoma, serif; }
+
+::selection { background: #C5A059; color: #0F172A; }
+:focus-visible { outline: 3px solid #C5A059; outline-offset: 3px; }
