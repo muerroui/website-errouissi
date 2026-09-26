@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "http://errouissi.ma/.well-known/acme-challenge/*"
+  to = "https://app.certkit.io/http-challenge/free/b6e1eae441ff4116b0d959e07f6cc619/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "https://website-errouissi-avocat.netlify.app/*"
   to = "https://errouissi.ma/:splat"
   status = 301
