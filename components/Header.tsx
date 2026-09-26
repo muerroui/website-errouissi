@@ -26,6 +26,10 @@ export function Header({ locale }: { locale: Locale }) {
     "/ar/services/الميراث-والتركات": "/fr/services/succession-heritage",
     "/fr/services/droit-foncier-rural": "/ar/services/العقار-الفلاحي-وأراضي-الجموع",
     "/ar/services/العقار-الفلاحي-وأراضي-الجموع": "/fr/services/droit-foncier-rural",
+    "/fr/services/droit-fiscal": "/ar/services/القانون-الضريبي",
+    "/ar/services/القانون-الضريبي": "/fr/services/droit-fiscal",
+    "/fr/services/droit-administratif": "/ar/services/القانون-الإداري",
+    "/ar/services/القانون-الإداري": "/fr/services/droit-administratif",
   };
   const alternatePath = alternatePaths[decodeURIComponent(pathname)] || `/${other}`;
   return (

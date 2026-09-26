@@ -34,22 +34,22 @@ const content = {
   },
   ar: {
     eyebrow: "مكتب محاماة بالمحمدية · منذ يناير 1992",
-    h1: "محامي بالمحمدية منذ 1992",
+    h1: "محامٍ بالمحمدية منذ 1992",
     intro: "خبرة تفوق 32 سنة في القانون العقاري والعقار الفلاحي وأراضي الجموع والميراث والضرائب بالمحمدية وفي مختلف مدن المغرب.",
     call: "الاتصال بالمكتب",
     whatsapp: "التواصل عبر واتساب",
     proofTitle: "خبرة قانونية تمتد لأكثر من ثلاثة عقود",
-    proofText: "يرافق الأستاذ عبد الرزاق الرويسي الأفراد والشركات والفلاحين بمنهج دقيق وواضح يتلاءم مع خصوصية كل ملف.",
-    servicesTitle: "مجالات عمل المكتب",
+    proofText: "يرافق الأستاذ عبد الرزاق الرويسي الأفراد والمقاولات والفلاحين بمنهج دقيق وواضح يتلاءم مع خصوصية كل ملف.",
+    servicesTitle: "مجالات تدخل المكتب",
     servicesIntro: "الاستشارة والتفاوض والوساطة والتحكيم والتمثيل أمام المحاكم المغربية.",
     services: [
-      ["القانون العقاري والتحفيظ", "الرسوم العقارية والبيع والشراء والكراء ونقل الملكية والمنازعات العقارية."],
-      ["الميراث والتركات", "قسمة التركة والشياع والنزاعات بين الورثة والعقارات الموروثة."],
-      ["العقار الفلاحي وأراضي الجموع", "الملكية والتحديد والشياع ونزع الملكية ونزاعات الأراضي القروية."],
-      ["القانون الضريبي", "الاستشارة والمراقبة والمنازعات الضريبية للأفراد والشركات."],
-      ["القانون الإداري", "المساطر والطعون والمنازعات المرتبطة بالإدارات العمومية."],
+      ["القانون العقاري والتحفيظ العقاري", "التحفيظ العقاري والرسوم العقارية ومعاملات البيع والشراء والكراء ونقل الملكية وتسوية المنازعات العقارية."],
+      ["الميراث والتركات", "قسمة التركات وإنهاء حالة الشياع وتسوية النزاعات بين الورثة والمنازعات المتعلقة بالعقارات الموروثة."],
+      ["العقار الفلاحي وأراضي الجموع", "قضايا الملكية والتحديد والشياع ونزع الملكية والمنازعات المتعلقة بالعقارات الفلاحية وأراضي الجموع."],
+      ["القانون الضريبي", "الاستشارات الضريبية ومواكبة الأفراد والمقاولات أثناء المراقبة الضريبية والتمثيل في المنازعات الضريبية."],
+      ["القانون الإداري", "المواكبة في المساطر الإدارية وتقديم الطعون والتمثيل في المنازعات مع الإدارات العمومية."],
     ],
-    reachTitle: "محام بالمحمدية يخدم مختلف مدن المغرب",
+    reachTitle: "مكتب محاماة بالمحمدية يتولى ملفات في مختلف مدن المغرب",
     reachText: "يتدخل المكتب خصوصا في الدار البيضاء والرباط وفاس ومراكش وطنجة والقنيطرة وبوسكورة وبنسليمان.",
     finalTitle: "تواصلوا معنا بشأن ملفكم",
     finalText: "اشرحوا وضعيتكم بإيجاز عبر الهاتف أو واتساب من أجل تنظيم موعد بالمكتب.",
@@ -69,7 +69,7 @@ export default async function HomePage({ params }: PageProps) {
   const cities = lang === "ar"
     ? ["المحمدية", "الدار البيضاء", "الرباط", "فاس", "مراكش", "طنجة", "القنيطرة", "بنسليمان"]
     : ["Mohammédia", "Casablanca", "Rabat", "Fès", "Marrakech", "Tanger", "Kénitra", "Benslimane"];
-  const serviceKeys: Array<ServiceKey | null> = ["immobilier", "succession", "foncierRural", null, null];
+  const serviceKeys: Array<ServiceKey | null> = ["immobilier", "succession", "foncierRural", "fiscal", "administratif"];
 
   return (
     <main className="overflow-hidden bg-[#F3F0E9] text-slate-950">
@@ -113,10 +113,10 @@ export default async function HomePage({ params }: PageProps) {
             <div className="my-8 h-px bg-white/10" />
             <p className="font-display text-[4.75rem] font-semibold leading-none tracking-[-0.04em] text-[#C5A059]">+32</p>
             <p className="mt-2 text-lg text-slate-200">{lang === "ar" ? "سنة من الخبرة" : "ans d’expérience"}</p>
-            <p className="mt-8 max-w-[28ch] text-sm leading-7 text-slate-400">{lang === "ar" ? "خبرة قانونية في خدمة الأفراد والشركات والفلاحين في جميع أنحاء المغرب." : "Une pratique au service des particuliers, des entreprises et des agriculteurs dans tout le Maroc."}</p>
+            <p className="mt-8 max-w-[28ch] text-sm leading-7 text-slate-400">{lang === "ar" ? "خبرة قانونية في خدمة الأفراد والمقاولات والفلاحين في جميع أنحاء المغرب." : "Une pratique au service des particuliers, des entreprises et des agriculteurs dans tout le Maroc."}</p>
             <dl className="mt-8 space-y-4 border-t border-white/10 pt-6 text-sm">
               <div className="flex justify-between gap-5"><dt className="text-slate-400">{lang === "ar" ? "المقر" : "Cabinet"}</dt><dd className="font-medium text-slate-200">{lang === "ar" ? "المحمدية" : "Mohammédia"}</dd></div>
-              <div className="flex justify-between gap-5"><dt className="text-slate-400">{lang === "ar" ? "اللغات" : "Langues"}</dt><dd className="font-medium text-slate-200">Français · العربية</dd></div>
+              <div className="flex justify-between gap-5"><dt className="text-slate-400">{lang === "ar" ? "اللغات" : "Langues"}</dt><dd className="font-medium text-slate-200">{lang === "ar" ? "العربية · Français · English" : "Français · العربية · English"}</dd></div>
             </dl>
           </aside>
         </div>
@@ -135,7 +135,7 @@ export default async function HomePage({ params }: PageProps) {
             <div className="mt-12 grid gap-8 border-t border-slate-900/15 pt-7 sm:grid-cols-3">
               <div><p className="font-display text-2xl text-slate-950">{lang === "ar" ? "المحمدية" : "Mohammédia"}</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "مقر المكتب" : "Adresse du cabinet"}</p></div>
               <div><p className="font-display text-2xl text-slate-950">{lang === "ar" ? "المغرب" : "Maroc"}</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "نطاق التدخل" : "Zone d’intervention"}</p></div>
-              <div><p className="font-display text-2xl text-slate-950">FR · AR</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "لغات التواصل" : "Langues de travail"}</p></div>
+              <div><p className="font-display text-2xl text-slate-950" dir="ltr">FR · AR · EN</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "لغات التواصل" : "Langues de travail"}</p></div>
             </div>
           </div>
         </div>

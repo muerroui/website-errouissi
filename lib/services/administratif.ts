@@ -1,0 +1,102 @@
+import type { ServicePageDefinition } from "@/lib/service-page-types";
+
+export const administratifPage: ServicePageDefinition = {
+  key: "administratif",
+  index: "05",
+  content: {
+    fr: {
+      slug: "droit-administratif",
+      seo: {
+        title: "Avocat en droit administratif au Maroc",
+        description: "Avocat en droit administratif au Maroc : recours contre une décision, excès de pouvoir et litiges avec les administrations publiques.",
+      },
+      eyebrow: "Administration · Recours · Juridictions",
+      h1: "Avocat en droit administratif au Maroc",
+      lead: "Maître Abderrazak Errouissi accompagne particuliers, agriculteurs et entreprises dans leurs démarches, recours et litiges avec les administrations et organismes publics marocains.",
+      summary: [
+        "Une décision administrative peut produire des effets immédiats sur un terrain, une autorisation, une activité ou une situation personnelle. Avant d’agir, il faut identifier l’auteur de la décision, sa date de notification, ses motifs et la voie de recours applicable.",
+        "Le cabinet intervient depuis Mohammedia pour des dossiers concernant notamment Casablanca, Benslimane, Rabat et d’autres régions du Maroc. Il examine les échanges avec l’administration, les demandes restées sans réponse et les pièces permettant d’établir le droit invoqué ou le préjudice subi.",
+        "Selon le dossier, la démarche peut prendre la forme d’une demande motivée, d’un recours gracieux ou hiérarchique, d’un recours en annulation pour excès de pouvoir ou d’une action relevant du plein contentieux. Les délais et conditions de recevabilité doivent être vérifiés dès réception de la décision.",
+      ],
+      servicesTitle: "Faire valoir ses droits face à l’administration",
+      servicesIntro: "La stratégie dépend de la nature de l’acte, de l’autorité concernée, de la preuve de notification et de l’objectif recherché par le client.",
+      services: [
+        { title: "Recours contre une décision administrative", text: "Analyse de la décision, de sa motivation et de ses effets, puis préparation du recours adapté à la situation et aux délais applicables." },
+        { title: "Recours pour excès de pouvoir", text: "Étude de la compétence de l’auteur, de la forme, des motifs, du but poursuivi et du respect de la loi avant une demande d’annulation." },
+        { title: "Autorisations, permis et urbanisme", text: "Litiges relatifs aux autorisations administratives, permis, refus, retraits, décisions d’urbanisme et difficultés affectant un projet immobilier ou rural." },
+        { title: "Responsabilité de l’administration", text: "Examen d’une faute, d’un dommage et du lien entre les deux, puis étude d’une demande d’indemnisation lorsqu’elle est juridiquement fondée." },
+        { title: "Domaine public et expropriation", text: "Analyse des décisions touchant l’occupation, les limites, l’utilité publique, l’expropriation et les droits attachés à un bien immobilier ou agricole." },
+        { title: "Exécution et suivi des décisions", text: "Suivi des démarches après une décision administrative ou juridictionnelle et examen des difficultés rencontrées dans son application." },
+      ],
+      processTitle: "Identifier l’acte, le délai et la juridiction compétente",
+      processIntro: "En droit administratif, une bonne argumentation ne suffit pas si le recours vise le mauvais acte, la mauvaise autorité ou intervient hors délai.",
+      process: [
+        { title: "Établir la chronologie", text: "Réunir la décision, sa preuve de notification, les demandes antérieures, les réponses et tous les documents justificatifs." },
+        { title: "Qualifier le recours", text: "Identifier l’acte contestable, les moyens juridiques, la juridiction compétente et les conditions de recevabilité." },
+        { title: "Engager la démarche utile", text: "Préparer le recours administratif ou juridictionnel et suivre les mesures nécessaires à la défense du dossier." },
+      ],
+      faqTitle: "Questions fréquentes sur les recours administratifs",
+      faqIntro: "Une décision défavorable ou le silence d’une administration doit être analysé rapidement. Les règles changent selon l’acte, la matière et le recours envisagé.",
+      faqs: [
+        { question: "Comment contester une décision administrative au Maroc ?", answer: "Il faut obtenir la décision, vérifier sa notification, identifier l’autorité qui l’a prise et déterminer le recours ouvert. Selon le cas, un recours gracieux, hiérarchique ou contentieux peut être envisagé." },
+        { question: "Quel est le délai pour former un recours en annulation ?", answer: "Le recours en annulation pour excès de pouvoir est en principe encadré par un délai de soixante jours, mais le point de départ et les règles particulières doivent être vérifiés pour chaque décision. Il est prudent de consulter dès la notification." },
+        { question: "Peut-on agir lorsque l’administration ne répond pas ?", answer: "Le silence peut produire des effets juridiques qui varient selon la demande et le texte applicable. Il faut conserver la preuve du dépôt, calculer le délai et déterminer si une relance, un recours ou une saisine juridictionnelle est possible." },
+        { question: "Quels documents fournir pour un recours administratif ?", answer: "Apportez la décision contestée, l’enveloppe ou preuve de notification, les demandes déposées, récépissés, réponses, autorisations, plans et tout document établissant votre droit et les conséquences de la décision." },
+        { question: "Le tribunal administratif peut-il accorder une indemnisation ?", answer: "Une demande d’indemnisation peut être étudiée lorsqu’un dommage est imputé à l’administration. Il faut établir les faits, le préjudice, le lien de causalité et respecter la procédure correspondant à l’action envisagée." },
+      ],
+      related: [
+        { key: "fiscal", label: "Contentieux fiscal" },
+        { key: "foncierRural", label: "Foncier rural" },
+      ],
+      ctaTitle: "Une décision administrative affecte vos droits ?",
+      ctaText: "Adressez au cabinet la décision, sa date de notification et vos échanges avec l’administration afin d’examiner rapidement les recours possibles.",
+    },
+    ar: {
+      slug: "القانون-الإداري",
+      seo: {
+        title: "محامٍ في القانون الإداري بالمغرب",
+        description: "محامٍ في المنازعات الإدارية بالمغرب للطعن في القرارات الإدارية ودعاوى الإلغاء والنزاعات مع الإدارات والمؤسسات العمومية.",
+      },
+      eyebrow: "القانون الإداري · الطعون · المحاكم",
+      h1: "محامٍ في القانون الإداري بالمغرب",
+      lead: "يواكب الأستاذ عبد الرزاق الرويسي الأفراد والفلاحين والمقاولات في المساطر والطعون والمنازعات التي تجمعهم بالإدارات والمؤسسات العمومية المغربية.",
+      summary: [
+        "قد يؤثر القرار الإداري فوراً في عقار أو رخصة أو نشاط أو مركز قانوني. وقبل مباشرة أي طعن، يجب تحديد الجهة التي أصدرت القرار وتاريخ تبليغه وأسبابه والآثار المترتبة عنه وطريق المراجعة المتاح.",
+        "يتولى المكتب، انطلاقاً من المحمدية، ملفات تخص الدار البيضاء وبنسليمان والرباط ومناطق أخرى من المغرب. وتشمل الدراسة المراسلات والطلبات التي لم تتلق جواباً والوثائق التي تثبت الحق المدعى به أو الضرر الناتج عن تصرف الإدارة.",
+        "قد يستدعي الملف تقديم طلب معلل أو تظلم إداري أو تظلم رئاسي، وقد يتطلب رفع دعوى الإلغاء بسبب تجاوز السلطة أو دعوى تدخل ضمن القضاء الشامل. لذلك يجب فحص الآجال وشروط قبول الدعوى فور التوصل بالقرار.",
+      ],
+      servicesTitle: "حماية الحقوق في مواجهة القرارات الإدارية",
+      servicesIntro: "يتحدد الإجراء وفق طبيعة القرار والجهة التي أصدرته وتاريخ التبليغ والنتيجة التي يسعى إليها صاحب الملف.",
+      services: [
+        { title: "الطعن في القرارات الإدارية", text: "دراسة القرار وأسبابه وآثاره، ثم إعداد التظلم أو الطعن الذي يتناسب مع طبيعة الملف والآجال المقررة." },
+        { title: "دعوى الإلغاء بسبب تجاوز السلطة", text: "فحص اختصاص مصدر القرار وشكله وأسبابه والغاية منه ومدى احترامه للقانون قبل طلب إلغائه أمام المحكمة الإدارية." },
+        { title: "الرخص والتعمير", text: "منازعات الرخص والرفض والسحب وقرارات التعمير والصعوبات الإدارية التي تمس مشروعاً عقارياً أو فلاحياً." },
+        { title: "مسؤولية الإدارة والتعويض", text: "دراسة الخطأ والضرر والعلاقة بينهما، ثم بحث طلب التعويض عندما تتوفر أسسه القانونية ووسائل إثباته." },
+        { title: "الملك العمومي ونزع الملكية", text: "فحص القرارات المتعلقة بالاحتلال والحدود والمنفعة العامة ونزع الملكية والحقوق المرتبطة بعقار أو أرض فلاحية." },
+        { title: "تنفيذ القرارات وتتبعها", text: "مواكبة الإجراءات اللاحقة لصدور القرار الإداري أو الحكم القضائي ودراسة الصعوبات التي تعترض تنفيذه." },
+      ],
+      processTitle: "تحديد القرار والآجال والمحكمة المختصة",
+      processIntro: "لا تكفي الحجة القانونية إذا لم ينصب الطعن على القرار الإداري الصحيح، أو وُجِّه إلى جهة غير مختصة، أو قُدِّم بعد انقضاء الأجل.",
+      process: [
+        { title: "ترتيب الوقائع والوثائق", text: "جمع القرار وإثبات التبليغ والطلبات السابقة والأجوبة والوثائق التي يستند إليها صاحب الملف." },
+        { title: "تحديد طبيعة الطعن", text: "تعيين القرار القابل للطعن والأسباب القانونية والمحكمة المختصة وشروط قبول الدعوى." },
+        { title: "مباشرة الإجراء المناسب", text: "إعداد التظلم الإداري أو الدعوى القضائية وتتبع الإجراءات اللازمة للدفاع عن الملف." },
+      ],
+      faqTitle: "أسئلة شائعة حول الطعون والمنازعات الإدارية",
+      faqIntro: "يجب دراسة القرار السلبي أو سكوت الإدارة دون تأخير، لأن القواعد تختلف بحسب القرار والمادة ونوع الطعن المزمع تقديمه.",
+      faqs: [
+        { question: "كيف أطعن في قرار إداري بالمغرب؟", answer: "ينبغي الحصول على نسخة من القرار والتحقق من تاريخ تبليغه وتحديد الجهة التي أصدرته وطريق الطعن المتاح. وقد يكون الإجراء تظلماً إدارياً أو تظلماً رئاسياً أو دعوى أمام المحكمة الإدارية بحسب الحالة." },
+        { question: "ما أجل رفع دعوى الإلغاء بسبب تجاوز السلطة؟", answer: "يخضع طعن الإلغاء من حيث المبدأ لأجل ستين يوماً، غير أن تاريخ بداية الأجل والقواعد الخاصة يجب التحقق منها بالنسبة إلى كل قرار. لذلك يستحسن طلب الاستشارة فور التبليغ." },
+        { question: "هل يمكن الطعن إذا لم تجب الإدارة عن طلبي؟", answer: "قد يرتب سكوت الإدارة أثراً قانونياً يختلف بحسب نوع الطلب والنص المطبق. ويجب الاحتفاظ بما يثبت الإيداع وحساب الأجل ودراسة إمكانية التذكير أو الطعن أو اللجوء إلى المحكمة." },
+        { question: "ما الوثائق اللازمة للطعن في قرار إداري؟", answer: "تشمل الوثائق القرار وإثبات التبليغ والطلبات المودعة ووصولات الإيداع والأجوبة والرخص والتصاميم وكل مستند يثبت الحق المدعى به والآثار المترتبة على القرار." },
+        { question: "هل يمكن طلب التعويض أمام المحكمة الإدارية؟", answer: "يمكن دراسة طلب التعويض عندما ينسب الضرر إلى الإدارة. ويجب إثبات الوقائع والضرر والعلاقة السببية واحترام المسطرة الخاصة بالدعوى المزمع رفعها." },
+      ],
+      related: [
+        { key: "fiscal", label: "المنازعات الضريبية" },
+        { key: "foncierRural", label: "العقار الفلاحي" },
+      ],
+      ctaTitle: "هل يمس قرار إداري بحقوقكم؟",
+      ctaText: "أرسلوا القرار وتاريخ التبليغ والمراسلات المتبادلة مع الإدارة حتى يتسنى فحص طرق الطعن الممكنة دون تأخير.",
+    },
+  },
+};

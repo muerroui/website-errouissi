@@ -4,6 +4,8 @@ const files = [
   "lib/services/immobilier.ts",
   "lib/services/succession.ts",
   "lib/services/foncier-rural.ts",
+  "lib/services/fiscal.ts",
+  "lib/services/administratif.ts",
   "app/[lang]/contact/page.tsx",
 ];
 

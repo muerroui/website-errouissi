@@ -4,6 +4,8 @@ const paths = [
   "/fr/services/droit-immobilier", "/ar/services/القانون-العقاري",
   "/fr/services/succession-heritage", "/ar/services/الميراث-والتركات",
   "/fr/services/droit-foncier-rural", "/ar/services/العقار-الفلاحي-وأراضي-الجموع",
+  "/fr/services/droit-fiscal", "/ar/services/القانون-الضريبي",
+  "/fr/services/droit-administratif", "/ar/services/القانون-الإداري",
   "/fr/contact", "/ar/contact",
 ];
 

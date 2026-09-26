@@ -1,0 +1,102 @@
+import type { ServicePageDefinition } from "@/lib/service-page-types";
+
+export const fiscalPage: ServicePageDefinition = {
+  key: "fiscal",
+  index: "04",
+  content: {
+    fr: {
+      slug: "droit-fiscal",
+      seo: {
+        title: "Avocat fiscaliste à Casablanca et au Maroc",
+        description: "Avocat fiscaliste près de Casablanca : contrôle, redressement, réclamation et contentieux fiscal pour particuliers et entreprises au Maroc.",
+      },
+      eyebrow: "Fiscalité · Contrôle · Contentieux",
+      h1: "Avocat fiscaliste à Casablanca et au Maroc",
+      lead: "Maître Abderrazak Errouissi accompagne particuliers, entreprises et détenteurs de patrimoine lors des contrôles, redressements et litiges avec l’administration fiscale marocaine.",
+      summary: [
+        "Un dossier fiscal se joue souvent dès le premier avis ou la première notification. Les pièces comptables, actes, déclarations, échanges et délais doivent être examinés ensemble afin de comprendre la méthode retenue par l’administration et de préparer une réponse documentée.",
+        "Depuis Mohammedia, à proximité de Casablanca, le cabinet intervient dans les différends relatifs à l’impôt sur le revenu, à l’impôt sur les sociétés, à la TVA, aux profits fonciers et aux impositions liées aux opérations immobilières ou successorales.",
+        "L’analyse porte sur les faits, la procédure suivie, les éléments de preuve et les voies de recours réellement ouvertes. Le cabinet distingue la demande d’explication, la réponse à une rectification, la réclamation administrative et le contentieux devant la juridiction compétente.",
+      ],
+      servicesTitle: "Répondre au contrôle, défendre la position fiscale",
+      servicesIntro: "Chaque intervention commence par la chronologie du dossier et la vérification des documents reçus, des bases d’imposition et des délais applicables.",
+      services: [
+        { title: "Contrôle fiscal", text: "Analyse de l’avis de vérification, préparation des justificatifs, suivi des échanges et assistance pendant les opérations de contrôle." },
+        { title: "Redressement et notifications", text: "Étude des motifs, montants et méthodes de calcul, puis préparation d’une réponse argumentée à partir des pièces disponibles." },
+        { title: "Réclamations et recours fiscaux", text: "Préparation des réclamations, suivi des réponses de l’administration et orientation vers la commission ou la juridiction compétente selon le dossier." },
+        { title: "Contentieux fiscal", text: "Représentation dans les litiges portant sur l’assiette, le recouvrement, les pénalités ou la régularité de la procédure fiscale." },
+        { title: "Fiscalité immobilière et successorale", text: "Analyse des impositions liées aux ventes, profits fonciers, transmissions, partages, régularisations et biens reçus par succession." },
+        { title: "Sécurisation documentaire", text: "Examen juridique des actes, déclarations, contrats et justificatifs afin d’identifier les incohérences et les risques avant une opération ou un recours." },
+      ],
+      processTitle: "Une défense fiscale fondée sur les pièces et la procédure",
+      processIntro: "Le montant contesté ne suffit pas à définir la stratégie : la notification, les délais, la preuve et l’étape exacte de la procédure sont déterminants.",
+      process: [
+        { title: "Reconstituer le dossier", text: "Classer les avis, notifications, déclarations, actes, justificatifs, échanges et paiements dans leur ordre chronologique." },
+        { title: "Vérifier la procédure", text: "Examiner la base juridique, la méthode de calcul, les délais et les garanties dont dispose le contribuable." },
+        { title: "Choisir le recours adapté", text: "Préparer une réponse, une réclamation, une saisine de commission ou une action contentieuse selon l’état du dossier." },
+      ],
+      faqTitle: "Questions fréquentes sur le contrôle et le contentieux fiscal",
+      faqIntro: "Les délais et voies de recours varient selon l’impôt, la décision reçue et l’étape de la procédure. Une notification doit être examinée sans attendre.",
+      faqs: [
+        { question: "Que faire après réception d’un avis de contrôle fiscal ?", answer: "Il faut identifier la période et les impôts concernés, préserver les pièces demandées et vérifier le calendrier de la procédure. Une préparation anticipée permet de présenter des justificatifs cohérents et d’éviter des réponses contradictoires." },
+        { question: "Comment contester un redressement fiscal au Maroc ?", answer: "La notification, ses motifs et les calculs doivent être analysés avec les déclarations et justificatifs. La réponse dépend du stade de la procédure et peut conduire à une réclamation, à une commission de recours ou à une action devant la juridiction compétente." },
+        { question: "Quels documents apporter à un avocat fiscaliste ?", answer: "Apportez les avis, notifications, déclarations, contrats, factures, relevés utiles, actes immobiliers, réponses déjà envoyées et preuves de réception. Une chronologie des échanges aide également à repérer les délais." },
+        { question: "Un particulier peut-il être concerné par un contentieux fiscal ?", answer: "Oui. Un litige peut notamment porter sur des revenus, un profit foncier, une cession immobilière, une succession ou une procédure de recouvrement. La situation doit être examinée à partir des documents effectivement reçus." },
+        { question: "Combien coûte l’accompagnement d’un dossier fiscal ?", answer: "Les honoraires dépendent du stade de la procédure, du volume des pièces, des montants en jeu et des démarches nécessaires. Le périmètre de la mission est défini après une première étude du dossier." },
+      ],
+      related: [
+        { key: "administratif", label: "Droit administratif" },
+        { key: "immobilier", label: "Droit immobilier" },
+      ],
+      ctaTitle: "Vous avez reçu un avis ou une notification fiscale ?",
+      ctaText: "Transmettez les documents reçus, leur date de notification et les justificatifs disponibles afin d’identifier rapidement les prochaines étapes.",
+    },
+    ar: {
+      slug: "القانون-الضريبي",
+      seo: {
+        title: "محامٍ في القانون الضريبي بالمغرب",
+        description: "محامٍ في المنازعات الضريبية بالمغرب لمواكبة مساطر المراقبة والتصحيح والمطالبات والطعون الضريبية الخاصة بالأفراد والمقاولات.",
+      },
+      eyebrow: "القانون الضريبي · المراقبة · المنازعات",
+      h1: "محامٍ في القانون الضريبي بالمغرب",
+      lead: "يواكب الأستاذ عبد الرزاق الرويسي الأفراد والمقاولات وأصحاب الممتلكات خلال المراقبة الضريبية ومساطر التصحيح والمنازعات مع الإدارة الضريبية.",
+      summary: [
+        "تبدأ حماية حقوق الملزم منذ التوصل بأول إشعار أو رسالة. لذلك يجب فحص الوثائق المحاسبية والتصريحات والعقود والمراسلات والآجال بشكل مترابط لفهم أساس موقف الإدارة وإعداد جواب مدعم بالحجج والوثائق.",
+        "يتولى المكتب من المحمدية، بالقرب من الدار البيضاء، ملفات مرتبطة بالضريبة على الدخل والضريبة على الشركات والضريبة على القيمة المضافة والأرباح العقارية والضرائب الناتجة عن بعض التصرفات العقارية أو التركات.",
+        "لا تقتصر دراسة الملف على المبلغ المطلوب، بل تشمل الوقائع وسلامة المسطرة ووسائل الإثبات ومرحلة النزاع. وبناء على ذلك يحدد المكتب ما إذا كان الملف يستدعي جواباً على التصحيح أو مطالبة إدارية أو طعناً أمام اللجنة أو المحكمة المختصة.",
+      ],
+      servicesTitle: "مواكبة المراقبة والدفاع في المنازعة الضريبية",
+      servicesIntro: "تنطلق المعالجة من ترتيب وقائع الملف وفحص الوثائق المتوصل بها وأساس فرض الضريبة والآجال المرتبطة بكل إجراء.",
+      services: [
+        { title: "المراقبة الضريبية", text: "فحص إشعار المراقبة وإعداد الوثائق المثبتة وتتبع المراسلات ومواكبة الملزم خلال إجراءات الفحص." },
+        { title: "مسطرة تصحيح الضرائب", text: "دراسة أسباب التصحيح والمبالغ وطريقة الاحتساب، ثم إعداد جواب معلل يستند إلى الوقائع والوثائق المتوفرة." },
+        { title: "المطالبات والطعون الضريبية", text: "إعداد المطالبات وتتبع جواب الإدارة وتحديد الجهة أو اللجنة أو المحكمة المختصة بحسب مرحلة الملف." },
+        { title: "المنازعات الضريبية أمام القضاء", text: "التمثيل في النزاعات المتعلقة بوعاء الضريبة أو التحصيل أو الجزاءات أو مدى احترام الإدارة للمسطرة." },
+        { title: "الجبايات العقارية والآثار الضريبية للتركات", text: "دراسة الضرائب المرتبطة بالتفويت والأرباح العقارية وانتقال الأموال والقسمة والتسويات المتعلقة بالعقارات الموروثة." },
+        { title: "مراجعة الوثائق قبل التصرف", text: "فحص العقود والتصريحات والمستندات المثبتة لرصد أوجه النقص أو التعارض والمخاطر قبل العملية أو قبل تقديم الطعن." },
+      ],
+      processTitle: "دفاع ضريبي يقوم على الوثائق وسلامة المسطرة",
+      processIntro: "لا يحدد المبلغ وحده طريقة الدفاع، إذ تؤثر طبيعة الإشعار والآجال ووسائل الإثبات ومرحلة المسطرة في اختيار الإجراء المناسب.",
+      process: [
+        { title: "ترتيب عناصر الملف", text: "جمع الإشعارات والتصريحات والعقود والمستندات والمراسلات والأداءات وترتيبها حسب تواريخها." },
+        { title: "فحص المسطرة والحساب", text: "دراسة الأساس القانوني وطريقة احتساب الضريبة والآجال والضمانات المخولة للملزم." },
+        { title: "اختيار وسيلة الطعن", text: "إعداد الجواب أو المطالبة أو الطعن أمام اللجنة أو الدعوى القضائية وفق المرحلة التي بلغها الملف." },
+      ],
+      faqTitle: "أسئلة شائعة حول المراقبة والمنازعات الضريبية",
+      faqIntro: "تختلف الآجال وطرق الطعن بحسب نوع الضريبة والقرار المتوصل به ومرحلة المسطرة، لذلك ينبغي فحص كل إشعار دون تأخير.",
+      faqs: [
+        { question: "ماذا أفعل بعد التوصل بإشعار بالمراقبة الضريبية؟", answer: "ينبغي تحديد الفترة والضرائب المعنية والحفاظ على الوثائق المطلوبة وفحص الجدول الزمني للمسطرة. ويساعد الإعداد المبكر على تقديم مستندات متناسقة وتفادي الأجوبة المتعارضة." },
+        { question: "كيف يمكن الاعتراض على تصحيح ضريبي في المغرب؟", answer: "يجب دراسة رسالة التصحيح وأسبابها وطريقة الاحتساب إلى جانب التصريحات والوثائق المثبتة. ويتحدد الإجراء بحسب مرحلة المسطرة، وقد يكون جواباً أو مطالبة أو طعناً أمام لجنة أو أمام المحكمة المختصة." },
+        { question: "ما الوثائق التي يحتاجها المحامي في النزاع الضريبي؟", answer: "تشمل الوثائق الإشعارات ورسائل التصحيح والتصريحات والعقود والفواتير والكشوف ذات الصلة والرسوم العقارية والأجوبة السابقة وإثباتات التوصل، مع بيان زمني للمراسلات." },
+        { question: "هل يمكن أن تهم المنازعة الضريبية شخصاً ذاتياً؟", answer: "نعم، فقد يتعلق النزاع بالدخل أو ربح عقاري أو تفويت عقار أو تركة أو إجراءات التحصيل. ويجب تحديد الوضع بدقة انطلاقاً من الوثائق التي توصل بها المعني." },
+        { question: "كيف تحدد أتعاب المحامي في الملف الضريبي؟", answer: "تتوقف الأتعاب على مرحلة المسطرة وحجم الوثائق والمبالغ موضوع النزاع والإجراءات المطلوبة. ويحدد نطاق المهمة بعد الاطلاع الأولي على الملف." },
+      ],
+      related: [
+        { key: "administratif", label: "القانون الإداري" },
+        { key: "immobilier", label: "القانون العقاري" },
+      ],
+      ctaTitle: "هل توصلتم بإشعار أو رسالة من الإدارة الضريبية؟",
+      ctaText: "أرسلوا الوثائق المتوصل بها وتاريخ التبليغ والمستندات المتوفرة لتحديد المرحلة والإجراء الذي ينبغي دراسته دون تأخير.",
+    },
+  },
+};

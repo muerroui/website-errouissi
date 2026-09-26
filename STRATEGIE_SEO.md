@@ -227,6 +227,38 @@ Les pages FR et AR sont des équivalents reliés par `hreflang`, mais leur réda
 - **H1 :** محامي الأراضي الفلاحية وأراضي الجموع بالمغرب
 - **H2 :** الملكية ؛ أراضي الجموع ؛ الخروج من الشياع ؛ التحديد ؛ نزع الملكية ؛ الاستغلال الفلاحي
 
+#### `/fr/services/droit-fiscal`
+
+- **Title :** Avocat fiscaliste à Casablanca et au Maroc
+- **Meta description :** Avocat fiscaliste près de Casablanca : contrôle, redressement, réclamation et contentieux fiscal pour particuliers et entreprises au Maroc.
+- **H1 :** Avocat fiscaliste à Casablanca et au Maroc
+- **H2 :** Contrôle fiscal ; Redressement ; Réclamations et recours ; Contentieux fiscal ; Fiscalité immobilière et successorale
+- **Cibles Ubersuggest :** `avocat fiscaliste casablanca` (volume 30, KD 26) ; `avocat fiscaliste maroc` (volume 20, KD 17)
+
+#### `/ar/services/القانون-الضريبي`
+
+- **Title :** محامٍ في القانون الضريبي بالمغرب
+- **Meta description :** محامٍ في المنازعات الضريبية بالمغرب لمواكبة المراقبة والتصحيح والمطالبات والطعون الضريبية للأفراد والمقاولات.
+- **H1 :** محامٍ في القانون الضريبي بالمغرب
+- **H2 :** المراقبة الضريبية ؛ مسطرة تصحيح الضرائب ؛ المطالبات والطعون ؛ المنازعات الضريبية ؛ الضرائب العقارية
+- **Cibles sémantiques :** `محامي ضرائب المغرب` ; `محامي منازعات ضريبية` ; `المراقبة الضريبية` ; `الطعن الضريبي`
+
+#### `/fr/services/droit-administratif`
+
+- **Title :** Avocat en droit administratif au Maroc
+- **Meta description :** Avocat en droit administratif au Maroc : recours contre une décision, excès de pouvoir et litiges avec les administrations publiques.
+- **H1 :** Avocat en droit administratif au Maroc
+- **H2 :** Décisions administratives ; Excès de pouvoir ; Autorisations et urbanisme ; Responsabilité administrative ; Domaine public
+- **Cibles sémantiques :** `avocat droit administratif maroc` ; `recours décision administrative` ; `recours pour excès de pouvoir`
+
+#### `/ar/services/القانون-الإداري`
+
+- **Title :** محامٍ في القانون الإداري بالمغرب
+- **Meta description :** محامٍ في المنازعات الإدارية بالمغرب للطعن في القرارات الإدارية ودعاوى الإلغاء والنزاعات مع الإدارات والمؤسسات العمومية.
+- **H1 :** محامٍ في القانون الإداري بالمغرب
+- **H2 :** الطعن في القرارات الإدارية ؛ دعوى الإلغاء ؛ الرخص والتعمير ؛ مسؤولية الإدارة ؛ الملك العمومي
+- **Cibles sémantiques :** `محامي القانون الإداري المغرب` ; `الطعن في قرار إداري` ; `دعوى الإلغاء بسبب تجاوز السلطة`
+
 #### `/fr/contact` et `/ar/contact`
 
 - **Title FR :** Contact avocat Mohammedia | Maître Abderrazak Errouissi
@@ -247,7 +279,7 @@ Les pages FR et AR sont des équivalents reliés par `hreflang`, mais leur réda
 
 ### Phase 1 — Fondations
 
-- Mettre en ligne les accueils FR/AR, les six pages services, À propos et Contact.
+- Mettre en ligne les accueils FR/AR, les cinq pages services, À propos et Contact.
 - Ajouter données structurées, sitemap XML, robots.txt, canonicals et hreflang.
 - Optimiser les Core Web Vitals : images dimensionnées, polices locales, JavaScript minimal, rendu serveur.
 - Harmoniser nom, adresse et téléphone avec Google Business Profile et les annuaires fiables.

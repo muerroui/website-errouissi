@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/i18n";
 
 const descriptions: Record<Locale, string> = {
   fr: "Avocat spécialisé en droit immobilier, conflits de succession, arbitrage et litiges fonciers. Services pour particuliers, entreprises et agriculteurs au Maroc.",
-  ar: "مكتب المحاماة عبد الرزاق الرويسي بالمحمدية، متخصص في القانون العقاري ونزاعات الميراث والتحكيم والمنازعات الأرضية.",
+  ar: "مكتب الأستاذ عبد الرزاق الرويسي للمحاماة بالمحمدية، متخصص في القانون العقاري ونزاعات الميراث والتحكيم والمنازعات العقارية، ويقدم خدماته للأفراد والمقاولات والفلاحين في المغرب.",
 };
 
 export function JsonLd({ locale }: { locale: Locale }) {
@@ -41,14 +41,14 @@ export function JsonLd({ locale }: { locale: Locale }) {
       "Mohammédia", "Casablanca", "Rabat", "Fès", "Marrakech", "Tanger", "Kénitra", "Bouskoura", "Benslimane",
       { "@type": "Country", name: "Maroc" },
     ],
-    knowsLanguage: ["fr", "ar"],
+    knowsLanguage: ["fr", "ar", "en"],
     amenityFeature: [
       { "@type": "LocationFeatureSpecification", name: "Parking sur place", value: true },
       { "@type": "LocationFeatureSpecification", name: "Accessible en fauteuil roulant", value: true },
     ],
     contactPoint: [
-      { "@type": "ContactPoint", telephone: firm.telephone, contactType: "customer service", availableLanguage: ["French", "Arabic"], areaServed: "MA" },
-      { "@type": "ContactPoint", telephone: firm.whatsappNumber, url: firm.whatsappUrl, contactType: "WhatsApp", availableLanguage: ["French", "Arabic"], areaServed: "MA" },
+      { "@type": "ContactPoint", telephone: firm.telephone, contactType: "customer service", availableLanguage: ["French", "Arabic", "English"], areaServed: "MA" },
+      { "@type": "ContactPoint", telephone: firm.whatsappNumber, url: firm.whatsappUrl, contactType: "WhatsApp", availableLanguage: ["French", "Arabic", "English"], areaServed: "MA" },
     ],
     employee: {
       "@type": "Person",

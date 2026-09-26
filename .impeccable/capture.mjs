@@ -10,6 +10,8 @@ const routes = [
   { name: "immobilier", desktop: "/fr/services/droit-immobilier", mobile: "/ar/services/القانون-العقاري" },
   { name: "succession", desktop: "/fr/services/succession-heritage", mobile: "/ar/services/الميراث-والتركات" },
   { name: "foncier-rural", desktop: "/fr/services/droit-foncier-rural", mobile: "/ar/services/العقار-الفلاحي-وأراضي-الجموع" },
+  { name: "fiscal", desktop: "/fr/services/droit-fiscal", mobile: "/ar/services/القانون-الضريبي" },
+  { name: "administratif", desktop: "/fr/services/droit-administratif", mobile: "/ar/services/القانون-الإداري" },
   { name: "contact", desktop: "/fr/contact", mobile: "/ar/contact" },
 ];
 
