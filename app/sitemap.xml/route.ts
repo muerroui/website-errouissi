@@ -1,6 +1,8 @@
 import { siteUrl } from "@/lib/site";
 import { getServicePath, servicePages } from "@/lib/services";
 
+export const dynamic = "force-static";
+
 function entry(path: string, frPath: string, arPath: string, priority: string, changefreq: string) {
   return `
   <url>
