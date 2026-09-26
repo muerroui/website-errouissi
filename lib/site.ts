@@ -1,5 +1,5 @@
 export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://example.ma"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://errouissi.ma"
 ).replace(/\/$/, "");
 
 export const firm = {
