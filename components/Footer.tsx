@@ -17,7 +17,10 @@ export function Footer({ locale }: { locale: Locale }) {
           <div className="flex items-start gap-3"><MapPin className="mt-0.5 shrink-0 text-gold" size={18} /><p>{firm.address.street}<br />{firm.address.city} {firm.address.postalCode}</p></div>
           <a className="flex items-center gap-3 transition-colors hover:text-gold" href={`tel:${firm.telephone}`}><Phone className="text-gold" size={18} />{firm.displayTelephone}</a>
           <p className="flex items-center gap-3"><Clock3 className="text-gold" size={18} />{locale === "ar" ? "الاثنين–السبت: 09:00–19:30" : "Lundi–samedi : 09:00–19:30"}</p>
-          <Link href={`/${locale}/contact`} className="inline-flex rounded-full border border-gold/50 px-5 py-2.5 font-semibold text-gold transition-colors hover:bg-gold hover:text-navy motion-reduce:transition-none">{locale === "ar" ? "العنوان والاتصال" : "Adresse et contact"}</Link>
+          <div className="flex flex-wrap gap-3">
+            <Link href={`/${locale}/guides`} className="inline-flex rounded-full border border-white/20 px-5 py-2.5 font-semibold text-white transition-colors hover:border-gold hover:text-gold motion-reduce:transition-none">{locale === "ar" ? "الدليل القانوني" : "Guides juridiques"}</Link>
+            <Link href={`/${locale}/contact`} className="inline-flex rounded-full border border-gold/50 px-5 py-2.5 font-semibold text-gold transition-colors hover:bg-gold hover:text-navy motion-reduce:transition-none">{locale === "ar" ? "العنوان والاتصال" : "Adresse et contact"}</Link>
+          </div>
         </address>
       </div>
     </footer>

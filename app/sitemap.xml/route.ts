@@ -1,5 +1,8 @@
 import { siteUrl } from "@/lib/site";
 import { getServicePath, servicePages } from "@/lib/services";
+import { guides } from "@/lib/guides";
+import { getGuidePath } from "@/lib/guide-slugs";
+import type { GuideKey } from "@/lib/guide-slugs";
 
 function entry(path: string, frPath: string, arPath: string, priority: string, changefreq: string) {
   return `
@@ -22,7 +25,13 @@ export function GET() {
     return [entry(frPath, frPath, arPath, "0.9", "monthly"), entry(arPath, frPath, arPath, "0.9", "monthly")];
   });
   const contacts = [entry("/fr/contact", "/fr/contact", "/ar/contact", "0.8", "monthly"), entry("/ar/contact", "/fr/contact", "/ar/contact", "0.8", "monthly")];
-  const urls = [...homes, ...services, ...contacts].join("");
+  const guideHubs = [entry("/fr/guides", "/fr/guides", "/ar/guides", "0.9", "weekly"), entry("/ar/guides", "/fr/guides", "/ar/guides", "0.9", "weekly")];
+  const guideEntries = Object.values(guides).flatMap((guide) => {
+    const frPath = getGuidePath("fr", guide.key as GuideKey);
+    const arPath = getGuidePath("ar", guide.key as GuideKey);
+    return [entry(frPath, frPath, arPath, "0.8", "monthly"), entry(arPath, frPath, arPath, "0.8", "monthly")];
+  });
+  const urls = [...homes, ...services, ...guideHubs, ...guideEntries, ...contacts].join("");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${urls}

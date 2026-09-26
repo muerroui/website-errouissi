@@ -1,0 +1,192 @@
+import type { GuideDefinition } from "@/lib/guide-types";
+
+const ancfccProcedure = "https://ancfcc.gov.ma/ProcedureNormale/";
+const ancfccTexts = "https://www.ancfcc.gov.ma/espace-media/publications/";
+const expropriationLaw = "https://www.sgg.gov.ma/Portals/1/textesconsolides/7_81.pdf";
+
+export const immatriculationGuide: GuideDefinition = {
+  key: "immatriculation",
+  publishedAt: "2026-09-26",
+  updatedAt: "2026-09-26",
+  serviceKey: "immobilier",
+  content: {
+    fr: {
+      slug: "titre-foncier-conservation-fonciere-maroc",
+      seo: { title: "Titre foncier et conservation foncière au Maroc", description: "Comprendre le titre foncier au Maroc : immatriculation, bornage, opposition, frais et vérifications auprès de la conservation foncière." },
+      category: "Immatriculation foncière",
+      h1: "Titre foncier et conservation foncière au Maroc",
+      lead: "De la réquisition d’immatriculation à l’établissement du titre foncier, chaque étape engage la preuve de la propriété, les limites du bien et les droits des tiers.",
+      intro: [
+        "L’immatriculation foncière soumet un immeuble au régime des livres fonciers et conduit, lorsque la procédure aboutit, à la création d’un titre foncier. Elle ne se résume pas au dépôt d’un formulaire : les actes, la localisation, la publicité, le bornage et les éventuelles oppositions doivent être examinés ensemble.",
+        "Une difficulté peut apparaître avant le dépôt, pendant le bornage, lors d’une opposition ou à l’occasion d’une inscription ultérieure. Le bon réflexe consiste à identifier exactement le statut du terrain et l’étape de la procédure avant de choisir une démarche.",
+      ],
+      takeaways: [
+        "Le titre foncier résulte d’une procédure d’immatriculation ; il ne se confond pas avec un acte de propriété concernant un terrain non immatriculé.",
+        "Le bornage est à la fois une opération topographique, une mesure de publicité et une étape d’enquête sur place.",
+        "Une opposition ou une incohérence entre les actes et le terrain doit être traitée en tenant compte des délais et des pièces disponibles.",
+      ],
+      sections: [
+        { id: "statut", title: "Distinguer le titre foncier des autres documents", paragraphs: ["Le titre foncier identifie un immeuble immatriculé et les droits qui y sont inscrits. Un certificat de propriété récent permet de connaître la situation publiée à une date donnée, notamment les propriétaires inscrits et les charges mentionnées.", "Pour un terrain non immatriculé, l’analyse porte sur les actes invoqués, leur chaîne de transmission, la possession, les plans et la concordance avec la situation matérielle. Employer le mot « titre » pour tous les documents masque donc une différence juridique essentielle."], bullets: ["Vérifier le numéro du titre et la conservation foncière compétente.", "Comparer le certificat de propriété, l’acte et le plan.", "Rechercher les hypothèques, saisies, servitudes ou autres inscriptions utiles."] },
+        { id: "procedure", title: "Les étapes de l’immatriculation foncière", paragraphs: ["Selon la présentation officielle de l’ANCFCC, la procédure ordinaire comprend notamment le dépôt et l’enrôlement de la réquisition, la publicité, le bornage, l’établissement du plan foncier puis la décision du conservateur.", "La demande doit être appuyée par les actes et documents susceptibles de faire connaître le droit invoqué. La procédure peut aboutir à l’immatriculation, mais aussi connaître une annulation, un rejet ou une transmission au tribunal lorsqu’une opposition subsiste."], bullets: ["Repérage préalable et dépôt de la réquisition.", "Publication et affichage de l’extrait avec avis de bornage.", "Bornage en présence des personnes concernées ou susceptibles de l’être.", "Décision après vérification des formalités et des oppositions."] },
+        { id: "verifications", title: "Vérifier un bien avant une opération", paragraphs: ["Avant une vente, une acquisition, un partage ou une garantie, il faut rapprocher les informations de la conservation foncière de l’état réel du bien. Un numéro exact ne suffit pas si la parcelle visitée, sa superficie ou ses limites ne correspondent pas aux documents.", "La vérification porte aussi sur l’identité et la capacité des parties, l’origine de propriété, les pouvoirs du mandataire, les inscriptions et les conditions prévues dans l’acte. Une difficulté détectée tôt est généralement plus simple à traiter qu’un conflit après signature."], note: "Une consultation en ligne ou un certificat ne remplace pas l’examen de l’ensemble des actes lorsqu’une anomalie, une succession ou un litige de limites existe." },
+        { id: "litiges", title: "Opposition, bornage et contestation", paragraphs: ["Une personne qui prétend disposer d’un droit sur le terrain faisant l’objet d’une réquisition peut être amenée à former une opposition selon les conditions et délais applicables. Le dossier doit préciser le droit revendiqué, son étendue et les pièces qui le soutiennent.", "Les conflits de bornage et de chevauchement exigent souvent de mettre en regard les actes, les plans cadastraux, les repères sur place et l’historique de la possession. Selon l’état de la procédure, la réponse peut être administrative, amiable, technique ou judiciaire."], bullets: ["Conserver les avis, convocations et récépissés avec leur date.", "Faire identifier précisément la parcelle et les limites discutées.", "Éviter toute démarche fondée sur un document isolé ou une simple déclaration orale."] },
+      ],
+      checklistTitle: "Documents utiles pour une première analyse",
+      checklistIntro: "La liste exacte dépend du statut du bien et de la difficulté rencontrée. Ces pièces permettent généralement de reconstituer une première chronologie.",
+      checklist: ["Certificat de propriété récent ou numéro complet du titre foncier.", "Actes de vente, donations, actes adoulaires, décisions ou autres documents invoqués.", "Plans, croquis, procès-verbaux de bornage et références cadastrales disponibles.", "Avis de publication, convocations, récépissés et correspondances avec la conservation foncière.", "Pièces relatives à la succession ou aux mandats lorsque le bien appartient à plusieurs personnes."],
+      faqTitle: "Questions fréquentes sur le titre foncier",
+      faqs: [
+        { question: "Comment consulter un titre foncier au Maroc ?", answer: "Il faut disposer des références exactes du titre et s’adresser aux services de l’ANCFCC ou utiliser les services officiels disponibles. Pour sécuriser une opération, la consultation doit être complétée par un certificat récent et l’examen des actes." },
+        { question: "Combien de temps dure une immatriculation foncière ?", answer: "Il n’existe pas une durée identique pour tous les dossiers. La publicité, le bornage, les diligences du requérant, les difficultés techniques et les oppositions éventuelles influencent la durée." },
+        { question: "Que faire si les limites réelles ne correspondent pas au plan ?", answer: "Il faut identifier l’origine de l’écart, réunir les plans et actes disponibles et vérifier si une opération technique, une rectification, une expertise ou une procédure contentieuse est appropriée." },
+        { question: "Le titre foncier peut-il comporter une hypothèque ou une saisie ?", answer: "Oui. Les droits et charges inscrits doivent être vérifiés sur un document récent avant toute opération. Leur effet et leur radiation éventuelle dépendent de leur nature et des justificatifs produits." },
+      ],
+      ctaTitle: "Une difficulté avec un titre foncier ?",
+      ctaText: "Le cabinet examine les actes, les inscriptions, les plans et l’état de la procédure afin d’identifier les mesures adaptées au dossier.",
+      serviceLabel: "Droit immobilier",
+      sourcesLabel: "Sources institutionnelles",
+      sources: [{ label: "ANCFCC — procédure ordinaire d’immatriculation", url: ancfccProcedure }, { label: "ANCFCC — textes et publications foncières", url: ancfccTexts }],
+    },
+    ar: {
+      slug: "التحفيظ-العقاري-في-المغرب",
+      seo: { title: "التحفيظ العقاري في المغرب: المسطرة والتعرض", description: "دليل التحفيظ العقاري في المغرب: مطلب التحفيظ والتحديد والتعرض والرسم العقاري والوثائق الضرورية وفق المسطرة المغربية." },
+      category: "التحفيظ العقاري",
+      h1: "التحفيظ العقاري في المغرب: من المطلب إلى الرسم العقاري",
+      lead: "تمر مسطرة التحفيظ بمراحل مترابطة تشمل الوثائق والإشهار والتحديد ودراسة التعرضات قبل اتخاذ المحافظ للقرار المناسب.",
+      intro: ["يهدف التحفيظ العقاري إلى إخضاع العقار لنظام الرسوم العقارية، وينتهي عند قبول المطلب بتأسيس رسم عقاري. ولا يكفي إيداع المطلب وحده، إذ ينبغي فحص أصل الحق وموقع العقار وحدوده والحقوق التي قد يتمسك بها الغير.", "قد تظهر الصعوبة قبل إيداع المطلب أو أثناء التحديد أو بسبب تعرض أو عند طلب تقييد لاحق. لذلك يبدأ التعامل السليم مع الملف بتحديد الوضع القانوني للعقار والمرحلة التي بلغتها المسطرة."],
+      takeaways: ["الرسم العقاري ينتج عن مسطرة التحفيظ، ولا يطابق رسم الملكية المتعلق عادة بعقار غير محفظ.", "التحديد عملية طبوغرافية وإجراء للإشهار وبحث ميداني في آن واحد.", "ينبغي التعامل مع التعرض أو اختلاف الحدود وفق الآجال والوثائق المرتبطة بكل ملف."],
+      sections: [
+        { id: "statut", title: "التمييز بين الرسم العقاري وباقي وثائق الملكية", paragraphs: ["يتعلق الرسم العقاري بعقار محفظ ويبين الحقوق المقيدة عليه. أما شهادة الملكية الحديثة فتعكس البيانات المنشورة في تاريخ إصدارها، بما فيها الملاك المقيدون والتحملات الظاهرة.", "بالنسبة إلى العقار غير المحفظ، تنصب الدراسة على الرسوم والعقود وتسلسل انتقال الحقوق والحيازة والتصاميم ومدى مطابقتها للوضع الفعلي. لذلك لا يصح استعمال المصطلحات نفسها لكل الوثائق دون تمييز."], bullets: ["التحقق من رقم الرسم العقاري والمحافظة المختصة.", "مطابقة شهادة الملكية والعقد والتصميم.", "فحص الرهون والحجوزات والارتفاقات وباقي التقييدات المفيدة."] },
+        { id: "procedure", title: "مراحل مسطرة التحفيظ العقاري", paragraphs: ["تتضمن المسطرة العادية، وفق المعطيات الرسمية للوكالة الوطنية للمحافظة العقارية، إيداع مطلب التحفيظ وإدراجه، ثم الإشهار والتحديد وإعداد التصميم العقاري، قبل اتخاذ المحافظ للقرار.", "يجب دعم المطلب بالرسوم والعقود والوثائق التي تثبت الحق المدعى به. وقد تنتهي المسطرة بالتحفيظ، كما قد تعرف الإلغاء أو الرفض أو الإحالة على المحكمة عند بقاء تعرض قائم."], bullets: ["التحديد الأولي لموقع العقار وإيداع مطلب التحفيظ.", "نشر خلاصة المطلب وتعليقها مع الإعلان عن تاريخ التحديد.", "إنجاز التحديد بحضور المعنيين ومن يحتمل أن تكون لهم حقوق.", "فحص الإجراءات والتعرضات قبل اتخاذ القرار."] },
+        { id: "verifications", title: "التحقق من العقار قبل إبرام أي معاملة", paragraphs: ["قبل البيع أو الشراء أو القسمة أو ترتيب ضمان، ينبغي مطابقة بيانات المحافظة العقارية مع الوضع الحقيقي للعقار. فصحة رقم الرسم لا تكفي إذا كانت القطعة المعاينة أو مساحتها أو حدودها لا توافق الوثائق.", "يشمل الفحص كذلك هوية الأطراف وأهليتهم وأصل الملكية وصفة الوكيل والتقييدات والشروط الواردة في العقد. ويساعد اكتشاف الإشكال قبل التوقيع على تجنب نزاع أكثر تعقيداً بعده."], note: "لا تغني الاستشارة الإلكترونية أو شهادة منفردة عن دراسة مجموع الوثائق عند وجود اختلاف أو إرث أو نزاع حول الحدود." },
+        { id: "litiges", title: "التعرض والتحديد والمنازعات", paragraphs: ["قد يلجأ من يدعي حقاً على العقار موضوع مطلب التحفيظ إلى التعرض وفق الشروط والآجال المقررة. وينبغي أن يحدد الملف طبيعة الحق المدعى به ونطاقه والوثائق المؤيدة له.", "تقتضي منازعات الحدود والتداخل مقارنة الرسوم والعقود بالتصاميم والعلامات الموجودة في الميدان وتاريخ الحيازة. وقد يكون التدخل، بحسب مرحلة الملف، إدارياً أو تفاوضياً أو تقنياً أو قضائياً."], bullets: ["الاحتفاظ بالإعلانات والاستدعاءات والوصولات وتواريخها.", "تحديد القطعة والحدود المتنازع بشأنها بدقة.", "عدم بناء الإجراء على وثيقة معزولة أو أقوال شفوية فقط."] },
+      ],
+      checklistTitle: "وثائق مفيدة للدراسة الأولية",
+      checklistIntro: "تختلف الوثائق المطلوبة بحسب وضعية العقار وطبيعة النزاع، غير أن هذه العناصر تساعد عادة على ترتيب الوقائع والإجراءات.",
+      checklist: ["شهادة ملكية حديثة أو المراجع الكاملة للرسم العقاري.", "عقود البيع والهبات ورسوم الملكية والأحكام وباقي الوثائق المحتج بها.", "التصاميم ومحاضر التحديد والمراجع المساحية المتوفرة.", "إعلانات النشر والاستدعاءات والوصولات والمراسلات مع المحافظة العقارية.", "رسم الإراثة أو الوكالات إذا كان العقار مملوكاً لعدة أشخاص."],
+      faqTitle: "أسئلة شائعة حول التحفيظ العقاري",
+      faqs: [
+        { question: "كيف يمكن الاطلاع على الرسم العقاري في المغرب؟", answer: "ينبغي التوفر على المراجع الدقيقة للرسم العقاري ومراجعة خدمات الوكالة الوطنية للمحافظة العقارية أو خدماتها الرسمية المتاحة. ولتأمين معاملة، يستحسن الاعتماد على شهادة حديثة مع فحص العقود." },
+        { question: "كم تستغرق مسطرة التحفيظ العقاري؟", answer: "لا توجد مدة واحدة لكل الملفات. فقد تتأثر المسطرة بالإشهار والتحديد والإجراءات المطلوبة من صاحب المطلب والصعوبات التقنية والتعرضات المحتملة." },
+        { question: "ماذا أفعل إذا لم توافق الحدود الفعلية التصميم؟", answer: "ينبغي تحديد سبب الاختلاف وجمع التصاميم والرسوم المتوفرة، ثم تقييم الحاجة إلى إجراء تقني أو تصحيح أو خبرة أو مسطرة قضائية." },
+        { question: "هل يمكن أن يتضمن الرسم العقاري رهناً أو حجزاً؟", answer: "نعم. يجب فحص التقييدات والتحملات الواردة في شهادة حديثة قبل المعاملة. وتختلف آثارها وشروط التشطيب عليها بحسب طبيعتها والوثائق اللازمة." },
+      ],
+      ctaTitle: "هل تواجهون صعوبة في مسطرة التحفيظ؟",
+      ctaText: "يفحص المكتب الرسوم والعقود والتقييدات والتصاميم ومرحلة المسطرة لتحديد الإجراءات المناسبة للملف.",
+      serviceLabel: "القانون العقاري",
+      sourcesLabel: "المصادر الرسمية",
+      sources: [{ label: "الوكالة الوطنية للمحافظة العقارية — المسطرة العادية", url: "https://www.ancfcc.gov.ma/arnos-m%C3%A9tiers/conservation-fonci%C3%A8re-cadastre/procedure-normale/" }, { label: "الوكالة الوطنية للمحافظة العقارية — النصوص والمنشورات", url: ancfccTexts }],
+    },
+  },
+};
+
+export const expropriationGuide: GuideDefinition = {
+  key: "expropriation", publishedAt: "2026-09-26", updatedAt: "2026-09-26", serviceKey: "administratif",
+  content: {
+    fr: {
+      slug: "expropriation-indemnisation-maroc",
+      seo: { title: "Expropriation et indemnisation au Maroc", description: "Procédure d’expropriation au Maroc, indemnité, expertise, prise de possession et recours : les points à vérifier pour défendre ses droits." },
+      category: "Expropriation",
+      h1: "Expropriation au Maroc : procédure, indemnité et recours",
+      lead: "Une expropriation pour cause d’utilité publique suit une procédure encadrée. La propriété, la consistance du bien, les délais et l’évaluation de l’indemnité doivent être documentés avec précision.",
+      intro: ["La loi n° 7-81 organise l’expropriation pour cause d’utilité publique et l’occupation temporaire. Le dossier comporte une phase administrative et peut donner lieu à une phase judiciaire, notamment pour le transfert de propriété, la prise de possession et la fixation de l’indemnité.", "Le propriétaire ou titulaire de droits doit suivre les actes de procédure et réunir sans attendre les éléments relatifs au bien et à sa valeur. Une réponse tardive ou un dossier incomplet peut compliquer la discussion sur les droits concernés et l’indemnisation."],
+      takeaways: ["L’utilité publique, la cessibilité, le transfert de propriété et l’indemnité sont des questions distinctes.", "L’estimation doit être étayée par la situation juridique, les caractéristiques et l’usage du bien.", "Les notifications et dates de procédure doivent être conservées et vérifiées dès leur réception."],
+      sections: [
+        { id: "procedure", title: "Comprendre les phases de l’expropriation", paragraphs: ["La procédure commence par des actes administratifs destinés à établir l’utilité publique et à identifier les biens concernés. Leur contenu, leur publication et leur portée doivent être lus en fonction du projet et de la parcelle.", "Lorsque l’accord n’aboutit pas, le juge peut être saisi des demandes prévues par la loi. Il faut alors distinguer les mesures relatives à la possession, au transfert de propriété et à l’indemnité."], bullets: ["Identifier l’acte déclaratif et le plan du projet.", "Vérifier si toute la parcelle ou seulement une partie est concernée.", "Conserver les notifications et les références de la procédure."] },
+        { id: "rights", title: "Établir la propriété et les droits concernés", paragraphs: ["L’indemnisation suppose d’identifier les propriétaires et autres titulaires de droits. Le titre foncier, les actes, la succession ou les droits d’occupation doivent être clarifiés, notamment lorsqu’un bien est indivis ou non immatriculé.", "Pour une terre agricole, il faut aussi documenter l’exploitation, les plantations, les constructions autorisées, l’accès et les conséquences de l’emprise sur la partie restante."], note: "Un conflit entre héritiers ou une chaîne de propriété incomplète doit être traité parallèlement, sans perdre de vue les échéances propres à l’expropriation." },
+        { id: "indemnity", title: "Discuter l’indemnité sur des éléments vérifiables", paragraphs: ["La contestation d’une évaluation ne peut reposer sur une estimation abstraite. Les références pertinentes, la superficie, la destination du terrain, les équipements et les éléments effectivement affectés doivent être réunis.", "Une expertise peut devenir déterminante. Il convient alors de préparer les documents et observations permettant de décrire le bien, son environnement et les préjudices juridiquement pris en compte."], bullets: ["Actes et documents fonciers.", "Plans d’emprise et mesures de la surface concernée.", "Éléments objectifs de valeur et caractéristiques de l’exploitation.", "Constats, photographies et justificatifs des aménagements existants."] },
+        { id: "reaction", title: "Réagir à une notification ou à une prise de possession", paragraphs: ["Dès réception d’un avis, d’une offre ou d’un acte judiciaire, il faut vérifier sa nature, la juridiction ou l’administration concernée et le délai utile. Toutes les correspondances doivent être datées et conservées.", "L’objectif d’une première analyse est de déterminer les droits à faire valoir, les documents manquants et la voie adaptée : observations, négociation, expertise, intervention dans la procédure ou recours." ] },
+      ],
+      checklistTitle: "Préparer un dossier d’expropriation",
+      checklistIntro: "La qualité du dossier dépend autant de la preuve des droits que de la description exacte du bien et de l’emprise.",
+      checklist: ["Titre foncier, certificat de propriété, actes ou documents de propriété.", "Actes de succession et identité des ayants droit, le cas échéant.", "Avis, arrêtés, notifications, offres et actes judiciaires reçus.", "Plan de la parcelle et plan d’emprise du projet.", "Photographies, autorisations, éléments d’exploitation et références utiles à l’évaluation."],
+      faqTitle: "Questions fréquentes sur l’expropriation",
+      faqs: [
+        { question: "Peut-on contester le montant proposé ?", answer: "Une offre peut être discutée lorsque les éléments du dossier le justifient. Il faut alors produire une argumentation documentée sur les droits, la consistance du bien et les éléments pertinents pour son évaluation." },
+        { question: "Que se passe-t-il si le terrain appartient à plusieurs héritiers ?", answer: "Les droits et qualités des héritiers doivent être établis. L’indivision ne fait pas disparaître la procédure d’expropriation, mais elle impose d’identifier les ayants droit et de coordonner la défense de leurs intérêts." },
+        { question: "Une partie seulement du terrain peut-elle être expropriée ?", answer: "Oui, une emprise peut ne concerner qu’une partie du bien. Il faut alors vérifier sa délimitation et examiner les conséquences sur la partie restante selon les circonstances du dossier." },
+        { question: "Faut-il attendre la prise de possession pour consulter ?", answer: "Non. Une analyse précoce permet de vérifier les actes, les délais, la parcelle visée et les éléments d’évaluation avant que la procédure n’avance davantage." },
+      ],
+      ctaTitle: "Un terrain concerné par une expropriation ?", ctaText: "Présentez les notifications, les actes et le plan disponibles afin d’identifier les délais et les premières mesures utiles.", serviceLabel: "Droit administratif",
+      sourcesLabel: "Sources institutionnelles", sources: [{ label: "SGG — loi n° 7-81 sur l’expropriation et l’occupation temporaire", url: expropriationLaw }],
+    },
+    ar: {
+      slug: "نزع-الملكية-والتعويض",
+      seo: { title: "نزع الملكية والتعويض في القانون المغربي", description: "دليل نزع الملكية للمنفعة العامة بالمغرب: المسطرة والتعويض والخبرة وانتقال الملكية والوثائق الضرورية لحماية الحقوق." },
+      category: "نزع الملكية",
+      h1: "نزع الملكية للمنفعة العامة والتعويض في المغرب",
+      lead: "تخضع مسطرة نزع الملكية لضوابط قانونية، ويقتضي الدفاع عن الحقوق توثيق الملكية ووضعية العقار والآجال والعناصر المؤثرة في تقدير التعويض.",
+      intro: ["ينظم القانون رقم 7.81 نزع الملكية لأجل المنفعة العامة والاحتلال المؤقت. وتشمل المسطرة مرحلة إدارية، وقد تنتقل إلى القضاء في ما يتعلق بالحيازة ونقل الملكية وتحديد التعويض.", "يتعين على المالك أو صاحب الحق تتبع الإجراءات وجمع الوثائق المتعلقة بالعقار وقيمته منذ البداية. فقد يؤدي التأخر أو نقص الوثائق إلى تعقيد مناقشة الحقوق والتعويض."],
+      takeaways: ["المنفعة العامة وقابلية العقار للتفويت ونقل الملكية والتعويض مسائل مترابطة لكنها غير متطابقة.", "يجب دعم التقييم بالوضع القانوني للعقار وخصائصه واستعماله الفعلي.", "ينبغي حفظ التبليغات وتواريخ الإجراءات وفحصها فور التوصل بها."],
+      sections: [
+        { id: "procedure", title: "مراحل مسطرة نزع الملكية", paragraphs: ["تبدأ المسطرة بإجراءات إدارية تهدف إلى تقرير المنفعة العامة وتحديد العقارات المعنية. ويتعين فحص مضمون القرارات ونشرها ومدى انطباقها على القطعة المقصودة.", "عند تعذر الاتفاق، قد تعرض الطلبات المنصوص عليها قانوناً على القضاء. وهنا يجب التمييز بين الإذن بالحيازة ونقل الملكية وتحديد التعويض."], bullets: ["تحديد المقرر المرتبط بالمنفعة العامة وتصميم المشروع.", "التحقق مما إذا كان النزع يشمل كامل القطعة أو جزءاً منها.", "الاحتفاظ بالتبليغات ومراجع المسطرة."] },
+        { id: "rights", title: "إثبات الملكية والحقوق المتأثرة", paragraphs: ["يفترض التعويض تحديد الملاك وأصحاب الحقوق. لذلك ينبغي توضيح الرسم العقاري أو الرسوم والعقود والإرث وحقوق الاستغلال، خاصة عندما يكون العقار مشاعاً أو غير محفظ.", "بالنسبة إلى الأرض الفلاحية، ينبغي كذلك توثيق الاستغلال والأغراس والبنايات المرخصة والمسالك وآثار اقتطاع الجزء المنزوع على بقية العقار."], note: "يجب معالجة النزاع بين الورثة أو النقص في تسلسل الملكية بالتوازي مع تتبع آجال مسطرة نزع الملكية." },
+        { id: "indemnity", title: "مناقشة التعويض على أساس عناصر قابلة للإثبات", paragraphs: ["لا تكفي قيمة تقديرية عامة للاعتراض على التعويض. بل ينبغي جمع المراجع المناسبة والمساحة وطبيعة استعمال الأرض والتجهيزات والعناصر التي يمسها المشروع فعلاً.", "قد تكون الخبرة عنصراً حاسماً، مما يستلزم إعداد الوثائق والملاحظات التي تصف العقار ومحيطه والأضرار التي يمكن قانوناً أخذها بعين الاعتبار."], bullets: ["الرسوم والعقود والوثائق العقارية.", "تصاميم الوعاء والمساحة المشمولة بالنزع.", "العناصر الموضوعية للقيمة وخصائص الاستغلال.", "المعاينات والصور ووثائق التجهيزات الموجودة."] },
+        { id: "reaction", title: "التعامل مع التبليغ أو الإذن بالحيازة", paragraphs: ["عند التوصل بإشعار أو عرض أو مقال قضائي، ينبغي تحديد طبيعته والجهة المعنية والأجل الذي يجب مراعاته. كما يلزم حفظ جميع المراسلات مع تواريخها.", "تهدف الدراسة الأولية إلى تحديد الحقوق الواجب التمسك بها والوثائق الناقصة والإجراء المناسب، سواء تعلق الأمر بملاحظات أو تفاوض أو خبرة أو تدخل في الدعوى أو طعن." ] },
+      ],
+      checklistTitle: "إعداد ملف نزع الملكية", checklistIntro: "تتوقف قوة الملف على إثبات الحقوق وعلى الوصف الدقيق للعقار والمساحة المشمولة بالمشروع.",
+      checklist: ["الرسم العقاري أو شهادة الملكية أو رسوم الملكية والعقود.", "رسم الإراثة وهوية ذوي الحقوق عند الاقتضاء.", "الإعلانات والقرارات والتبليغات والعروض والمقالات القضائية.", "تصميم القطعة وتصميم المساحة المشمولة بالمشروع.", "الصور والتراخيص ووثائق الاستغلال والعناصر المفيدة للتقييم."],
+      faqTitle: "أسئلة شائعة حول نزع الملكية",
+      faqs: [
+        { question: "هل يمكن الاعتراض على مبلغ التعويض المقترح؟", answer: "يمكن مناقشة العرض عندما تبرر عناصر الملف ذلك، على أن يستند الطلب إلى وثائق تتعلق بالحقوق وبوصف العقار والعناصر المؤثرة في تقييمه." },
+        { question: "ماذا يحدث إذا كانت الأرض مملوكة لعدة ورثة؟", answer: "ينبغي إثبات صفة الورثة وحقوقهم. ولا توقف حالة الشياع مسطرة نزع الملكية، لكنها تقتضي تحديد ذوي الحقوق وتنظيم الدفاع عن مصالحهم." },
+        { question: "هل يمكن أن يشمل نزع الملكية جزءاً من الأرض فقط؟", answer: "نعم، قد يقتصر المشروع على جزء من العقار. ويتعين حينئذ التحقق من حدوده ودراسة أثره على الجزء المتبقي بحسب ظروف الملف." },
+        { question: "هل ينبغي انتظار الحيازة قبل استشارة محامٍ؟", answer: "لا. تسمح الدراسة المبكرة بفحص القرارات والآجال والقطعة المعنية وعناصر التقييم قبل تقدم المسطرة." },
+      ],
+      ctaTitle: "هل تشمل مسطرة نزع الملكية عقاركم؟", ctaText: "اعرضوا التبليغات والرسوم والتصميم المتوفر لتحديد الآجال والإجراءات الأولى المناسبة.", serviceLabel: "القانون الإداري",
+      sourcesLabel: "المصادر الرسمية", sources: [{ label: "الأمانة العامة للحكومة — القانون رقم 7.81 المتعلق بنزع الملكية", url: expropriationLaw }],
+    },
+  },
+};
+
+export const oppositionGuide: GuideDefinition = {
+  key: "opposition", publishedAt: "2026-09-26", updatedAt: "2026-09-26", serviceKey: "immobilier",
+  content: {
+    fr: {
+      slug: "opposition-immatriculation-fonciere-maroc", seo: { title: "Opposition à l’immatriculation foncière au Maroc", description: "Opposition à une réquisition d’immatriculation au Maroc : droit revendiqué, délais, preuves, bornage et phase judiciaire." }, category: "Contentieux de l’immatriculation",
+      h1: "Opposition à une immatriculation foncière au Maroc", lead: "Former ou défendre une opposition exige d’identifier le droit revendiqué, la parcelle concernée, les preuves disponibles et l’étape exacte de la procédure.",
+      intro: ["La publicité et le bornage d’une réquisition permettent aux personnes qui prétendent détenir un droit sur l’immeuble de se manifester. L’opposition ne doit pas être réduite à une contestation générale : elle porte sur un droit déterminé et doit être soutenue par des éléments précis.", "La stratégie varie selon que l’opposition concerne la totalité du terrain, une limite, un droit réel ou une quote-part. Elle dépend également du moment où la difficulté est découverte et de l’état administratif ou judiciaire de la procédure."],
+      takeaways: ["L’objet de l’opposition et l’étendue du droit revendiqué doivent être clairement définis.", "Les actes, la possession et les limites matérielles doivent être reliés à la parcelle visée.", "Les délais et formalités ne se déduisent pas d’une information générale : ils doivent être vérifiés dans le dossier."],
+      sections: [
+        { id: "object", title: "Déterminer ce qui est réellement contesté", paragraphs: ["Une opposition peut concerner la propriété de tout ou partie de l’immeuble, une limite ou un autre droit susceptible d’être affecté par l’immatriculation. La première étape consiste à décrire ce droit sans ambiguïté.", "Il faut ensuite relier la prétention aux références de la réquisition, au plan et à la zone effectivement concernée. Une confusion entre deux parcelles ou entre une limite physique et une limite juridique fragilise la compréhension du dossier."], bullets: ["Référence exacte de la réquisition.", "Nature et origine du droit revendiqué.", "Surface ou limite concernée.", "Identité et qualité des personnes impliquées."] },
+        { id: "proof", title: "Réunir les preuves et reconstituer la chronologie", paragraphs: ["Les actes de propriété, contrats, documents successoraux, plans, constats et éléments de possession doivent être classés par date. L’objectif est de montrer comment le droit revendiqué s’est constitué et à quelle parcelle il se rapporte.", "Pour une terre rurale, les limites peuvent être décrites par des repères anciens qui ont changé. Une confrontation technique et juridique des documents avec le terrain peut alors être nécessaire."], note: "Une attestation isolée ou une occupation récente ne doit pas être présentée comme suffisante sans analyse de l’ensemble des éléments." },
+        { id: "process", title: "De la conservation foncière au tribunal", paragraphs: ["L’opposition intervient d’abord dans le cadre de la procédure d’immatriculation. Lorsque le différend n’est pas résolu et que les conditions sont réunies, le dossier peut être transmis à la juridiction compétente.", "La phase judiciaire exige de présenter les demandes, les moyens et les pièces de façon cohérente. La décision rendue s’insère ensuite dans la suite de la procédure d’immatriculation."], bullets: ["Suivre les notifications et convocations.", "Vérifier la transmission et les références judiciaires.", "Conserver une copie ordonnée de chaque pièce déposée."] },
+        { id: "defence", title: "Répondre à une opposition dirigée contre son terrain", paragraphs: ["Le requérant doit examiner la nature du droit invoqué par l’opposant et les pièces produites. La réponse peut nécessiter de compléter la preuve de propriété, de clarifier les limites ou de contester la qualité et les prétentions adverses.", "Une solution amiable peut être examinée lorsqu’elle repose sur une délimitation claire et protège les droits en présence. À défaut, le dossier doit être préparé pour la procédure compétente." ] },
+      ],
+      checklistTitle: "Pièces à rassembler", checklistIntro: "Une opposition se prépare à partir du dossier réel de la réquisition, et non d’un modèle générique.",
+      checklist: ["Récépissé et référence de la réquisition d’immatriculation.", "Avis de bornage, convocations et procès-verbal disponible.", "Actes, contrats, documents de succession et décisions invoqués.", "Plans, photographies et repères permettant d’identifier les limites.", "Copie de l’opposition, notifications et actes judiciaires éventuels."],
+      faqTitle: "Questions sur l’opposition à l’immatriculation",
+      faqs: [
+        { question: "Qui peut former une opposition ?", answer: "La qualité dépend du droit prétendu sur l’immeuble en cours d’immatriculation. Elle doit être appréciée à partir des documents et de la nature exacte de la revendication." },
+        { question: "Peut-on s’opposer uniquement sur une partie du terrain ?", answer: "Une contestation peut porter sur une partie ou une limite, mais cette emprise doit être identifiée avec précision et rattachée au droit invoqué." },
+        { question: "Que devient l’opposition si aucun accord n’est trouvé ?", answer: "Selon l’état de la procédure et les conditions légales, le différend peut être transmis à la juridiction compétente. Les parties doivent alors soutenir leurs prétentions par des moyens et pièces organisés." },
+        { question: "Une opposition abusive comporte-t-elle un risque ?", answer: "Le régime de l’immatriculation prévoit des conséquences pour certaines oppositions reconnues abusives, vexatoires ou de mauvaise foi. La pertinence d’une opposition doit donc être évaluée sérieusement avant d’agir." },
+      ],
+      ctaTitle: "Une opposition bloque la procédure ?", ctaText: "Le cabinet analyse la réquisition, le droit invoqué, les limites et les pièces afin de préparer une réponse adaptée à l’étape du dossier.", serviceLabel: "Droit immobilier",
+      sourcesLabel: "Sources institutionnelles", sources: [{ label: "ANCFCC — procédure ordinaire d’immatriculation", url: ancfccProcedure }, { label: "ANCFCC — recueil des textes sur l’immatriculation", url: ancfccTexts }],
+    },
+    ar: {
+      slug: "التعرض-على-مطلب-التحفيظ", seo: { title: "التعرض على مطلب التحفيظ في المغرب", description: "التعرض على مطلب التحفيظ في المغرب: تحديد الحق والآجال والوثائق والتحديد والمرحلة القضائية وفق وضعية كل ملف." }, category: "منازعات التحفيظ",
+      h1: "التعرض على مطلب التحفيظ في المغرب", lead: "يتطلب تقديم التعرض أو مواجهته تحديد الحق المدعى به والجزء المعني والوثائق المتوفرة والمرحلة التي بلغتها المسطرة.",
+      intro: ["يتيح نشر مطلب التحفيظ وإجراء التحديد لمن يدعي حقاً على العقار أن يتمسك به وفق القواعد المقررة. ولا ينبغي اختزال التعرض في اعتراض عام، بل يجب ربطه بحق محدد وبوقائع ووثائق واضحة.", "تختلف معالجة الملف بحسب ما إذا كان التعرض يشمل كامل العقار أو جزءاً منه أو حداً أو حقاً عينياً. كما تتأثر بالإجراءات المنجزة وبالوقت الذي ظهر فيه النزاع."],
+      takeaways: ["يجب تحديد موضوع التعرض ونطاق الحق المدعى به بدقة.", "ينبغي ربط الرسوم والحيازة والحدود المادية بالقطعة موضوع المطلب.", "تُفحص الآجال والإجراءات من خلال وثائق الملف ومرحلة المسطرة."],
+      sections: [
+        { id: "object", title: "تحديد موضوع النزاع بدقة", paragraphs: ["قد ينصب التعرض على ملكية كل العقار أو جزء منه أو على حد أو حق آخر يمكن أن يتأثر بالتحفيظ. وتبدأ الدراسة بوصف الحق المدعى به وصفاً واضحاً.", "بعد ذلك تتم مطابقة الادعاء مع مراجع مطلب التحفيظ والتصميم والموقع المعني فعلاً. فالخلط بين قطعتين أو بين حد مادي وحد قانوني يصعب فهم النزاع."], bullets: ["المرجع الكامل لمطلب التحفيظ.", "طبيعة الحق المدعى به ومصدره.", "المساحة أو الحد المعني.", "هوية الأطراف وصفاتهم."] },
+        { id: "proof", title: "جمع وسائل الإثبات وترتيب الوقائع", paragraphs: ["ينبغي ترتيب رسوم الملكية والعقود ووثائق الإرث والتصاميم والمعاينات وأدلة الحيازة بحسب تاريخها. والغاية هي بيان أصل الحق المدعى به والعقار الذي يتعلق به.", "في الأراضي القروية قد تعتمد الحدود على معالم قديمة تغيرت مع الزمن. وقد يستلزم الأمر مطابقة تقنية وقانونية بين الوثائق والوضع الميداني."], note: "لا ينبغي اعتبار شهادة منفردة أو حيازة حديثة دليلاً كافياً دون فحص باقي العناصر." },
+        { id: "process", title: "من المحافظة العقارية إلى المحكمة", paragraphs: ["يقدم التعرض أولاً في إطار مسطرة التحفيظ. وإذا لم تتم تسوية النزاع وتوفرت الشروط القانونية، فقد يحال الملف على المحكمة المختصة.", "تقتضي المرحلة القضائية عرض الطلبات والدفوع والوثائق بصورة منسجمة، ثم يندرج الحكم الصادر في استكمال مسطرة التحفيظ."], bullets: ["تتبع التبليغات والاستدعاءات.", "التحقق من الإحالة ومراجع الملف القضائي.", "الاحتفاظ بنسخة مرتبة من كل وثيقة مودعة."] },
+        { id: "defence", title: "مواجهة تعرض موجه ضد مطلب التحفيظ", paragraphs: ["على طالب التحفيظ فحص طبيعة الحق الذي يتمسك به المتعرض والوثائق المقدمة. وقد تقتضي الإجابة استكمال إثبات الملكية أو توضيح الحدود أو منازعة صفة الطرف الآخر وادعاءاته.", "يمكن بحث حل رضائي إذا استند إلى تحديد واضح وحمى حقوق الأطراف. وعند تعذر ذلك، يُعد الملف للمسطرة المختصة." ] },
+      ],
+      checklistTitle: "الوثائق الواجب جمعها", checklistIntro: "يُعد التعرض انطلاقاً من وثائق مطلب التحفيظ الفعلية، لا من نموذج عام منفصل عن الوقائع.",
+      checklist: ["وصل ومراجع مطلب التحفيظ.", "إعلان التحديد والاستدعاءات ومحضر التحديد إن توفر.", "رسوم الملكية والعقود ووثائق الإرث والأحكام المحتج بها.", "التصاميم والصور والمعالم التي تساعد على تحديد الحدود.", "نسخة من التعرض والتبليغات والوثائق القضائية عند وجودها."],
+      faqTitle: "أسئلة حول التعرض على مطلب التحفيظ",
+      faqs: [
+        { question: "من يمكنه تقديم تعرض على مطلب التحفيظ؟", answer: "ترتبط الصفة بالحق المدعى به على العقار الجاري تحفيظه، ويجب تقديرها على ضوء الوثائق وطبيعة الادعاء." },
+        { question: "هل يمكن أن يتعلق التعرض بجزء فقط من العقار؟", answer: "يمكن أن ينصب النزاع على جزء أو حد معين، لكن ينبغي تحديده بدقة وربطه بالحق المدعى به." },
+        { question: "ماذا يحدث إذا تعذر الاتفاق بشأن التعرض؟", answer: "قد يحال النزاع، وفق وضعية المسطرة والشروط القانونية، على المحكمة المختصة. ويتعين حينها دعم الطلبات والدفوع بوثائق مرتبة." },
+        { question: "هل يترتب خطر عن التعرض التعسفي؟", answer: "يتضمن نظام التحفيظ آثاراً لبعض التعرضات التي يثبت أنها تعسفية أو كيدية أو صادرة بسوء نية، لذلك ينبغي تقييم أساس التعرض قبل تقديمه." },
+      ],
+      ctaTitle: "هل يعطل التعرض مسطرة التحفيظ؟", ctaText: "يفحص المكتب مطلب التحفيظ والحق المدعى به والحدود والوثائق لإعداد الإجراء المناسب لمرحلة الملف.", serviceLabel: "القانون العقاري",
+      sourcesLabel: "المصادر الرسمية", sources: [{ label: "الوكالة الوطنية للمحافظة العقارية — المسطرة العادية", url: "https://www.ancfcc.gov.ma/arnos-m%C3%A9tiers/conservation-fonci%C3%A8re-cadastre/procedure-normale/" }, { label: "الوكالة الوطنية للمحافظة العقارية — النصوص القانونية", url: ancfccTexts }],
+    },
+  },
+};

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpLeft, ArrowUpRight, Clock3, FileCheck2, MessageCircle, Phone } from "lucide-react";
+import { ArrowUpLeft, ArrowUpRight, Clock3, FileCheck2, MessageCircle } from "lucide-react";
 import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { GuideJsonLd } from "@/components/GuideJsonLd";
 import type { GuideDefinition } from "@/lib/guide-types";
@@ -194,7 +194,6 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
         </section>
       </article>
 
-      <a href={`tel:${firm.telephone}`} aria-label={labels.call} className="fixed bottom-5 start-5 z-40 hidden h-12 items-center gap-2 rounded-xl border border-white/15 bg-[#0B132B]/95 px-4 text-sm font-semibold text-white shadow-2xl backdrop-blur-md transition-transform hover:-translate-y-0.5 motion-reduce:transform-none sm:inline-flex"><Phone aria-hidden="true" size={16} className="text-[#C5A059]" />{firm.displayTelephone}</a>
     </main>
   );
 }
