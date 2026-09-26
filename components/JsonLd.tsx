@@ -7,11 +7,6 @@ const descriptions: Record<Locale, string> = {
 };
 
 export function JsonLd({ locale }: { locale: Locale }) {
-  const sameAs = [
-    process.env.NEXT_PUBLIC_FACEBOOK_URL,
-    process.env.NEXT_PUBLIC_LINKEDIN_URL,
-  ].filter((url): url is string => Boolean(url));
-
   const data = {
     "@context": "https://schema.org",
     "@type": ["LegalService", "LocalBusiness"],
@@ -56,7 +51,7 @@ export function JsonLd({ locale }: { locale: Locale }) {
       jobTitle: locale === "ar" ? "محام" : "Avocat",
       knowsAbout: ["Droit immobilier", "Droit foncier rural", "Terres agricoles", "Terres Soulaliyates", "Indivision", "Successions", "Fiscalité", "Droit administratif", "Arbitrage"],
     },
-    ...(sameAs.length ? { sameAs } : {}),
+    sameAs: [firm.socialLinks.linkedin, firm.socialLinks.facebook],
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;

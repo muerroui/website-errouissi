@@ -51,7 +51,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   return (
-    <html lang={lang === "ar" ? "ar-MA" : "fr-MA"} dir={lang === "ar" ? "rtl" : "ltr"}>
+    <html lang={lang === "ar" ? "ar-MA" : "fr-MA"} dir={lang === "ar" ? "rtl" : "ltr"} data-scroll-behavior="smooth">
       <head><JsonLd locale={lang} /></head>
       <body><Header locale={lang} />{children}<Footer locale={lang} /></body>
     </html>

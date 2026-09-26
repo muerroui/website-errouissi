@@ -12,12 +12,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
+:root {
+  color-scheme: light;
+  --color-navy: #0B132B;
+  --color-gold: #C5A059;
+  --color-paper: #F3F0E9;
+  --color-ink: #0F172A;
+}
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  background: #f9f7f1;
-  color: #101b18;
+  background: var(--color-paper);
+  color: var(--color-ink);
   font-family: Inter, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,6 +31,11 @@ body {
 
 html[lang^="ar"] body { font-family: "Noto Naskh Arabic", Tahoma, serif; }
 html[lang^="ar"] .font-display { font-family: "Noto Naskh Arabic", Tahoma, serif; }
+.font-brand { font-family: "Playfair Display", Georgia, serif; }
 
-::selection { background: #C5A059; color: #0F172A; }
-:focus-visible { outline: 3px solid #C5A059; outline-offset: 3px; }
+::selection { background: var(--color-gold); color: var(--color-ink); }
+:focus-visible { outline: 3px solid var(--color-gold); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

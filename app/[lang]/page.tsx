@@ -18,6 +18,9 @@ const content = {
     whatsapp: "Écrire sur WhatsApp",
     proofTitle: "Une expérience juridique construite sur plus de trois décennies",
     proofText: "Maître Abderrazak Errouissi accompagne particuliers, entreprises et agriculteurs avec une approche rigoureuse, directe et adaptée à chaque dossier.",
+    teamNumber: "Une dizaine",
+    teamTitle: "Une équipe placée sous sa direction",
+    teamText: "Le cabinet réunit une dizaine d’avocats collaborateurs inscrits au barreau. Chaque dossier est traité sous la direction et la supervision directes de Maître Abderrazak Errouissi.",
     servicesTitle: "Nos domaines d'intervention",
     servicesIntro: "Conseil, négociation, médiation, arbitrage et représentation devant les juridictions marocaines.",
     services: [
@@ -40,6 +43,9 @@ const content = {
     whatsapp: "التواصل عبر واتساب",
     proofTitle: "خبرة قانونية تمتد لأكثر من ثلاثة عقود",
     proofText: "يرافق الأستاذ عبد الرزاق الرويسي الأفراد والمقاولات والفلاحين بمنهج دقيق وواضح يتلاءم مع خصوصية كل ملف.",
+    teamNumber: "نحو 10",
+    teamTitle: "فريق يعمل تحت إدارته المباشرة",
+    teamText: "يضم المكتب فريقًا من نحو عشرة محامين متعاونين مسجلين بهيئة المحامين. تتم معالجة كل ملف تحت إدارة وإشراف الأستاذ عبد الرزاق الرويسي مباشرة.",
     servicesTitle: "مجالات تدخل المكتب",
     servicesIntro: "الاستشارة والتفاوض والوساطة والتحكيم والتمثيل أمام المحاكم المغربية.",
     services: [
@@ -72,8 +78,8 @@ export default async function HomePage({ params }: PageProps) {
   const serviceKeys: Array<ServiceKey | null> = ["immobilier", "succession", "foncierRural", "fiscal", "administratif"];
 
   return (
-    <main className="overflow-hidden bg-[#F3F0E9] text-slate-950">
-      <section className="relative isolate min-h-[calc(100svh-76px)] overflow-hidden bg-[#0B132B] text-white">
+    <main className="overflow-hidden bg-paper text-slate-950">
+      <section className="relative isolate min-h-[calc(100svh-76px)] overflow-hidden bg-navy text-white">
         <div aria-hidden="true" className="absolute inset-y-0 start-[8%] hidden w-px bg-white/[0.06] lg:block" />
         <div aria-hidden="true" className="absolute inset-y-0 end-[30%] hidden w-px bg-white/[0.06] lg:block" />
         <div aria-hidden="true" className="absolute inset-x-0 top-[32%] h-px bg-white/[0.05]" />
@@ -93,7 +99,7 @@ export default async function HomePage({ params }: PageProps) {
 
             <div className="mt-14 grid items-end gap-8 border-t border-white/10 pt-8 sm:grid-cols-[1fr_auto] lg:ms-[6rem]">
               <div className="flex flex-wrap gap-3">
-                <a href={`tel:${firm.telephone}`} className="inline-flex min-h-12 items-center gap-3 rounded-xl bg-[#C5A059] px-6 py-3 font-semibold text-[#0B132B] shadow-[0_14px_36px_rgba(197,160,89,0.18)] transition-[transform,background-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:bg-[#D6B66A] hover:shadow-[0_18px_42px_rgba(197,160,89,0.26)] active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">
+                <a href={`tel:${firm.telephone}`} className="inline-flex min-h-12 items-center gap-3 rounded-xl bg-gold px-6 py-3 font-semibold text-navy shadow-[0_14px_36px_rgba(197,160,89,0.18)] transition-[transform,background-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:bg-brass hover:shadow-[0_18px_42px_rgba(197,160,89,0.26)] active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">
                   <Phone aria-hidden="true" size={17} strokeWidth={1.7} />{copy.call}
                 </a>
                 <a href={firm.whatsappUrl} className="inline-flex min-h-12 items-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold text-white backdrop-blur-md transition-[transform,background-color,border-color] duration-300 hover:-translate-y-0.5 hover:border-amber-500/35 hover:bg-white/[0.08] active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none" rel="noopener noreferrer">
@@ -111,7 +117,7 @@ export default async function HomePage({ params }: PageProps) {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300/75">{lang === "ar" ? "منذ يناير" : "Depuis janvier"}</p>
             <p className="font-display mt-3 text-[5.5rem] font-semibold leading-none tracking-[-0.04em] text-white">1992</p>
             <div className="my-8 h-px bg-white/10" />
-            <p className="font-display text-[4.75rem] font-semibold leading-none tracking-[-0.04em] text-[#C5A059]">+32</p>
+            <p className="font-display text-[4.75rem] font-semibold leading-none tracking-[-0.04em] text-gold">+32</p>
             <p className="mt-2 text-lg text-slate-200">{lang === "ar" ? "سنة من الخبرة" : "ans d’expérience"}</p>
             <p className="mt-8 max-w-[28ch] text-sm leading-7 text-slate-400">{lang === "ar" ? "خبرة قانونية في خدمة الأفراد والمقاولات والفلاحين في جميع أنحاء المغرب." : "Une pratique au service des particuliers, des entreprises et des agriculteurs dans tout le Maroc."}</p>
             <dl className="mt-8 space-y-4 border-t border-white/10 pt-6 text-sm">
@@ -125,14 +131,21 @@ export default async function HomePage({ params }: PageProps) {
       <section className="relative px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
         <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-24">
           <div className="relative min-h-72 border-t border-slate-900/15 pt-5">
-            <p className="font-display text-[clamp(5rem,12vw,10rem)] font-semibold leading-none tracking-[-0.04em] text-[#C5A059]">32</p>
+            <p className="font-display text-[clamp(5rem,12vw,10rem)] font-semibold leading-none tracking-[-0.04em] text-gold">32</p>
             <p className="mt-2 max-w-48 text-xs font-semibold uppercase leading-5 tracking-[0.2em] text-slate-600">{lang === "ar" ? "عاماً من الممارسة القانونية" : "années de pratique juridique"}</p>
             <span aria-hidden="true" className="absolute bottom-0 end-0 h-28 w-px bg-slate-900/15" />
           </div>
           <div className="lg:pt-16">
             <h2 className="font-display max-w-[15ch] text-[clamp(2.7rem,5vw,4.7rem)] font-semibold leading-[1.04] tracking-[-0.03em] text-slate-950 text-balance">{copy.proofTitle}</h2>
             <p className="mt-8 max-w-[68ch] text-lg leading-8 text-slate-600">{copy.proofText}</p>
-            <div className="mt-12 grid gap-8 border-t border-slate-900/15 pt-7 sm:grid-cols-3">
+            <div className="mt-12 grid gap-5 border-y border-slate-900/15 py-7 sm:grid-cols-[8rem_minmax(0,1fr)] sm:items-center sm:gap-8">
+              <p className="font-display text-4xl font-semibold leading-none text-gold sm:text-5xl">{copy.teamNumber}</p>
+              <div>
+                <h3 className="font-display text-2xl font-semibold text-slate-950">{copy.teamTitle}</h3>
+                <p className="mt-3 max-w-[68ch] text-sm leading-7 text-slate-600 sm:text-base">{copy.teamText}</p>
+              </div>
+            </div>
+            <div className="mt-8 grid gap-8 sm:grid-cols-3">
               <div><p className="font-display text-2xl text-slate-950">{lang === "ar" ? "المحمدية" : "Mohammédia"}</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "مقر المكتب" : "Adresse du cabinet"}</p></div>
               <div><p className="font-display text-2xl text-slate-950">{lang === "ar" ? "المغرب" : "Maroc"}</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "نطاق التدخل" : "Zone d’intervention"}</p></div>
               <div><p className="font-display text-2xl text-slate-950" dir="ltr">FR · AR · EN</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "لغات التواصل" : "Langues de travail"}</p></div>
@@ -152,8 +165,8 @@ export default async function HomePage({ params }: PageProps) {
             {copy.services.map(([title, description], index) => {
               const serviceKey = serviceKeys[index];
               return <article key={title} className="group grid gap-5 py-9 transition-[background-color,padding] duration-300 hover:bg-amber-500/[0.055] motion-reduce:transition-none sm:grid-cols-[5rem_1fr] sm:px-4 lg:grid-cols-[8rem_0.8fr_1.2fr] lg:items-baseline lg:gap-10 lg:py-11 lg:hover:px-7">
-                <p className="font-display text-lg tracking-[0.08em] text-[#C5A059]">{String(index + 1).padStart(2, "0")} /</p>
-                <h3 className="font-display text-2xl font-semibold leading-tight text-white transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transform-none motion-reduce:transition-none rtl:group-hover:-translate-x-1 sm:text-3xl">{serviceKey ? <Link href={getServicePath(lang, serviceKey)}>{title}</Link> : title}</h3>
+                <p className="font-display text-lg tracking-[0.08em] text-gold">{String(index + 1).padStart(2, "0")} /</p>
+                <h3 className="font-display text-2xl font-semibold leading-tight text-white transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transform-none motion-reduce:transition-none rtl:group-hover:-translate-x-1 sm:text-3xl">{serviceKey ? <Link href={getServicePath(lang, serviceKey)} className="inline-flex min-h-11 items-center">{title}</Link> : title}</h3>
                 <p className="max-w-[62ch] text-sm leading-7 text-slate-400 lg:text-base">{description}</p>
               </article>;
             })}
@@ -161,10 +174,10 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="bg-[#E5DED0] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
+      <section className="bg-warm-paper px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
         <div className="mx-auto grid max-w-[86rem] gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
           <div>
-            <p className="font-display text-[5rem] leading-none text-[#C5A059]">MA</p>
+            <p className="font-display text-[5rem] leading-none text-gold">MA</p>
             <h2 className="font-display mt-8 max-w-[13ch] text-[clamp(2.8rem,5vw,4.6rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-slate-950 text-balance">{copy.reachTitle}</h2>
             <p className="mt-7 max-w-[62ch] text-lg leading-8 text-slate-600">{copy.reachText}</p>
           </div>
@@ -178,24 +191,24 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="bg-[#C5A059] px-5 py-20 text-[#0B132B] sm:px-8 lg:px-12 lg:py-28">
+      <section className="bg-gold px-5 py-20 text-navy sm:px-8 lg:px-12 lg:py-28">
         <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:gap-24">
           <div>
             <h2 className="font-display max-w-[13ch] text-[clamp(3rem,6vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.03em] text-balance">{copy.finalTitle}</h2>
-            <p className="mt-7 max-w-[62ch] text-lg leading-8 text-[#0B132B]/75">{copy.finalText}</p>
+            <p className="mt-7 max-w-[62ch] text-lg leading-8 text-navy/75">{copy.finalText}</p>
           </div>
           <div className="grid gap-3 lg:justify-self-end">
-            <a href={`tel:${firm.telephone}`} className="inline-flex min-h-14 items-center justify-between gap-8 rounded-xl bg-[#0B132B] px-6 py-4 font-semibold text-white shadow-2xl transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">
+            <a href={`tel:${firm.telephone}`} className="inline-flex min-h-14 items-center justify-between gap-8 rounded-xl bg-navy px-6 py-4 font-semibold text-white shadow-2xl transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">
               <span>{copy.call}</span><Phone aria-hidden="true" size={18} />
             </a>
-            <a href={firm.whatsappUrl} className="inline-flex min-h-14 items-center justify-between gap-8 rounded-xl border border-[#0B132B]/25 px-6 py-4 font-semibold transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-white/20 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none" rel="noopener noreferrer">
+            <a href={firm.whatsappUrl} className="inline-flex min-h-14 items-center justify-between gap-8 rounded-xl border border-navy/25 px-6 py-4 font-semibold transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-white/20 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none" rel="noopener noreferrer">
               <span>{copy.whatsapp}</span><MessageCircle aria-hidden="true" size={18} />
             </a>
           </div>
         </div>
       </section>
 
-      <a href={firm.whatsappUrl} aria-label={copy.whatsapp} className="fixed bottom-5 end-5 z-50 grid h-14 w-14 place-items-center rounded-full border border-white/60 bg-[#25D366] text-white shadow-2xl transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(37,211,102,0.28)] active:translate-y-0 active:scale-95 motion-reduce:transform-none motion-reduce:transition-none" rel="noopener noreferrer"><MessageCircle aria-hidden="true" size={24} /></a>
+      <a href={firm.whatsappUrl} aria-label={copy.whatsapp} className="fixed bottom-5 end-5 z-50 grid h-14 w-14 place-items-center rounded-full border border-white/60 bg-whatsapp text-white shadow-2xl transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(37,211,102,0.28)] active:translate-y-0 active:scale-95 motion-reduce:transform-none motion-reduce:transition-none" rel="noopener noreferrer"><MessageCircle aria-hidden="true" size={24} /></a>
     </main>
   );
 }

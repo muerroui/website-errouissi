@@ -9,6 +9,10 @@ export const firm = {
   displayTelephone: "05 23 28 32 58",
   whatsappNumber: "+212661966642",
   whatsappUrl: "https://wa.me/212661966642",
+  socialLinks: {
+    linkedin: "https://www.linkedin.com/in/abderrazak-errouissi-407a53348",
+    facebook: "https://web.facebook.com/profile.php?id=61559589686731",
+  },
   address: {
     street: "127 Boulevard de Palestine, 1er étage (au-dessus du café Montreal)",
     city: "Mohammédia",

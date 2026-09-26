@@ -62,22 +62,22 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
   const date = new Intl.DateTimeFormat(locale === "ar" ? "ar-MA" : "fr-MA", { dateStyle: "long" }).format(new Date(guide.updatedAt));
 
   return (
-    <main className="overflow-clip bg-[#F3F0E9] text-slate-950">
+    <main className="overflow-clip bg-paper text-slate-950">
       <GuideJsonLd locale={locale} guide={guide} />
       <FaqJsonLd faqs={copy.faqs} />
 
       <article>
-        <header className="relative isolate overflow-hidden bg-[#0B132B] text-white">
+        <header className="relative isolate overflow-hidden bg-navy text-white">
           <div aria-hidden="true" className="absolute inset-y-0 start-[9%] hidden w-px bg-white/[0.06] lg:block" />
           <div aria-hidden="true" className="absolute inset-y-0 end-[26%] hidden w-px bg-white/[0.06] lg:block" />
-          <div aria-hidden="true" className="absolute -bottom-24 end-[4%] h-72 w-72 rounded-full bg-[#C5A059]/[0.07] blur-3xl" />
+          <div aria-hidden="true" className="absolute -bottom-24 end-[4%] h-72 w-72 rounded-full bg-gold/[0.07] blur-3xl" />
 
           <div className="relative mx-auto max-w-[90rem] px-5 pb-20 pt-12 sm:px-8 lg:px-12 lg:pb-28 lg:pt-16">
             <nav aria-label={locale === "ar" ? "مسار التنقل" : "Fil d’Ariane"} className="flex flex-wrap items-center gap-3 text-sm text-slate-400">
-              <Link href={`/${locale}`} className="underline-offset-4 transition-colors hover:text-amber-300 hover:underline motion-reduce:transition-none">{labels.home}</Link>
-              <span aria-hidden="true" className="text-[#C5A059]">/</span>
-              <Link href={`/${locale}/guides`} className="underline-offset-4 transition-colors hover:text-amber-300 hover:underline motion-reduce:transition-none">{labels.guides}</Link>
-              <span aria-hidden="true" className="text-[#C5A059]">/</span>
+              <Link href={`/${locale}`} className="inline-flex min-h-11 items-center underline-offset-4 transition-colors hover:text-amber-300 hover:underline motion-reduce:transition-none">{labels.home}</Link>
+              <span aria-hidden="true" className="text-gold">/</span>
+              <Link href={`/${locale}/guides`} className="inline-flex min-h-11 items-center underline-offset-4 transition-colors hover:text-amber-300 hover:underline motion-reduce:transition-none">{labels.guides}</Link>
+              <span aria-hidden="true" className="text-gold">/</span>
               <span className="text-slate-300">{copy.category}</span>
             </nav>
 
@@ -93,7 +93,7 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
                   <time dateTime={guide.updatedAt} className="font-medium text-white">{date}</time>
                 </div>
                 <div className="flex items-center justify-between gap-6 pt-5">
-                  <span className="inline-flex items-center gap-2"><Clock3 aria-hidden="true" size={16} className="text-[#C5A059]" />{labels.read}</span>
+                  <span className="inline-flex items-center gap-2"><Clock3 aria-hidden="true" size={16} className="text-gold" />{labels.read}</span>
                   <span className="font-medium tabular-nums text-white">{readingTime(guide, locale)} {labels.minutes}</span>
                 </div>
               </aside>
@@ -107,7 +107,7 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
               {copy.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
 
-            <section aria-labelledby="guide-essentials" className="my-16 border-y border-[#C5A059]/45 py-9">
+            <section aria-labelledby="guide-essentials" className="my-16 border-y border-gold/45 py-9">
               <h2 id="guide-essentials" className="font-display text-3xl font-semibold tracking-[-0.02em]">{labels.essentials}</h2>
               <ul className="mt-7 grid gap-5 sm:grid-cols-3">
                 {copy.takeaways.map((item) => <li key={item} className="border-t border-slate-900/15 pt-4 leading-7 text-slate-700">{item}</li>)}
@@ -123,10 +123,10 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
                   </div>
                   {section.bullets?.length ? (
                     <ul className="mt-8 max-w-[72ch] border-t border-slate-900/15">
-                      {section.bullets.map((item) => <li key={item} className="grid grid-cols-[1.25rem_1fr] gap-4 border-b border-slate-900/15 py-4 leading-7 text-slate-700"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 rounded-full bg-[#9A773B]" /><span>{item}</span></li>)}
+                      {section.bullets.map((item) => <li key={item} className="grid grid-cols-[1.25rem_1fr] gap-4 border-b border-slate-900/15 py-4 leading-7 text-slate-700"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 rounded-full bg-gold-ink" /><span>{item}</span></li>)}
                     </ul>
                   ) : null}
-                  {section.note ? <p className="mt-8 max-w-[72ch] bg-[#E5DED0] px-6 py-5 leading-7 text-slate-800">{section.note}</p> : null}
+                  {section.note ? <p className="mt-8 max-w-[72ch] bg-warm-paper px-6 py-5 leading-7 text-slate-800">{section.note}</p> : null}
                 </section>
               ))}
             </div>
@@ -137,15 +137,15 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
               <nav aria-label={labels.summary} className="border-t border-slate-900/20 pt-5">
                 <h2 className="font-display text-2xl font-semibold">{labels.summary}</h2>
                 <ol className="mt-5 space-y-1 text-sm leading-6 text-slate-600">
-                  {copy.sections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="block border-s border-transparent py-2 ps-4 underline-offset-4 transition-colors hover:border-[#C5A059] hover:text-slate-950 hover:underline motion-reduce:transition-none">{section.title}</a></li>)}
-                  <li><a href="#questions" className="block border-s border-transparent py-2 ps-4 underline-offset-4 transition-colors hover:border-[#C5A059] hover:text-slate-950 hover:underline motion-reduce:transition-none">{copy.faqTitle}</a></li>
+                  {copy.sections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="flex min-h-11 items-center border-s border-transparent py-2 ps-4 underline-offset-4 transition-colors hover:border-gold hover:text-slate-950 hover:underline motion-reduce:transition-none">{section.title}</a></li>)}
+                  <li><a href="#questions" className="flex min-h-11 items-center border-s border-transparent py-2 ps-4 underline-offset-4 transition-colors hover:border-gold hover:text-slate-950 hover:underline motion-reduce:transition-none">{copy.faqTitle}</a></li>
                 </ol>
               </nav>
 
-              <div className="bg-[#0B132B] p-6 text-white shadow-[0_22px_55px_rgba(11,19,43,0.16)]">
+              <div className="bg-navy p-6 text-white shadow-[0_22px_55px_rgba(11,19,43,0.16)]">
                 <p className="font-display text-xl font-semibold">{labels.legalNote}</p>
                 <p className="mt-4 text-sm leading-6 text-slate-300">{labels.legalText}</p>
-                <Link href={getServicePath(locale, guide.serviceKey)} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#D6B66A] underline decoration-[#C5A059]/50 underline-offset-4 hover:decoration-[#C5A059]">
+                <Link href={getServicePath(locale, guide.serviceKey)} className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-brass underline decoration-gold/50 underline-offset-4 hover:decoration-gold">
                   {labels.service}<Arrow aria-hidden="true" size={16} />
                 </Link>
               </div>
@@ -153,15 +153,15 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
           </aside>
         </div>
 
-        <section className="bg-[#E5DED0] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
+        <section className="bg-warm-paper px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
           <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24">
             <div>
-              <FileCheck2 aria-hidden="true" className="text-[#9A773B]" size={28} strokeWidth={1.5} />
+              <FileCheck2 aria-hidden="true" className="text-gold-ink" size={28} strokeWidth={1.5} />
               <h2 className="font-display mt-6 max-w-[14ch] text-[clamp(2.4rem,4vw,3.8rem)] font-semibold leading-[1.05] tracking-[-0.03em]">{copy.checklistTitle}</h2>
               <p className="mt-6 max-w-[48ch] leading-7 text-slate-600">{copy.checklistIntro}</p>
             </div>
             <ul className="border-t border-slate-900/15">
-              {copy.checklist.map((item) => <li key={item} className="grid grid-cols-[2rem_1fr] gap-4 border-b border-slate-900/15 py-5 leading-7 text-slate-700"><span aria-hidden="true" className="font-display text-[#9A773B]">—</span><span>{item}</span></li>)}
+              {copy.checklist.map((item) => <li key={item} className="grid grid-cols-[2rem_1fr] gap-4 border-b border-slate-900/15 py-5 leading-7 text-slate-700"><span aria-hidden="true" className="font-display text-gold-ink">—</span><span>{item}</span></li>)}
             </ul>
           </div>
         </section>
@@ -173,22 +173,22 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
               <div className="mt-9 border-t border-slate-900/15 pt-5">
                 <p className="text-sm font-semibold text-slate-800">{copy.sourcesLabel}</p>
                 <ul className="mt-3 space-y-3 text-sm leading-6 text-slate-600">
-                  {copy.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="underline decoration-slate-400 underline-offset-4 transition-colors hover:text-[#7A5A25] motion-reduce:transition-none">{source.label}</a></li>)}
+                  {copy.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center underline decoration-slate-400 underline-offset-4 transition-colors hover:text-gold-ink motion-reduce:transition-none">{source.label}</a></li>)}
                 </ul>
               </div>
             </div>
             <div className="border-t border-slate-900/15">
-              {copy.faqs.map((faq) => <details key={faq.question} className="group border-b border-slate-900/15 py-6"><summary className="flex cursor-pointer list-none items-start justify-between gap-6 font-display text-xl font-semibold marker:content-none sm:text-2xl"><span>{faq.question}</span><span aria-hidden="true" className="text-[#9A773B] transition-transform group-open:rotate-45 motion-reduce:transition-none">+</span></summary><p className="mt-5 max-w-[68ch] pe-10 leading-7 text-slate-600">{faq.answer}</p></details>)}
+              {copy.faqs.map((faq) => <details key={faq.question} className="group border-b border-slate-900/15 py-6"><summary className="flex cursor-pointer list-none items-start justify-between gap-6 font-display text-xl font-semibold marker:content-none sm:text-2xl"><span>{faq.question}</span><span aria-hidden="true" className="text-gold-ink transition-transform group-open:rotate-45 motion-reduce:transition-none">+</span></summary><p className="mt-5 max-w-[68ch] pe-10 leading-7 text-slate-600">{faq.answer}</p></details>)}
             </div>
           </div>
         </section>
 
-        <section className="bg-[#C5A059] px-5 py-20 text-[#0B132B] sm:px-8 lg:px-12 lg:py-24">
+        <section className="bg-gold px-5 py-20 text-navy sm:px-8 lg:px-12 lg:py-24">
           <div className="mx-auto grid max-w-[86rem] gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-20">
-            <div><h2 className="font-display max-w-[15ch] text-[clamp(2.7rem,5vw,4.8rem)] font-semibold leading-[1] tracking-[-0.03em]">{copy.ctaTitle}</h2><p className="mt-6 max-w-[62ch] text-lg leading-8 text-[#0B132B]/75">{copy.ctaText}</p></div>
+            <div><h2 className="font-display max-w-[15ch] text-[clamp(2.7rem,5vw,4.8rem)] font-semibold leading-[1] tracking-[-0.03em]">{copy.ctaTitle}</h2><p className="mt-6 max-w-[62ch] text-lg leading-8 text-navy/75">{copy.ctaText}</p></div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 lg:justify-self-end">
-              <Link href={`/${locale}/contact`} className="inline-flex min-h-14 items-center justify-between gap-7 rounded-xl bg-[#0B132B] px-6 py-4 font-semibold text-white shadow-[0_18px_44px_rgba(11,19,43,0.24)] transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">{labels.contact}<Arrow aria-hidden="true" size={18} /></Link>
-              <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-between gap-7 rounded-xl border border-[#0B132B]/25 px-6 py-4 font-semibold transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-white/25 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">{labels.whatsapp}<MessageCircle aria-hidden="true" size={18} /></a>
+              <Link href={`/${locale}/contact`} className="inline-flex min-h-14 items-center justify-between gap-7 rounded-xl bg-navy px-6 py-4 font-semibold text-white shadow-[0_18px_44px_rgba(11,19,43,0.24)] transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">{labels.contact}<Arrow aria-hidden="true" size={18} /></Link>
+              <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-between gap-7 rounded-xl border border-navy/25 px-6 py-4 font-semibold transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-white/25 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">{labels.whatsapp}<MessageCircle aria-hidden="true" size={18} /></a>
             </div>
           </div>
         </section>

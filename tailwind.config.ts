@@ -9,11 +9,14 @@ const config: Config = {
     extend: {
       colors: {
         ink: "#0F172A",
-        navy: "#0A1128",
+        navy: "#0B132B",
         midnight: "#111C36",
         gold: "#C5A059",
+        "gold-ink": "#7A5A25",
         brass: "#D6B66A",
-        parchment: "#F8FAFC",
+        paper: "#F3F0E9",
+        "warm-paper": "#E5DED0",
+        whatsapp: "#25D366",
       },
       fontFamily: {
         sans: ["Inter", "Arial", "sans-serif"],
