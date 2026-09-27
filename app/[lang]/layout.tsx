@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import type { ReactNode } from "react";
 import "../globals.css";
 import { Footer } from "@/components/Footer";
@@ -54,6 +55,18 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     <html lang={lang === "ar" ? "ar-MA" : "fr-MA"} dir={lang === "ar" ? "rtl" : "ltr"} data-scroll-behavior="smooth">
       <head><JsonLd locale={lang} /></head>
       <body><Header locale={lang} />{children}<Footer locale={lang} /></body>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-QKRLHX88W9"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QKRLHX88W9');
+        `}
+      </Script>
     </html>
   );
 }
