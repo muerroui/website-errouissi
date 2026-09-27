@@ -4,6 +4,7 @@ import type { GuideKey } from "@/lib/guide-slugs";
 import { agriculturalRegistrationGuide, indivisionGuide, melkiyaGuide, soulaliyatesGuide } from "@/lib/guides/rural";
 import { expropriationGuide, immatriculationGuide, oppositionGuide } from "@/lib/guides/property";
 import { inheritanceGuide, taxDisputeGuide } from "@/lib/guides/tax-and-inheritance";
+import { caveatGuide, dispossessionGuide, encroachmentGuide, ownershipClaimGuide, saleOthersPropertyGuide, shufaaGuide } from "@/lib/guides/land-disputes";
 
 export const guides: Record<GuideKey, GuideDefinition> = {
   immatriculation: immatriculationGuide,
@@ -15,6 +16,12 @@ export const guides: Record<GuideKey, GuideDefinition> = {
   "agricultural-registration": agriculturalRegistrationGuide,
   "tax-dispute": taxDisputeGuide,
   inheritance: inheritanceGuide,
+  caveat: caveatGuide,
+  shufaa: shufaaGuide,
+  dispossession: dispossessionGuide,
+  encroachment: encroachmentGuide,
+  "sale-others-property": saleOthersPropertyGuide,
+  "ownership-claim": ownershipClaimGuide,
 };
 
 export function getGuideBySlug(locale: Locale, slug: string) {

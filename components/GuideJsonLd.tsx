@@ -22,6 +22,7 @@ export function GuideJsonLd({ locale, guide }: { locale: Locale; guide: GuideDef
         author: { "@type": "Person", name: "Maître Abderrazak Errouissi" },
         publisher: { "@id": `${siteUrl}/${locale}#cabinet` },
         about: copy.category,
+        citation: copy.sources.map((source) => source.url),
       },
       {
         "@type": "BreadcrumbList",

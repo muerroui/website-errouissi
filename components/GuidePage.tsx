@@ -6,6 +6,7 @@ import type { GuideDefinition } from "@/lib/guide-types";
 import type { Locale } from "@/lib/i18n";
 import { getGuidePath } from "@/lib/guide-slugs";
 import type { GuideKey } from "@/lib/guide-slugs";
+import { guides as guidesForRelated } from "@/lib/guides";
 import { getServicePath } from "@/lib/services";
 import { firm } from "@/lib/site";
 
@@ -26,6 +27,8 @@ const ui = {
     call: "Appeler le cabinet",
     whatsapp: "Écrire sur WhatsApp",
     contact: "Présenter votre dossier",
+    related: "Guides à consulter ensuite",
+    relatedRead: "Consulter",
   },
   ar: {
     home: "الرئيسية",
@@ -43,6 +46,8 @@ const ui = {
     call: "الاتصال بالمكتب",
     whatsapp: "مراسلة المكتب عبر واتساب",
     contact: "عرض الملف على المكتب",
+    related: "أدلة مرتبطة بالموضوع",
+    relatedRead: "قراءة الدليل",
   },
 } as const;
 
@@ -60,6 +65,9 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
   const labels = ui[locale];
   const Arrow = locale === "ar" ? ArrowUpLeft : ArrowUpRight;
   const date = new Intl.DateTimeFormat(locale === "ar" ? "ar-MA" : "fr-MA", { dateStyle: "long" }).format(new Date(guide.updatedAt));
+  const related = (guide.relatedGuides ?? [])
+    .map((key) => ({ key: key as GuideKey, guide: guidesForRelated[key as GuideKey] }))
+    .filter((item) => item.guide);
 
   return (
     <main className="overflow-clip bg-paper text-slate-950">
@@ -182,6 +190,20 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
             </div>
           </div>
         </section>
+
+        {related.length ? (
+          <section className="border-t border-slate-900/10 bg-paper px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+            <div className="mx-auto max-w-[86rem]">
+              <h2 className="font-display text-3xl font-semibold tracking-[-0.02em]">{labels.related}</h2>
+              <div className="mt-8 grid gap-px bg-slate-900/10 md:grid-cols-3">
+                {related.map(({ key, guide: relatedGuide }) => {
+                  const item = relatedGuide.content[locale];
+                  return <article key={key} className="bg-paper p-6 transition-colors hover:bg-warm-paper"><p className="text-sm font-semibold text-gold-ink">{item.category}</p><h3 className="font-display mt-3 text-xl font-semibold leading-snug"><Link href={getGuidePath(locale, key)}>{item.h1}</Link></h3><Link href={getGuidePath(locale, key)} className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-semibold underline decoration-gold/60 underline-offset-4">{labels.relatedRead}<Arrow aria-hidden="true" size={15} /></Link></article>;
+                })}
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         <section className="bg-gold px-5 py-20 text-navy sm:px-8 lg:px-12 lg:py-24">
           <div className="mx-auto grid max-w-[86rem] gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-20">

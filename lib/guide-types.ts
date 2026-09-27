@@ -35,5 +35,6 @@ export type GuideDefinition = {
   publishedAt: string;
   updatedAt: string;
   serviceKey: ServiceKey;
+  relatedGuides?: string[];
   content: Record<Locale, GuideLocaleContent>;
 };

@@ -10,6 +10,12 @@ export const guideSlugPairs = [
   { key: "agricultural-registration", fr: "immatriculation-terrain-agricole-maroc", ar: "تحفيظ-أرض-فلاحية-بالمغرب" },
   { key: "tax-dispute", fr: "controle-fiscal-contestation-maroc", ar: "المراقبة-والمنازعات-الضريبية" },
   { key: "inheritance", fr: "heritage-succession-maroc", ar: "الإرث-وتصفية-التركة-في-المغرب" },
+  { key: "caveat", fr: "prenotation-titre-foncier-maroc", ar: "التقييد-الاحتياطي-على-الرسم-العقاري" },
+  { key: "shufaa", fr: "droit-chafaa-preemption-maroc", ar: "الشفعة-في-القانون-المغربي" },
+  { key: "dispossession", fr: "depossession-occupation-terrain-maroc", ar: "انتزاع-عقار-من-حيازة-الغير" },
+  { key: "encroachment", fr: "empietement-terrain-autrui-maroc", ar: "الترامي-على-ملك-الغير-في-المغرب" },
+  { key: "sale-others-property", fr: "vente-bien-autrui-maroc", ar: "بيع-ملك-الغير-في-القانون-المغربي" },
+  { key: "ownership-claim", fr: "action-revendication-propriete-maroc", ar: "دعوى-الاستحقاق-في-القانون-المغربي" },
 ] as const;
 
 export type GuideKey = (typeof guideSlugPairs)[number]["key"];
