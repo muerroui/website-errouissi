@@ -52,7 +52,7 @@ export function ServiceLandingPage({ locale, page }: { locale: Locale; page: Ser
 
       <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
         <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
-          <div className="border-t border-slate-900/15 pt-5"><p className="font-display text-[6rem] leading-none text-gold">{page.index}</p><p className="mt-3 text-xs font-semibold tracking-[0.18em] text-slate-600">{copy.eyebrow}</p></div>
+          <div className="border-t border-slate-900/15 pt-5"><p className="font-display text-[6rem] leading-none text-gold-ink">{page.index}</p><p className="mt-3 text-xs font-semibold tracking-[0.18em] text-slate-600">{copy.eyebrow}</p></div>
           <div className="space-y-6 text-lg leading-8 text-slate-700">{copy.summary.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
         </div>
       </section>
@@ -86,7 +86,7 @@ export function ServiceLandingPage({ locale, page }: { locale: Locale; page: Ser
 
       <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
         <div className="mx-auto grid max-w-[86rem] gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24">
-          <div><p className="font-display text-5xl text-gold">{labels.faqNumber}</p><h2 className="font-display mt-6 max-w-[12ch] text-[clamp(2.6rem,5vw,4.4rem)] font-semibold leading-[1.04] tracking-[-0.03em] text-balance">{copy.faqTitle}</h2><p className="mt-7 max-w-[52ch] leading-7 text-slate-600">{copy.faqIntro}</p></div>
+          <div><p className="font-display text-5xl text-gold-ink">{labels.faqNumber}</p><h2 className="font-display mt-6 max-w-[12ch] text-[clamp(2.6rem,5vw,4.4rem)] font-semibold leading-[1.04] tracking-[-0.03em] text-balance">{copy.faqTitle}</h2><p className="mt-7 max-w-[52ch] leading-7 text-slate-600">{copy.faqIntro}</p></div>
           <div className="border-t border-slate-900/15">
             {copy.faqs.map((faq, index) => <details key={faq.question} className="group border-b border-slate-900/15 py-6"><summary className="flex cursor-pointer list-none items-start justify-between gap-6 text-start font-display text-xl font-semibold marker:content-none"><span><span className="me-3 text-sm text-gold-ink">0{index + 1} /</span>{faq.question}</span><span aria-hidden="true" className="text-gold-ink transition-transform group-open:rotate-45 motion-reduce:transition-none">+</span></summary><p className="mt-4 max-w-[68ch] ps-10 leading-7 text-slate-600">{faq.answer}</p></details>)}
           </div>

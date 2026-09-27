@@ -131,7 +131,7 @@ export default async function HomePage({ params }: PageProps) {
       <section className="relative px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
         <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-24">
           <div className="relative min-h-72 border-t border-slate-900/15 pt-5">
-            <p className="font-display text-[clamp(5rem,12vw,10rem)] font-semibold leading-none tracking-[-0.04em] text-gold">32</p>
+            <p className="font-display text-[clamp(5rem,12vw,10rem)] font-semibold leading-none tracking-[-0.04em] text-gold-ink">32</p>
             <p className="mt-2 max-w-48 text-xs font-semibold uppercase leading-5 tracking-[0.2em] text-slate-600">{lang === "ar" ? "عاماً من الممارسة القانونية" : "années de pratique juridique"}</p>
             <span aria-hidden="true" className="absolute bottom-0 end-0 h-28 w-px bg-slate-900/15" />
           </div>
@@ -139,7 +139,7 @@ export default async function HomePage({ params }: PageProps) {
             <h2 className="font-display max-w-[15ch] text-[clamp(2.7rem,5vw,4.7rem)] font-semibold leading-[1.04] tracking-[-0.03em] text-slate-950 text-balance">{copy.proofTitle}</h2>
             <p className="mt-8 max-w-[68ch] text-lg leading-8 text-slate-600">{copy.proofText}</p>
             <div className="mt-12 grid gap-5 border-y border-slate-900/15 py-7 sm:grid-cols-[8rem_minmax(0,1fr)] sm:items-center sm:gap-8">
-              <p className="font-display text-4xl font-semibold leading-none text-gold sm:text-5xl">{copy.teamNumber}</p>
+              <p className="font-display text-4xl font-semibold leading-none text-gold-ink sm:text-5xl">{copy.teamNumber}</p>
               <div>
                 <h3 className="font-display text-2xl font-semibold text-slate-950">{copy.teamTitle}</h3>
                 <p className="mt-3 max-w-[68ch] text-sm leading-7 text-slate-600 sm:text-base">{copy.teamText}</p>
@@ -177,14 +177,14 @@ export default async function HomePage({ params }: PageProps) {
       <section className="bg-warm-paper px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
         <div className="mx-auto grid max-w-[86rem] gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
           <div>
-            <p className="font-display text-[5rem] leading-none text-gold">MA</p>
+            <p className="font-display text-[5rem] leading-none text-gold-ink">MA</p>
             <h2 className="font-display mt-8 max-w-[13ch] text-[clamp(2.8rem,5vw,4.6rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-slate-950 text-balance">{copy.reachTitle}</h2>
             <p className="mt-7 max-w-[62ch] text-lg leading-8 text-slate-600">{copy.reachText}</p>
           </div>
           <div className="grid content-start sm:grid-cols-2">
             {cities.map((city, index) => (
               <p key={city} className="flex items-baseline justify-between gap-4 border-t border-slate-900/15 py-5 text-xl text-slate-800 sm:px-5 sm:text-2xl">
-                <span className="font-display">{city}</span><span className="text-[0.65rem] tabular-nums tracking-[0.18em] text-slate-400">0{index + 1}</span>
+                <span className="font-display">{city}</span><span className="text-[0.65rem] font-semibold tabular-nums tracking-[0.18em] text-slate-600">0{index + 1}</span>
               </p>
             ))}
           </div>
