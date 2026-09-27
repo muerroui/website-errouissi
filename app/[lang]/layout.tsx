@@ -65,6 +65,34 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QKRLHX88W9');
+          gtag('config', 'G-Q8VVZ5F10M');
+        `}
+      </Script>
+      <Script id="google-analytics-lead-events" strategy="afterInteractive">
+        {`
+          document.addEventListener('click', function (event) {
+            var link = event.target instanceof Element
+              ? event.target.closest('a[href]')
+              : null;
+
+            if (!link || typeof window.gtag !== 'function') return;
+
+            var href = link.getAttribute('href') || '';
+            var eventName = href.indexOf('tel:') === 0
+              ? 'phone_click'
+              : href.indexOf('https://wa.me/') === 0
+                ? 'whatsapp_click'
+                : null;
+
+            if (!eventName) return;
+
+            window.gtag('event', eventName, {
+              event_category: 'lead',
+              link_url: link.href,
+              page_location: window.location.href,
+              page_language: document.documentElement.lang
+            });
+          });
         `}
       </Script>
     </html>
