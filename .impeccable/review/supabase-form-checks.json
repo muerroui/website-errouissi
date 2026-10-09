@@ -1,0 +1,13 @@
+{
+  "externalSubmissions": 0,
+  "checks": [
+    "ar/desktop: disclosure, private API payload, save before WhatsApp, loading, double-click guard, error retains inputs, stable retry UUID and confirmed-save navigation",
+    "ar/mobile: disclosure, private API payload, save before WhatsApp, loading, double-click guard, error retains inputs, stable retry UUID and confirmed-save navigation",
+    "ar/narrow: disclosure, private API payload, save before WhatsApp, loading, double-click guard, error retains inputs, stable retry UUID and confirmed-save navigation",
+    "fr/desktop: disclosure, private API payload, save before WhatsApp, loading, double-click guard, error retains inputs, stable retry UUID and confirmed-save navigation",
+    "fr/mobile: disclosure, private API payload, save before WhatsApp, loading, double-click guard, error retains inputs, stable retry UUID and confirmed-save navigation",
+    "fr/narrow: disclosure, private API payload, save before WhatsApp, loading, double-click guard, error retains inputs, stable retry UUID and confirmed-save navigation",
+    "rate-limit feedback and explicit unsaved WhatsApp recovery"
+  ],
+  "browserErrors": []
+}

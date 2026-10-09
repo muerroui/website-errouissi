@@ -41,4 +41,8 @@ Test réel : `node scripts/verify-immobilier-leads-live.mjs`. Deux demandes `TES
 
 Test navigateur : `node .impeccable/verify-immobilier-supabase.mjs`, avec `ADS_PREVIEW_ORIGIN=http://localhost:3112`. Supabase, Analytics et WhatsApp sont interceptés ; aucune demande réelle ni message envoyé. Captures `supabase-{ar,fr}-{desktop,mobile,narrow}.png` et états loading/error pour desktop/mobile. Rapport : `supabase-form-checks.json`.
 
+Résultat final : sept groupes de vérifications navigateur passent (les six combinaisons langue/taille et la récupération après limitation), aucune erreur JavaScript. Compilation finale de 57 pages et TypeScript réussis ; validation SEO réussie. Analyse de 120 fichiers client : aucune occurrence de la clé secrète configurée. `.env.local` est confirmé ignoré par Git.
+
+Corrections issues des vérifications : erreur automatiquement centrée et focalisée ; barre mobile masquée pendant le focus de tout le formulaire, y compris le bouton, pour éviter une interception du clic lors de la sortie d’un champ. Le libellé français de présélection est abrégé pour ne pas être tronqué aux petites tailles. Revue visuelle effectuée par l’agent principal, sans nouveau monde, sans modification du système global et sans prétendre à une nouvelle revue indépendante de la surface entière.
+
 Un seul passage du détecteur pour cette extension : sortie tronquée, avertissements visibles sur les fontes et valeurs du système existant. Aucun second passage ; pas de prétention à une attestation exhaustive. Impeccable a guidé les états localisés, l’information avant le clic, la récupération en cas d’erreur et les entrées françaises d’au moins 16 px. Le système global et le raster existant n’ont pas été modifiés.

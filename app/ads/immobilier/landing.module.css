@@ -214,7 +214,7 @@
   .page[lang="fr-MA"] .brand { font-size: 1rem; }
   .page[lang="fr-MA"] .brandDetail { font-size: .75rem; }
   .page[lang="fr-MA"] .sectionIntro h2, .page[lang="fr-MA"] .lawyerSection h2, .page[lang="fr-MA"] .processIntro h2, .page[lang="fr-MA"] .faqSection h2, .page[lang="fr-MA"] .finalSection h2 { font-size: 2.25rem; }
-  .page:has(.form input:focus) .mobileContact, .page:has(.form select:focus) .mobileContact { display: none; }
+  .page:has(.form:focus-within) .mobileContact { display: none; }
 }
 @media (max-width: 350px) {
   .container { padding-inline: 18px; }

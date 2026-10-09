@@ -34,13 +34,14 @@ try {
       await page.screenshot({ path: `${out}/supabase-${locale}-${view}.png` });
       await page.locator("#lead-name").fill("TEST ONLY QA");
       await page.locator("#lead-topic").selectOption("rural");
+      if (view !== "desktop") assert.equal(await page.locator('a[data-contact-position="mobile_bar"]').first().isVisible(), false);
       const button = page.locator('button[type="submit"]');
       await button.click();
       await page.waitForFunction(() => document.querySelector("form").getAttribute("aria-busy") === "true", null, { timeout: 2000 }).catch(async error => {
         console.log(JSON.stringify({ diagnostic: "pending-state", locale, view, requestCount: requests.length,
           formBusy: await page.locator("form").getAttribute("aria-busy"),
           buttonDisabled: await button.isDisabled(), browserErrors: report.browserErrors,
-          alert: await page.locator('form [role="alert"]').textContent().catch(() => null),
+          alert: await page.locator('form [role="alert"]').allTextContents(),
         }));
         throw error;
       });
