@@ -1,0 +1,3219 @@
+{
+  "collected_on": "2026-10-09",
+  "market": {
+    "name": "Morocco",
+    "locId": 2504
+  },
+  "sources": "Ubersuggest MCP",
+  "notes": {
+    "cpc_units": "keyword_overview.cpc is USD; keyword_suggestions.cpcDollars is USD. keyword_suggestions.cpc has a different unit and must not be read as USD.",
+    "zero": "A returned volume or CPC of zero is not proof of no demand or free clicks."
+  },
+  "keyword_results": [
+    {
+      "keyword": "محامي عقاري",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي عقاري",
+        "search_volume": 70,
+        "cpc": 0.83,
+        "seo_difficulty": 3,
+        "paid_difficulty": 7,
+        "competition": 0.07,
+        "search_intent": "Commercial",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202504",
+            "search_volume": 70
+          },
+          {
+            "period": "202505",
+            "search_volume": 110
+          },
+          {
+            "period": "202506",
+            "search_volume": 50
+          },
+          {
+            "period": "202507",
+            "search_volume": 70
+          },
+          {
+            "period": "202508",
+            "search_volume": 110
+          },
+          {
+            "period": "202509",
+            "search_volume": 110
+          },
+          {
+            "period": "202510",
+            "search_volume": 50
+          },
+          {
+            "period": "202511",
+            "search_volume": 70
+          },
+          {
+            "period": "202512",
+            "search_volume": 70
+          },
+          {
+            "period": "202601",
+            "search_volume": 50
+          },
+          {
+            "period": "202602",
+            "search_volume": 50
+          },
+          {
+            "period": "202603",
+            "search_volume": 70
+          },
+          {
+            "period": "202604",
+            "search_volume": 70
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "محامي مختص في العقار الدار البيضاء",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي مختص في العقار الدار البيضاء",
+        "search_volume": 70,
+        "cpc": 0.16,
+        "seo_difficulty": 8,
+        "paid_difficulty": 11,
+        "competition": 0.11,
+        "search_intent": "Commercial",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202411",
+            "search_volume": 90
+          },
+          {
+            "period": "202412",
+            "search_volume": 70
+          },
+          {
+            "period": "202501",
+            "search_volume": 110
+          },
+          {
+            "period": "202502",
+            "search_volume": 70
+          },
+          {
+            "period": "202503",
+            "search_volume": 50
+          },
+          {
+            "period": "202504",
+            "search_volume": 40
+          },
+          {
+            "period": "202505",
+            "search_volume": 50
+          },
+          {
+            "period": "202506",
+            "search_volume": 30
+          },
+          {
+            "period": "202507",
+            "search_volume": 70
+          },
+          {
+            "period": "202508",
+            "search_volume": 30
+          },
+          {
+            "period": "202509",
+            "search_volume": 90
+          },
+          {
+            "period": "202510",
+            "search_volume": 40
+          },
+          {
+            "period": "202511",
+            "search_volume": 70
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat immobilier casablanca",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat immobilier casablanca",
+        "search_volume": 70,
+        "cpc": 0.82,
+        "seo_difficulty": 11,
+        "paid_difficulty": 31,
+        "competition": 0.31,
+        "search_intent": "Commercial",
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202412",
+            "search_volume": 70
+          },
+          {
+            "period": "202501",
+            "search_volume": 70
+          },
+          {
+            "period": "202502",
+            "search_volume": 50
+          },
+          {
+            "period": "202503",
+            "search_volume": 170
+          },
+          {
+            "period": "202504",
+            "search_volume": 70
+          },
+          {
+            "period": "202505",
+            "search_volume": 70
+          },
+          {
+            "period": "202506",
+            "search_volume": 50
+          },
+          {
+            "period": "202507",
+            "search_volume": 70
+          },
+          {
+            "period": "202508",
+            "search_volume": 30
+          },
+          {
+            "period": "202509",
+            "search_volume": 50
+          },
+          {
+            "period": "202510",
+            "search_volume": 50
+          },
+          {
+            "period": "202511",
+            "search_volume": 30
+          },
+          {
+            "period": "202512",
+            "search_volume": 70
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "محامي عقار",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي عقار",
+        "search_volume": 70,
+        "cpc": 0,
+        "seo_difficulty": 22,
+        "paid_difficulty": 12,
+        "competition": 0.12,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202505",
+            "search_volume": 110
+          },
+          {
+            "period": "202506",
+            "search_volume": 50
+          },
+          {
+            "period": "202507",
+            "search_volume": 70
+          },
+          {
+            "period": "202508",
+            "search_volume": 110
+          },
+          {
+            "period": "202509",
+            "search_volume": 110
+          },
+          {
+            "period": "202510",
+            "search_volume": 50
+          },
+          {
+            "period": "202511",
+            "search_volume": 70
+          },
+          {
+            "period": "202512",
+            "search_volume": 70
+          },
+          {
+            "period": "202601",
+            "search_volume": 50
+          },
+          {
+            "period": "202602",
+            "search_volume": 50
+          },
+          {
+            "period": "202603",
+            "search_volume": 70
+          },
+          {
+            "period": "202604",
+            "search_volume": 70
+          },
+          {
+            "period": "202605",
+            "search_volume": 70
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "محامي عقارات",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي عقارات",
+        "search_volume": 50,
+        "cpc": 1.475,
+        "seo_difficulty": 21,
+        "paid_difficulty": 9,
+        "competition": 0.09,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202509",
+            "search_volume": 70
+          },
+          {
+            "period": "202510",
+            "search_volume": 40
+          },
+          {
+            "period": "202511",
+            "search_volume": 50
+          },
+          {
+            "period": "202512",
+            "search_volume": 50
+          },
+          {
+            "period": "202601",
+            "search_volume": 30
+          },
+          {
+            "period": "202602",
+            "search_volume": 40
+          },
+          {
+            "period": "202603",
+            "search_volume": 50
+          },
+          {
+            "period": "202604",
+            "search_volume": 50
+          },
+          {
+            "period": "202605",
+            "search_volume": 50
+          },
+          {
+            "period": "202606",
+            "search_volume": 50
+          },
+          {
+            "period": "202607",
+            "search_volume": 70
+          },
+          {
+            "period": "202608",
+            "search_volume": 90
+          },
+          {
+            "period": "202609",
+            "search_volume": 50
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat droit immobilier casablanca",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat droit immobilier casablanca",
+        "search_volume": 30,
+        "cpc": 0.575,
+        "seo_difficulty": 20,
+        "paid_difficulty": 48,
+        "competition": 0.48,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202507",
+            "search_volume": 40
+          },
+          {
+            "period": "202508",
+            "search_volume": 50
+          },
+          {
+            "period": "202509",
+            "search_volume": 70
+          },
+          {
+            "period": "202510",
+            "search_volume": 30
+          },
+          {
+            "period": "202511",
+            "search_volume": 20
+          },
+          {
+            "period": "202512",
+            "search_volume": 30
+          },
+          {
+            "period": "202601",
+            "search_volume": 40
+          },
+          {
+            "period": "202602",
+            "search_volume": 20
+          },
+          {
+            "period": "202603",
+            "search_volume": 20
+          },
+          {
+            "period": "202604",
+            "search_volume": 30
+          },
+          {
+            "period": "202605",
+            "search_volume": 30
+          },
+          {
+            "period": "202606",
+            "search_volume": 20
+          },
+          {
+            "period": "202607",
+            "search_volume": 30
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat droit immobilier",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat droit immobilier",
+        "search_volume": 30,
+        "cpc": 1.64,
+        "seo_difficulty": 19,
+        "paid_difficulty": 17,
+        "competition": 0.17,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202411",
+            "search_volume": 20
+          },
+          {
+            "period": "202412",
+            "search_volume": 30
+          },
+          {
+            "period": "202501",
+            "search_volume": 30
+          },
+          {
+            "period": "202502",
+            "search_volume": 20
+          },
+          {
+            "period": "202503",
+            "search_volume": 30
+          },
+          {
+            "period": "202504",
+            "search_volume": 40
+          },
+          {
+            "period": "202505",
+            "search_volume": 50
+          },
+          {
+            "period": "202506",
+            "search_volume": 50
+          },
+          {
+            "period": "202507",
+            "search_volume": 20
+          },
+          {
+            "period": "202508",
+            "search_volume": 20
+          },
+          {
+            "period": "202509",
+            "search_volume": 30
+          },
+          {
+            "period": "202510",
+            "search_volume": 30
+          },
+          {
+            "period": "202511",
+            "search_volume": 30
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat immobilier rabat",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat immobilier rabat",
+        "search_volume": 20,
+        "cpc": 0,
+        "seo_difficulty": 14,
+        "paid_difficulty": 2,
+        "competition": 0.02,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202505",
+            "search_volume": 30
+          },
+          {
+            "period": "202506",
+            "search_volume": 20
+          },
+          {
+            "period": "202507",
+            "search_volume": 30
+          },
+          {
+            "period": "202508",
+            "search_volume": 10
+          },
+          {
+            "period": "202509",
+            "search_volume": 40
+          },
+          {
+            "period": "202510",
+            "search_volume": 10
+          },
+          {
+            "period": "202511",
+            "search_volume": 10
+          },
+          {
+            "period": "202512",
+            "search_volume": 20
+          },
+          {
+            "period": "202601",
+            "search_volume": 30
+          },
+          {
+            "period": "202602",
+            "search_volume": 10
+          },
+          {
+            "period": "202603",
+            "search_volume": 20
+          },
+          {
+            "period": "202604",
+            "search_volume": 20
+          },
+          {
+            "period": "202605",
+            "search_volume": 20
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat droit immobilier rabat",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat droit immobilier rabat",
+        "search_volume": 20,
+        "cpc": 0,
+        "seo_difficulty": 8,
+        "paid_difficulty": 7,
+        "competition": 0.07,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202507",
+            "search_volume": 10
+          },
+          {
+            "period": "202508",
+            "search_volume": 20
+          },
+          {
+            "period": "202509",
+            "search_volume": 10
+          },
+          {
+            "period": "202510",
+            "search_volume": 20
+          },
+          {
+            "period": "202511",
+            "search_volume": 30
+          },
+          {
+            "period": "202512",
+            "search_volume": 20
+          },
+          {
+            "period": "202601",
+            "search_volume": 30
+          },
+          {
+            "period": "202602",
+            "search_volume": 10
+          },
+          {
+            "period": "202603",
+            "search_volume": 20
+          },
+          {
+            "period": "202604",
+            "search_volume": 10
+          },
+          {
+            "period": "202605",
+            "search_volume": 10
+          },
+          {
+            "period": "202606",
+            "search_volume": 10
+          },
+          {
+            "period": "202607",
+            "search_volume": 20
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat immobilier",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat immobilier",
+        "search_volume": 20,
+        "cpc": 0.64,
+        "seo_difficulty": 28,
+        "paid_difficulty": 30,
+        "competition": 0.3,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202507",
+            "search_volume": 20
+          },
+          {
+            "period": "202508",
+            "search_volume": 30
+          },
+          {
+            "period": "202509",
+            "search_volume": 20
+          },
+          {
+            "period": "202510",
+            "search_volume": 40
+          },
+          {
+            "period": "202511",
+            "search_volume": 20
+          },
+          {
+            "period": "202512",
+            "search_volume": 20
+          },
+          {
+            "period": "202601",
+            "search_volume": 20
+          },
+          {
+            "period": "202602",
+            "search_volume": 20
+          },
+          {
+            "period": "202603",
+            "search_volume": 10
+          },
+          {
+            "period": "202604",
+            "search_volume": 20
+          },
+          {
+            "period": "202605",
+            "search_volume": 20
+          },
+          {
+            "period": "202606",
+            "search_volume": 20
+          },
+          {
+            "period": "202607",
+            "search_volume": 20
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat succession maroc",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat succession maroc",
+        "search_volume": 10,
+        "cpc": 0.98,
+        "seo_difficulty": 17,
+        "paid_difficulty": 13,
+        "competition": 0.13,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202509",
+            "search_volume": 10
+          },
+          {
+            "period": "202510",
+            "search_volume": 10
+          },
+          {
+            "period": "202511",
+            "search_volume": 10
+          },
+          {
+            "period": "202512",
+            "search_volume": 10
+          },
+          {
+            "period": "202601",
+            "search_volume": 10
+          },
+          {
+            "period": "202602",
+            "search_volume": 10
+          },
+          {
+            "period": "202604",
+            "search_volume": 10
+          },
+          {
+            "period": "202605",
+            "search_volume": 10
+          },
+          {
+            "period": "202606",
+            "search_volume": 10
+          },
+          {
+            "period": "202607",
+            "search_volume": 10
+          },
+          {
+            "period": "202608",
+            "search_volume": 30
+          },
+          {
+            "period": "202609",
+            "search_volume": 10
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat immobilier maroc",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat immobilier maroc",
+        "search_volume": 10,
+        "cpc": 0,
+        "seo_difficulty": 18,
+        "paid_difficulty": 14,
+        "competition": 0.14,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202505",
+            "search_volume": 10
+          },
+          {
+            "period": "202506",
+            "search_volume": 10
+          },
+          {
+            "period": "202507",
+            "search_volume": 10
+          },
+          {
+            "period": "202508",
+            "search_volume": 10
+          },
+          {
+            "period": "202509",
+            "search_volume": 10
+          },
+          {
+            "period": "202510",
+            "search_volume": 10
+          },
+          {
+            "period": "202511",
+            "search_volume": 10
+          },
+          {
+            "period": "202512",
+            "search_volume": 10
+          },
+          {
+            "period": "202601",
+            "search_volume": 0
+          },
+          {
+            "period": "202602",
+            "search_volume": 10
+          },
+          {
+            "period": "202603",
+            "search_volume": 10
+          },
+          {
+            "period": "202604",
+            "search_volume": 10
+          },
+          {
+            "period": "202605",
+            "search_volume": 10
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat droit immobilier maroc",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat droit immobilier maroc",
+        "search_volume": 10,
+        "cpc": 0,
+        "seo_difficulty": 12,
+        "paid_difficulty": 21,
+        "competition": 0.21,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202509",
+            "search_volume": 20
+          },
+          {
+            "period": "202510",
+            "search_volume": 10
+          },
+          {
+            "period": "202511",
+            "search_volume": 10
+          },
+          {
+            "period": "202512",
+            "search_volume": 20
+          },
+          {
+            "period": "202601",
+            "search_volume": 20
+          },
+          {
+            "period": "202602",
+            "search_volume": 10
+          },
+          {
+            "period": "202603",
+            "search_volume": 10
+          },
+          {
+            "period": "202604",
+            "search_volume": 20
+          },
+          {
+            "period": "202605",
+            "search_volume": 10
+          },
+          {
+            "period": "202606",
+            "search_volume": 10
+          },
+          {
+            "period": "202607",
+            "search_volume": 10
+          },
+          {
+            "period": "202608",
+            "search_volume": 10
+          },
+          {
+            "period": "202609",
+            "search_volume": 10
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "استشارة قانونية عقارية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "استشارة قانونية عقارية",
+        "search_volume": 10,
+        "cpc": 0,
+        "seo_difficulty": 17,
+        "paid_difficulty": 10,
+        "competition": 0.1,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202504",
+            "search_volume": 10
+          },
+          {
+            "period": "202505",
+            "search_volume": 10
+          },
+          {
+            "period": "202506",
+            "search_volume": 10
+          },
+          {
+            "period": "202507",
+            "search_volume": 10
+          },
+          {
+            "period": "202508",
+            "search_volume": 10
+          },
+          {
+            "period": "202509",
+            "search_volume": 10
+          },
+          {
+            "period": "202510",
+            "search_volume": 10
+          },
+          {
+            "period": "202511",
+            "search_volume": 10
+          },
+          {
+            "period": "202512",
+            "search_volume": 10
+          },
+          {
+            "period": "202601",
+            "search_volume": 10
+          },
+          {
+            "period": "202602",
+            "search_volume": 10
+          },
+          {
+            "period": "202603",
+            "search_volume": 10
+          },
+          {
+            "period": "202604",
+            "search_volume": 10
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "محامي قضايا ميراث",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "محامي قضايا ميراث",
+        "competition": 0,
+        "volume": 10,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 13,
+        "updated_at": 1775467168,
+        "pd": 1,
+        "searchIntent": null,
+        "source": "research_initial_1"
+      }
+    },
+    {
+      "keyword": "avocat mohammedia",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat mohammedia",
+        "search_volume": 260,
+        "cpc": 0.25,
+        "seo_difficulty": 4,
+        "paid_difficulty": 14,
+        "competition": 0.14,
+        "search_intent": "Informational",
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202507",
+            "search_volume": 320
+          },
+          {
+            "period": "202508",
+            "search_volume": 390
+          },
+          {
+            "period": "202509",
+            "search_volume": 210
+          },
+          {
+            "period": "202510",
+            "search_volume": 320
+          },
+          {
+            "period": "202511",
+            "search_volume": 260
+          },
+          {
+            "period": "202512",
+            "search_volume": 320
+          },
+          {
+            "period": "202601",
+            "search_volume": 260
+          },
+          {
+            "period": "202602",
+            "search_volume": 260
+          },
+          {
+            "period": "202603",
+            "search_volume": 260
+          },
+          {
+            "period": "202604",
+            "search_volume": 260
+          },
+          {
+            "period": "202605",
+            "search_volume": 260
+          },
+          {
+            "period": "202606",
+            "search_volume": 260
+          },
+          {
+            "period": "202607",
+            "search_volume": 260
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "محامي المحمدية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي المحمدية",
+        "search_volume": 50,
+        "cpc": 0,
+        "seo_difficulty": 21,
+        "paid_difficulty": 9,
+        "competition": 0.09,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202505",
+            "search_volume": 40
+          },
+          {
+            "period": "202506",
+            "search_volume": 40
+          },
+          {
+            "period": "202507",
+            "search_volume": 70
+          },
+          {
+            "period": "202508",
+            "search_volume": 50
+          },
+          {
+            "period": "202509",
+            "search_volume": 50
+          },
+          {
+            "period": "202510",
+            "search_volume": 70
+          },
+          {
+            "period": "202511",
+            "search_volume": 50
+          },
+          {
+            "period": "202512",
+            "search_volume": 70
+          },
+          {
+            "period": "202601",
+            "search_volume": 70
+          },
+          {
+            "period": "202602",
+            "search_volume": 50
+          },
+          {
+            "period": "202603",
+            "search_volume": 40
+          },
+          {
+            "period": "202604",
+            "search_volume": 70
+          },
+          {
+            "period": "202605",
+            "search_volume": 50
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "محامي بالمحمدية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي بالمحمدية",
+        "search_volume": 40,
+        "cpc": 0,
+        "seo_difficulty": 20,
+        "paid_difficulty": 6,
+        "competition": 0.06,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202509",
+            "search_volume": 70
+          },
+          {
+            "period": "202510",
+            "search_volume": 20
+          },
+          {
+            "period": "202511",
+            "search_volume": 50
+          },
+          {
+            "period": "202512",
+            "search_volume": 30
+          },
+          {
+            "period": "202601",
+            "search_volume": 10
+          },
+          {
+            "period": "202602",
+            "search_volume": 170
+          },
+          {
+            "period": "202603",
+            "search_volume": 30
+          },
+          {
+            "period": "202604",
+            "search_volume": 50
+          },
+          {
+            "period": "202605",
+            "search_volume": 20
+          },
+          {
+            "period": "202606",
+            "search_volume": 20
+          },
+          {
+            "period": "202607",
+            "search_volume": 20
+          },
+          {
+            "period": "202608",
+            "search_volume": 20
+          },
+          {
+            "period": "202609",
+            "search_volume": 40
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat casablanca",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat casablanca",
+        "search_volume": 2400,
+        "cpc": 0.96,
+        "seo_difficulty": 25,
+        "paid_difficulty": 34,
+        "competition": 0.34,
+        "search_intent": "Informational",
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202507",
+            "search_volume": 2400
+          },
+          {
+            "period": "202508",
+            "search_volume": 2900
+          },
+          {
+            "period": "202509",
+            "search_volume": 2900
+          },
+          {
+            "period": "202510",
+            "search_volume": 2900
+          },
+          {
+            "period": "202511",
+            "search_volume": 1900
+          },
+          {
+            "period": "202512",
+            "search_volume": 1600
+          },
+          {
+            "period": "202601",
+            "search_volume": 1900
+          },
+          {
+            "period": "202602",
+            "search_volume": 1600
+          },
+          {
+            "period": "202603",
+            "search_volume": 1900
+          },
+          {
+            "period": "202604",
+            "search_volume": 3600
+          },
+          {
+            "period": "202605",
+            "search_volume": 1600
+          },
+          {
+            "period": "202606",
+            "search_volume": 1900
+          },
+          {
+            "period": "202607",
+            "search_volume": 2400
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "avocat rabat",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat rabat",
+        "search_volume": 1000,
+        "cpc": 0.93,
+        "seo_difficulty": 3,
+        "paid_difficulty": 2,
+        "competition": 0.02,
+        "search_intent": "Commercial",
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202507",
+            "search_volume": 1000
+          },
+          {
+            "period": "202508",
+            "search_volume": 1000
+          },
+          {
+            "period": "202509",
+            "search_volume": 1000
+          },
+          {
+            "period": "202510",
+            "search_volume": 1300
+          },
+          {
+            "period": "202511",
+            "search_volume": 1000
+          },
+          {
+            "period": "202512",
+            "search_volume": 1000
+          },
+          {
+            "period": "202601",
+            "search_volume": 880
+          },
+          {
+            "period": "202602",
+            "search_volume": 880
+          },
+          {
+            "period": "202603",
+            "search_volume": 1000
+          },
+          {
+            "period": "202604",
+            "search_volume": 1300
+          },
+          {
+            "period": "202605",
+            "search_volume": 1300
+          },
+          {
+            "period": "202606",
+            "search_volume": 1300
+          },
+          {
+            "period": "202607",
+            "search_volume": 1000
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "محامي الدار البيضاء",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي الدار البيضاء",
+        "search_volume": 880,
+        "cpc": 0.84,
+        "seo_difficulty": 9,
+        "paid_difficulty": 19,
+        "competition": 0.19,
+        "search_intent": "Commercial",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202509",
+            "search_volume": 880
+          },
+          {
+            "period": "202510",
+            "search_volume": 1000
+          },
+          {
+            "period": "202511",
+            "search_volume": 880
+          },
+          {
+            "period": "202512",
+            "search_volume": 880
+          },
+          {
+            "period": "202601",
+            "search_volume": 720
+          },
+          {
+            "period": "202602",
+            "search_volume": 720
+          },
+          {
+            "period": "202603",
+            "search_volume": 720
+          },
+          {
+            "period": "202604",
+            "search_volume": 1000
+          },
+          {
+            "period": "202605",
+            "search_volume": 720
+          },
+          {
+            "period": "202606",
+            "search_volume": 1000
+          },
+          {
+            "period": "202607",
+            "search_volume": 880
+          },
+          {
+            "period": "202608",
+            "search_volume": 720
+          },
+          {
+            "period": "202609",
+            "search_volume": 880
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "محامي الرباط",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي الرباط",
+        "search_volume": 390,
+        "cpc": 0.77,
+        "seo_difficulty": 5,
+        "paid_difficulty": 2,
+        "competition": 0.02,
+        "search_intent": "Commercial",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202504",
+            "search_volume": 390
+          },
+          {
+            "period": "202505",
+            "search_volume": 480
+          },
+          {
+            "period": "202506",
+            "search_volume": 320
+          },
+          {
+            "period": "202507",
+            "search_volume": 390
+          },
+          {
+            "period": "202508",
+            "search_volume": 390
+          },
+          {
+            "period": "202509",
+            "search_volume": 480
+          },
+          {
+            "period": "202510",
+            "search_volume": 480
+          },
+          {
+            "period": "202511",
+            "search_volume": 320
+          },
+          {
+            "period": "202512",
+            "search_volume": 480
+          },
+          {
+            "period": "202601",
+            "search_volume": 590
+          },
+          {
+            "period": "202602",
+            "search_volume": 260
+          },
+          {
+            "period": "202603",
+            "search_volume": 390
+          },
+          {
+            "period": "202604",
+            "search_volume": 390
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "تعويضات الأراضي السلالية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "تعويضات الأراضي السلالية",
+        "search_volume": 210,
+        "cpc": 0,
+        "seo_difficulty": 13,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202504",
+            "search_volume": 320
+          },
+          {
+            "period": "202505",
+            "search_volume": 320
+          },
+          {
+            "period": "202506",
+            "search_volume": 210
+          },
+          {
+            "period": "202507",
+            "search_volume": 170
+          },
+          {
+            "period": "202508",
+            "search_volume": 140
+          },
+          {
+            "period": "202509",
+            "search_volume": 170
+          },
+          {
+            "period": "202510",
+            "search_volume": 170
+          },
+          {
+            "period": "202511",
+            "search_volume": 170
+          },
+          {
+            "period": "202512",
+            "search_volume": 210
+          },
+          {
+            "period": "202601",
+            "search_volume": 260
+          },
+          {
+            "period": "202602",
+            "search_volume": 140
+          },
+          {
+            "period": "202603",
+            "search_volume": 170
+          },
+          {
+            "period": "202604",
+            "search_volume": 210
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "قانون إفراغ المكتري بدون عقد",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "قانون إفراغ المكتري بدون عقد",
+        "search_volume": 170,
+        "cpc": 0,
+        "seo_difficulty": 26,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202412",
+            "search_volume": 260
+          },
+          {
+            "period": "202501",
+            "search_volume": 170
+          },
+          {
+            "period": "202502",
+            "search_volume": 210
+          },
+          {
+            "period": "202503",
+            "search_volume": 210
+          },
+          {
+            "period": "202504",
+            "search_volume": 210
+          },
+          {
+            "period": "202505",
+            "search_volume": 260
+          },
+          {
+            "period": "202506",
+            "search_volume": 170
+          },
+          {
+            "period": "202507",
+            "search_volume": 210
+          },
+          {
+            "period": "202508",
+            "search_volume": 140
+          },
+          {
+            "period": "202509",
+            "search_volume": 140
+          },
+          {
+            "period": "202510",
+            "search_volume": 140
+          },
+          {
+            "period": "202511",
+            "search_volume": 20
+          },
+          {
+            "period": "202512",
+            "search_volume": 170
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "الترامي على ملك الغير",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "الترامي على ملك الغير",
+        "search_volume": 110,
+        "cpc": 0,
+        "seo_difficulty": 15,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202503",
+            "search_volume": 70
+          },
+          {
+            "period": "202504",
+            "search_volume": 110
+          },
+          {
+            "period": "202505",
+            "search_volume": 140
+          },
+          {
+            "period": "202506",
+            "search_volume": 110
+          },
+          {
+            "period": "202507",
+            "search_volume": 90
+          },
+          {
+            "period": "202508",
+            "search_volume": 90
+          },
+          {
+            "period": "202509",
+            "search_volume": 110
+          },
+          {
+            "period": "202510",
+            "search_volume": 110
+          },
+          {
+            "period": "202511",
+            "search_volume": 110
+          },
+          {
+            "period": "202512",
+            "search_volume": 90
+          },
+          {
+            "period": "202601",
+            "search_volume": 90
+          },
+          {
+            "period": "202602",
+            "search_volume": 90
+          },
+          {
+            "period": "202603",
+            "search_volume": 110
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "مسطرة التعويض عن نزع الملكية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "مسطرة التعويض عن نزع الملكية",
+        "search_volume": 110,
+        "cpc": 0,
+        "seo_difficulty": 11,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202501",
+            "search_volume": 210
+          },
+          {
+            "period": "202502",
+            "search_volume": 210
+          },
+          {
+            "period": "202503",
+            "search_volume": 140
+          },
+          {
+            "period": "202504",
+            "search_volume": 140
+          },
+          {
+            "period": "202505",
+            "search_volume": 170
+          },
+          {
+            "period": "202506",
+            "search_volume": 90
+          },
+          {
+            "period": "202507",
+            "search_volume": 70
+          },
+          {
+            "period": "202508",
+            "search_volume": 50
+          },
+          {
+            "period": "202509",
+            "search_volume": 40
+          },
+          {
+            "period": "202510",
+            "search_volume": 50
+          },
+          {
+            "period": "202511",
+            "search_volume": 30
+          },
+          {
+            "period": "202512",
+            "search_volume": 20
+          },
+          {
+            "period": "202601",
+            "search_volume": 110
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "التعرض على مطلب التحفيظ",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "التعرض على مطلب التحفيظ",
+        "search_volume": 90,
+        "cpc": 0,
+        "seo_difficulty": 10,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202503",
+            "search_volume": 110
+          },
+          {
+            "period": "202504",
+            "search_volume": 140
+          },
+          {
+            "period": "202505",
+            "search_volume": 140
+          },
+          {
+            "period": "202506",
+            "search_volume": 90
+          },
+          {
+            "period": "202507",
+            "search_volume": 110
+          },
+          {
+            "period": "202508",
+            "search_volume": 70
+          },
+          {
+            "period": "202509",
+            "search_volume": 70
+          },
+          {
+            "period": "202510",
+            "search_volume": 90
+          },
+          {
+            "period": "202511",
+            "search_volume": 70
+          },
+          {
+            "period": "202512",
+            "search_volume": 140
+          },
+          {
+            "period": "202601",
+            "search_volume": 70
+          },
+          {
+            "period": "202602",
+            "search_volume": 70
+          },
+          {
+            "period": "202603",
+            "search_volume": 90
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "شكاية الترامي على ملك الغير",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "شكاية الترامي على ملك الغير",
+        "search_volume": 90,
+        "cpc": 0,
+        "seo_difficulty": 11,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202503",
+            "search_volume": 110
+          },
+          {
+            "period": "202504",
+            "search_volume": 170
+          },
+          {
+            "period": "202505",
+            "search_volume": 110
+          },
+          {
+            "period": "202506",
+            "search_volume": 70
+          },
+          {
+            "period": "202507",
+            "search_volume": 50
+          },
+          {
+            "period": "202508",
+            "search_volume": 50
+          },
+          {
+            "period": "202509",
+            "search_volume": 90
+          },
+          {
+            "period": "202510",
+            "search_volume": 90
+          },
+          {
+            "period": "202511",
+            "search_volume": 70
+          },
+          {
+            "period": "202512",
+            "search_volume": 70
+          },
+          {
+            "period": "202601",
+            "search_volume": 50
+          },
+          {
+            "period": "202602",
+            "search_volume": 40
+          },
+          {
+            "period": "202603",
+            "search_volume": 90
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "دعوى رفع الضرر في الملكية المشتركة",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "دعوى رفع الضرر في الملكية المشتركة",
+        "competition": 0,
+        "volume": 90,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 9,
+        "updated_at": 1761122610,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "rental_copro_ar"
+      }
+    },
+    {
+      "keyword": "التعويض عن نزع الملكية للمنفعة العامة بالمغرب",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "التعويض عن نزع الملكية للمنفعة العامة بالمغرب",
+        "search_volume": 70,
+        "cpc": 0,
+        "seo_difficulty": 12,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202504",
+            "search_volume": 110
+          },
+          {
+            "period": "202505",
+            "search_volume": 90
+          },
+          {
+            "period": "202506",
+            "search_volume": 70
+          },
+          {
+            "period": "202507",
+            "search_volume": 70
+          },
+          {
+            "period": "202508",
+            "search_volume": 50
+          },
+          {
+            "period": "202509",
+            "search_volume": 70
+          },
+          {
+            "period": "202510",
+            "search_volume": 50
+          },
+          {
+            "period": "202511",
+            "search_volume": 70
+          },
+          {
+            "period": "202512",
+            "search_volume": 50
+          },
+          {
+            "period": "202601",
+            "search_volume": 40
+          },
+          {
+            "period": "202602",
+            "search_volume": 30
+          },
+          {
+            "period": "202603",
+            "search_volume": 30
+          },
+          {
+            "period": "202604",
+            "search_volume": 70
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "طلب التعويض عن نزع الملكية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "طلب التعويض عن نزع الملكية",
+        "search_volume": 70,
+        "cpc": 0,
+        "seo_difficulty": 10,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Navigational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202501",
+            "search_volume": 50
+          },
+          {
+            "period": "202502",
+            "search_volume": 90
+          },
+          {
+            "period": "202503",
+            "search_volume": 90
+          },
+          {
+            "period": "202504",
+            "search_volume": 90
+          },
+          {
+            "period": "202505",
+            "search_volume": 90
+          },
+          {
+            "period": "202506",
+            "search_volume": 50
+          },
+          {
+            "period": "202507",
+            "search_volume": 50
+          },
+          {
+            "period": "202508",
+            "search_volume": 30
+          },
+          {
+            "period": "202509",
+            "search_volume": 50
+          },
+          {
+            "period": "202510",
+            "search_volume": 40
+          },
+          {
+            "period": "202511",
+            "search_volume": 30
+          },
+          {
+            "period": "202512",
+            "search_volume": 50
+          },
+          {
+            "period": "202601",
+            "search_volume": 70
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "الخروج من الشياع في القانون المغربي",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "الخروج من الشياع في القانون المغربي",
+        "search_volume": 70,
+        "cpc": 0,
+        "seo_difficulty": 26,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202504",
+            "search_volume": 50
+          },
+          {
+            "period": "202505",
+            "search_volume": 50
+          },
+          {
+            "period": "202506",
+            "search_volume": 40
+          },
+          {
+            "period": "202507",
+            "search_volume": 70
+          },
+          {
+            "period": "202508",
+            "search_volume": 50
+          },
+          {
+            "period": "202509",
+            "search_volume": 90
+          },
+          {
+            "period": "202510",
+            "search_volume": 70
+          },
+          {
+            "period": "202511",
+            "search_volume": 70
+          },
+          {
+            "period": "202512",
+            "search_volume": 70
+          },
+          {
+            "period": "202601",
+            "search_volume": 70
+          },
+          {
+            "period": "202602",
+            "search_volume": 70
+          },
+          {
+            "period": "202603",
+            "search_volume": 50
+          },
+          {
+            "period": "202604",
+            "search_volume": 70
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "الإفراغ للاحتياج في الكراء التجاري",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "الإفراغ للاحتياج في الكراء التجاري",
+        "competition": 0,
+        "volume": 70,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 9,
+        "updated_at": 1776386668,
+        "pd": 1,
+        "searchIntent": [
+          1,
+          2
+        ],
+        "source": "rental_copro_ar"
+      }
+    },
+    {
+      "keyword": "الخروج من الشيوع في الأراضي الفلاحية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "الخروج من الشيوع في الأراضي الفلاحية",
+        "search_volume": 50,
+        "cpc": 0,
+        "seo_difficulty": 26,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": "Informational",
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202410",
+            "search_volume": 70
+          },
+          {
+            "period": "202411",
+            "search_volume": 50
+          },
+          {
+            "period": "202412",
+            "search_volume": 70
+          },
+          {
+            "period": "202501",
+            "search_volume": 50
+          },
+          {
+            "period": "202502",
+            "search_volume": 70
+          },
+          {
+            "period": "202503",
+            "search_volume": 40
+          },
+          {
+            "period": "202504",
+            "search_volume": 50
+          },
+          {
+            "period": "202505",
+            "search_volume": 30
+          },
+          {
+            "period": "202506",
+            "search_volume": 40
+          },
+          {
+            "period": "202507",
+            "search_volume": 40
+          },
+          {
+            "period": "202508",
+            "search_volume": 40
+          },
+          {
+            "period": "202509",
+            "search_volume": 50
+          },
+          {
+            "period": "202510",
+            "search_volume": 50
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "منازعات الملكية المشتركة",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "منازعات الملكية المشتركة",
+        "competition": 0,
+        "volume": 50,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 12,
+        "updated_at": 1768260070,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "rental_copro_ar"
+      }
+    },
+    {
+      "keyword": "expropriation maroc",
+      "language": "fr",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "expropriation maroc",
+        "competition": 0,
+        "volume": 50,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 9,
+        "updated_at": 1761056693,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "issues_fr"
+      }
+    },
+    {
+      "keyword": "قسمة قضائية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "قسمة قضائية",
+        "search_volume": 30,
+        "cpc": 0,
+        "seo_difficulty": 18,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202509",
+            "search_volume": 40
+          },
+          {
+            "period": "202510",
+            "search_volume": 40
+          },
+          {
+            "period": "202511",
+            "search_volume": 40
+          },
+          {
+            "period": "202512",
+            "search_volume": 50
+          },
+          {
+            "period": "202601",
+            "search_volume": 20
+          },
+          {
+            "period": "202602",
+            "search_volume": 30
+          },
+          {
+            "period": "202603",
+            "search_volume": 20
+          },
+          {
+            "period": "202604",
+            "search_volume": 30
+          },
+          {
+            "period": "202605",
+            "search_volume": 20
+          },
+          {
+            "period": "202606",
+            "search_volume": 30
+          },
+          {
+            "period": "202607",
+            "search_volume": 40
+          },
+          {
+            "period": "202608",
+            "search_volume": 20
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "منازعات التحفيظ العقاري",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "منازعات التحفيظ العقاري",
+        "search_volume": 20,
+        "cpc": 0,
+        "seo_difficulty": 13,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202509",
+            "search_volume": 10
+          },
+          {
+            "period": "202510",
+            "search_volume": 10
+          },
+          {
+            "period": "202511",
+            "search_volume": 40
+          },
+          {
+            "period": "202512",
+            "search_volume": 10
+          },
+          {
+            "period": "202601",
+            "search_volume": 10
+          },
+          {
+            "period": "202602",
+            "search_volume": 10
+          },
+          {
+            "period": "202603",
+            "search_volume": 10
+          },
+          {
+            "period": "202604",
+            "search_volume": 50
+          },
+          {
+            "period": "202605",
+            "search_volume": 40
+          },
+          {
+            "period": "202606",
+            "search_volume": 30
+          },
+          {
+            "period": "202607",
+            "search_volume": 20
+          },
+          {
+            "period": "202608",
+            "search_volume": 10
+          },
+          {
+            "period": "202609",
+            "search_volume": 20
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "الخروج من الشياع",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "الخروج من الشياع",
+        "competition": 0,
+        "volume": 20,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 13,
+        "updated_at": 1775467221,
+        "pd": 1,
+        "searchIntent": null,
+        "source": "issues_ar"
+      }
+    },
+    {
+      "keyword": "نزاع بين الورثة",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "نزاع بين الورثة",
+        "search_volume": 10,
+        "cpc": 0,
+        "seo_difficulty": 13,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": [
+          {
+            "period": "202509",
+            "search_volume": 10
+          },
+          {
+            "period": "202602",
+            "search_volume": 10
+          },
+          {
+            "period": "202603",
+            "search_volume": 10
+          },
+          {
+            "period": "202605",
+            "search_volume": 10
+          },
+          {
+            "period": "202608",
+            "search_volume": 10
+          }
+        ]
+      }
+    },
+    {
+      "keyword": "النزاعات العقارية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "النزاعات العقارية",
+        "competition": 0,
+        "volume": 10,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 18,
+        "updated_at": 1775467411,
+        "pd": 1,
+        "searchIntent": null,
+        "source": "succession_realestate_ar"
+      }
+    },
+    {
+      "keyword": "الكراء التجاري",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "الكراء التجاري",
+        "competition": 0,
+        "volume": 170,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 14,
+        "updated_at": 1786678384,
+        "pd": 1,
+        "searchIntent": [
+          3
+        ],
+        "source": "rental_copro_ar"
+      }
+    },
+    {
+      "keyword": "التحفيظ العقاري في المغرب",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "التحفيظ العقاري في المغرب",
+        "competition": 0,
+        "volume": 2900,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 11,
+        "updated_at": 1768515418,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "rural_ar"
+      }
+    },
+    {
+      "keyword": "titre foncier maroc",
+      "language": "fr",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "titre foncier maroc",
+        "competition": 0,
+        "volume": 1900,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 22,
+        "updated_at": 1774804754,
+        "pd": 1,
+        "searchIntent": [
+          2
+        ],
+        "source": "local_fr"
+      }
+    },
+    {
+      "keyword": "لائحة ذوي الحقوق الأراضي السلالية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "لائحة ذوي الحقوق الأراضي السلالية",
+        "competition": 0,
+        "volume": 1000,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 12,
+        "updated_at": 1768762586,
+        "pd": 1,
+        "searchIntent": [
+          2,
+          1
+        ],
+        "source": "rural_ar"
+      }
+    },
+    {
+      "keyword": "الأراضي السلالية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "الأراضي السلالية",
+        "competition": 0,
+        "volume": 880,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 13,
+        "updated_at": 1790159709,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "rural_ar"
+      }
+    },
+    {
+      "keyword": "الملكية المشتركة",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "الملكية المشتركة",
+        "competition": 0,
+        "volume": 720,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 11,
+        "updated_at": 1790320635,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "rental_copro_ar"
+      }
+    },
+    {
+      "keyword": "التحفيظ العقاري",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "التحفيظ العقاري",
+        "competition": 0,
+        "volume": 480,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 18,
+        "updated_at": 1790727715,
+        "pd": 1,
+        "searchIntent": [
+          1,
+          3
+        ],
+        "source": "rural_ar"
+      }
+    },
+    {
+      "keyword": "نزع الملكية من اجل المنفعة العامة",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "نزع الملكية من اجل المنفعة العامة",
+        "competition": 0,
+        "volume": 390,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 12,
+        "updated_at": 1784203735,
+        "pd": 1,
+        "searchIntent": [
+          4
+        ],
+        "source": "issues_ar"
+      }
+    },
+    {
+      "keyword": "قانون نزع الملكية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "قانون نزع الملكية",
+        "competition": 0,
+        "volume": 320,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 10,
+        "updated_at": 1784222991,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "issues_ar"
+      }
+    },
+    {
+      "keyword": "consultation titre foncier maroc",
+      "language": "fr",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "consultation titre foncier maroc",
+        "competition": 0.01,
+        "volume": 320,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 7,
+        "updated_at": 1791191774,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "local_fr"
+      }
+    },
+    {
+      "keyword": "أراضي الجموع",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "أراضي الجموع",
+        "competition": 0,
+        "volume": 170,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 11,
+        "updated_at": 1786697419,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "rural_more_ar"
+      }
+    },
+    {
+      "keyword": "كراء الأراضي الفلاحية بالمغرب",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "كراء الأراضي الفلاحية بالمغرب",
+        "competition": 0,
+        "volume": 90,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 12,
+        "updated_at": 1780227785,
+        "pd": 1,
+        "searchIntent": [
+          1,
+          3
+        ],
+        "source": "rural_more_ar"
+      }
+    },
+    {
+      "keyword": "قانون تقسيم الأراضي الفلاحية بالمغرب",
+      "language": "ar",
+      "source": "Ubersuggest keyword_suggestions",
+      "raw": {
+        "keyword": "قانون تقسيم الأراضي الفلاحية بالمغرب",
+        "competition": 0,
+        "volume": 70,
+        "cpc": 0,
+        "cpcDollars": 0,
+        "sd": 9,
+        "updated_at": 1781653991,
+        "pd": 1,
+        "searchIntent": [
+          1
+        ],
+        "source": "rural_more_ar"
+      }
+    },
+    {
+      "keyword": "محامي نزاعات الأراضي الفلاحية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي نزاعات الأراضي الفلاحية",
+        "search_volume": 0,
+        "cpc": 0,
+        "seo_difficulty": 4,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": []
+      }
+    },
+    {
+      "keyword": "avocat foncier maroc",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat foncier maroc",
+        "search_volume": 0,
+        "cpc": 0,
+        "seo_difficulty": 12,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": []
+      }
+    },
+    {
+      "keyword": "avocat terres agricoles",
+      "language": "fr",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "avocat terres agricoles",
+        "search_volume": 0,
+        "cpc": 0,
+        "seo_difficulty": 12,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "French",
+        "location": "Morocco",
+        "monthly_searches": []
+      }
+    },
+    {
+      "keyword": "محامي مختص في الارث",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "محامي مختص في الارث",
+        "search_volume": 0,
+        "cpc": 0,
+        "seo_difficulty": 4,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": []
+      }
+    },
+    {
+      "keyword": "إفراغ المكتري لعدم أداء الكراء",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "إفراغ المكتري لعدم أداء الكراء",
+        "search_volume": 0,
+        "cpc": 0,
+        "seo_difficulty": 4,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": []
+      }
+    },
+    {
+      "keyword": "تحفيظ أرض فلاحية",
+      "language": "ar",
+      "source": "Ubersuggest keyword_overview",
+      "raw": {
+        "keyword": "تحفيظ أرض فلاحية",
+        "search_volume": 0,
+        "cpc": 0,
+        "seo_difficulty": 12,
+        "paid_difficulty": 1,
+        "competition": 0,
+        "search_intent": null,
+        "language": "Arabic",
+        "location": "Morocco",
+        "monthly_searches": []
+      }
+    }
+  ],
+  "serps": {
+    "قانون إفراغ المكتري بدون عقد": {
+      "serpEntries": [
+        {
+          "url": "http://NODOMAIN",
+          "title": null,
+          "domain": "NODOMAIN",
+          "position": 1,
+          "type": "ai_overview"
+        },
+        {
+          "url": "http://NODOMAIN",
+          "title": null,
+          "domain": "NODOMAIN",
+          "position": 2,
+          "type": "video"
+        },
+        {
+          "url": "http://NODOMAIN",
+          "title": null,
+          "domain": "NODOMAIN",
+          "position": 3,
+          "type": "people_also_ask"
+        },
+        {
+          "url": "http://www.youtube.com/watch?v=B0hyvebn204",
+          "title": "كراء شقة او محل تجاري بدون عقد رأي الأستاذ معتوق",
+          "domain": "youtube.com",
+          "position": 4,
+          "type": "organic",
+          "clicks": 90,
+          "domainAuthority": 100,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://www.youtube.com/watch?v=A7PH9Qy7peA",
+          "title": "شنو قال القانون في الإفراغ لعدم أداء واجبات الكراء",
+          "domain": "youtube.com",
+          "position": 5,
+          "type": "organic",
+          "clicks": 16,
+          "domainAuthority": 100,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://mahkamaty.com/ar-ma/consultations/68615/%D8%A7%D9%84%D8%A5%D9%81%D8%B1%D8%A7%D8%BA-%D9%84%D9%84%D8%A5-%D8%AD%D8%AA%D9%8A%D8%A7%D8%AC-%D8%B3%D9%83%D9%86%D9%89-%D9%83%D9%85-%D8%AA%D8%AF%D9%88%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%B7%D8%B1%D8%A9-%D9%85%D8%A7-%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%AD%D8%A9-%D9%84%D9%84%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9-%D8%A8%D9%87%D8%A7",
+          "title": "الإفراغ للإ حتياج (سكنى) ! كم تدوم المسطرة و ما الطريقة الصحيحة ...",
+          "domain": "mahkamaty.com",
+          "position": 6,
+          "type": "organic",
+          "clicks": 4,
+          "domainAuthority": 20,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://www.marocdroit.com/%D8%A3%D9%87%D9%85-%D9%85%D8%B3%D8%AA%D8%AC%D8%AF%D8%A7%D8%AA-%D9%83%D9%80%D9%80%D9%80%D9%80%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%AD%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D8%A9-%D9%84%D9%84%D8%B3%D9%83%D9%86%D9%89-%D8%A3%D9%88-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D9%87%D9%86%D9%8A_a4483.html",
+          "title": "أهم مستجدات كــــراء المحلات المعدة للسكنى أو للاستعمال المهني ...",
+          "domain": "marocdroit.com",
+          "position": 7,
+          "type": "organic",
+          "clicks": 2,
+          "domainAuthority": 30,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://yane.ma/poste.php?s=684",
+          "title": "ما هي شروط إنهاء أو فسخ عقد الكراء؟",
+          "domain": "yane.ma",
+          "position": 8,
+          "type": "organic",
+          "clicks": 2,
+          "domainAuthority": 3,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://mahkamaty.com/ar-ma/consultations/13922/%D9%83%D8%B1%D8%A7%D8%A1-%D8%B4%D9%82%D8%A9-%D8%A8%D8%AF%D9%88%D9%86-%D8%B9%D9%82%D8%AF",
+          "title": "كراء شقة بدون عقد - محكمتي",
+          "domain": "mahkamaty.com",
+          "position": 9,
+          "type": "organic",
+          "clicks": 3,
+          "domainAuthority": 20,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://facebook.com/alkanounia.info/posts/-%D8%B9%D9%82%D8%AF-%D8%A7%D9%84%D9%83%D8%B1%D8%A7%D8%A1-%D9%81%D9%8A-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D9%83%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF-%D9%8A%D9%87%D8%AF%D9%81-%D8%A5%D9%84%D9%89-%D8%AA%D8%B4%D8%AC%D9%8A%D8%B9-%D8%A3%D8%B5%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D8%AD%D9%84%D8%A7%D8%AA-%D8%B9%D9%84/1882978731734032/",
+          "title": "🔴 عقد الكراء في قانون المغربي🔴 قانون الكراء الجديد يهدف إلى ...",
+          "domain": "facebook.com",
+          "position": 10,
+          "type": "organic",
+          "clicks": 4,
+          "domainAuthority": 96,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://mahkamaty.com/ar-ma/consultations/60574/%D8%A5%D9%81%D8%B1%D8%A7%D8%BA-%D9%85%D9%83%D8%AA%D8%B1%D9%8A-%D8%A8%D8%AF%D9%88%D9%86-%D8%B9%D9%82%D8%AF-%D9%83%D8%B1%D8%A7%D8%A1",
+          "title": "إفراغ مكتري بدون عقد كراء - محكمتي",
+          "domain": "mahkamaty.com",
+          "position": 11,
+          "type": "organic",
+          "clicks": 2,
+          "domainAuthority": 20,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        }
+      ],
+      "newData": true,
+      "keyword": "قانون إفراغ المكتري بدون عقد",
+      "updated_at": "2026-10-09",
+      "limits": {
+        "monthly_keyword_metrics_updates_limits": 200,
+        "monthly_keyword_metrics_updates_used": 0
+      },
+      "location": "Morocco",
+      "language": "Arabic"
+    },
+    "التعرض على مطلب التحفيظ": {
+      "serpEntries": [
+        {
+          "url": "http://NODOMAIN",
+          "title": null,
+          "domain": "NODOMAIN",
+          "position": 1,
+          "type": "ai_overview"
+        },
+        {
+          "url": "http://maroclaw.com/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D8%B6%D8%A7%D8%AA-%D8%A8%D8%B4%D8%A3%D9%86-%D9%85%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%AD%D9%81%D9%8A%D8%B8-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D9%86%D8%B5-%D8%A7%D9%84/",
+          "title": "التعرضات بشأن مطلب التحفيظ بين النص القانوني و العمل ...",
+          "domain": "maroclaw.com",
+          "position": 2,
+          "type": "organic",
+          "clicks": 25,
+          "domainAuthority": 24,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://www.scribd.com/document/410734637/364303237-%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D8%B6-%D8%B6%D8%AF-%D9%85%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%AD%D9%81%D9%8A%D8%B8",
+          "title": "التعرض ضد مطلب التحفيظ | PDF",
+          "domain": "scribd.com",
+          "position": 3,
+          "type": "organic",
+          "clicks": 7,
+          "domainAuthority": 94,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://NODOMAIN",
+          "title": null,
+          "domain": "NODOMAIN",
+          "position": 4,
+          "type": "people_also_ask"
+        },
+        {
+          "url": "http://youtube.com/watch?v=cFq8Ps742qM&xstg=CAMSBhUDzO3xHw==",
+          "title": "ما هي أنواع التعرضات على مطلب التحفيظ وهل يمكن منع المتعرض من ...",
+          "domain": "youtube.com",
+          "position": 5,
+          "type": "organic",
+          "clicks": 8,
+          "domainAuthority": 100,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://www.ancfcc.gov.ma/arnos-m%C3%A9tiers/conservation-fonci%C3%A8re-cadastre/procedure-normale/",
+          "title": "التحفيظ والمسح العقاري",
+          "domain": "ancfcc.gov.ma",
+          "position": 6,
+          "type": "organic",
+          "clicks": 2,
+          "domainAuthority": 36,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://www.droitetentreprise.com/%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9-%D8%AF%D8%B9%D9%88%D9%89-%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D8%B6-%D8%B9%D9%84%D9%89-%D9%85%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%AD%D9%81%D9%8A%D8%B8-%D8%B9%D8%AB/",
+          "title": "خصوصية دعوى التعرض على مطلب التحفيظ - عثمان شجري",
+          "domain": "droitetentreprise.com",
+          "position": 7,
+          "type": "organic",
+          "clicks": 2,
+          "domainAuthority": 25,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://facebook.com/alkanounia.info/posts/%D8%A3%D9%86%D9%88%D8%A7%D8%B9-%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D8%B6%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%A7%D8%B1%D8%AF%D8%A9-%D8%B9%D9%84%D9%89-%D9%85%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%AD%D9%81%D9%8A%D8%B8%D8%A7%D9%84%D9%81%D9%82%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89-%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D8%B6-%D9%84%D9%82%D8%AF-%D9%86%D8%B5-%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D8%B9-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8/1662365010462073/",
+          "title": "أنواع التعرضات الواردة على مطلب التحفيظ. الفقرة الاولى",
+          "domain": "facebook.com",
+          "position": 8,
+          "type": "organic",
+          "clicks": 2,
+          "domainAuthority": 96,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://avocat-malainine.ma/blog/taarod-matlab-tahfid-maroc/",
+          "title": "التعرض على مطلب التحفيظ في القانون المغربي - محامي في أكادير",
+          "domain": "avocat-malainine.ma",
+          "position": 9,
+          "type": "organic",
+          "clicks": 1,
+          "domainAuthority": 1,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://scribd.com/document/808190434/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D8%B6-%D8%B9%D9%84%D9%89-%D9%85%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%AD%D9%81%D9%8A%D8%B8",
+          "title": "التعرض على مطلب التحفيظ | PDF",
+          "domain": "scribd.com",
+          "position": 10,
+          "type": "organic",
+          "clicks": 1,
+          "domainAuthority": 94,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        }
+      ],
+      "newData": true,
+      "keyword": "التعرض على مطلب التحفيظ",
+      "updated_at": "2026-10-09",
+      "limits": {
+        "monthly_keyword_metrics_updates_limits": 200,
+        "monthly_keyword_metrics_updates_used": 0
+      },
+      "location": "Morocco",
+      "language": "Arabic"
+    },
+    "تعويضات الأراضي السلالية": {
+      "serpEntries": [
+        {
+          "url": "http://NODOMAIN",
+          "title": null,
+          "domain": "NODOMAIN",
+          "position": 1,
+          "type": "ai_overview"
+        },
+        {
+          "url": "http://www.facebook.com/groups/1199201156760238/posts/23997175976536099/",
+          "title": "فيما يتعلق بنزع الأراضي السلالية دون تعويض، ينص القانون",
+          "domain": "facebook.com",
+          "position": 2,
+          "type": "organic",
+          "clicks": 76,
+          "domainAuthority": 96,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://NODOMAIN",
+          "title": null,
+          "domain": "NODOMAIN",
+          "position": 3,
+          "type": "people_also_ask"
+        },
+        {
+          "url": "http://NODOMAIN",
+          "title": null,
+          "domain": "NODOMAIN",
+          "position": 4,
+          "type": "video"
+        },
+        {
+          "url": "http://www.terrescollectives.ma/",
+          "title": "الجماعات السلالية و الأراضي الجماعية",
+          "domain": "terrescollectives.ma",
+          "position": 5,
+          "type": "organic",
+          "clicks": 15,
+          "domainAuthority": 28,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://albahja24.ma/%D8%AA%D8%A3%D8%AE%D8%B1-%D8%AA%D8%B9%D9%88%D9%8A%D8%B6%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D9%85%D9%86%D8%B2%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9-%D9%8A/",
+          "title": "تأخر تعويضات الأراضي منزوعة الملكية يثير قلق حقوقيين ...",
+          "domain": "albahja24.ma",
+          "position": 6,
+          "type": "organic",
+          "clicks": 10,
+          "domainAuthority": 14,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://avocatlib.ma/ar/%D9%85%D8%AF%D9%88%D9%86%D8%A9/terres-soulaliyates-droit-partage-maroc-mnfmzlfq",
+          "title": "أراضي الجموع السلالية: القسمة والتعويض",
+          "domain": "avocatlib.ma",
+          "position": 7,
+          "type": "organic",
+          "clicks": 5,
+          "domainAuthority": 6,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://www.telemaroc.tv/jt/19777",
+          "title": "تمليك الأراضي السلالية لذوي الحقوق... هذه هي الشروط",
+          "domain": "telemaroc.tv",
+          "position": 8,
+          "type": "organic",
+          "clicks": 4,
+          "domainAuthority": 32,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://www.chambredesrepresentants.ma/ar/%D9%85%D8%B1%D8%A7%D9%82%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A/%D8%A7%D9%84%D8%A3%D8%B3%D9%80%D8%A6%D9%84%D8%A9-%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D9%8A%D8%A9/%D8%AA%D8%B9%D9%88%D9%8A%D8%B6%D8%A7%D8%AA-%D8%B0%D9%88%D9%8A-%D8%AD%D9%82%D9%88%D9%82-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%84%D9%8A%D8%A9-%D8%B9%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D8%AA%D9%85",
+          "title": "2144 | مجلس النواب، البرلمان، المملكة المغربية",
+          "domain": "chambredesrepresentants.ma",
+          "position": 9,
+          "type": "organic",
+          "clicks": 2,
+          "domainAuthority": 46,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://www.facebook.com/anbaetv.ma/videos/%D8%A3%D8%B5%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%84%D9%8A%D8%A9-%D9%8A%D8%B7%D8%A7%D9%84%D8%A8%D9%88%D9%86-%D8%A8%D8%AD%D9%82%D9%88%D9%82%D9%87%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%B9%D9%88%D9%8A%D8%B6%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84%D8%A9/799125532549944/",
+          "title": "أصحاب الأراضي السلالية يطالبون بحقوقهم في التعويضات ...",
+          "domain": "facebook.com",
+          "position": 10,
+          "type": "organic",
+          "clicks": 3,
+          "domainAuthority": 96,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        },
+        {
+          "url": "http://rue20.com/976342.html",
+          "title": "تأخر صرف تعويضات الأراضي السلالية يثير القلق بالرحامنة",
+          "domain": "rue20.com",
+          "position": 11,
+          "type": "organic",
+          "clicks": 3,
+          "domainAuthority": 47,
+          "facebookShares": null,
+          "pinterestShares": null,
+          "redditShares": null
+        }
+      ],
+      "newData": true,
+      "keyword": "تعويضات الأراضي السلالية",
+      "updated_at": "2026-10-09",
+      "limits": {
+        "monthly_keyword_metrics_updates_limits": 200,
+        "monthly_keyword_metrics_updates_used": 0
+      },
+      "location": "Morocco",
+      "language": "Arabic"
+    }
+  }
+}
