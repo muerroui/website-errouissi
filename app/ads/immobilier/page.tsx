@@ -74,7 +74,7 @@ export default function FrenchPropertyCampaignPage() {
           <div className={`${styles.container} ${styles.heroGrid}`}>
             <div className={styles.heroCopy}>
               <h1 id="hero-heading">Avocat immobilier<br /><span>au Maroc</span></h1>
-              <p className={styles.heroQuestion}>Un terrain ou un bien en litige ?</p>
+              <p className={styles.heroQuestion}>Un terrain ou un bien en litige ?</p>
               <p className={styles.heroDescription}>Propriété, immatriculation, terre agricole ou bien hérité : commencez par discuter de votre dossier avec le cabinet de Maître Abderrazak Errouissi.</p>
               <ContactButtons position="hero" />
               <p className={styles.directNumber}>Appelez directement : <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
@@ -91,7 +91,7 @@ export default function FrenchPropertyCampaignPage() {
 
         <section className={`${styles.container} ${styles.issuesSection}`} aria-labelledby="issues-heading">
           <div className={styles.sectionIntro}>
-            <h2 id="issues-heading">Quel est votre<br />dossier immobilier ?</h2>
+            <h2 id="issues-heading">Quel est votre<br />dossier immobilier ?</h2>
             <p>Choisissez le sujet le plus proche de votre situation pour préparer votre message. Chaque bien a ses documents, chaque litige ses particularités.</p>
             <figure className={styles.landFigure}>
               <Image src="/images/ads/litige-immobilier-avocat-maroc.webp"
