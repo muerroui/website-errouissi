@@ -1,5 +1,7 @@
 # Landings Ads immobilier bilingues — dossier de maintenance
 
+> Mise à jour du formulaire : l’extension Supabase est décrite dans [immobilier-supabase-integration.md](immobilier-supabase-integration.md). Les mentions ci-dessous « aucun backend » et de retrait de `formPrivacy` décrivent la livraison antérieure ; elles ne décrivent plus le parcours actuel du formulaire.
+
 Livraison locale du 9 octobre 2026. L’arabe se trouve à `/ar/ads/immobilier` ; la version française équivalente à `/ads/immobilier`. Configuration des conversions Google Ads reportée. Aucune publication ni campagne lancée.
 
 Prévisualisation de la version finale : `http://localhost:3111/ar/ads/immobilier` et `http://localhost:3111/ads/immobilier`.

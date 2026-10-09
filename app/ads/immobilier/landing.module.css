@@ -24,8 +24,9 @@
 .page[lang="fr-MA"] .heroGrid::after { transform-origin: left; }
 .page[lang="fr-MA"] .issueRow:hover > div { transform: translateX(4px); }
 .page[lang="fr-MA"] .form h2 { font-size: 1.8rem; }
-.page[lang="fr-MA"] .formIntro, .page[lang="fr-MA"] .field label, .page[lang="fr-MA"] .field input, .page[lang="fr-MA"] .field select { font-size: .9375rem; }
-.page[lang="fr-MA"] .formPrivacy { font-size: .8125rem; }
+.page[lang="fr-MA"] .formIntro, .page[lang="fr-MA"] .field label { font-size: .9375rem; }
+.page[lang="fr-MA"] .field input, .page[lang="fr-MA"] .field select { font-size: 1rem; }
+.page[lang="fr-MA"] .formPrivacy { font-size: .875rem; }
 .page[lang="fr-MA"] .footerLinks a[lang="ar"] { font-family: "Noto Naskh Arabic", Tahoma, serif; font-size: 1.125rem; }
 .page a { text-decoration: none; text-underline-offset: .25em; }
 .page a:focus-visible, .page button:focus-visible, .page summary:focus-visible { outline-offset: 5px; }
@@ -79,6 +80,8 @@
 .formButton:disabled { cursor: wait; background: #465166; transform: none; }
 .formPrivacy { display: flex; align-items: flex-start; gap: 8px; color: var(--campaign-muted); font-size: .875rem; line-height: 1.6; margin-top: 16px !important; }
 .formPrivacy svg { margin-top: 4px; flex: 0 0 15px; }
+.saveError { margin-top: 16px; }
+.recoveryButton { margin-top: 10px; padding: 8px 0; min-height: 48px; background: none; border: 0; color: var(--campaign-navy); font: inherit; font-size: 1rem; text-align: start; text-decoration: underline; text-underline-offset: .25em; cursor: pointer; }
 .issuesSection { display: grid; grid-template-columns: .8fr 1.2fr; gap: 96px; padding-block: 100px; }
 .sectionIntro h2, .lawyerSection h2, .processIntro h2, .faqSection h2, .finalSection h2 { font-size: clamp(2.5rem, 3.6vw, 3.65rem); line-height: 1.35; font-weight: 600; }
 .sectionIntro p { max-width: 23rem; margin-top: 22px; color: var(--campaign-muted); font-size: 1.1875rem; }
