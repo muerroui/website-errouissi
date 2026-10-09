@@ -132,9 +132,6 @@ export function ImmobilierLeadForm({ locale = "ar" }: { locale?: Locale }) {
       <button className={`${styles.button} ${styles.formButton}`} type="submit" disabled={!ready || opening}>
         {opening ? copy.opening : copy.submit}<DirectionArrow size={20} aria-hidden="true" />
       </button>
-      <p className={styles.formPrivacy}><LockKeyhole size={15} aria-hidden="true" />
-        {copy.privacy}
-      </p>
       <noscript><p>{copy.noJsBefore} <a href={`tel:${firm.telephone}`} dir="ltr">{firm.displayTelephone}</a> {copy.noJsAfter}</p></noscript>
       <span className={styles.srOnly} role="status" aria-live="polite">
         {Object.keys(errors).length ? copy.errorStatus : opening ? copy.openingStatus : ""}

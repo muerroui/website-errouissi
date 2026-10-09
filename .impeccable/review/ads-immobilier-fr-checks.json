@@ -1,0 +1,1150 @@
+{
+  "origin": "http://localhost:3111",
+  "views": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "lang": "fr-MA",
+      "dir": "ltr",
+      "h1": "Avocat immobilierau Maroc",
+      "h1Count": 1,
+      "font": "\"Playfair Display\", Georgia, serif",
+      "robots": "noindex, follow",
+      "canonical": "https://errouissi.ma/ads/immobilier",
+      "scrollWidth": 1440,
+      "callBottom": 576.953125,
+      "scriptCount": 1,
+      "phoneLinks": [
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258"
+      ],
+      "whatsappLinks": [
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci.",
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci.",
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci."
+      ],
+      "contrasts": [
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avocat immobilierau Maroc",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "au Maroc",
+          "ratio": 9.42,
+          "minimum": 3
+        },
+        {
+          "text": "Un terrain ou un bien en litige ?",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Propriété, immatriculation, terre agricole ou",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appeler le cabinet",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Écrire sur WhatsApp",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appelez directement : 05 23 28 32 58",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avocat depuis 1992",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Cabinet à Mohammedia · Accompagnement au Maro",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "Parlons de votre dossier",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Préparez un court message, puis relisez-le da",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Votre nom (obligatoire)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(obligatoire)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Sujet du dossier (obligatoire)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(obligatoire)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Téléphone (facultatif)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(facultatif)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Cette page ne transmet pas vos données au cab",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Quel est votredossier immobilier ?",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Choisissez le sujet le plus proche de votre s",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Illustration générée, ne représentant ni le c",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Propriété ou limites contestées",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Droits de propriété, limites du bien ou occup",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Terre agricole ou foncier rural",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Propriété et litiges concernant les terres ag",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Un bien partagé entre héritiers",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Indivision, partage et désaccords sur l’utili",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Immatriculation ou opposition",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Accompagnement du dossier foncier, étude des ",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Litige locatif ou expulsion",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Étude du bail, des loyers dus et du différend",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Vente ou achat immobilier",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Examen de la situation juridique et des docum",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "L’expérience juridique.La connaissance du ter",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Maître Abderrazak Errouissi",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Avocat depuis 1992, avec une attention partic",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "L’accompagnement commence par la compréhensio",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "Discuter de votre dossier",
+          "ratio": 13.74,
+          "minimum": 4.5
+        },
+        {
+          "text": "À votre écoute à Mohammedia",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "127 Boulevard de Palestine1er étage, au-dessu",
+          "ratio": 13.74,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appelez pour convenir d’un rendez-vous.",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Du premier contactà un dossier plus clair.",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Un parcours simple. Prendre contact ne vous e",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Présentez votre situation",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Appelez ou envoyez un court message sur le bi",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Préparez votre rendez-vous",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Le cabinet précise avec vous les modalités de",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Discutez des options et des honoraires",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Après examen des faits et des pièces, les dém",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avant de contacterle cabinet.",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Puis-je vous contacter pour un bien hors de M",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Le cabinet se situe à Mohammedia et accompagn",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Quelles informations donner lors du premier c",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Précisez le lieu du bien, le sujet du différe",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Faut-il avoir tous les documents pour prendre",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Vous pouvez demander un rendez-vous avec les ",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Comment les honoraires sont-ils définis ?",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Les honoraires sont discutés directement avec",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Parlons devotre dossier.",
+          "ratio": 7.48,
+          "minimum": 3
+        },
+        {
+          "text": "Précisez le sujet et le lieu du bien. Si un d",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appeler le cabinet",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Écrire sur WhatsApp",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Un appel ou un message WhatsApp ne vaut pas a",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Cabinet de Maître Abderrazak Errouissi",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Cette page présente les services du cabinet e",
+          "ratio": 6.66,
+          "minimum": 4.5
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "lang": "fr-MA",
+      "dir": "ltr",
+      "h1": "Avocat immobilierau Maroc",
+      "h1Count": 1,
+      "font": "\"Playfair Display\", Georgia, serif",
+      "robots": "noindex, follow",
+      "canonical": "https://errouissi.ma/ads/immobilier",
+      "scrollWidth": 390,
+      "callBottom": 453.375,
+      "scriptCount": 1,
+      "phoneLinks": [
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258"
+      ],
+      "whatsappLinks": [
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci.",
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci.",
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci."
+      ],
+      "contrasts": [
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avocat immobilierau Maroc",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "au Maroc",
+          "ratio": 9.42,
+          "minimum": 3
+        },
+        {
+          "text": "Un terrain ou un bien en litige ?",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Propriété, immatriculation, terre agricole ou",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appeler le cabinet",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Écrire sur WhatsApp",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appelez directement : 05 23 28 32 58",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avocat depuis 1992",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Cabinet à Mohammedia · Accompagnement au Maro",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "Parlons de votre dossier",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Préparez un court message, puis relisez-le da",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Votre nom (obligatoire)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(obligatoire)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Sujet du dossier (obligatoire)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(obligatoire)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Téléphone (facultatif)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(facultatif)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Cette page ne transmet pas vos données au cab",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Quel est votredossier immobilier ?",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Choisissez le sujet le plus proche de votre s",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Illustration générée, ne représentant ni le c",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Propriété ou limites contestées",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Droits de propriété, limites du bien ou occup",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Terre agricole ou foncier rural",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Propriété et litiges concernant les terres ag",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Un bien partagé entre héritiers",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Indivision, partage et désaccords sur l’utili",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Immatriculation ou opposition",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Accompagnement du dossier foncier, étude des ",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Litige locatif ou expulsion",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Étude du bail, des loyers dus et du différend",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Vente ou achat immobilier",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Examen de la situation juridique et des docum",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "L’expérience juridique.La connaissance du ter",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Maître Abderrazak Errouissi",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Avocat depuis 1992, avec une attention partic",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "L’accompagnement commence par la compréhensio",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "Discuter de votre dossier",
+          "ratio": 13.74,
+          "minimum": 4.5
+        },
+        {
+          "text": "À votre écoute à Mohammedia",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "127 Boulevard de Palestine1er étage, au-dessu",
+          "ratio": 13.74,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appelez pour convenir d’un rendez-vous.",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Du premier contactà un dossier plus clair.",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Un parcours simple. Prendre contact ne vous e",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Présentez votre situation",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Appelez ou envoyez un court message sur le bi",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Préparez votre rendez-vous",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Le cabinet précise avec vous les modalités de",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Discutez des options et des honoraires",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Après examen des faits et des pièces, les dém",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avant de contacterle cabinet.",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Puis-je vous contacter pour un bien hors de M",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Le cabinet se situe à Mohammedia et accompagn",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Quelles informations donner lors du premier c",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Précisez le lieu du bien, le sujet du différe",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Faut-il avoir tous les documents pour prendre",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Vous pouvez demander un rendez-vous avec les ",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Comment les honoraires sont-ils définis ?",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Les honoraires sont discutés directement avec",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Parlons devotre dossier.",
+          "ratio": 7.48,
+          "minimum": 3
+        },
+        {
+          "text": "Précisez le sujet et le lieu du bien. Si un d",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appeler le cabinet",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Écrire sur WhatsApp",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Un appel ou un message WhatsApp ne vaut pas a",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Cabinet de Maître Abderrazak Errouissi",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Cette page présente les services du cabinet e",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appeler",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "WhatsApp",
+          "ratio": 16.15,
+          "minimum": 4.5
+        }
+      ]
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "lang": "fr-MA",
+      "dir": "ltr",
+      "h1": "Avocat immobilierau Maroc",
+      "h1Count": 1,
+      "font": "\"Playfair Display\", Georgia, serif",
+      "robots": "noindex, follow",
+      "canonical": "https://errouissi.ma/ads/immobilier",
+      "scrollWidth": 320,
+      "callBottom": 566.546875,
+      "scriptCount": 1,
+      "phoneLinks": [
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258",
+        "tel:+212523283258"
+      ],
+      "whatsappLinks": [
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci.",
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci.",
+        "https://wa.me/212668075213?text=Bonjour%2C%20je%20souhaite%20contacter%20le%20cabinet%20de%20Ma%C3%AEtre%20Abderrazak%20Errouissi%20au%20sujet%20d%E2%80%99un%20dossier%20immobilier.%0AJe%20souhaite%20conna%C3%AEtre%20les%20possibilit%C3%A9s%20de%20rendez-vous%20et%20les%20documents%20utiles%20%C3%A0%20mon%20dossier.%20Merci."
+      ],
+      "contrasts": [
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avocat immobilierau Maroc",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "au Maroc",
+          "ratio": 9.42,
+          "minimum": 3
+        },
+        {
+          "text": "Un terrain ou un bien en litige ?",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Propriété, immatriculation, terre agricole ou",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appeler le cabinet",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Écrire sur WhatsApp",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appelez directement : 05 23 28 32 58",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avocat depuis 1992",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Cabinet à Mohammedia · Accompagnement au Maro",
+          "ratio": 13.26,
+          "minimum": 4.5
+        },
+        {
+          "text": "Parlons de votre dossier",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Préparez un court message, puis relisez-le da",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Votre nom (obligatoire)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(obligatoire)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Sujet du dossier (obligatoire)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(obligatoire)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Téléphone (facultatif)",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "(facultatif)",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Cette page ne transmet pas vos données au cab",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Quel est votredossier immobilier ?",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Choisissez le sujet le plus proche de votre s",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Illustration générée, ne représentant ni le c",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Propriété ou limites contestées",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Droits de propriété, limites du bien ou occup",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Terre agricole ou foncier rural",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Propriété et litiges concernant les terres ag",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Un bien partagé entre héritiers",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Indivision, partage et désaccords sur l’utili",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Immatriculation ou opposition",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Accompagnement du dossier foncier, étude des ",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Litige locatif ou expulsion",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Étude du bail, des loyers dus et du différend",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Vente ou achat immobilier",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Examen de la situation juridique et des docum",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "L’expérience juridique.La connaissance du ter",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Maître Abderrazak Errouissi",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Avocat depuis 1992, avec une attention partic",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "L’accompagnement commence par la compréhensio",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "Discuter de votre dossier",
+          "ratio": 13.74,
+          "minimum": 4.5
+        },
+        {
+          "text": "À votre écoute à Mohammedia",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "127 Boulevard de Palestine1er étage, au-dessu",
+          "ratio": 13.74,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appelez pour convenir d’un rendez-vous.",
+          "ratio": 7.78,
+          "minimum": 4.5
+        },
+        {
+          "text": "05 23 28 32 58",
+          "ratio": 13.74,
+          "minimum": 3
+        },
+        {
+          "text": "Du premier contactà un dossier plus clair.",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Un parcours simple. Prendre contact ne vous e",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Présentez votre situation",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Appelez ou envoyez un court message sur le bi",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Préparez votre rendez-vous",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Le cabinet précise avec vous les modalités de",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Discutez des options et des honoraires",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Après examen des faits et des pièces, les dém",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Avant de contacterle cabinet.",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Puis-je vous contacter pour un bien hors de M",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Le cabinet se situe à Mohammedia et accompagn",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Quelles informations donner lors du premier c",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Précisez le lieu du bien, le sujet du différe",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Faut-il avoir tous les documents pour prendre",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Vous pouvez demander un rendez-vous avec les ",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Comment les honoraires sont-ils définis ?",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Les honoraires sont discutés directement avec",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Parlons devotre dossier.",
+          "ratio": 7.48,
+          "minimum": 3
+        },
+        {
+          "text": "Précisez le sujet et le lieu du bien. Si un d",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appeler le cabinet",
+          "ratio": 16.15,
+          "minimum": 4.5
+        },
+        {
+          "text": "Écrire sur WhatsApp",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Un appel ou un message WhatsApp ne vaut pas a",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "Cabinet de Maître Abderrazak Errouissi",
+          "ratio": 16.15,
+          "minimum": 3
+        },
+        {
+          "text": "Cette page présente les services du cabinet e",
+          "ratio": 6.66,
+          "minimum": 4.5
+        },
+        {
+          "text": "Appeler",
+          "ratio": 7.48,
+          "minimum": 4.5
+        },
+        {
+          "text": "WhatsApp",
+          "ratio": 16.15,
+          "minimum": 4.5
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "French phone and WhatsApp events, no PII",
+    "French validation and focus",
+    "topic preset",
+    "Arabic digit normalization",
+    "localized WhatsApp composer, intercepted",
+    "input hides bottom bar",
+    "phone optional",
+    "no-JS direct contacts",
+    "reduced motion and native FAQ",
+    "both campaigns absent from sitemap",
+    "six editorial routes still 200 and indexable",
+    "bidirectional language links and Arabic event locale"
+  ],
+  "browserErrors": []
+}

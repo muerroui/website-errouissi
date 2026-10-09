@@ -1,5 +1,5 @@
 {
-  "origin": "http://localhost:3110",
+  "origin": "http://localhost:3111",
   "views": [
     {
       "name": "desktop",
@@ -9,7 +9,7 @@
       "title": "محامي عقاري بالمغرب | الأستاذ عبد الرزاق الرويسي",
       "description": "ملف عقاري أو نزاع حول أرض؟ تواصلوا مع مكتب الأستاذ عبد الرزاق الرويسي بالمحمدية، ممارسة منذ 1992 في العقار والتحفيظ والأراضي الفلاحية. اتصال أو واتساب.",
       "robots": "noindex, follow",
-      "canonical": "https://errouissi.ma/ads/immobilier",
+      "canonical": "https://errouissi.ma/ar/ads/immobilier",
       "width": 1440,
       "scrollWidth": 1440,
       "callBottom": 590.28125,
@@ -397,7 +397,7 @@
       "title": "محامي عقاري بالمغرب | الأستاذ عبد الرزاق الرويسي",
       "description": "ملف عقاري أو نزاع حول أرض؟ تواصلوا مع مكتب الأستاذ عبد الرزاق الرويسي بالمحمدية، ممارسة منذ 1992 في العقار والتحفيظ والأراضي الفلاحية. اتصال أو واتساب.",
       "robots": "noindex, follow",
-      "canonical": "https://errouissi.ma/ads/immobilier",
+      "canonical": "https://errouissi.ma/ar/ads/immobilier",
       "width": 390,
       "scrollWidth": 390,
       "callBottom": 459.40625,
@@ -795,7 +795,7 @@
       "title": "محامي عقاري بالمغرب | الأستاذ عبد الرزاق الرويسي",
       "description": "ملف عقاري أو نزاع حول أرض؟ تواصلوا مع مكتب الأستاذ عبد الرزاق الرويسي بالمحمدية، ممارسة منذ 1992 في العقار والتحفيظ والأراضي الفلاحية. اتصال أو واتساب.",
       "robots": "noindex, follow",
-      "canonical": "https://errouissi.ma/ads/immobilier",
+      "canonical": "https://errouissi.ma/ar/ads/immobilier",
       "width": 320,
       "scrollWidth": 320,
       "callBottom": 458.53125,
