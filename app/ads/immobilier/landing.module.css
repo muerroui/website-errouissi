@@ -1,0 +1,206 @@
+.page {
+  --campaign-navy: var(--color-navy);
+  --campaign-gold: var(--color-gold);
+  --campaign-paper: var(--color-paper);
+  --campaign-muted: #475569;
+  --campaign-line: #d4cec2;
+  background: var(--campaign-paper);
+  color: var(--campaign-navy);
+  font-size: 1.125rem;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+  caret-color: var(--campaign-navy);
+  scrollbar-color: var(--campaign-gold) var(--campaign-navy);
+}
+.page *, .page *::before, .page *::after { box-sizing: border-box; }
+.page h1, .page h2, .page h3, .page p { margin: 0; }
+.page h1, .page h2 { text-wrap: balance; }
+.page a { text-decoration: none; text-underline-offset: .25em; }
+.page a:focus-visible, .page button:focus-visible, .page summary:focus-visible { outline-offset: 5px; }
+.container { max-width: 1380px; padding-inline: 48px; margin-inline: auto; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skipLink { position: fixed; z-index: 50; inset-block-start: 8px; inset-inline-start: 16px; padding: 12px 22px; background: var(--campaign-paper); color: var(--campaign-navy); transform: translateY(-150%); border-radius: 12px; }
+.skipLink:focus { transform: translateY(0); }
+.header { background: var(--campaign-navy); color: var(--campaign-paper); }
+.headerInner { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block: 22px; }
+.brand { display: flex; flex-direction: column; color: var(--campaign-paper); font-size: 1.5rem; font-weight: 700; line-height: 1.4; }
+.brandDetail { color: #d9c6a1; font-size: .9375rem; font-weight: 400; margin-top: 5px; }
+.headerPhone { display: flex; align-items: center; gap: 12px; min-height: 48px; color: var(--campaign-paper); font-family: Inter, Arial, sans-serif; font-size: 1rem; }
+.headerPhone:hover { color: var(--campaign-gold); }
+.hero { background: var(--campaign-navy); color: var(--campaign-paper); }
+.heroGrid { position: relative; display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(48px, 6vw, 96px); padding-block: 62px 76px; border-top: 1px solid #3c4251; }
+.heroGrid::after { content: ""; position: absolute; inset-block-start: -1px; inset-inline-start: 48px; width: 80px; height: 1px; background: var(--campaign-gold); transform-origin: right; animation: rule-introduce 1000ms cubic-bezier(.16,1,.3,1) both; }
+.heroCopy { align-self: center; min-width: 0; }
+.hero h1 { font-size: clamp(3.5rem, 5.8vw, 5.2rem); font-weight: 600; line-height: 1.14; }
+.hero h1 span { color: #d6b66a; }
+.heroQuestion { font-size: 1.75rem; line-height: 1.5; padding-top: 26px; font-weight: 600; }
+.heroDescription { color: #d8dbe2; max-width: 34rem; padding-top: 12px; font-size: 1.25rem; line-height: 1.75; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero .actions { margin-top: 28px; }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 10px; min-height: 56px; padding: 12px 23px; border-radius: 12px; border: 1px solid transparent; font: inherit; font-weight: 700; font-size: 1.125rem; line-height: 1.5; cursor: pointer; transition: background-color 180ms ease, transform 180ms cubic-bezier(.16,1,.3,1); }
+.button svg { flex-shrink: 0; }
+.button:hover { transform: translateY(-2px); }
+.button:active { transform: translateY(0); }
+.goldButton { background: var(--campaign-gold); color: var(--campaign-navy); }
+.goldButton:hover { background: #d6b66a; }
+.secondaryButton { color: var(--campaign-paper); border-color: #898b95; background: transparent; }
+.secondaryButton:hover { background: #253047; }
+.directNumber { margin-top: 15px !important; color: #d8dbe2; font-size: 1rem; }
+.directNumber a { color: var(--campaign-paper); display: inline-block; font-family: Inter, Arial, sans-serif; font-size: .9375rem; padding: 8px; text-decoration: underline; }
+.heroEvidence { margin-top: 34px; padding-top: 22px; border-top: 1px solid #3c4251; font-size: 1.0625rem; color: #d8dbe2; }
+.heroEvidence p:first-child { color: var(--campaign-paper); font-weight: 700; font-size: 1.1875rem; }
+.heroEvidence bdi { color: #d6b66a; font-family: Inter, Arial, sans-serif; font-weight: 500; }
+.consultation { align-self: center; min-width: 0; scroll-margin-top: 28px; background: var(--campaign-paper); color: var(--campaign-navy); }
+.form { padding: 32px 36px 28px; }
+.form h2 { font-size: 2rem; line-height: 1.4; font-weight: 700; }
+.formIntro { color: var(--campaign-muted); margin-top: 7px !important; font-size: 1.0625rem; line-height: 1.6; }
+.field { display: flex; flex-direction: column; gap: 7px; margin-top: 18px; }
+.field label { font-size: 1.0625rem; font-weight: 700; }
+.field label span { font-weight: 400; color: var(--campaign-muted); font-size: .9375rem; }
+.field input, .field select { width: 100%; min-width: 0; min-height: 48px; padding: 10px 12px; border-radius: 6px; border: 1px solid #89909b; background: #fff; color: var(--campaign-navy); font: inherit; font-size: 1.0625rem; line-height: 1.4; }
+.field input::placeholder { color: #536077; opacity: 1; }
+.field input:focus-visible, .field select:focus-visible { outline: 2px solid #7a5a25; outline-offset: 2px; }
+.field [aria-invalid="true"] { border-color: #a12d2d; }
+.error { color: #9b2424; font-size: .9375rem; line-height: 1.5; }
+.formButton { margin-top: 24px; width: 100%; color: var(--campaign-paper); background: var(--campaign-navy); justify-content: space-between; }
+.formButton:hover { background: #253047; }
+.formButton:disabled { cursor: wait; background: #465166; transform: none; }
+.formPrivacy { display: flex; align-items: flex-start; gap: 8px; color: var(--campaign-muted); font-size: .875rem; line-height: 1.6; margin-top: 16px !important; }
+.formPrivacy svg { margin-top: 4px; flex: 0 0 15px; }
+.issuesSection { display: grid; grid-template-columns: .8fr 1.2fr; gap: 96px; padding-block: 100px; }
+.sectionIntro h2, .lawyerSection h2, .processIntro h2, .faqSection h2, .finalSection h2 { font-size: clamp(2.5rem, 3.6vw, 3.65rem); line-height: 1.35; font-weight: 600; }
+.sectionIntro p { max-width: 23rem; margin-top: 22px; color: var(--campaign-muted); font-size: 1.1875rem; }
+.issueList { border-top: 1px solid var(--campaign-line); }
+.issueRow { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--campaign-line); color: var(--campaign-navy); transition: background-color 200ms ease; }
+.issueRow > div { transition: transform 200ms cubic-bezier(.16,1,.3,1); }
+.issueRow h3 { font-size: 1.5rem; line-height: 1.5; font-weight: 600; }
+.issueRow p { color: var(--campaign-muted); margin-top: 4px; font-size: 1.0625rem; }
+.issueRow svg { flex: 0 0 24px; color: #7a5a25; }
+.issueRow:hover { background: #eae4d9; }
+.issueRow:hover > div { transform: translateX(-4px); }
+.lawyerSection { background: #e5ded0; padding-block: 94px; }
+.lawyerGrid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 120px; }
+.lawyerName { font-size: 1.5rem; margin-top: 32px !important; font-weight: 700; }
+.lawyerBody { margin-top: 13px !important; max-width: 40rem; font-size: 1.1875rem; color: #354055; }
+.textLink { display: inline-flex; align-items: center; gap: 12px; color: var(--campaign-navy); min-height: 48px; text-decoration: underline !important; font-weight: 700; }
+.textLink:hover { color: #705021; }
+.lawyerGrid > div > .textLink { margin-top: 23px; }
+.office { border-inline-start: 1px solid #b7ad9b; padding-inline-start: 40px; align-self: center; }
+.office > svg { color: #7a5a25; margin-bottom: 16px; }
+.office h3 { font-size: 1.625rem; font-weight: 700; }
+.office address { font-style: normal; margin-top: 16px; font-size: 1.1875rem; }
+.office p { color: #354055; margin-top: 12px; }
+.office .textLink { font-size: 1rem; margin-top: 10px; }
+.officePhone { display: table; margin-top: 26px; color: var(--campaign-navy); font-family: Inter, Arial, sans-serif; font-size: 1.5rem; padding-block: 8px; }
+.officePhone:hover { text-decoration: underline; }
+.processSection { padding-block: 100px; display: grid; grid-template-columns: 1fr 1fr; gap: 96px; }
+.processIntro p { margin-top: 20px; color: var(--campaign-muted); font-size: 1.1875rem; }
+.processList { margin: 0; padding: 0; list-style: none; }
+.processList li { display: flex; align-items: flex-start; gap: 22px; padding-block: 24px; border-bottom: 1px solid var(--campaign-line); }
+.processList li:first-child { padding-top: 8px; }
+.processList li > span { font-family: Inter, Arial, sans-serif; color: #7a5a25; font-size: 1.125rem; font-weight: 600; padding-top: 5px; font-variant-numeric: tabular-nums; }
+.processList h3 { font-size: 1.5rem; font-weight: 600; }
+.processList p { color: var(--campaign-muted); margin-top: 8px; font-size: 1.0625rem; }
+.faqSection { display: grid; grid-template-columns: .8fr 1.2fr; gap: 96px; padding-block: 0 100px; }
+.faqList { border-top: 1px solid var(--campaign-line); }
+.faqList details { border-bottom: 1px solid var(--campaign-line); }
+.faqList summary { padding-block: 23px; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 1.3125rem; font-weight: 600; list-style: none; cursor: pointer; }
+.faqList summary::-webkit-details-marker { display: none; }
+.faqList summary svg { flex: 0 0 20px; color: #7a5a25; transition: transform 180ms ease; }
+.faqList details[open] summary svg { transform: rotate(45deg); }
+.faqList summary:hover { color: #705021; }
+.faqList details > p { color: var(--campaign-muted); padding: 0 0 23px 30px; font-size: 1.125rem; }
+.finalSection { background: var(--campaign-gold); padding-block: 72px; }
+.finalInner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 96px; align-items: center; }
+.finalInner > div > p { max-width: 35rem; margin-top: 18px; font-size: 1.1875rem; }
+.finalInner .actions { flex-direction: column; }
+.darkButton { background: var(--campaign-navy); color: var(--campaign-paper); }
+.darkButton:hover { background: #253047; }
+.paperSecondary { border-color: var(--campaign-navy); color: var(--campaign-navy); background: transparent; }
+.paperSecondary:hover { background: #d6b66a; }
+.finalInner .finalNote { font-size: .9375rem; margin-top: 16px; }
+.footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 30px; padding-block: 42px; }
+.footer > div:first-child p { font-size: 1.1875rem; font-weight: 700; }
+.footer > div:first-child span { font-size: 1rem; color: var(--campaign-muted); }
+.footerLinks { display: flex; align-items: center; gap: 28px; }
+.footerLinks a { min-height: 44px; display: inline-flex; align-items: center; text-decoration: underline; font-size: 1rem; }
+.footerLinks a[lang="fr"] { font-family: Inter, Arial, sans-serif; font-size: .875rem; }
+.disclaimer { width: 100%; border-top: 1px solid var(--campaign-line); padding-top: 22px; color: var(--campaign-muted); font-size: .9375rem; }
+.mobileContact { display: none; }
+@keyframes rule-introduce { from { transform: scaleX(.15); } to { transform: scaleX(1); } }
+@media (max-width: 1100px) {
+  .container { padding-inline: 32px; }
+  .heroGrid { gap: 40px; grid-template-columns: 1.1fr 1fr; padding-block: 48px 64px; }
+  .heroGrid::after { inset-inline-start: 32px; }
+  .hero h1 { font-size: 4rem; }
+  .hero .actions { flex-direction: column; align-items: flex-start; }
+  .hero .button { min-width: 230px; }
+  .form { padding: 28px; }
+  .issuesSection, .processSection, .faqSection, .finalInner { gap: 48px; }
+  .lawyerGrid { gap: 60px; }
+  .office { padding-inline-start: 28px; }
+}
+@media (max-width: 760px) {
+  .page { padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
+  .container { padding-inline: 20px; }
+  .headerInner { gap: 14px; padding-block: 18px; }
+  .brand { font-size: 1.1875rem; }
+  .brandDetail { font-size: .8125rem; margin-top: 4px; }
+  .headerPhone { justify-content: center; min-width: 44px; }
+  .headerPhone span { display: none; }
+  .heroGrid { grid-template-columns: 1fr; gap: 38px; padding-block: 34px 48px; }
+  .heroGrid::after { inset-inline-start: 20px; }
+  .hero h1 { font-size: clamp(2.8rem, 11.5vw, 3.8rem); line-height: 1.15; }
+  .heroQuestion { padding-top: 20px; font-size: 1.5rem; }
+  .heroDescription { padding-top: 8px; font-size: 1.125rem; }
+  .hero .actions { flex-direction: column; align-items: stretch; margin-top: 24px; gap: 10px; }
+  .hero .button { min-width: 0; min-height: 54px; }
+  .directNumber { margin-top: 8px !important; }
+  .heroEvidence { margin-top: 18px; padding-top: 16px; font-size: 1rem; }
+  .heroEvidence p:first-child { font-size: 1.125rem; }
+  .form { padding: 24px; }
+  .form h2 { font-size: 1.875rem; }
+  .formIntro { font-size: 1rem; }
+  .field { margin-top: 18px; }
+  .field input, .field select { font-size: 1rem; }
+  .formPrivacy { font-size: .875rem; }
+  .issuesSection, .lawyerGrid, .processSection, .faqSection, .finalInner { grid-template-columns: 1fr; gap: 36px; }
+  .issuesSection, .processSection { padding-block: 64px; }
+  .sectionIntro h2, .lawyerSection h2, .processIntro h2, .faqSection h2, .finalSection h2 { font-size: 2.625rem; line-height: 1.3; }
+  .sectionIntro p, .processIntro p { margin-top: 16px; font-size: 1.125rem; }
+  .issueRow { gap: 16px; padding-block: 20px; }
+  .issueRow h3 { font-size: 1.375rem; }
+  .issueRow p { font-size: 1.0625rem; }
+  .lawyerSection { padding-block: 64px; }
+  .lawyerName { margin-top: 26px !important; }
+  .lawyerBody { font-size: 1.125rem; }
+  .office { border-inline-start: 0; border-top: 1px solid #b7ad9b; padding-inline-start: 0; padding-top: 32px; }
+  .officePhone { margin-top: 18px; }
+  .processList li:first-child { padding-top: 0; }
+  .processList { margin-top: 0; }
+  .faqSection { padding-bottom: 64px; }
+  .faqList summary { font-size: 1.1875rem; gap: 16px; padding-block: 20px; }
+  .faqList details > p { font-size: 1.0625rem; padding-left: 0; }
+  .finalSection { padding-block: 54px; }
+  .finalInner { gap: 28px; }
+  .finalInner > div > p { font-size: 1.125rem; }
+  .footer { padding-block: 32px; gap: 20px; }
+  .mobileContact { display: block; position: fixed; z-index: 20; inset-inline: 0; inset-block-end: 0; background: var(--campaign-navy); padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid #3c4251; }
+  .mobileContact .actions { flex-wrap: nowrap; gap: 10px; }
+  .mobileContact .button { flex: 1; min-width: 0; min-height: 48px; padding: 10px 8px; font-size: 1rem; gap: 7px; }
+  .mobileContact .button svg { width: 18px; }
+  .page:has(.form input:focus) .mobileContact, .page:has(.form select:focus) .mobileContact { display: none; }
+}
+@media (max-width: 350px) {
+  .container { padding-inline: 18px; }
+  .brand { font-size: 1.0625rem; }
+  .brandDetail { font-size: .75rem; }
+  .form { padding: 20px 16px; }
+  .mobileContact { padding-inline: 10px; }
+  .mobileContact .button { font-size: .875rem; gap: 5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page *, .page *::before, .page *::after { animation: none !important; transition: none !important; }
+  .button:hover, .button:active { transform: none; }
+  .issueRow:hover > div { transform: none; }
+}
