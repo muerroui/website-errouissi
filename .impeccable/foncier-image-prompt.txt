@@ -1,0 +1,8 @@
+Use case: photorealistic-natural.
+Asset type: a single landscape editorial image for an Arabic Moroccan property-law landing page, displayed beside the list of legal issues, not a website mockup.
+Primary request: create a photorealistic, quiet, credible rural landscape inspired by the agricultural plains of the Chaouia in Morocco. No human beings.
+Scene and subject: slightly elevated oblique view of adjoining agricultural parcels, muted olive trees in the near ground, pale ochre earth, cultivated fields, a modest unpaved track and naturally irregular low stone field edges. The parcels and their relationship to the land are the main subject. A gentle rural horizon, no dramatic mountains, no urban skyline.
+Style and composition: restrained high-end editorial landscape photography, horizontal 3:2 composition, natural texture and imperfect rural detail, clear visual structure that still reads at 350 pixels wide. No collage, no objects floating in space, no interface, no text overlay. Keep the full scene in focus enough to recognize the fields and olive trees.
+Light and palette: soft natural late-afternoon light, muted olive greens, earth and straw gold, realistic subdued colors suitable next to a navy and ivory law-firm website. Avoid exaggerated sunset orange, HDR and artificial cinematic grading.
+Truth constraint: an illustrative imagined scene, not a specific property, office, client or actual legal case. Do not imply any named landmark or legally surveyed boundary.
+Avoid: people, faces, hands, silhouettes, animals, cars, luxury villas, gavels, scales of justice, documents, readable text, letters, numbers, cadastral overlays, boundary pins, logos, watermarks, frames or borders.

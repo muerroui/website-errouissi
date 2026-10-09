@@ -15,6 +15,18 @@
 .page *, .page *::before, .page *::after { box-sizing: border-box; }
 .page h1, .page h2, .page h3, .page p { margin: 0; }
 .page h1, .page h2 { text-wrap: balance; }
+.page[lang="fr-MA"] { font-size: 1rem; }
+.page[lang="fr-MA"] h1, .page[lang="fr-MA"] h2, .page[lang="fr-MA"] h3 { font-family: "Playfair Display", Georgia, serif; }
+.page[lang="fr-MA"] .hero h1 { font-size: clamp(3rem, 4.6vw, 4.1rem); line-height: 1.08; letter-spacing: -.025em; }
+.page[lang="fr-MA"] .heroQuestion { font-size: 1.4rem; }
+.page[lang="fr-MA"] .heroDescription { font-size: 1.0625rem; line-height: 1.75; }
+.page[lang="fr-MA"] .button { font-size: 1rem; }
+.page[lang="fr-MA"] .heroGrid::after { transform-origin: left; }
+.page[lang="fr-MA"] .issueRow:hover > div { transform: translateX(4px); }
+.page[lang="fr-MA"] .form h2 { font-size: 1.8rem; }
+.page[lang="fr-MA"] .formIntro, .page[lang="fr-MA"] .field label, .page[lang="fr-MA"] .field input, .page[lang="fr-MA"] .field select { font-size: .9375rem; }
+.page[lang="fr-MA"] .formPrivacy { font-size: .8125rem; }
+.page[lang="fr-MA"] .footerLinks a[lang="ar"] { font-family: "Noto Naskh Arabic", Tahoma, serif; font-size: 1.125rem; }
 .page a { text-decoration: none; text-underline-offset: .25em; }
 .page a:focus-visible, .page button:focus-visible, .page summary:focus-visible { outline-offset: 5px; }
 .container { max-width: 1380px; padding-inline: 48px; margin-inline: auto; }
@@ -70,6 +82,9 @@
 .issuesSection { display: grid; grid-template-columns: .8fr 1.2fr; gap: 96px; padding-block: 100px; }
 .sectionIntro h2, .lawyerSection h2, .processIntro h2, .faqSection h2, .finalSection h2 { font-size: clamp(2.5rem, 3.6vw, 3.65rem); line-height: 1.35; font-weight: 600; }
 .sectionIntro p { max-width: 23rem; margin-top: 22px; color: var(--campaign-muted); font-size: 1.1875rem; }
+.landFigure { margin: 32px 0 0; max-width: 29rem; }
+.landFigure img { display: block; width: 100%; height: auto; }
+.landFigure figcaption { margin-top: 10px; max-width: 26rem; color: var(--campaign-muted); font-size: .875rem; line-height: 1.6; }
 .issueList { border-top: 1px solid var(--campaign-line); }
 .issueRow { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--campaign-line); color: var(--campaign-navy); transition: background-color 200ms ease; }
 .issueRow > div { transition: transform 200ms cubic-bezier(.16,1,.3,1); }
@@ -109,7 +124,7 @@
 .faqList summary svg { flex: 0 0 20px; color: #7a5a25; transition: transform 180ms ease; }
 .faqList details[open] summary svg { transform: rotate(45deg); }
 .faqList summary:hover { color: #705021; }
-.faqList details > p { color: var(--campaign-muted); padding: 0 0 23px 30px; font-size: 1.125rem; }
+.faqList details > p { color: var(--campaign-muted); padding-block: 0 23px; padding-inline: 0 30px; font-size: 1.125rem; }
 .finalSection { background: var(--campaign-gold); padding-block: 72px; }
 .finalInner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 96px; align-items: center; }
 .finalInner > div > p { max-width: 35rem; margin-top: 18px; font-size: 1.1875rem; }
@@ -168,6 +183,7 @@
   .issuesSection, .processSection { padding-block: 64px; }
   .sectionIntro h2, .lawyerSection h2, .processIntro h2, .faqSection h2, .finalSection h2 { font-size: 2.625rem; line-height: 1.3; }
   .sectionIntro p, .processIntro p { margin-top: 16px; font-size: 1.125rem; }
+  .landFigure { margin-top: 24px; }
   .issueRow { gap: 16px; padding-block: 20px; }
   .issueRow h3 { font-size: 1.375rem; }
   .issueRow p { font-size: 1.0625rem; }
@@ -180,7 +196,7 @@
   .processList { margin-top: 0; }
   .faqSection { padding-bottom: 64px; }
   .faqList summary { font-size: 1.1875rem; gap: 16px; padding-block: 20px; }
-  .faqList details > p { font-size: 1.0625rem; padding-left: 0; }
+  .faqList details > p { font-size: 1.0625rem; padding-inline-end: 0; }
   .finalSection { padding-block: 54px; }
   .finalInner { gap: 28px; }
   .finalInner > div > p { font-size: 1.125rem; }
@@ -189,6 +205,12 @@
   .mobileContact .actions { flex-wrap: nowrap; gap: 10px; }
   .mobileContact .button { flex: 1; min-width: 0; min-height: 48px; padding: 10px 8px; font-size: 1rem; gap: 7px; }
   .mobileContact .button svg { width: 18px; }
+  .page[lang="fr-MA"] .hero h1 { font-size: clamp(2.5rem, 10vw, 3.25rem); }
+  .page[lang="fr-MA"] .heroQuestion { font-size: 1.25rem; }
+  .page[lang="fr-MA"] .heroDescription { font-size: 1rem; }
+  .page[lang="fr-MA"] .brand { font-size: 1rem; }
+  .page[lang="fr-MA"] .brandDetail { font-size: .75rem; }
+  .page[lang="fr-MA"] .sectionIntro h2, .page[lang="fr-MA"] .lawyerSection h2, .page[lang="fr-MA"] .processIntro h2, .page[lang="fr-MA"] .faqSection h2, .page[lang="fr-MA"] .finalSection h2 { font-size: 2.25rem; }
   .page:has(.form input:focus) .mobileContact, .page:has(.form select:focus) .mobileContact { display: none; }
 }
 @media (max-width: 350px) {
@@ -203,4 +225,5 @@
   .page *, .page *::before, .page *::after { animation: none !important; transition: none !important; }
   .button:hover, .button:active { transform: none; }
   .issueRow:hover > div { transform: none; }
+  .page[lang="fr-MA"] .issueRow:hover > div { transform: none; }
 }

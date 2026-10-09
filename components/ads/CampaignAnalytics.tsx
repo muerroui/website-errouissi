@@ -11,13 +11,16 @@ type AnalyticsWindow = Window & {
 // These events describe contact intent, never a sent message or a booked appointment.
 // Do not send form values, the composed WhatsApp URL or visitor contact information.
 export function trackCampaignContact(event: ContactEvent, position: string) {
+  const path = window.location.pathname.replace(/\/$/, "");
+  if (path !== "/ads/immobilier" && path !== "/ar/ads/immobilier") return;
+  const locale = path.startsWith("/ar/") ? "ar" : "fr";
   const analytics = window as AnalyticsWindow;
   const args = ["event", event, {
     event_category: "lead",
     page_path: window.location.pathname,
-    page_language: "ar-MA",
+    page_language: `${locale}-MA`,
     contact_position: position,
-    campaign_page: "immobilier_ar",
+    campaign_page: `immobilier_${locale}`,
   }];
   if (typeof analytics.gtag === "function") analytics.gtag(...args);
   else {
