@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "seo:validate": "node scripts/validate-seo.mjs"
+    "seo:validate": "node scripts/validate-seo.mjs",
+    "generate:correction-docs": "npx -y tsx scripts/generate-correction-documents.ts"
   },
   "dependencies": {
     "@fontsource/inter": "^5.3.0",

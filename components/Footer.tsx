@@ -11,7 +11,7 @@ export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer id="contact" className="relative overflow-hidden border-t border-gold/30 bg-navy text-white">
       <div aria-hidden="true" className="absolute -bottom-32 -end-32 h-80 w-80 rounded-full bg-gold/10 blur-3xl" />
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 sm:py-16 md:grid-cols-[minmax(0,1.15fr)_minmax(18rem,0.85fr)] md:gap-10 lg:gap-16 lg:px-12">
+      <div className="relative mx-auto grid max-w-[90rem] gap-12 px-5 py-14 sm:px-8 sm:py-16 md:grid-cols-[minmax(0,1.15fr)_minmax(18rem,0.85fr)] md:gap-10 lg:gap-16 lg:px-12">
         <div>
           <div className="flex items-center gap-3 text-gold"><Scale size={22} strokeWidth={1.5} /><span className="h-px w-12 bg-gold/60" /></div>
           <p className={`mt-5 break-words font-display font-semibold text-balance ${locale === "ar" ? "max-w-[27ch] text-[clamp(1.65rem,5vw,2.25rem)] leading-[1.5]" : "max-w-[31ch] text-[clamp(1.5rem,4.5vw,2.25rem)] leading-[1.25] tracking-[-0.02em]"}`}>{footerTitle}</p>

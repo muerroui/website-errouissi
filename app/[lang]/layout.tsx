@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import "../globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { JsonLd } from "@/components/JsonLd";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 import { siteUrl } from "@/lib/site";
@@ -54,7 +55,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   return (
     <html lang={lang === "ar" ? "ar-MA" : "fr-MA"} dir={lang === "ar" ? "rtl" : "ltr"} data-scroll-behavior="smooth">
       <head><JsonLd locale={lang} /></head>
-      <body><Header locale={lang} />{children}<Footer locale={lang} /></body>
+      <body>
+        <Header locale={lang} />
+        {children}
+        <Footer locale={lang} />
+        <FloatingWhatsApp locale={lang} />
+      </body>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-QKRLHX88W9"
         strategy="afterInteractive"

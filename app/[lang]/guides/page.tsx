@@ -72,7 +72,7 @@ export default async function GuidesIndex({ params }: PageProps) {
             {Object.values(guides).map((guide) => {
               const item = guide.content[locale];
               return (
-                <article key={guide.key} className="group grid gap-5 border-b border-slate-900/15 py-8 transition-[background-color,padding] duration-300 hover:bg-gold/[0.08] motion-reduce:transition-none sm:px-4 lg:grid-cols-[0.55fr_1.2fr_0.25fr] lg:items-baseline lg:gap-10 lg:py-10 lg:hover:px-7">
+                <article key={guide.key} className="group grid gap-5 rounded-2xl border-b border-slate-900/15 px-4 py-8 transition-colors duration-300 hover:bg-gold/[0.08] motion-reduce:transition-none sm:px-6 lg:grid-cols-[0.55fr_1.2fr_0.25fr] lg:items-baseline lg:gap-10 lg:px-7 lg:py-10">
                   <p className="text-sm font-semibold text-gold-ink">{item.category}</p>
                   <div><h2 className="font-display text-2xl font-semibold leading-tight tracking-[-0.02em] sm:text-3xl"><Link href={getGuidePath(locale, guide.key as GuideKey)} className="inline-flex min-h-11 items-center">{item.h1}</Link></h2><p className="mt-3 max-w-[66ch] leading-7 text-slate-600">{item.lead}</p></div>
                   <Link href={getGuidePath(locale, guide.key as GuideKey)} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold underline decoration-gold/60 underline-offset-4 group-hover:decoration-gold lg:justify-self-end">{page.read}<Arrow aria-hidden="true" size={16} /></Link>

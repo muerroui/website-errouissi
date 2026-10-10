@@ -9,8 +9,24 @@ import { firm } from "@/lib/site";
 import { getAlternateGuidePath } from "@/lib/guide-slugs";
 
 const labels = {
-  fr: { home: "Accueil", expertise: "Expertises", guides: "Guides", contact: "Contact", switcher: "العربية" },
-  ar: { home: "الرئيسية", expertise: "مجالات الممارسة", guides: "الدليل القانوني", contact: "الاتصال بالمكتب", switcher: "Français" },
+  fr: {
+    home: "Accueil",
+    expertise: "Expertises",
+    guides: "Guides",
+    contact: "Contact",
+    switcher: "العربية",
+    brand: "Cabinet Errouissi",
+    location: "Mohammédia · 1992",
+  },
+  ar: {
+    home: "الرئيسية",
+    expertise: "مجالات الممارسة",
+    guides: "الدليل القانوني",
+    contact: "الاتصال بالمكتب",
+    switcher: "Français",
+    brand: "الأستاذ الرويسي",
+    location: "المحمدية · 1992",
+  },
 } as const;
 
 export function Header({ locale }: { locale: Locale }) {
@@ -44,14 +60,18 @@ export function Header({ locale }: { locale: Locale }) {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-navy/95 text-white shadow-lg backdrop-blur-xl">
-      <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-2 px-3 py-3 sm:gap-5 sm:px-5 sm:py-4 lg:px-8">
-        <Link href={`/${locale}`} className="group flex min-h-11 min-w-0 items-center gap-2 sm:gap-3" aria-label={copy.home}>
+      <div className="relative mx-auto flex max-w-[90rem] items-center justify-between gap-3 px-5 py-3 sm:gap-6 sm:px-8 sm:py-4 lg:px-12">
+        <Link href={`/${locale}`} className="group flex min-h-11 min-w-0 items-center gap-2 sm:gap-3" aria-label={locale === "ar" ? "مكتب الأستاذ الرويسي — الصفحة الرئيسية" : "Cabinet Errouissi — Accueil"}>
           <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-gold/50 bg-white/[0.04] text-gold transition group-hover:border-gold group-hover:bg-gold/10 motion-reduce:transition-none sm:h-11 sm:w-11">
             <Scale aria-hidden="true" size={19} strokeWidth={1.5} />
           </span>
-          <span className="min-w-0 max-w-[7rem] min-[360px]:max-w-[8.5rem] sm:max-w-xs" dir="ltr">
-            <span className="font-brand block truncate text-[0.8125rem] font-semibold tracking-tight sm:text-lg">{firm.shortName}</span>
-            <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-white/55 sm:block">Mohammédia · 1992</span>
+          <span className="min-w-0 max-w-[8.5rem] min-[375px]:max-w-[11rem] min-[410px]:max-w-[13.5rem] sm:max-w-xs">
+            <span className={`${locale === "ar" ? "font-display" : "font-brand"} block truncate text-[0.875rem] font-semibold tracking-tight sm:text-lg`}>
+              {copy.brand}
+            </span>
+            <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-white/55 sm:block">
+              {copy.location}
+            </span>
           </span>
         </Link>
         <nav className="hidden lg:block" aria-label={locale === "ar" ? "التنقل الرئيسي" : "Navigation principale"}>

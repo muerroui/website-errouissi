@@ -208,7 +208,7 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
         <section className="bg-gold px-5 py-20 text-navy sm:px-8 lg:px-12 lg:py-24">
           <div className="mx-auto grid max-w-[86rem] gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-20">
             <div><h2 className="font-display max-w-[15ch] text-[clamp(2.7rem,5vw,4.8rem)] font-semibold leading-[1] tracking-[-0.03em]">{copy.ctaTitle}</h2><p className="mt-6 max-w-[62ch] text-lg leading-8 text-navy/75">{copy.ctaText}</p></div>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 lg:justify-self-end">
+            <div className="grid w-full gap-3 sm:w-72 sm:grid-cols-2 lg:w-80 lg:grid-cols-1 lg:justify-self-end">
               <Link href={`/${locale}/contact`} className="inline-flex min-h-14 items-center justify-between gap-7 rounded-xl bg-navy px-6 py-4 font-semibold text-white shadow-[0_18px_44px_rgba(11,19,43,0.24)] transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">{labels.contact}<Arrow aria-hidden="true" size={18} /></Link>
               <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-between gap-7 rounded-xl border border-navy/25 px-6 py-4 font-semibold transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-white/25 active:translate-y-0 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none">{labels.whatsapp}<MessageCircle aria-hidden="true" size={18} /></a>
             </div>

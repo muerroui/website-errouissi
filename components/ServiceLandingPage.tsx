@@ -34,13 +34,13 @@ export function ServiceLandingPage({ locale, page }: { locale: Locale; page: Ser
             <p className="border-s border-amber-500/60 ps-4 text-xs font-semibold tracking-[0.18em] text-amber-300">{copy.eyebrow}</p>
             <h1 className="font-display mt-7 max-w-[15ch] text-[clamp(2.8rem,7vw,6rem)] font-semibold leading-[1] tracking-[-0.035em] text-balance">{copy.h1}</h1>
             <p className="mt-8 max-w-[66ch] text-lg leading-8 text-slate-300 sm:text-xl">{copy.lead}</p>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <a href={`tel:${firm.telephone}`} className="inline-flex min-h-12 items-center gap-3 rounded-xl bg-gold px-6 py-3 font-semibold text-navy shadow-[0_14px_36px_rgba(197,160,89,0.18)] transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-brass active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none"><Phone aria-hidden="true" size={17} />{labels.call}</a>
-              <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-12 items-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold backdrop-blur-md transition-[transform,background-color,border-color] duration-300 hover:-translate-y-0.5 hover:border-amber-500/35 hover:bg-white/[0.08] active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none"><MessageCircle aria-hidden="true" size={17} />{labels.whatsapp}</a>
+            <div className="mt-10 flex w-full flex-col flex-wrap gap-3 sm:w-auto sm:flex-row">
+              <a href={`tel:${firm.telephone}`} className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl bg-gold px-6 py-3 font-semibold text-navy shadow-[0_14px_36px_rgba(197,160,89,0.18)] transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-brass active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"><Phone aria-hidden="true" size={17} />{labels.call}</a>
+              <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold backdrop-blur-md transition-[transform,background-color,border-color] duration-300 hover:-translate-y-0.5 hover:border-amber-500/35 hover:bg-white/[0.08] active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"><MessageCircle aria-hidden="true" size={17} />{labels.whatsapp}</a>
             </div>
           </div>
 
-          <aside className="self-end border-y border-white/10 bg-white/[0.035] px-7 py-9 shadow-2xl backdrop-blur-md">
+          <aside className="self-center border-y border-white/10 bg-white/[0.035] px-7 py-9 shadow-2xl backdrop-blur-md lg:translate-y-2">
             <p className="text-xs font-semibold tracking-[0.18em] text-amber-300/80">{labels.since}</p>
             <p className="font-display mt-3 text-[5rem] font-semibold leading-none tracking-[-0.04em]">1992</p>
             <div className="my-7 h-px bg-white/10" />
@@ -65,7 +65,7 @@ export function ServiceLandingPage({ locale, page }: { locale: Locale; page: Ser
           </header>
           <div className="divide-y divide-white/10">
             {copy.services.map((item, index) => (
-              <article key={item.title} className="group grid gap-5 py-9 transition-[background-color,padding] duration-300 hover:bg-amber-500/[0.055] motion-reduce:transition-none sm:grid-cols-[5rem_1fr] sm:px-4 lg:grid-cols-[8rem_0.8fr_1.2fr] lg:items-baseline lg:gap-10 lg:py-11 lg:hover:px-7">
+              <article key={item.title} className="group grid gap-5 rounded-2xl px-4 py-9 transition-colors duration-300 hover:bg-amber-500/[0.055] motion-reduce:transition-none sm:grid-cols-[5rem_1fr] sm:px-6 lg:grid-cols-[8rem_0.8fr_1.2fr] lg:items-baseline lg:gap-10 lg:px-7 lg:py-11">
                 <p className="font-display text-lg tracking-[0.08em] text-gold">{String(index + 1).padStart(2, "0")} /</p>
                 <h3 className="font-display text-2xl font-semibold leading-tight transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transform-none motion-reduce:transition-none rtl:group-hover:-translate-x-1 sm:text-3xl">{item.title}</h3>
                 <p className="max-w-[62ch] text-sm leading-7 text-slate-400 lg:text-base">{item.text}</p>
@@ -98,10 +98,13 @@ export function ServiceLandingPage({ locale, page }: { locale: Locale; page: Ser
       </section>
 
       <section className="bg-gold px-5 py-20 text-navy sm:px-8 lg:px-12 lg:py-24">
-        <div className="mx-auto grid max-w-[86rem] gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end"><div><h2 className="font-display max-w-[14ch] text-[clamp(2.8rem,5vw,5rem)] font-semibold leading-[1] tracking-[-0.03em] text-balance">{copy.ctaTitle}</h2><p className="mt-6 max-w-[62ch] text-lg leading-8 text-navy/75">{copy.ctaText}</p></div><Link href={`/${locale}/contact`} className="inline-flex min-h-14 items-center justify-between gap-8 rounded-xl bg-navy px-6 py-4 font-semibold text-white shadow-2xl transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 motion-reduce:transform-none motion-reduce:transition-none lg:justify-self-end">{labels.call}<Phone aria-hidden="true" size={18} /></Link></div>
+        <div className="mx-auto grid max-w-[86rem] gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+          <div><h2 className="font-display max-w-[14ch] text-[clamp(2.8rem,5vw,5rem)] font-semibold leading-[1] tracking-[-0.03em] text-balance">{copy.ctaTitle}</h2><p className="mt-6 max-w-[62ch] text-lg leading-8 text-navy/75">{copy.ctaText}</p></div>
+          <div className="w-full sm:w-72 lg:w-80 lg:justify-self-end">
+            <Link href={`/${locale}/contact`} className="inline-flex min-h-14 w-full items-center justify-between gap-8 rounded-xl bg-navy px-6 py-4 font-semibold text-white shadow-2xl transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 motion-reduce:transform-none motion-reduce:transition-none">{labels.call}<Phone aria-hidden="true" size={18} /></Link>
+          </div>
+        </div>
       </section>
-
-      <a href={firm.whatsappUrl} aria-label={labels.whatsapp} rel="noopener noreferrer" className="fixed bottom-5 end-5 z-50 grid h-14 w-14 place-items-center rounded-full border border-white/60 bg-whatsapp text-white shadow-2xl transition-[transform,box-shadow] duration-300 hover:-translate-y-1 motion-reduce:transform-none motion-reduce:transition-none"><MessageCircle aria-hidden="true" size={24} /></a>
     </main>
   );
 }

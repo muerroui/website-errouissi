@@ -114,9 +114,9 @@ export default async function ContactPage({ params }: PageProps) {
             <p className="border-s border-amber-500/60 ps-4 text-xs font-semibold tracking-[0.18em] text-amber-300">{copy.eyebrow}</p>
             <h1 className="font-display mt-7 max-w-[14ch] text-[clamp(3rem,7vw,6rem)] font-semibold leading-[1] tracking-[-0.035em] text-balance">{copy.h1}</h1>
             <p className="mt-8 max-w-[64ch] text-lg leading-8 text-slate-300 sm:text-xl">{copy.lead}</p>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <a href={`tel:${firm.telephone}`} className="inline-flex min-h-12 items-center gap-3 rounded-xl bg-gold px-6 py-3 font-semibold text-navy shadow-[0_14px_36px_rgba(197,160,89,0.18)] transition-transform hover:-translate-y-0.5 motion-reduce:transform-none motion-reduce:transition-none"><Phone aria-hidden="true" size={18} />{copy.call}</a>
-              <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-12 items-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold backdrop-blur-md transition-colors hover:border-amber-500/35 hover:bg-white/[0.08] motion-reduce:transition-none"><MessageCircle aria-hidden="true" size={18} />{copy.whatsapp}</a>
+            <div className="mt-10 flex w-full flex-col flex-wrap gap-3 sm:w-auto sm:flex-row">
+              <a href={`tel:${firm.telephone}`} className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl bg-gold px-6 py-3 font-semibold text-navy shadow-[0_14px_36px_rgba(197,160,89,0.18)] transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-brass active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"><Phone aria-hidden="true" size={18} />{copy.call}</a>
+              <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold backdrop-blur-md transition-[transform,background-color,border-color] duration-300 hover:-translate-y-0.5 hover:border-amber-500/35 hover:bg-white/[0.08] active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"><MessageCircle aria-hidden="true" size={18} />{copy.whatsapp}</a>
             </div>
           </div>
           <aside className="border-y border-white/10 bg-white/[0.035] px-7 py-9 shadow-2xl backdrop-blur-md">
@@ -145,9 +145,9 @@ export default async function ContactPage({ params }: PageProps) {
 
       <section className="bg-slate-950 px-5 py-24 text-white sm:px-8 lg:px-12 lg:py-32">
         <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-20">
-          <div><p className="font-display text-[5rem] text-gold">MA</p><h2 className="font-display mt-6 max-w-[13ch] text-[clamp(2.8rem,5vw,4.8rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-balance">{copy.mapTitle}</h2><p className="mt-7 max-w-[56ch] text-lg leading-8 text-slate-300">{copy.mapText}</p><a href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`} rel="noopener noreferrer" className="mt-9 inline-flex min-h-12 items-center gap-3 rounded-xl border border-amber-500/35 px-6 py-3 font-semibold text-amber-200 transition-colors hover:bg-amber-500/10 motion-reduce:transition-none"><Route aria-hidden="true" size={18} />{copy.route}</a></div>
+          <div><p className="font-display text-[5rem] text-gold">MA</p><h2 className="font-display mt-6 max-w-[13ch] text-[clamp(2.8rem,5vw,4.8rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-balance">{copy.mapTitle}</h2><p className="mt-7 max-w-[56ch] text-lg leading-8 text-slate-300">{copy.mapText}</p><a href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`} rel="noopener noreferrer" className="mt-9 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl border border-amber-500/35 px-6 py-3 font-semibold text-amber-200 transition-colors hover:bg-amber-500/10 motion-reduce:transition-none sm:w-auto"><Route aria-hidden="true" size={18} />{copy.route}</a></div>
           <div className="relative overflow-hidden border border-white/10 bg-midnight p-2 shadow-2xl">
-            <iframe title={copy.mapTitle} src={`https://www.google.com/maps?q=${mapQuery}&output=embed`} width="100%" height="480" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="relative z-10 block opacity-90 grayscale-[25%] contrast-[1.05]" />
+            <iframe title={copy.mapTitle} src={`https://www.google.com/maps?q=${mapQuery}&output=embed`} width="100%" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="relative z-10 block h-72 w-full opacity-90 grayscale-[25%] contrast-[1.05] sm:h-96 lg:h-[480px]" />
             <div aria-hidden="true" className="pointer-events-none absolute inset-2 z-20 border border-amber-500/20">
               <span className="absolute bottom-4 start-4 max-w-[18rem] bg-navy/90 px-4 py-3 text-xs leading-5 text-amber-100 backdrop-blur-md">{locale === "ar" ? "127 شارع فلسطين · المحمدية" : "127 Boulevard de Palestine · Mohammédia"}</span>
             </div>
@@ -159,7 +159,17 @@ export default async function ContactPage({ params }: PageProps) {
         <div className="mx-auto grid max-w-[86rem] gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24"><div><p className="font-display text-5xl text-gold-ink">{locale === "ar" ? "س / ج" : "FAQ"}</p><h2 className="font-display mt-6 max-w-[12ch] text-[clamp(2.6rem,5vw,4.4rem)] font-semibold leading-[1.04] tracking-[-0.03em] text-balance">{copy.faqTitle}</h2></div><div className="border-t border-slate-900/15">{copy.faqs.map((faq, index) => <details key={faq.question} className="group border-b border-slate-900/15 py-6"><summary className="flex cursor-pointer list-none items-start justify-between gap-6 text-start font-display text-xl font-semibold"><span><span className="me-3 text-sm text-gold-ink">0{index + 1} /</span>{faq.question}</span><span aria-hidden="true" className="text-gold-ink transition-transform group-open:rotate-45 motion-reduce:transition-none">+</span></summary><p className="mt-4 max-w-[68ch] ps-10 leading-7 text-slate-600">{faq.answer}</p></details>)}</div></div>
       </section>
 
-      <section className="bg-gold px-5 py-16 text-navy sm:px-8 lg:px-12"><div className="mx-auto flex max-w-[86rem] flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"><div><a href={`tel:${firm.telephone}`} dir="ltr" className="inline-block whitespace-nowrap font-brand text-3xl font-semibold tabular-nums tracking-[-0.02em]">{firm.displayTelephone}</a><p className="mt-2">{copy.hours}</p></div><a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-14 items-center gap-4 rounded-xl bg-navy px-7 py-4 font-semibold text-white shadow-2xl"><MessageCircle aria-hidden="true" size={19} />{copy.whatsapp}</a></div></section>
+      <section className="bg-gold px-5 py-16 text-navy sm:px-8 lg:px-12">
+        <div className="mx-auto flex max-w-[86rem] flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <a href={`tel:${firm.telephone}`} dir="ltr" className="inline-block whitespace-nowrap font-brand text-3xl font-semibold tabular-nums tracking-[-0.02em] transition-colors hover:text-navy/80">{firm.displayTelephone}</a>
+            <p className="mt-2 text-navy/80">{copy.hours}</p>
+          </div>
+          <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-14 w-full items-center justify-center gap-4 rounded-xl bg-navy px-7 py-4 font-semibold text-white shadow-2xl transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 active:translate-y-0 motion-reduce:transform-none motion-reduce:transition-none sm:w-auto">
+            <MessageCircle aria-hidden="true" size={19} />{copy.whatsapp}
+          </a>
+        </div>
+      </section>
     </main>
   );
 }

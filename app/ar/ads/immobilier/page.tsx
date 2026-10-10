@@ -163,6 +163,7 @@ export default function PropertyCampaignPage() {
       <footer className={`${styles.container} ${styles.footer}`}>
         <div><p>مكتب الأستاذ عبد الرزاق الرويسي</p><span>المحمدية · ممارسة مهنية منذ 1992</span></div>
         <div className={styles.footerLinks}><a href="/ar">الموقع الرئيسي</a><a href="/ads/immobilier" hrefLang="fr-MA" lang="fr">Français</a></div>
+        <p className={styles.disclaimer}>تقدم هذه الصفحة معطيات تعريفية بخدمات المكتب ولا تغني عن الاستشارة القانونية المباشرة ودراسة الوثائق. ولا يشكل أي إجراء ضماناً مسبقاً لنتيجة قضائية محددة.</p>
       </footer>
 
       <nav className={styles.mobileContact} aria-label="تواصل سريع مع المكتب"><ContactButtons position="mobile_bar" compact /></nav>
