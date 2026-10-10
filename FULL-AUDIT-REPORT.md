@@ -75,7 +75,7 @@ Six titres français dépassent 60 caractères une fois le suffixe de marque ajo
 
 - titre foncier / conservation foncière ;
 - opposition à l'immatriculation ;
-- terres collectives et soulaliyates ;
+- terres des coopératives de la réforme agraire ;
 - sortie d'indivision ;
 - immatriculation d'un terrain agricole ;
 - héritage et liquidation d'une succession.

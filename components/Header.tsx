@@ -10,7 +10,7 @@ import { getAlternateGuidePath } from "@/lib/guide-slugs";
 
 const labels = {
   fr: { home: "Accueil", expertise: "Expertises", guides: "Guides", contact: "Contact", switcher: "العربية" },
-  ar: { home: "الرئيسية", expertise: "مجالات التدخل", guides: "الدليل القانوني", contact: "اتصل بنا", switcher: "Français" },
+  ar: { home: "الرئيسية", expertise: "مجالات الممارسة", guides: "الدليل القانوني", contact: "الاتصال بالمكتب", switcher: "Français" },
 } as const;
 
 export function Header({ locale }: { locale: Locale }) {
@@ -27,8 +27,8 @@ export function Header({ locale }: { locale: Locale }) {
     "/ar/services/القانون-العقاري": "/fr/services/droit-immobilier",
     "/fr/services/succession-heritage": "/ar/services/الميراث-والتركات",
     "/ar/services/الميراث-والتركات": "/fr/services/succession-heritage",
-    "/fr/services/droit-foncier-rural": "/ar/services/العقار-الفلاحي-وأراضي-الجموع",
-    "/ar/services/العقار-الفلاحي-وأراضي-الجموع": "/fr/services/droit-foncier-rural",
+    "/fr/services/droit-foncier-rural": "/ar/services/العقار-الفلاحي-وأراضي-تعاونيات-الإصلاح-الزراعي",
+    "/ar/services/العقار-الفلاحي-وأراضي-تعاونيات-الإصلاح-الزراعي": "/fr/services/droit-foncier-rural",
     "/fr/services/droit-fiscal": "/ar/services/القانون-الضريبي",
     "/ar/services/القانون-الضريبي": "/fr/services/droit-fiscal",
     "/fr/services/droit-administratif": "/ar/services/القانون-الإداري",

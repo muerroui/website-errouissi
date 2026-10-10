@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/i18n";
 
 const descriptions: Record<Locale, string> = {
   fr: "Avocat spécialisé en droit immobilier, conflits de succession, arbitrage et litiges fonciers. Services pour particuliers, entreprises et agriculteurs au Maroc.",
-  ar: "مكتب الأستاذ عبد الرزاق الرويسي للمحاماة بالمحمدية، متخصص في القانون العقاري ونزاعات الميراث والتحكيم والمنازعات العقارية، ويقدم خدماته للأفراد والمقاولات والفلاحين في المغرب.",
+  ar: "مكتب الأستاذ عبد الرزاق الرويسي للمحاماة بالمحمدية (هيئة المحامين بالدار البيضاء)، يكرس ممارسته القانونية الممتدة لأكثر من ثلاثة عقود في منازعات التحفيظ العقاري، وتصفية التركات والمواريث، والتحكيم، وقضايا الأراضي الفلاحية لفائدة الأفراد والشركات في المغرب.",
 };
 
 export function JsonLd({ locale }: { locale: Locale }) {
@@ -16,7 +16,7 @@ export function JsonLd({ locale }: { locale: Locale }) {
     url: `${siteUrl}/${locale}`,
     description: descriptions[locale],
     foundingDate: firm.founded,
-    slogan: locale === "ar" ? "خبرة قانونية لأكثر من 32 سنة" : "Plus de 32 ans d'expérience juridique",
+    slogan: locale === "ar" ? "أكثر من 32 سنة من الممارسة القانونية الرصينة" : "Plus de 32 ans d'expérience juridique",
     telephone: firm.telephone,
     address: {
       "@type": "PostalAddress",
@@ -49,7 +49,9 @@ export function JsonLd({ locale }: { locale: Locale }) {
       "@type": "Person",
       name: "Maître Abderrazak Errouissi",
       jobTitle: locale === "ar" ? "محام" : "Avocat",
-      knowsAbout: ["Droit immobilier", "Droit foncier rural", "Terres agricoles", "Terres Soulaliyates", "Indivision", "Successions", "Fiscalité", "Droit administratif", "Arbitrage"],
+      knowsAbout: locale === "ar"
+        ? ["القانون العقاري", "العقار الفلاحي", "الأراضي الفلاحية", "أراضي تعاونيات الإصلاح الزراعي", "الشياع", "الميراث والتركات", "القانون الضريبي", "القانون الإداري", "التحكيم"]
+        : ["Droit immobilier", "Droit foncier rural", "Terres agricoles", "Terres des coopératives de la réforme agraire", "Indivision", "Successions", "Fiscalité", "Droit administratif", "Arbitrage"],
     },
     sameAs: [firm.socialLinks.linkedin, firm.socialLinks.facebook],
   };

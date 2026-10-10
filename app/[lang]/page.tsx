@@ -26,7 +26,7 @@ const content = {
     services: [
       ["Droit immobilier et foncier", "Titres fonciers, achat, vente, location, transfert de propriété et litiges immobiliers."],
       ["Successions et héritage", "Partage, indivision, conflits entre héritiers et successions comportant des biens immobiliers."],
-      ["Droit foncier rural", "Terres agricoles, Melkiya, bornage, terres Soulaliyates, expropriation et sortie d’indivision."],
+      ["Droit foncier rural", "Terres agricoles, Melkiya, bornage, terres des coopératives de la réforme agraire, expropriation et sortie d’indivision."],
       ["Fiscalité", "Conseil, contrôle, contentieux fiscal et accompagnement des particuliers et entreprises."],
       ["Droit administratif", "Démarches, recours et litiges impliquant les administrations publiques."],
     ],
@@ -36,29 +36,29 @@ const content = {
     finalText: "Exposez brièvement votre situation par téléphone ou WhatsApp afin d'organiser un rendez-vous au cabinet.",
   },
   ar: {
-    eyebrow: "مكتب محاماة بالمحمدية · منذ يناير 1992",
+    eyebrow: "مكتب الأستاذ عبد الرزاق الرويسي للمحاماة · هيئة الدار البيضاء · منذ 1992",
     h1: "محامٍ بالمحمدية منذ 1992",
-    intro: "خبرة تفوق 32 سنة في القانون العقاري والعقار الفلاحي وأراضي الجموع والميراث والضرائب بالمحمدية وفي مختلف مدن المغرب.",
+    intro: "أكثر من 32 سنة من الممارسة المهنية في قضايا التحفيظ العقاري، والعقار الفلاحي، وأراضي تعاونيات الإصلاح الزراعي، وتصفية التركات، والمنازعات الجبائية والإدارية بالمغرب.",
     call: "الاتصال بالمكتب",
     whatsapp: "التواصل عبر واتساب",
-    proofTitle: "خبرة قانونية تمتد لأكثر من ثلاثة عقود",
-    proofText: "يرافق الأستاذ عبد الرزاق الرويسي الأفراد والمقاولات والفلاحين بمنهج دقيق وواضح يتلاءم مع خصوصية كل ملف.",
-    teamNumber: "نحو 10",
-    teamTitle: "فريق يعمل تحت إدارته المباشرة",
-    teamText: "يضم المكتب فريقًا من نحو عشرة محامين متعاونين مسجلين بهيئة المحامين. تتم معالجة كل ملف تحت إدارة وإشراف الأستاذ عبد الرزاق الرويسي مباشرة.",
-    servicesTitle: "مجالات تدخل المكتب",
-    servicesIntro: "الاستشارة والتفاوض والوساطة والتحكيم والتمثيل أمام المحاكم المغربية.",
+    proofTitle: "خبرة قانونية وقضائية تمتد لأكثر من ثلاثة عقود",
+    proofText: "يقدم الأستاذ عبد الرزاق الرويسي المشورة القانونية والمؤازرة القضائية للأفراد والشركات والمستغلين الفلاحيين بمنهج تحليلي صارم يراعي خصوصية القواعد الموضوعية والإجرائية لكل ملف.",
+    teamNumber: "10 محامين",
+    teamTitle: "فريق متكامل يعمل تحت إشرافه المباشر",
+    teamText: "يضم المكتب نخبة من المحامين المتعاونين والمساعدين القانونيين المقيدين بهيئة المحامين بالدار البيضاء. وتُعالج كافة القضايا تحت الإشراف والتوجيه المباشر للأستاذ عبد الرزاق الرويسي.",
+    servicesTitle: "مجالات ممارسة المكتب واختصاصاته",
+    servicesIntro: "الاستشارة القانونية، التفاوض، الوساطة الاتفاقية، التحكيم، والتمثيل والترافع أمام مختلف المحاكم المغربية.",
     services: [
-      ["القانون العقاري والتحفيظ العقاري", "التحفيظ العقاري والرسوم العقارية ومعاملات البيع والشراء والكراء ونقل الملكية وتسوية المنازعات العقارية."],
-      ["الميراث والتركات", "قسمة التركات وإنهاء حالة الشياع وتسوية النزاعات بين الورثة والمنازعات المتعلقة بالعقارات الموروثة."],
-      ["العقار الفلاحي وأراضي الجموع", "قضايا الملكية والتحديد والشياع ونزع الملكية والمنازعات المتعلقة بالعقارات الفلاحية وأراضي الجموع."],
-      ["القانون الضريبي", "الاستشارات الضريبية ومواكبة الأفراد والمقاولات أثناء المراقبة الضريبية والتمثيل في المنازعات الضريبية."],
-      ["القانون الإداري", "المواكبة في المساطر الإدارية وتقديم الطعون والتمثيل في المنازعات مع الإدارات العمومية."],
+      ["القانون العقاري ومساطر التحفيظ", "متابعة مطالب التحفيظ، تأسيس الرسوم العقارية، تقييد التصرفات والتشطيبات، دعاوى القسمة وإنهاء الشياع، وحل النزاعات العقارية المعقدة."],
+      ["تصفية التركات وقسمة المواريث", "حصر متروك الهالك، إعداد القسمة الرضائية والقضائية، إنهاء حالة الشياع، وحل النزاعات بين الورثة حول الأصول والعقارات الموروثة."],
+      ["العقار الفلاحي وأراضي تعاونيات الإصلاح الزراعي", "رسوم الملكية العدلية (أراضي الملك)، قضايا ومنازعات أراضي تعاونيات الإصلاح الزراعي (حال حياة المستفيدين وبعد وفاتهم)، ونزع الملكية للمنفعة العامة."],
+      ["القانون الضريبي والمنازعات الجبائية", "مؤازرة الملزمين أثناء المراقبة الضريبية، الرد على رسائل التصحيح، الترافع أمام اللجان الضريبية، ومقاضاة الإدارة أمام المحاكم الإدارية."],
+      ["القانون الإداري والمنازعات العمومية", "دعاوى الإلغاء لتجاوز السلطة، دعاوى التعويض والمسؤولية الإدارية للدولة والجماعات الترابية، ومباشرة التظلمات الاستعطافية والرئاسية."],
     ],
-    reachTitle: "مكتب محاماة بالمحمدية يتولى ملفات في مختلف مدن المغرب",
-    reachText: "يتدخل المكتب خصوصا في الدار البيضاء والرباط وفاس ومراكش وطنجة والقنيطرة وبوسكورة وبنسليمان.",
-    finalTitle: "تواصلوا معنا بشأن ملفكم",
-    finalText: "اشرحوا وضعيتكم بإيجاز عبر الهاتف أو واتساب من أجل تنظيم موعد بالمكتب.",
+    reachTitle: "مكتب محاماة بالمحمدية يباشر القضايا في مختلف محاكم المملكة",
+    reachText: "يترافع المكتب ويباشر الإجراءات القضائية خصوصاً في الدار البيضاء، والرباط، وبنسليمان، وفاس، ومراكش، وطنجة، والقنيطرة، ومختلف الدوائر القضائية بالمغرب.",
+    finalTitle: "تواصلوا مع المكتب بشأن قضيتكم",
+    finalText: "تفضلوا بعرض عناصر ملفكم بإيجاز عبر الهاتف أو واتساب لترتيب موعد استشارة قانونية بمقر المكتب.",
   },
 } as const;
 
@@ -107,7 +107,7 @@ export default async function HomePage({ params }: PageProps) {
                 </a>
               </div>
               <a href="#expertises" className="group hidden items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-slate-400 transition-colors hover:text-amber-300 motion-reduce:transition-none sm:flex">
-                {lang === "ar" ? "مجالات العمل" : "Découvrir nos expertises"}<ArrowDownRight aria-hidden="true" size={18} className="text-amber-400 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:translate-y-0.5 motion-reduce:transform-none motion-reduce:transition-none rtl:-scale-x-100" />
+                {lang === "ar" ? "مجالات الممارسة" : "Découvrir nos expertises"}<ArrowDownRight aria-hidden="true" size={18} className="text-amber-400 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:translate-y-0.5 motion-reduce:transform-none motion-reduce:transition-none rtl:-scale-x-100" />
               </a>
             </div>
           </div>
@@ -119,7 +119,7 @@ export default async function HomePage({ params }: PageProps) {
             <div className="my-8 h-px bg-white/10" />
             <p className="font-display text-[4.75rem] font-semibold leading-none tracking-[-0.04em] text-gold">+32</p>
             <p className="mt-2 text-lg text-slate-200">{lang === "ar" ? "سنة من الخبرة" : "ans d’expérience"}</p>
-            <p className="mt-8 max-w-[28ch] text-sm leading-7 text-slate-400">{lang === "ar" ? "خبرة قانونية في خدمة الأفراد والمقاولات والفلاحين في جميع أنحاء المغرب." : "Une pratique au service des particuliers, des entreprises et des agriculteurs dans tout le Maroc."}</p>
+            <p className="mt-8 max-w-[28ch] text-sm leading-7 text-slate-400">{lang === "ar" ? "ممارسة قانونية رصينة في مؤازرة الخواص، المقاولات، والفاعلين العقاريين والفلاحيين عبر كافة ربوع المملكة." : "Une pratique au service des particuliers, des entreprises et des agriculteurs dans tout le Maroc."}</p>
             <dl className="mt-8 space-y-4 border-t border-white/10 pt-6 text-sm">
               <div className="flex justify-between gap-5"><dt className="text-slate-400">{lang === "ar" ? "المقر" : "Cabinet"}</dt><dd className="font-medium text-slate-200">{lang === "ar" ? "المحمدية" : "Mohammédia"}</dd></div>
               <div className="flex justify-between gap-5"><dt className="text-slate-400">{lang === "ar" ? "اللغات" : "Langues"}</dt><dd className="font-medium text-slate-200">{lang === "ar" ? "العربية · Français · English" : "Français · العربية · English"}</dd></div>
@@ -147,7 +147,7 @@ export default async function HomePage({ params }: PageProps) {
             </div>
             <div className="mt-8 grid gap-8 sm:grid-cols-3">
               <div><p className="font-display text-2xl text-slate-950">{lang === "ar" ? "المحمدية" : "Mohammédia"}</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "مقر المكتب" : "Adresse du cabinet"}</p></div>
-              <div><p className="font-display text-2xl text-slate-950">{lang === "ar" ? "المغرب" : "Maroc"}</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "نطاق التدخل" : "Zone d’intervention"}</p></div>
+              <div><p className="font-display text-2xl text-slate-950">{lang === "ar" ? "المغرب" : "Maroc"}</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "نطاق الترافع والممارسة" : "Zone d’intervention"}</p></div>
               <div><p className="font-display text-2xl text-slate-950" dir="ltr">FR · AR · EN</p><p className="mt-2 text-sm text-slate-600">{lang === "ar" ? "لغات التواصل" : "Langues de travail"}</p></div>
             </div>
           </div>

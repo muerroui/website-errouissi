@@ -6,8 +6,8 @@ import { propertyWhatsAppUrl, type PropertyTopic } from "@/lib/ads-immobilier";
 import { firm, siteUrl } from "@/lib/site";
 import styles from "@/app/ads/immobilier/landing.module.css";
 
-const title = "محامي عقاري بالمغرب | الأستاذ عبد الرزاق الرويسي";
-const description = "ملف عقاري أو نزاع حول أرض؟ تواصلوا مع مكتب الأستاذ عبد الرزاق الرويسي بالمحمدية، ممارسة منذ 1992 في العقار والتحفيظ والأراضي الفلاحية. اتصال أو واتساب.";
+const title = "محامٍ في المنازعات العقارية و نزاعات الاراضي الفلاحية | الأستاذ عبد الرزاق الرويسي";
+const description = "نزاع حول عقار أو أرض فلاحية؟ مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض (المحمدية)، ممارس في قضايا التحفيظ، التركات، والنزاعات العقارية منذ 1992.";
 
 export const metadata: Metadata = {
   title,
@@ -18,19 +18,19 @@ export const metadata: Metadata = {
 };
 
 const issues: { topic: PropertyTopic; title: string; text: string }[] = [
-  { topic: "property", title: "نزاع حول ملكية عقار", text: "حقوق الملكية، حدود العقار أو الاستغلال دون اتفاق." },
-  { topic: "rural", title: "أرض فلاحية أو عقار قروي", text: "ملفات الأراضي الفلاحية، الملكية والنزاعات العقارية بالمجال القروي." },
-  { topic: "inheritance", title: "عقار موروث بين عدة ورثة", text: "الشياع، القسمة والخلافات المتعلقة باستغلال العقار الموروث." },
-  { topic: "registration", title: "تحفيظ عقاري أو تعرض", text: "مواكبة ملف التحفيظ ودراسة التعرضات والوثائق المرتبطة به." },
-  { topic: "lease", title: "نزاع كراء أو طلب إفراغ", text: "دراسة عقد الكراء، المستحقات والنزاع بين المكري والمكتري." },
-  { topic: "transaction", title: "بيع أو شراء عقار", text: "فحص الوضعية القانونية والوثائق قبل اتخاذ القرار." },
+  { topic: "property", title: "نزاع حول ملكية عقارية أو استحقاق", text: "دعاوى الاستحقاق، الترامي، نزاعات الحدود، ومنازعات الحيازة والاستغلال دون سند." },
+  { topic: "rural", title: "أراضٍ فلاحية وعقارات قروية", text: "تصفية الوضعية القانونية للملكيات الفلاحية، الرسوم العدلية، وأراضي تعاونيات الإصلاح الزراعي." },
+  { topic: "inheritance", title: "عقارات شائعة وتركات متنازع عليها", text: "تصفية التركات، قسمة العقارات المشاعة قضائياً أو رضائياً، وإسناد الاستغلال." },
+  { topic: "registration", title: "مساطر التحفيظ العقاري والتعرضات", text: "مؤازرة طالبي التحفيظ أو المتعرضين، والتقييدات الاحتياطية أمام المحافظة العقارية وقضاء التحفيظ." },
+  { topic: "lease", title: "منازعات الأكرية السكنية والمهنية والتجارية", text: "دعاوى الإفراغ، استيفاء الوجيبة الكرائية، ومساطر القانون 49.16 والقانون 67.12." },
+  { topic: "transaction", title: "تدقيق المعاملات والبيوعات العقارية", text: "فحص الشواهد العقارية وسلسلة البيوع قبل التعاقد والتحقق من سلامة الوضعية القانونية." },
 ];
 
 const faqs = [
-  { question: "هل يمكن التواصل بشأن عقار خارج المحمدية؟", answer: "المكتب يوجد بالمحمدية، ويتابع ملفات بالدار البيضاء وبنسليمان والشاوية، وفي مناطق أخرى بالمغرب حسب طبيعة الملف. اتصلوا لعرض موقع العقار وموضوع النزاع وتحديد إمكانية المواكبة." },
-  { question: "ما المعلومات المفيدة في أول تواصل؟", answer: "اذكروا موقع العقار، موضوع الخلاف، والمرحلة التي وصل إليها الملف. إذا توصلتم باستدعاء أو إشعار يتضمن أجلاً، اذكروا ذلك عند التواصل. يحدد المكتب لاحقاً الوثائق المناسبة لحالتكم." },
-  { question: "هل يلزم توفر جميع الوثائق لطلب موعد؟", answer: "يمكنكم طلب موعد بما يتوفر لديكم من معلومات. عند الاتفاق على الموعد، يوضح المكتب الوثائق التي ينبغي إحضارها، مثل عقد الملكية أو الرسم العقاري أو وثائق الإراثة بحسب موضوع الملف." },
-  { question: "كيف تُحدَّد أتعاب المواكبة؟", answer: "تُناقش الأتعاب مباشرة مع المكتب بعد التعرف على طبيعة الملف والعمل المطلوب. التواصل عبر هذه الصفحة لا يشكل اتفاقاً على الأتعاب أو قبولاً للتوكيل، ولا يتضمن وعداً بنتيجة." },
+  { question: "هل ينوب المكتب في النزاعات العقارية خارج دائرة المحمدية؟", answer: "نعم. ينوب المكتب ويترافع أمام المحاكم الابتدائية ومحاكم الاستئناف بالدار البيضاء والرباط، وكافة محاكم المملكة ومحكمة النقض، خاصة في النزاعات العقارية المعقدة وقضايا التحفيظ." },
+  { question: "ما هي المعطيات الضرورية خلال التواصل الأول؟", answer: "يُستحسن بيان طبيعة العقار (محفظ، في طور التحفيظ، أو غير محفظ)، موضوع النزاع، وأي استدعاء لجلسة أو إنذار أو تبليغ توصلتم به لتدارك أي أجل قانوني وشيك." },
+  { question: "هل يلزم توفير كافة الوثائق قبل حجز الموعد؟", answer: "يكفي حصر المعطيات الأساسية، على أن تُحضر في الموعد وثائق الملكية المتوفرة (رسم عقاري، شهادة ملكية، رسم ملكية عدلي، عقد بيع، أو إراثة) للتدقيق القانوني المباشر." },
+  { question: "كيف يتم تحديد أتعاب الملف العقاري؟", answer: "تُحدد الأتعاب بالاتفاق وفقاً لتعقيد المسطرة، حجم الوثائق، والمصالح المتنازع عليها، مع توثيق نطاق الإنابة طبقاً لقانون المحاماة." },
 ];
 
 function ContactButtons({ position, light = false, compact = false }: { position: string; light?: boolean; compact?: boolean }) {
@@ -73,14 +73,14 @@ export default function PropertyCampaignPage() {
         <section className={styles.hero} aria-labelledby="hero-heading">
           <div className={`${styles.container} ${styles.heroGrid}`}>
             <div className={styles.heroCopy}>
-              <h1 id="hero-heading">محامي عقاري<br /><span>بالمغرب</span></h1>
-              <p className={styles.heroQuestion}>نزاع حول أرض أو عقار؟</p>
-              <p className={styles.heroDescription}>من الملكية والتحفيظ إلى الأراضي الفلاحية والعقار الموروث، ابدؤوا بمناقشة ملفكم مع مكتب الأستاذ عبد الرزاق الرويسي.</p>
+              <h1 id="hero-heading">محامٍ في قضايا العقار<br /><span>والتحفيظ بالمغرب</span></h1>
+              <p className={styles.heroQuestion}>نزاع حول ملكية عقار، تحفيظ، أو أرض فلاحية؟</p>
+              <p className={styles.heroDescription}>من قضايا التحفيظ والتعرضات إلى قسمة التركات وتصفية الأراضي الفلاحية، ابدؤوا بدراسة ملفكم مع مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض.</p>
               <ContactButtons position="hero" />
               <p className={styles.directNumber}>للاتصال مباشرة: <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
               <div className={styles.heroEvidence}>
-                <p>ممارسة مهنية منذ <bdi>1992</bdi></p>
-                <p>مكتب بالمحمدية · مواكبة بالمغرب حسب الملف</p>
+                <p>ممارسة قانونية وترافع منذ <bdi>1992</bdi></p>
+                <p>مقر المكتب بالمحمدية · نيابة وترافع أمام كافة محاكم المملكة</p>
               </div>
             </div>
             <div id="consultation" className={styles.consultation}>
@@ -119,11 +119,11 @@ export default function PropertyCampaignPage() {
         <section className={styles.lawyerSection} aria-labelledby="lawyer-heading">
           <div className={`${styles.container} ${styles.lawyerGrid}`}>
             <div>
-              <h2 id="lawyer-heading">خبرة في العقار.<br />ومعرفة بواقع الأرض.</h2>
+              <h2 id="lawyer-heading">خبرة في المادة العقارية.<br />وإلمام بميدان النزاع.</h2>
               <p className={styles.lawyerName}>الأستاذ عبد الرزاق الرويسي</p>
-              <p className={styles.lawyerBody}>محامٍ يمارس منذ 1992، مع عناية خاصة بالملفات العقارية القروية، والأراضي الفلاحية، والتحفيظ العقاري والنزاعات المرتبطة بالعقار الموروث.</p>
-              <p className={styles.lawyerBody}>تبدأ المواكبة بفهم الوقائع وفحص الوثائق، ثم مناقشة الخيارات المناسبة لملفكم. لا توجد نتيجة مضمونة؛ توجد دراسة قانونية لكل حالة.</p>
-              <a href={`tel:${firm.telephone}`} data-contact-position="lawyer" className={styles.textLink}>ناقشوا ملفكم مع المكتب <ArrowLeft size={20} aria-hidden="true" /></a>
+              <p className={styles.lawyerBody}>محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض ممارس منذ 1992، راكم تجربة رصينة في معالجة النزاعات العقارية المعقدة، قضايا التحفيظ، الأراضي الفلاحية، وقسمة التركات.</p>
+              <p className={styles.lawyerBody}>ترتكز مؤازرة المكتب على تشخيص دقيق للوثائق والرسوم وتحديد المسطرة القضائية أو التحفظية الأنسب لضمان حقوقكم وصيانتها طبقاً لأحكام القانون.</p>
+              <a href={`tel:${firm.telephone}`} data-contact-position="lawyer" className={styles.textLink}>عرض ملفكم على المكتب <ArrowLeft size={20} aria-hidden="true" /></a>
             </div>
             <aside className={styles.office} aria-label="عنوان المكتب">
               <MapPin size={27} aria-hidden="true" />
@@ -137,11 +137,11 @@ export default function PropertyCampaignPage() {
         </section>
 
         <section className={`${styles.container} ${styles.processSection}`} aria-labelledby="process-heading">
-          <div className={styles.processIntro}><h2 id="process-heading">من أول اتصال<br />إلى فهم أوضح لملفكم.</h2><p>مسار بسيط، دون التزام بالتوكيل بمجرد التواصل.</p></div>
+          <div className={styles.processIntro}><h2 id="process-heading">من الاتصال الأولي<br />إلى مباشرة الإجراءات القانونية.</h2><p>مسار مهني واضح في احترام تام لأخلاقيات المهنة والسر المهني.</p></div>
           <ol className={styles.processList}>
-            <li><span aria-hidden="true">1</span><div><h3>اعرضوا موضوع الملف</h3><p>اتصلوا أو أرسلوا رسالة موجزة عن العقار والنزاع وموقعه.</p></div></li>
-            <li><span aria-hidden="true">2</span><div><h3>حدّدوا موعداً والوثائق اللازمة</h3><p>يناقش المكتب معكم طريقة اللقاء وما ينبغي تحضيره.</p></div></li>
-            <li><span aria-hidden="true">3</span><div><h3>ناقشوا الخيارات والأتعاب</h3><p>بعد دراسة الوقائع والوثائق، تُناقش الخطوات الممكنة وشروط المواكبة.</p></div></li>
+            <li><span aria-hidden="true">1</span><div><h3>عرض عناصر النزاع</h3><p>اتصال هاتفي أو إرسال ملخص موجز بموضوع العقار والنزاع والمركز القانوني.</p></div></li>
+            <li><span aria-hidden="true">2</span><div><h3>تحديد الموعد ودراسة الوثائق</h3><p>فحص الرسوم العقارية أو العدلية، الوثائق الثبوتية، والآجال القانونية بالمكتب.</p></div></li>
+            <li><span aria-hidden="true">3</span><div><h3>رسم الخطة الإجرائية وتحديد الأتعاب</h3><p>تحديد مسطرة الترافع أو الإجراء التحفظي المناسب والاتفاق على الأتعاب بشفافية.</p></div></li>
           </ol>
         </section>
 
@@ -154,8 +154,8 @@ export default function PropertyCampaignPage() {
 
         <section className={styles.finalSection} aria-labelledby="final-heading">
           <div className={`${styles.container} ${styles.finalInner}`}>
-            <div><h2 id="final-heading">ابدؤوا بالحديث<br />عن ملفكم.</h2><p>اذكروا موضوع الملف وموقع العقار. وإذا كان هناك أجل أو استدعاء، أخبروا المكتب به عند التواصل.</p></div>
-            <div><ContactButtons position="final" light /><p className={styles.finalNote}>الاتصال أو رسالة واتساب لا يُعدّان قبولاً للتوكيل.</p></div>
+            <div><h2 id="final-heading">ابدؤوا بعرض<br />ملفكم العقاري.</h2><p>بيّنوا موضوع النزاع وموقع العقار، وأخطروا المكتب فوراً بأي أجل مسطري أو إشعار قضائي جارٍ.</p></div>
+            <div><ContactButtons position="final" light /><p className={styles.finalNote}>التواصل الأولي لا ينشئ توكيلاً ولا يرتب مسؤولية مهنية إلا بعد الاتفاق الرسمي.</p></div>
           </div>
         </section>
       </main>
@@ -163,7 +163,6 @@ export default function PropertyCampaignPage() {
       <footer className={`${styles.container} ${styles.footer}`}>
         <div><p>مكتب الأستاذ عبد الرزاق الرويسي</p><span>المحمدية · ممارسة مهنية منذ 1992</span></div>
         <div className={styles.footerLinks}><a href="/ar">الموقع الرئيسي</a><a href="/ads/immobilier" hrefLang="fr-MA" lang="fr">Français</a></div>
-        <p className={styles.disclaimer}>محتوى هذه الصفحة للتعريف بخدمات المكتب، ولا يحل محل الاستشارة ودراسة الوثائق. لا تضمن أي مواكبة نتيجة محددة.</p>
       </footer>
 
       <nav className={styles.mobileContact} aria-label="تواصل سريع مع المكتب"><ContactButtons position="mobile_bar" compact /></nav>

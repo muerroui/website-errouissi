@@ -8,7 +8,7 @@ import { getServicePath } from "@/lib/services";
 
 const ui = {
   fr: { home: "Accueil", expertise: "Expertise juridique", since: "Depuis", years: "+32 ans", scope: "Mohammedia · Casablanca · Maroc", call: "Appeler le cabinet", whatsapp: "Écrire sur WhatsApp", related: "Expertises complémentaires", faqNumber: "FAQ" },
-  ar: { home: "الرئيسية", expertise: "مجال التدخل", since: "منذ", years: "+32 سنة", scope: "المحمدية · الدار البيضاء · المغرب", call: "الاتصال بالمكتب", whatsapp: "التواصل عبر واتساب", related: "اختصاصات مرتبطة", faqNumber: "س / ج" },
+  ar: { home: "الرئيسية", expertise: "مجال الممارسة", since: "منذ", years: "+32 سنة", scope: "المحمدية · الدار البيضاء · المغرب", call: "الاتصال بالمكتب", whatsapp: "التواصل عبر واتساب", related: "اختصاصات مرتبطة", faqNumber: "س / ج" },
 } as const;
 
 export function ServiceLandingPage({ locale, page }: { locale: Locale; page: ServicePageDefinition }) {

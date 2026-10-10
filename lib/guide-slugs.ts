@@ -4,7 +4,7 @@ export const guideSlugPairs = [
   { key: "immatriculation", fr: "titre-foncier-conservation-fonciere-maroc", ar: "التحفيظ-العقاري-في-المغرب" },
   { key: "expropriation", fr: "expropriation-indemnisation-maroc", ar: "نزع-الملكية-والتعويض" },
   { key: "opposition", fr: "opposition-immatriculation-fonciere-maroc", ar: "التعرض-على-مطلب-التحفيظ" },
-  { key: "soulaliyates", fr: "terres-collectives-soulaliyates-maroc", ar: "أراضي-الجموع-والأراضي-السلالية" },
+  { key: "agrarianReform", fr: "terres-cooperatives-reforme-agraire-maroc", ar: "أراضي-تعاونيات-الإصلاح-الزراعي" },
   { key: "indivision", fr: "sortie-indivision-maroc", ar: "الخروج-من-الشياع-في-القانون-المغربي" },
   { key: "melkiya", fr: "melkiya-terrain-non-titre-maroc", ar: "العقار-غير-المحفظ-ورسم-الملكية" },
   { key: "agricultural-registration", fr: "immatriculation-terrain-agricole-maroc", ar: "تحفيظ-أرض-فلاحية-بالمغرب" },

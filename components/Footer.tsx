@@ -15,7 +15,7 @@ export function Footer({ locale }: { locale: Locale }) {
         <div>
           <div className="flex items-center gap-3 text-gold"><Scale size={22} strokeWidth={1.5} /><span className="h-px w-12 bg-gold/60" /></div>
           <p className={`mt-5 break-words font-display font-semibold text-balance ${locale === "ar" ? "max-w-[27ch] text-[clamp(1.65rem,5vw,2.25rem)] leading-[1.5]" : "max-w-[31ch] text-[clamp(1.5rem,4.5vw,2.25rem)] leading-[1.25] tracking-[-0.02em]"}`}>{footerTitle}</p>
-          <p className="mt-4 max-w-[58ch] text-[0.9375rem] leading-7 text-slate-300">{locale === "ar" ? "مكتب محاماة بالمحمدية يقدم خدماته للأفراد والمقاولات والفلاحين في مختلف مدن المغرب." : "Cabinet à Mohammedia au service des particuliers, entreprises et agriculteurs dans tout le Maroc."}</p>
+          <p className="mt-4 max-w-[58ch] text-[0.9375rem] leading-7 text-slate-300">{locale === "ar" ? "مكتب محاماة بالمحمدية يتولى الدفاع وتقديم الاستشارات القانونية للأفراد والشركات والمستغلين الفلاحيين أمام مختلف محاكم المملكة المغربية." : "Cabinet à Mohammedia au service des particuliers, entreprises et agriculteurs dans tout le Maroc."}</p>
           <div className="mt-6 flex flex-wrap gap-3" aria-label={locale === "ar" ? "الشبكات الاجتماعية" : "Réseaux sociaux"}>
             <a
               href={firm.socialLinks.linkedin}
@@ -45,7 +45,7 @@ export function Footer({ locale }: { locale: Locale }) {
           <p className="flex items-center gap-3"><Clock3 className="shrink-0 text-gold" size={18} />{locale === "ar" ? <span>الاثنين–السبت: <span dir="ltr" className="inline-block whitespace-nowrap tabular-nums">09:00–19:30</span></span> : "Lundi–samedi : 09:00–19:30"}</p>
           <div className="flex flex-wrap gap-3">
             <Link href={`/${locale}/guides`} className="inline-flex min-h-11 items-center rounded-full border border-white/20 px-5 py-2.5 font-semibold text-white transition-colors hover:border-gold hover:text-gold motion-reduce:transition-none">{locale === "ar" ? "الدليل القانوني" : "Guides juridiques"}</Link>
-            <Link href={`/${locale}/contact`} className="inline-flex min-h-11 items-center rounded-full border border-gold/50 px-5 py-2.5 font-semibold text-gold transition-colors hover:bg-gold hover:text-navy motion-reduce:transition-none">{locale === "ar" ? "العنوان والاتصال" : "Adresse et contact"}</Link>
+            <Link href={`/${locale}/contact`} className="inline-flex min-h-11 items-center rounded-full border border-gold/50 px-5 py-2.5 font-semibold text-gold transition-colors hover:bg-gold hover:text-navy motion-reduce:transition-none">{locale === "ar" ? "مقر المكتب والتواصل" : "Adresse et contact"}</Link>
           </div>
         </address>
       </div>

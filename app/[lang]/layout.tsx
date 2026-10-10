@@ -17,8 +17,8 @@ const defaults: Record<Locale, { title: string; description: string }> = {
     description: "Maître Abderrazak Errouissi, avocat à Mohammedia depuis 1992. Foncier rural, terres agricoles, immobilier et successions partout au Maroc.",
   },
   ar: {
-    title: "محامٍ بالمحمدية منذ 1992 | الأستاذ عبد الرزاق الرويسي",
-    description: "الأستاذ عبد الرزاق الرويسي محامٍ بالمحمدية منذ 1992، متخصص في العقار الفلاحي وأراضي الجموع والميراث والمنازعات العقارية بالمغرب.",
+    title: "محامٍ بهيئة الدار البيضاء بالمحمدية منذ 1992 | الأستاذ عبد الرزاق الرويسي",
+    description: "الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء يمارس بالمحمدية منذ 1992 (مقبول لدى محكمة النقض). تجربة راسخة في قضايا العقار، والأراضي الفلاحية، وأراضي تعاونيات الإصلاح الزراعي، وقسمة التركات بالمغرب.",
   },
 };
 

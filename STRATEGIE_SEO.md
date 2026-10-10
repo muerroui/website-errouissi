@@ -55,7 +55,7 @@ La première position ne peut jamais être garantie. Le plan vise à maximiser l
 - avocat droit de succession Maroc
 - avocat terres agricoles Maroc
 - avocat conflit terrain rural
-- avocat terres Soulaliyates Maroc
+- avocat terres des coopératives de la réforme agraire Maroc
 - avocat fiscaliste Casablanca
 - avocat commercial Casablanca
 
@@ -118,12 +118,12 @@ Ne pas créer plusieurs pages quasi identiques autour de `التحفيظ الع�
 | قضايا التركة | 0 | 17 | 0 | Variante sémantique |
 | قضايا تقسيم التركة | 0 | 12 | 0 | Article / FAQ |
 
-### 3.5 Foncier rural et terres collectives
+### 3.5 Foncier rural et terres des coopératives de la réforme agraire
 
 | Mot-clé | Volume | KD | CPC USD | Usage recommandé |
 |---|---:|---:|---:|---|
-| أراضي الجموع | 170 | 11 | 0 | Champ sémantique principal |
-| الفرق بين أراضي الجموع والأراضي السلالية | 170 | 11 | 0 | FAQ informationnelle |
+| أراضي تعاونيات الإصلاح الزراعي | 170 | 11 | 0 | Champ sémantique principal |
+| إرث أراضي الإصلاح الزراعي | 110 | 10 | 0 | FAQ informationnelle et contentieux |
 | أرض فلاحية | 210 | 14 | 0 | Champ sémantique foncier rural |
 | الخروج من الشياع في القانون المغربي | 70 | 26 | 0 | FAQ et guide spécialisé |
 | قانون نزع الملكية بالمغرب | 70 | 11 | 0 | Section expropriation |
@@ -132,7 +132,7 @@ Ne pas créer plusieurs pages quasi identiques autour de `التحفيظ الع�
 
 - محامي الاسرة المحمدية
 - محامي الأراضي الفلاحية
-- محامي أراضي الجموع
+- محامي أراضي تعاونيات الإصلاح الزراعي
 - محامي الخروج من الشياع
 - محامي عقارات الدار البيضاء
 - محامي منازعات عقارية
@@ -157,7 +157,7 @@ Les pages FR et AR sont des équivalents reliés par `hreflang`, mais leur réda
 | `/fr` | `/ar` | Accueil local et conversion |
 | `/fr/services/droit-immobilier` | `/ar/services/القانون-العقاري` | Pilier immobilier / foncier |
 | `/fr/services/succession-heritage` | `/ar/services/الميراث-والتركات` | Pilier succession |
-| `/fr/services/droit-foncier-rural` | `/ar/services/العقار-الفلاحي-وأراضي-الجموع` | Pilier foncier rural / terres agricoles |
+| `/fr/services/droit-foncier-rural` | `/ar/services/العقار-الفلاحي-وأراضي-تعاونيات-الإصلاح-الزراعي` | Pilier foncier rural / terres agricoles |
 | `/fr/services/droit-fiscal` | `/ar/services/القانون-الضريبي` | Pilier fiscalité |
 | `/fr/services/droit-administratif` | `/ar/services/القانون-الإداري` | Service administratif |
 | `/fr/a-propos` | `/ar/عن-المكتب` | E-E-A-T, expérience, méthode |
@@ -181,7 +181,7 @@ Les pages FR et AR sont des équivalents reliés par `hreflang`, mais leur réda
 #### `/ar`
 
 - **Title :** محامي المحمدية منذ 1992 | الأستاذ عبد الرزاق الرويسي
-- **Meta description :** الأستاذ عبد الرزاق الرويسي محامي بالمحمدية منذ 1992، متخصص في العقار الفلاحي وأراضي الجموع والميراث والمنازعات العقارية بالمغرب.
+- **Meta description :** الأستاذ عبد الرزاق الرويسي محام بهيئة الدار البيضاء يمارس بالمحمدية منذ 1992، متخصص في العقار الفلاحي، أراضي تعاونيات الإصلاح الزراعي، الميراث والمنازعات العقارية بالمغرب.
 - **H1 :** محامي بالمحمدية منذ 1992
 - **H2 :** خبرة قانونية لأكثر من 32 سنة ؛ مجالات عمل المكتب ؛ محام بالمحمدية يخدم مختلف مدن المغرب ؛ تواصلوا معنا بشأن ملفكم
 
@@ -215,17 +215,17 @@ Les pages FR et AR sont des équivalents reliés par `hreflang`, mais leur réda
 
 #### `/fr/services/droit-foncier-rural`
 
-- **Title :** Avocat terres agricoles et foncier rural au Maroc
-- **Meta description :** Avocat en foncier rural au Maroc : terres agricoles, Soulaliyates, indivision, bornage et expropriation à Benslimane, Chaouia et Mohammedia.
+- **Title :** Avocat terres agricoles et réforme agraire au Maroc | Maître Errouissi
+- **Meta description :** Avocat en foncier rural et terres agricoles au Maroc : coopératives de la réforme agraire, indivision, bornage et contentieux foncier.
 - **H1 :** Avocat en terres agricoles et foncier rural au Maroc
-- **H2 :** Melkiya ; Terres Soulaliyates ; Sortie d'indivision ; Bornage ; Expropriation ; Exploitation agricole
+- **H2 :** Melkiya ; Terres des coopératives de la réforme agraire ; Sortie d'indivision ; Bornage ; Expropriation ; Exploitation agricole
 
-#### `/ar/services/العقار-الفلاحي-وأراضي-الجموع`
+#### `/ar/services/العقار-الفلاحي-وأراضي-تعاونيات-الإصلاح-الزراعي`
 
-- **Title :** محامي الأراضي الفلاحية وأراضي الجموع بالمغرب
-- **Meta description :** محامي العقار الفلاحي بالمغرب لقضايا أراضي الجموع والشياع والتحديد ونزع الملكية ببنسليمان والشاوية والمحمدية.
-- **H1 :** محامي الأراضي الفلاحية وأراضي الجموع بالمغرب
-- **H2 :** الملكية ؛ أراضي الجموع ؛ الخروج من الشياع ؛ التحديد ؛ نزع الملكية ؛ الاستغلال الفلاحي
+- **Title :** محامي الأراضي الفلاحية وتعاونيات الإصلاح الزراعي بالمغرب | الأستاذ الرويسي
+- **Meta description :** محامي العقار الفلاحي وأراضي تعاونيات الإصلاح الزراعي بالمغرب: قضايا الملكية، الشياع، التحديد وانتقال الحقوق والإرث.
+- **H1 :** محامي الأراضي الفلاحية وأراضي تعاونيات الإصلاح الزراعي بالمغرب
+- **H2 :** الملكية ورسوم الشراء ؛ أراضي تعاونيات الإصلاح الزراعي ؛ الخروج من الشياع ؛ التحديد ومنازعات الحدود ؛ نزع الملكية ؛ استغلال الأراضي الفلاحية
 
 #### `/fr/services/droit-fiscal`
 
@@ -328,7 +328,7 @@ Recherche effectuée sur Google Maroc (`locId 2504`) en français et en arabe. L
 | Succession AR | الإرث في المغرب | 90 | 10 | 0 | H1/H2 et FAQ |
 | Foncier rural FR | terrain agricole maroc | 30 | 13 | 0 | Champ sémantique |
 | Foncier rural FR | expropriation maroc | 50 | 9 | 0 | H2 et FAQ |
-| Foncier rural AR | أراضي الجموع | 170 | 11 | 0 | H1/H2 et FAQ |
+| Foncier rural AR | أراضي تعاونيات الإصلاح الزراعي | 170 | 11 | 0 | H1/H2 et FAQ |
 | Foncier rural AR | أرض فلاحية | 210 | 14 | 0 | Champ sémantique |
 | Foncier rural AR | الخروج من الشياع في القانون المغربي | 70 | 26 | 0 | FAQ transactionnelle |
 | Contact FR | avocat mohammedia | 260 | 4 | 0,25 | Cible locale principale |
