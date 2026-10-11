@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight, MapPin, MessageCircle, Phone, Plus } from "lucide-react";
 import { ImmobilierLeadForm } from "@/components/ads/ImmobilierLeadForm";
+import { GoogleHeroBadge, GoogleReviewsSection } from "@/components/ads/GoogleSocialProof";
 import { propertyWhatsAppUrl, type PropertyTopic } from "@/lib/ads-immobilier";
 import { firm, siteUrl } from "@/lib/site";
 import styles from "./landing.module.css";
@@ -48,10 +49,27 @@ function ContactButtons({ position, light = false, compact = false }: { position
 
 export default function FrenchPropertyCampaignPage() {
   const schema = {
-    "@context": "https://schema.org", "@type": "LegalService",
-    "@id": `${siteUrl}/#cabinet`, name: "Cabinet de Maître Abderrazak Errouissi",
-    url: siteUrl, telephone: firm.telephone, foundingDate: firm.founded,
-    address: { "@type": "PostalAddress", streetAddress: firm.address.street, addressLocality: firm.address.city, postalCode: firm.address.postalCode, addressCountry: "MA" },
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "@id": `${siteUrl}/#cabinet`,
+    name: "Cabinet de Maître Abderrazak Errouissi",
+    url: siteUrl,
+    telephone: firm.telephone,
+    foundingDate: firm.founded,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: firm.address.street,
+      addressLocality: firm.address.city,
+      postalCode: firm.address.postalCode,
+      addressCountry: "MA",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "24",
+      bestRating: "5",
+      worstRating: "1",
+    },
   };
 
   return (
@@ -73,13 +91,14 @@ export default function FrenchPropertyCampaignPage() {
         <section className={styles.hero} aria-labelledby="hero-heading">
           <div className={`${styles.container} ${styles.heroGrid}`}>
             <div className={styles.heroCopy}>
+              <GoogleHeroBadge locale="fr" />
               <h1 id="hero-heading">Avocat immobilier<br /><span>au Maroc</span></h1>
               <p className={styles.heroQuestion}>Un terrain ou un bien en litige ?</p>
               <p className={styles.heroDescription}>Propriété, immatriculation, terre agricole ou bien hérité : commencez par discuter de votre dossier avec le cabinet de Maître Abderrazak Errouissi.</p>
               <ContactButtons position="hero" />
               <p className={styles.directNumber}>Appelez directement : <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
               <div className={styles.heroEvidence}>
-                <p>Avocat depuis <bdi>1992</bdi></p>
+                <p>Avocat depuis <bdi>1992</bdi> · <bdi>5,0/5</bdi> sur Google (<bdi>24</bdi> avis vérifiés)</p>
                 <p>Cabinet à Mohammedia · Accompagnement au Maroc selon le dossier</p>
               </div>
             </div>
@@ -111,6 +130,8 @@ export default function FrenchPropertyCampaignPage() {
           </div>
         </section>
 
+        <GoogleReviewsSection locale="fr" />
+
         <section className={styles.lawyerSection} aria-labelledby="lawyer-heading">
           <div className={`${styles.container} ${styles.lawyerGrid}`}>
             <div>
@@ -124,8 +145,9 @@ export default function FrenchPropertyCampaignPage() {
               <MapPin size={27} aria-hidden="true" />
               <h3>À votre écoute à Mohammedia</h3>
               <address>127 Boulevard de Palestine<br />1er étage, au-dessus du Café Montréal<br />Mohammedia, Maroc</address>
+              <p>Note 5,0/5 sur Google · 24 avis vérifiés</p>
               <p>Appelez pour convenir d’un rendez-vous.</p>
-              <a className={styles.textLink} href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${firm.address.street}, ${firm.address.city}, Morocco`)}`} target="_blank" rel="noopener noreferrer">Voir l’adresse sur Google Maps <ArrowUpRight size={18} aria-hidden="true" /></a>
+              <a className={styles.textLink} href={firm.googleReviewsUrl} target="_blank" rel="noopener noreferrer">Voir les avis et l’adresse sur Google Maps <ArrowUpRight size={18} aria-hidden="true" /></a>
               <a className={styles.officePhone} href={`tel:${firm.telephone}`} dir="ltr" data-contact-position="office">{firm.displayTelephone}</a>
             </aside>
           </div>

@@ -95,7 +95,7 @@ export function GoogleReviewsSection({ locale }: { locale: Locale }) {
             </h2>
             <p className={styles.sectionDescription}>
               {isAr
-                ? "شهادات وتجارب حقيقية لمواطنين وأصحاب قضايا عقارية استفادوا من استشارات ومواكبة مكتب الأستاذ عبد الرزاق الرويسي."
+                ? "شهادات وتجارب حقيقية لمواطنين وأصحاب قضايا استفادوا من استشارات ومواكبة مكتب الأستاذ عبد الرزاق الرويسي."
                 : "Retours d’expérience authentiques de clients ayant sollicité le cabinet de Maître Abderrazak Errouissi pour leurs dossiers juridiques et immobiliers."}
             </p>
           </div>
@@ -148,13 +148,30 @@ export function GoogleReviewsSection({ locale }: { locale: Locale }) {
                     {review.author.charAt(0)}
                   </div>
                   <div>
-                    <h3 className={styles.authorName}>{review.author}</h3>
+                    <h3 className={styles.authorName}>
+                      <a
+                        href={review.profileUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.authorLink}
+                        title={isAr ? "عرض ملف صاحب التقييم على Google" : "Voir le profil de l'auteur sur Google"}
+                      >
+                        {review.author}
+                      </a>
+                    </h3>
                     <p className={styles.reviewDate}>
                       {review.date[locale]} · <span className={styles.verifiedBadge}>{isAr ? "موثق" : "Vérifié"}</span>
                     </p>
                   </div>
                 </div>
-                <GoogleLogo size={18} />
+                <a
+                  href={review.profileUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={isAr ? "عرض التقييم الأصلي على Google Maps" : "Voir l'avis original sur Google Maps"}
+                >
+                  <GoogleLogo size={18} />
+                </a>
               </div>
 
               <div className={styles.cardStars}>
@@ -176,11 +193,11 @@ export function GoogleReviewsSection({ locale }: { locale: Locale }) {
           <p>
             {isAr ? (
               <>
-                ⭐ مصدر التقييمات: حساب Google Business التابع للمكتب. نلتزم دائماً بالحفاظ على سرية ملفات الموكلين طبقاً لأحكام القانون رقم 28.08 المنظم لمهنة المحاماة.
+                مصدر التقييمات: حساب Google Business التابع للمكتب. نلتزم دائماً بالحفاظ على سرية ملفات الموكلين طبقاً لأحكام القانون رقم 28.08 المنظم لمهنة المحاماة.
               </>
             ) : (
               <>
-                ⭐ Source : Fiche Google Business officielle de Maître Abderrazak Errouissi. Le cabinet respecte scrupuleusement la confidentialité des dossiers et les règles déontologiques de la profession d’avocat.
+                Source : Fiche Google Business officielle de Maître Abderrazak Errouissi. Le cabinet respecte scrupuleusement la confidentialité des dossiers et les règles déontologiques de la profession d’avocat.
               </>
             )}
           </p>

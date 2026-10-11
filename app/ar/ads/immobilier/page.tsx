@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowLeft, ArrowUpLeft, MapPin, MessageCircle, Phone, Plus } from "lucide-react";
+import { GoogleHeroBadge, GoogleReviewsSection } from "@/components/ads/GoogleSocialProof";
 import { ImmobilierLeadForm } from "@/components/ads/ImmobilierLeadForm";
 import { propertyWhatsAppUrl, type PropertyTopic } from "@/lib/ads-immobilier";
 import { firm, siteUrl } from "@/lib/site";
@@ -27,10 +28,22 @@ const issues: { topic: PropertyTopic; title: string; text: string }[] = [
 ];
 
 const faqs = [
-  { question: "هل ينوب المكتب في النزاعات العقارية خارج دائرة المحمدية؟", answer: "نعم. ينوب المكتب ويترافع أمام المحاكم الابتدائية ومحاكم الاستئناف بالدار البيضاء والرباط، وكافة محاكم المملكة ومحكمة النقض، خاصة في النزاعات العقارية المعقدة وقضايا التحفيظ." },
-  { question: "ما هي المعطيات الضرورية خلال التواصل الأول؟", answer: "يُستحسن بيان طبيعة العقار (محفظ، في طور التحفيظ، أو غير محفظ)، موضوع النزاع، وأي استدعاء لجلسة أو إنذار أو تبليغ توصلتم به لتدارك أي أجل قانوني وشيك." },
-  { question: "هل يلزم توفير كافة الوثائق قبل حجز الموعد؟", answer: "يكفي حصر المعطيات الأساسية، على أن تُحضر في الموعد وثائق الملكية المتوفرة (رسم عقاري، شهادة ملكية، رسم ملكية عدلي، عقد بيع، أو إراثة) للتدقيق القانوني المباشر." },
-  { question: "كيف يتم تحديد أتعاب الملف العقاري؟", answer: "تُحدد الأتعاب بالاتفاق وفقاً لتعقيد المسطرة، حجم الوثائق، والمصالح المتنازع عليها، مع توثيق نطاق الإنابة طبقاً لقانون المحاماة." },
+  {
+    question: "هل الاستشارة الأولى بالمكتب مجانية؟",
+    answer: "نعم، الاستشارة الأولى بالمكتب مجانية، وتتيح لكم عرض موضوع قضيتكم والتعرف على كيفية مواكبتها. يُرجى حجز موعد مسبق.",
+  },
+  {
+    question: "هل يتولى المكتب القضايا العقارية في جميع أنحاء المغرب؟",
+    answer: "نعم، يتولى المكتب قضايا العقار والتحفيظ العقاري في مختلف أنحاء المغرب، وينوب عن موكليه أمام المحاكم الابتدائية ومحاكم الاستئناف ومحكمة النقض.",
+  },
+  {
+    question: "هل يواكب المكتب المغاربة المقيمين بالخارج في قضاياهم العقارية؟",
+    answer: "نعم، يواكب المكتب المغاربة المقيمين بالخارج في قضايا العقار والتحفيظ العقاري والميراث بالمغرب، مع تحديد الإجراءات والوثائق اللازمة بحسب طبيعة كل ملف.",
+  },
+  {
+    question: "هل يمكن التواصل مع المكتب قبل شراء عقار أو أرض فلاحية؟",
+    answer: "نعم، يمكنكم استشارة المكتب قبل الشراء لدراسة الوضعية القانونية للعقار والوثائق المتوفرة، وتوضيح النقاط التي تستوجب التحقق قبل إتمام المعاملة.",
+  },
 ];
 
 function ContactButtons({ position, light = false, compact = false }: { position: string; light?: boolean; compact?: boolean }) {
@@ -48,10 +61,27 @@ function ContactButtons({ position, light = false, compact = false }: { position
 
 export default function PropertyCampaignPage() {
   const schema = {
-    "@context": "https://schema.org", "@type": "LegalService",
-    "@id": `${siteUrl}/#cabinet`, name: "مكتب الأستاذ عبد الرزاق الرويسي",
-    url: siteUrl, telephone: firm.telephone, foundingDate: firm.founded,
-    address: { "@type": "PostalAddress", streetAddress: firm.address.street, addressLocality: firm.address.city, postalCode: firm.address.postalCode, addressCountry: "MA" },
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "@id": `${siteUrl}/#cabinet`,
+    name: "مكتب الأستاذ عبد الرزاق الرويسي",
+    url: siteUrl,
+    telephone: firm.telephone,
+    foundingDate: firm.founded,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: firm.address.street,
+      addressLocality: firm.address.city,
+      postalCode: firm.address.postalCode,
+      addressCountry: "MA",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "24",
+      bestRating: "5",
+      worstRating: "1",
+    },
   };
 
   return (
@@ -73,13 +103,14 @@ export default function PropertyCampaignPage() {
         <section className={styles.hero} aria-labelledby="hero-heading">
           <div className={`${styles.container} ${styles.heroGrid}`}>
             <div className={styles.heroCopy}>
+              <GoogleHeroBadge locale="ar" />
               <h1 id="hero-heading">محامٍ في قضايا العقار<br /><span>والتحفيظ بالمغرب</span></h1>
               <p className={styles.heroQuestion}>نزاع حول ملكية عقار، تحفيظ، أو أرض فلاحية؟</p>
               <p className={styles.heroDescription}>من قضايا التحفيظ والتعرضات إلى قسمة التركات وتصفية الأراضي الفلاحية، ابدؤوا بدراسة ملفكم مع مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض.</p>
               <ContactButtons position="hero" />
               <p className={styles.directNumber}>للاتصال مباشرة: <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
               <div className={styles.heroEvidence}>
-                <p>ممارسة قانونية وترافع منذ <bdi>1992</bdi></p>
+                <p>ممارسة قانونية وترافع منذ <bdi>1992</bdi> · تقييم <bdi>5,0/5</bdi> على Google (<bdi>24</bdi> تقييماً موثقاً)</p>
                 <p>مقر المكتب بالمحمدية · نيابة وترافع أمام كافة محاكم المملكة</p>
               </div>
             </div>
@@ -115,6 +146,8 @@ export default function PropertyCampaignPage() {
           </div>
         </section>
 
+        <GoogleReviewsSection locale="ar" />
+
         <section className={styles.lawyerSection} aria-labelledby="lawyer-heading">
           <div className={`${styles.container} ${styles.lawyerGrid}`}>
             <div>
@@ -128,8 +161,9 @@ export default function PropertyCampaignPage() {
               <MapPin size={27} aria-hidden="true" />
               <h3>نستقبلكم بالمحمدية</h3>
               <address>127 شارع فلسطين<br />الطابق الأول، فوق مقهى مونتريال<br />المحمدية، المغرب</address>
+              <p>تقييم ممتاز 5,0/5 على Google · 24 تقييماً موثقاً</p>
               <p>يرجى الاتصال لتحديد موعد.</p>
-              <a className={styles.textLink} href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${firm.address.street}, ${firm.address.city}, Morocco`)}`} target="_blank" rel="noopener noreferrer">العنوان على خرائط Google <ArrowUpLeft size={18} aria-hidden="true" /></a>
+              <a className={styles.textLink} href={firm.googleReviewsUrl} target="_blank" rel="noopener noreferrer">الاطلاع على التقييمات ومسار الوصول على Google Maps <ArrowUpLeft size={18} aria-hidden="true" /></a>
               <a className={styles.officePhone} href={`tel:${firm.telephone}`} dir="ltr" data-contact-position="office">{firm.displayTelephone}</a>
             </aside>
           </div>

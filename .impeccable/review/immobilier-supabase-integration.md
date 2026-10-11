@@ -4,7 +4,7 @@ Extension locale du 9 octobre 2026, sans publication. Table existante : `public.
 
 ## Parcours
 
-Sur `/ar/ads/immobilier` et `/ads/immobilier`, le clic sur « Continuer sur WhatsApp » valide les champs, appelle `POST /api/immobilier-leads`, attend la confirmation d’enregistrement, puis ouvre le message WhatsApp. La personne doit encore envoyer elle-même le message dans WhatsApp. Une ligne informe de l’enregistrement avant le bouton.
+Sur `/ar/ads/immobilier` et `/ads/immobilier`, le clic sur « Poursuivre ma demande » valide les champs, appelle `POST /api/immobilier-leads`, attend la confirmation d’enregistrement, puis ouvre le message WhatsApp. La personne doit encore envoyer elle-même le message dans WhatsApp. Une ligne informe de l’enregistrement avant le bouton.
 
 Une erreur ne signifie jamais « enregistré » : les valeurs restent présentes, le message d’erreur reçoit le focus et devient visible sur mobile. La personne peut réessayer ou explicitement ouvrir WhatsApp sans enregistrement. Les boutons WhatsApp directs et appels ne créent pas de ligne Supabase.
 

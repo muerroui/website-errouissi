@@ -12,9 +12,9 @@ type Errors = Partial<Record<"name" | "topic" | "phone", string>>;
 
 const formCopy = {
   ar: {
-    heading: "عرض معطيات قضيتكم", intro: "تفضلوا بتسجيل بياناتكم وموضوع الملف لتهيئة رسالة واضحة للمكتب عبر واتساب.",
+    heading: "عرض معطيات قضيتكم", intro: "يرجى إدخال بياناتكم وموضوع قضيتكم للتواصل مع المكتب.",
     name: "الاسم الكامل", required: "(مطلوب)", topic: "موضوع النزاع / القضية", choose: "اختاروا موضوع القضية الأقرب لحالتكم",
-    phone: "رقم الهاتف", optional: "(اختياري)", opening: "جارٍ تسجيل طلبكم…", submit: "متابعة عبر واتساب",
+    phone: "رقم الهاتف", optional: "(اختياري)", opening: "جارٍ تسجيل طلبكم…", submit: "متابعة الطلب",
     nameError: "يرجى كتابة اسمكم (حرفين على الأقل).", topicError: "يرجى اختيار موضوع النزاع لتهيئة رسالة الاستشارة.",
     phoneError: "يرجى إدخال رقم هاتف صحيح أو ترك الخانة فارغة.",
     saveError: "تعذّر حفظ بياناتكم حالياً. حاولوا مجدداً أو تواصلوا مباشرة عبر واتساب.",
@@ -24,9 +24,9 @@ const formCopy = {
     errorStatus: "يرجى تصحيح الخانات المشار إليها قبل المتابعة.", openingStatus: "جارٍ فتح تطبيق واتساب لمراجعة رسالتكم.",
   },
   fr: {
-    heading: "Parlons de votre dossier", intro: "Préparez un court message, puis relisez-le dans WhatsApp avant de l’envoyer.",
+    heading: "Parlons de votre dossier", intro: "Renseignez le thème de votre demande pour prendre contact avec le cabinet.",
     name: "Votre nom", required: "(obligatoire)", topic: "Sujet du dossier", choose: "Choisissez un sujet",
-    phone: "Téléphone", optional: "(facultatif)", opening: "Enregistrement de votre demande…", submit: "Continuer sur WhatsApp",
+    phone: "Téléphone", optional: "(facultatif)", opening: "Enregistrement de votre demande…", submit: "Poursuivre ma demande",
     nameError: "Indiquez votre nom avec au moins deux caractères.", topicError: "Choisissez un sujet pour préparer votre message.",
     phoneError: "Saisissez un numéro valide ou laissez ce champ vide.",
     saveError: "Votre demande n’a pas pu être enregistrée. Réessayez ou ouvrez WhatsApp sans enregistrement.",
