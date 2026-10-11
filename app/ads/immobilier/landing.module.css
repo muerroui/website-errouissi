@@ -36,6 +36,9 @@
 .skipLink:focus { transform: translateY(0); }
 .header { background: var(--campaign-navy); color: var(--campaign-paper); }
 .headerInner { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block: 22px; }
+.headerActions { display: flex; align-items: center; gap: 14px; }
+.langSwitch { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; padding: 6px 14px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.28); color: var(--campaign-paper); font-size: 0.9375rem; font-weight: 600; text-decoration: none; transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease; }
+.langSwitch:hover { background: rgba(255, 255, 255, 0.12); border-color: var(--campaign-gold); color: var(--campaign-gold); }
 .brand { display: flex; flex-direction: column; color: var(--campaign-paper); font-size: 1.5rem; font-weight: 700; line-height: 1.4; }
 .brandDetail { color: #d9c6a1; font-size: .9375rem; font-weight: 400; margin-top: 5px; }
 .headerPhone { display: flex; align-items: center; gap: 12px; min-height: 48px; color: var(--campaign-paper); font-family: Inter, Arial, sans-serif; font-size: 1rem; }
@@ -44,10 +47,12 @@
 .heroGrid { position: relative; display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(48px, 6vw, 96px); padding-block: 62px 76px; border-top: 1px solid #3c4251; }
 .heroGrid::after { content: ""; position: absolute; inset-block-start: -1px; inset-inline-start: 48px; width: 80px; height: 1px; background: var(--campaign-gold); transform-origin: right; animation: rule-introduce 1000ms cubic-bezier(.16,1,.3,1) both; }
 .heroCopy { align-self: center; min-width: 0; }
-.hero h1 { font-size: clamp(3.5rem, 5.8vw, 5.2rem); font-weight: 600; line-height: 1.14; }
+.hero h1 { font-size: clamp(3.2rem, 5.2vw, 4.8rem); font-weight: 600; line-height: 1.16; }
 .hero h1 span { color: #d6b66a; }
-.heroQuestion { font-size: 1.75rem; line-height: 1.5; padding-top: 26px; font-weight: 600; }
-.heroDescription { color: #d8dbe2; max-width: 34rem; padding-top: 12px; font-size: 1.25rem; line-height: 1.75; }
+.heroSubtitle { font-size: 1.25rem; line-height: 1.45; color: #d6b66a; font-weight: 600; padding-top: 18px; }
+.heroDescription { color: #d8dbe2; max-width: 36rem; padding-top: 12px; font-size: 1.1875rem; line-height: 1.7; }
+.heroPractical { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 16px; font-size: 0.9375rem; color: #c4c8d4; }
+.heroPracticalDivider { opacity: 0.6; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero .actions { margin-top: 28px; }
 .button { display: inline-flex; justify-content: center; align-items: center; gap: 10px; min-height: 56px; padding: 12px 23px; border-radius: 12px; border: 1px solid transparent; font: inherit; font-weight: 700; font-size: 1.125rem; line-height: 1.5; cursor: pointer; transition: background-color 180ms ease, transform 180ms cubic-bezier(.16,1,.3,1); }
@@ -78,7 +83,9 @@
 .formButton { margin-top: 24px; width: 100%; color: var(--campaign-paper); background: var(--campaign-navy); justify-content: space-between; }
 .formButton:hover { background: #253047; }
 .formButton:disabled { cursor: wait; background: #465166; transform: none; }
-.formPrivacy { display: flex; align-items: flex-start; gap: 8px; color: var(--campaign-muted); font-size: .875rem; line-height: 1.6; margin-top: 16px !important; }
+.submitNote { display: flex; align-items: flex-start; gap: 8px; margin-top: 10px !important; color: #536077; font-size: 0.8125rem; line-height: 1.5; }
+.submitNote svg { flex-shrink: 0; margin-top: 2px; color: #25d366; }
+.formPrivacy { display: flex; align-items: flex-start; gap: 8px; color: var(--campaign-muted); font-size: .875rem; line-height: 1.6; margin-top: 12px !important; }
 .formPrivacy svg { margin-top: 4px; flex: 0 0 15px; }
 .saveError { margin-top: 16px; }
 .recoveryButton { margin-top: 10px; padding: 8px 0; min-height: 48px; background: none; border: 0; color: var(--campaign-navy); font: inherit; font-size: 1rem; text-align: start; text-decoration: underline; text-underline-offset: .25em; cursor: pointer; }

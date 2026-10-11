@@ -7,8 +7,8 @@ import { propertyWhatsAppUrl, type PropertyTopic } from "@/lib/ads-immobilier";
 import { firm, siteUrl } from "@/lib/site";
 import styles from "./landing.module.css";
 
-const title = "Avocat immobilier au Maroc | Maître Errouissi";
-const description = "Litige immobilier, terrain ou bien hérité au Maroc ? Contactez Maître Abderrazak Errouissi à Mohammedia, avocat depuis 1992. Téléphone ou WhatsApp.";
+const title = "Litige immobilier ou foncier au Maroc | Maître Errouissi";
+const description = "Un litige sur un terrain, une terre agricole ou un bien hérité au Maroc ? Contactez Maître Abderrazak Errouissi, avocat depuis 1992. Échange rapide sur WhatsApp ou téléphone.";
 
 export const metadata: Metadata = {
   title,
@@ -29,31 +29,31 @@ const issues: { topic: PropertyTopic; title: string; text: string }[] = [
 
 const faqs = [
   {
-    question: "Pourquoi prendre un premier rendez-vous avec notre cabinet ?",
-    answer: "Bénéficiez d'un premier échange personnalisé pour présenter votre situation, obtenir une première orientation juridique et découvrir les démarches envisageables. Notre cabinet vous accueille dans un cadre professionnel et confidentiel.",
+    question: "Combien coûte le premier rendez-vous et comment sont fixés les honoraires ?",
+    answer: "Les honoraires du cabinet sont définis en toute transparence dès le premier échange, au regard de la complexité du dossier, des pièces à analyser et des démarches requises. Aucun engagement financier n’est pris sans votre accord préalable.",
   },
   {
-    question: "Le cabinet intervient-il pour des litiges partout au Maroc ?",
-    answer: "Oui, le cabinet prend en charge les dossiers immobiliers et fonciers dans tout le Maroc, et représente ses clients devant les tribunaux de première instance, les cours d'appel et la Cour de cassation.",
+    question: "Mon bien est situé dans une autre ville du Maroc : comment commencer ?",
+    answer: "Le cabinet est basé à Mohammedia et intervient régulièrement à Casablanca, Rabat et dans les différentes régions du Maroc. Vous pouvez commencer par échanger par téléphone ou WhatsApp en transmettant vos documents, avant d'organiser un rendez-vous au cabinet ou une représentation directe devant le tribunal.",
   },
   {
-    question: "Le cabinet accompagne-t-il les Marocains résidant à l'étranger (MRE) ?",
-    answer: "Oui, le cabinet accompagne les Marocains résidant à l'étranger pour leurs biens immobiliers, immatriculations foncières et successions au Maroc, avec un suivi rigoureux des démarches et pièces requises.",
+    question: "Puis-je contacter le cabinet si certains documents me manquent ?",
+    answer: "Oui, tout à fait. Même si votre dossier n'est pas encore complet (titre foncier en cours, absence de certains actes adoulaires ou d'héritage), le cabinet identifie dès le premier échange les pièces indispensables et vous guide pour les réunir auprès de la Conservation foncière ou des juridictions.",
   },
   {
-    question: "Peut-on consulter le cabinet avant d'acheter un bien immobilier ou un terrain ?",
-    answer: "Oui, vous pouvez consulter le cabinet avant l'achat afin d'auditer la situation juridique du bien et les documents disponibles, et d'identifier les points de vigilance avant la conclusion de la transaction.",
+    question: "Qui répond à ma demande et sous quel délai ?",
+    answer: "Votre message ou appel est traité directement par le cabinet de Maître Abderrazak Errouissi, du lundi au samedi entre 09h00 et 19h30. Une réponse vous est apportée rapidement (généralement en moins de deux heures ouvrées) pour orienter utilement votre situation.",
   },
 ];
 
 function ContactButtons({ position, light = false, compact = false }: { position: string; light?: boolean; compact?: boolean }) {
   return (
     <div className={styles.actions}>
-      <a href={`tel:${firm.telephone}`} data-contact-position={position} aria-label={compact ? "Appeler le cabinet" : undefined} className={`${styles.button} ${light ? styles.darkButton : styles.goldButton}`}>
-        <Phone size={20} aria-hidden="true" />{compact ? "Appeler" : "Appeler le cabinet"}
-      </a>
-      <a href={propertyWhatsAppUrl(undefined, undefined, undefined, "fr")} data-contact-position={position} aria-label={compact ? "Contacter le cabinet sur WhatsApp" : undefined} className={`${styles.button} ${light ? styles.paperSecondary : styles.secondaryButton}`}>
+      <a href={propertyWhatsAppUrl(undefined, undefined, undefined, "fr")} data-contact-position={position} aria-label={compact ? "Écrire sur WhatsApp" : undefined} className={`${styles.button} ${light ? styles.darkButton : styles.goldButton}`}>
         <MessageCircle size={21} aria-hidden="true" />{compact ? "WhatsApp" : "Écrire sur WhatsApp"}
+      </a>
+      <a href={`tel:${firm.telephone}`} data-contact-position={position} aria-label={compact ? "Appeler le cabinet" : undefined} className={`${styles.button} ${light ? styles.paperSecondary : styles.secondaryButton}`}>
+        <Phone size={20} aria-hidden="true" />{compact ? "Appeler" : "Appeler le cabinet"}
       </a>
     </div>
   );
@@ -93,9 +93,14 @@ export default function FrenchPropertyCampaignPage() {
             <span>Maître Abderrazak Errouissi</span>
             <span className={styles.brandDetail}>Cabinet d’avocat · Mohammedia · Depuis 1992</span>
           </a>
-          <a className={styles.headerPhone} href={`tel:${firm.telephone}`} data-contact-position="header" aria-label={`Appeler le cabinet au ${firm.displayTelephone}`}>
-            <Phone size={18} aria-hidden="true" /><span dir="ltr">{firm.displayTelephone}</span>
-          </a>
+          <div className={styles.headerActions}>
+            <a href="/ar/ads/immobilier" className={styles.langSwitch} hrefLang="ar-MA" lang="ar" aria-label="Passer en version arabe">
+              العربية
+            </a>
+            <a className={styles.headerPhone} href={`tel:${firm.telephone}`} data-contact-position="header" aria-label={`Appeler le cabinet au ${firm.displayTelephone}`}>
+              <Phone size={18} aria-hidden="true" /><span dir="ltr">{firm.displayTelephone}</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -104,14 +109,19 @@ export default function FrenchPropertyCampaignPage() {
           <div className={`${styles.container} ${styles.heroGrid}`}>
             <div className={styles.heroCopy}>
               <GoogleHeroBadge locale="fr" />
-              <h1 id="hero-heading">Avocat immobilier<br /><span>au Maroc</span></h1>
-              <p className={styles.heroQuestion}>Un terrain ou un bien en litige ?</p>
-              <p className={styles.heroDescription}>Propriété, immatriculation, terre agricole ou bien hérité : commencez par discuter de votre dossier avec le cabinet de Maître Abderrazak Errouissi.</p>
+              <h1 id="hero-heading">Un litige sur un terrain<br /><span>ou un bien hérité ?</span></h1>
+              <p className={styles.heroSubtitle}>Cabinet d’avocat en droit immobilier et foncier au Maroc — Depuis 1992</p>
+              <p className={styles.heroDescription}>Propriété contestée, partage entre héritiers, terre agricole ou immatriculation : échangez avec le cabinet pour exposer votre situation et préparer votre rendez-vous.</p>
+              <div className={styles.heroPractical}>
+                <span>📍 Cabinet à Mohammedia · Dossiers partout au Maroc</span>
+                <span className={styles.heroPracticalDivider}>·</span>
+                <span>🕒 Lun–Sam : 09h00–19h30</span>
+              </div>
               <ContactButtons position="hero" />
-              <p className={styles.directNumber}>Appelez directement : <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
+              <p className={styles.directNumber}>Appel direct : <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
               <div className={styles.heroEvidence}>
-                <p>Avocat depuis <bdi>1992</bdi> · <bdi>5,0/5</bdi> sur Google (<bdi>24</bdi> avis vérifiés)</p>
-                <p>Cabinet à Mohammedia · Accompagnement au Maroc selon le dossier</p>
+                <p>Maître Abderrazak Errouissi · Avocat depuis <bdi>1992</bdi> (<bdi>+32</bdi> ans)</p>
+                <p>Note <bdi>5,0/5</bdi> sur Google Maps · <bdi>24</bdi> avis clients vérifiés · Barreau de Casablanca</p>
               </div>
             </div>
             <div id="consultation" className={styles.consultation}>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { ArrowUpLeft, ArrowUpRight, LockKeyhole } from "lucide-react";
+import { ArrowUpLeft, ArrowUpRight, LockKeyhole, MessageCircle } from "lucide-react";
 import { getPropertyTopics, normalizePhone, propertyTopics, propertyWhatsAppUrl, type PropertyTopic } from "@/lib/ads-immobilier";
 import type { Locale } from "@/lib/i18n";
 import { firm } from "@/lib/site";
@@ -12,9 +12,11 @@ type Errors = Partial<Record<"name" | "topic" | "phone", string>>;
 
 const formCopy = {
   ar: {
-    heading: "عرض معطيات قضيتكم", intro: "يرجى إدخال بياناتكم وموضوع قضيتكم للتواصل مع المكتب.",
+    heading: "عرض معطيات ملفكم العقاري",
+    intro: "أدخلوا اسمكم وموضوع النزاع لتهيئة رسالتكم والتواصل المباشر مع المكتب عبر واتساب.",
     name: "الاسم الكامل", required: "(مطلوب)", topic: "موضوع النزاع / القضية", choose: "اختاروا موضوع القضية الأقرب لحالتكم",
-    phone: "رقم الهاتف", optional: "(اختياري)", opening: "جارٍ تسجيل طلبكم…", submit: "متابعة الطلب",
+    phone: "رقم الهاتف", optional: "(اختياري)", opening: "جارٍ فتح تطبيق واتساب…", submit: "المتابعة عبر واتساب",
+    note: "سيتم إعداد رسالتكم تلقائياً في واتساب، ويكفيكم الضغط على إرسال لتوجيهها إلى المكتب.",
     nameError: "يرجى كتابة اسمكم (حرفين على الأقل).", topicError: "يرجى اختيار موضوع النزاع لتهيئة رسالة الاستشارة.",
     phoneError: "يرجى إدخال رقم هاتف صحيح أو ترك الخانة فارغة.",
     saveError: "تعذّر حفظ بياناتكم حالياً. حاولوا مجدداً أو تواصلوا مباشرة عبر واتساب.",
@@ -24,9 +26,11 @@ const formCopy = {
     errorStatus: "يرجى تصحيح الخانات المشار إليها قبل المتابعة.", openingStatus: "جارٍ فتح تطبيق واتساب لمراجعة رسالتكم.",
   },
   fr: {
-    heading: "Parlons de votre dossier", intro: "Renseignez le thème de votre demande pour prendre contact avec le cabinet.",
+    heading: "Transmettre votre dossier",
+    intro: "Indiquez votre nom et le sujet de votre litige pour préparer votre échange direct sur WhatsApp.",
     name: "Votre nom", required: "(obligatoire)", topic: "Sujet du dossier", choose: "Choisissez un sujet",
-    phone: "Téléphone", optional: "(facultatif)", opening: "Enregistrement de votre demande…", submit: "Poursuivre ma demande",
+    phone: "Téléphone", optional: "(facultatif)", opening: "Ouverture de WhatsApp…", submit: "Continuer sur WhatsApp",
+    note: "Votre message sera préparé dans WhatsApp : vous n'aurez plus qu'à cliquer sur envoyer.",
     nameError: "Indiquez votre nom avec au moins deux caractères.", topicError: "Choisissez un sujet pour préparer votre message.",
     phoneError: "Saisissez un numéro valide ou laissez ce champ vide.",
     saveError: "Votre demande n’a pas pu être enregistrée. Réessayez ou ouvrez WhatsApp sans enregistrement.",
@@ -178,6 +182,10 @@ export function ImmobilierLeadForm({ locale = "ar" }: { locale?: Locale }) {
       <button className={`${styles.button} ${styles.formButton}`} type="submit" disabled={!ready || opening}>
         {opening ? copy.opening : copy.submit}<DirectionArrow size={20} aria-hidden="true" />
       </button>
+      <p className={styles.submitNote}>
+        <MessageCircle size={15} aria-hidden="true" />
+        <span>{copy.note}</span>
+      </p>
       {saveError && <div ref={saveErrorRef} className={styles.saveError} role="alert" tabIndex={-1}>
         <p className={styles.error}>{saveError}</p>
         <button className={styles.recoveryButton} type="button" onClick={() => openWhatsApp(unsavedUrlRef.current)}>

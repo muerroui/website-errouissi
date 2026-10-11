@@ -78,18 +78,18 @@ export function GoogleReviewsSection({ locale }: { locale: Locale }) {
           <div className={styles.headerInfo}>
             <div className={styles.pillBadge}>
               <CheckCircle2 size={15} aria-hidden="true" />
-              <span>{isAr ? "ثقة الموكلين وشفافية التجربة" : "Avis clients certifiés Google"}</span>
+              <span>{isAr ? "تقييم 5,0 / 5 على Google Maps" : "Note 5,0 / 5 sur Google Maps"}</span>
             </div>
             <h2 id="google-reviews-heading" className={styles.sectionTitle}>
               {isAr ? (
                 <>
                   ما يقوله الموكلون <br />
-                  <span>تقييم 5,0 / 5 على Google</span>
+                  <span>تقييم 5,0 / 5 على Google Maps</span>
                 </>
               ) : (
                 <>
-                  La confiance de nos clients <br />
-                  <span>Avis certifiés 5,0 / 5 sur Google</span>
+                  Ce que disent nos clients <br />
+                  <span>Note 5,0 / 5 sur Google Maps</span>
                 </>
               )}
             </h2>
@@ -117,8 +117,8 @@ export function GoogleReviewsSection({ locale }: { locale: Locale }) {
                 <FiveStars size={18} />
                 <p className={styles.reviewsTotal}>
                   {isAr
-                    ? `${googleReviewsStats.reviewCount} تقييماً بنسبة رضا ${googleReviewsStats.positivePercentage}`
-                    : `${googleReviewsStats.reviewCount} avis vérifiés · 100% satisfaits`}
+                    ? `تقييم 5,0 من 5 · ${googleReviewsStats.reviewCount} تقييماً حقيقياً على Google Maps`
+                    : `Note 5,0/5 sur Google · ${googleReviewsStats.reviewCount} avis vérifiés sur Google Maps`}
                 </p>
               </div>
             </div>

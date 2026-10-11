@@ -7,8 +7,8 @@ import { propertyWhatsAppUrl, type PropertyTopic } from "@/lib/ads-immobilier";
 import { firm, siteUrl } from "@/lib/site";
 import styles from "@/app/ads/immobilier/landing.module.css";
 
-const title = "محامٍ في المنازعات العقارية و نزاعات الاراضي الفلاحية | الأستاذ عبد الرزاق الرويسي";
-const description = "نزاع حول عقار أو أرض فلاحية؟ مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض (المحمدية)، ممارس في قضايا التحفيظ، التركات، والنزاعات العقارية منذ 1992.";
+const title = "نزاع حول عقار، أرض فلاحية أو تركة موروثة | الأستاذ الرويسي";
+const description = "نزاع حول عقار، أرض فلاحية أو تركة موروثة بالمغرب؟ تواصلوا مع مكتب الأستاذ عبد الرزاق الرويسي، محامٍ مقبول لدى محكمة النقض ممارس منذ 1992. تواصل فوري عبر واتساب أو الهاتف.";
 
 export const metadata: Metadata = {
   title,
@@ -29,31 +29,31 @@ const issues: { topic: PropertyTopic; title: string; text: string }[] = [
 
 const faqs = [
   {
-    question: "لماذا تحجزون موعداً أولياً مع مكتبنا؟",
-    answer: "تستفيدون من جلسة أولى مخصصة لعرض معطيات قضيتكم، والحصول على توجيه قانوني أولي، والتعرف على المساطر والإجراءات الممكنة. يستقبلكم المكتب في إطار مهني يضمن السرية التامة.",
+    question: "كيف يتم تحديد أتعاب الملف وتكاليف الاستشارة؟",
+    answer: "تُحدد الأتعاب بشفافية ووضوح منذ التواصل الأول، بالاتفاق المتبادل وفقاً لطبيعة النزاع، تعقيد الإجراءات والمصالح المتنازع عليها، وطبقاً لأحكام القانون المنظم لمهنة المحاماة. ولا يُباشر أي إجراء دون موافقتكم المسبقة.",
   },
   {
-    question: "هل يتولى المكتب القضايا العقارية في جميع أنحاء المغرب؟",
-    answer: "نعم، يتولى المكتب قضايا العقار والتحفيظ العقاري في مختلف أنحاء المغرب، وينوب عن موكليه أمام المحاكم الابتدائية ومحاكم الاستئناف ومحكمة النقض.",
+    question: "عقاري يقع في مدينة أخرى بالمغرب: كيف تبدأ المواكبة؟",
+    answer: "يقع مقر المكتب بالمحمدية ويتولى القضايا بالدار البيضاء، الرباط ومختلف محاكم المملكة. يمكنكم البدء بالتواصل هاتفياً أو عبر واتساب مع إرسال الوثائق المتوفرة، قبل تحديد موعد بالمكتب أو مباشرة المسطرة القضائية بالدائرة المختصة.",
   },
   {
-    question: "هل يواكب المكتب المغاربة المقيمين بالخارج في قضاياهم العقارية؟",
-    answer: "نعم، يواكب المكتب المغاربة المقيمين بالخارج في قضايا العقار والتحفيظ العقاري والميراث بالمغرب، مع تحديد الإجراءات والوثائق اللازمة بحسب طبيعة كل ملف.",
+    question: "هل يمكن التواصل مع المكتب في حال عدم توفر كافة الوثائق؟",
+    answer: "نعم بكل تأكيد. حتى وإن كانت وثائقكم غير مكتملة (رسم عقاري غير متوفر، وثائق إراثة ناقصة)، يحدد المكتب معكم منذ التواصل الأول الوثائق الجوهرية الواجب استخراجها من المحافظة العقارية أو المحاكم لمباشرة الإجراءات وحماية حقوقكم.",
   },
   {
-    question: "هل يمكن التواصل مع المكتب قبل شراء عقار أو أرض فلاحية؟",
-    answer: "نعم، يمكنكم استشارة المكتب قبل الشراء لدراسة الوضعية القانونية للعقار والوثائق المتوفرة، وتوضيح النقاط التي تستوجب التحقق قبل إتمام المعاملة.",
+    question: "من يتولى الرد على تواصلي وما هو الأجل المعتاد؟",
+    answer: "يتولى مكتب الأستاذ عبد الرزاق الرويسي الرد مباشرة على اتصالاتكم ورسائلكم من الاثنين إلى السبت بين 09:00 و19:30. ويتم التفاعل مع طلبكم في أقرب الآجال (عادة خلال ساعتين أثناء أوقات العمل) لتوضيح مسار قضيتكم.",
   },
 ];
 
 function ContactButtons({ position, light = false, compact = false }: { position: string; light?: boolean; compact?: boolean }) {
   return (
     <div className={styles.actions}>
-      <a href={`tel:${firm.telephone}`} data-contact-position={position} aria-label={compact ? "اتصلوا بالمكتب" : undefined} className={`${styles.button} ${light ? styles.darkButton : styles.goldButton}`}>
-        <Phone size={20} aria-hidden="true" />{compact ? "اتصال بالمكتب" : "اتصلوا بالمكتب"}
+      <a href={propertyWhatsAppUrl()} data-contact-position={position} aria-label={compact ? "تواصلوا عبر واتساب" : undefined} className={`${styles.button} ${light ? styles.darkButton : styles.goldButton}`}>
+        <MessageCircle size={21} aria-hidden="true" />{compact ? "واتساب" : "مراسلة عبر واتساب"}
       </a>
-      <a href={propertyWhatsAppUrl()} data-contact-position={position} aria-label={compact ? "تواصلوا عبر واتساب" : undefined} className={`${styles.button} ${light ? styles.paperSecondary : styles.secondaryButton}`}>
-        <MessageCircle size={21} aria-hidden="true" />{compact ? "واتساب" : "تواصلوا عبر واتساب"}
+      <a href={`tel:${firm.telephone}`} data-contact-position={position} aria-label={compact ? "اتصلوا بالمكتب" : undefined} className={`${styles.button} ${light ? styles.paperSecondary : styles.secondaryButton}`}>
+        <Phone size={20} aria-hidden="true" />{compact ? "اتصال" : "الاتصال بالمكتب"}
       </a>
     </div>
   );
@@ -93,9 +93,14 @@ export default function PropertyCampaignPage() {
             <span>الأستاذ عبد الرزاق الرويسي</span>
             <span className={styles.brandDetail}>مكتب المحاماة · المحمدية · منذ 1992</span>
           </a>
-          <a className={styles.headerPhone} href={`tel:${firm.telephone}`} data-contact-position="header" aria-label={`اتصلوا بالمكتب: ${firm.displayTelephone}`}>
-            <Phone size={18} aria-hidden="true" /><span dir="ltr">{firm.displayTelephone}</span>
-          </a>
+          <div className={styles.headerActions}>
+            <a href="/ads/immobilier" className={styles.langSwitch} hrefLang="fr-MA" lang="fr" aria-label="Passer en version française">
+              Français
+            </a>
+            <a className={styles.headerPhone} href={`tel:${firm.telephone}`} data-contact-position="header" aria-label={`اتصلوا بالمكتب: ${firm.displayTelephone}`}>
+              <Phone size={18} aria-hidden="true" /><span dir="ltr">{firm.displayTelephone}</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -104,14 +109,19 @@ export default function PropertyCampaignPage() {
           <div className={`${styles.container} ${styles.heroGrid}`}>
             <div className={styles.heroCopy}>
               <GoogleHeroBadge locale="ar" />
-              <h1 id="hero-heading">محامٍ في قضايا العقار<br /><span>والتحفيظ بالمغرب</span></h1>
-              <p className={styles.heroQuestion}>نزاع حول ملكية عقار، تحفيظ، أو أرض فلاحية؟</p>
-              <p className={styles.heroDescription}>من قضايا التحفيظ والتعرضات إلى قسمة التركات وتصفية الأراضي الفلاحية، ابدؤوا بدراسة ملفكم مع مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض.</p>
+              <h1 id="hero-heading">نزاع حول عقار، أرض فلاحية<br /><span>أو تركة موروثة؟</span></h1>
+              <p className={styles.heroSubtitle}>مكتب محاماة مختص في قضايا العقار والتحفيظ بالمغرب — ممارسة مهنية منذ 1992</p>
+              <p className={styles.heroDescription}>نزاعات الملكية، قسمة التركات، الأراضي الفلاحية، أو مساطر التحفيظ: اعرضوا قضيتكم على مكتب الأستاذ عبد الرزاق الرويسي لتشخيص الوضعية وترتيب موعد لدراسة ملفكم.</p>
+              <div className={styles.heroPractical}>
+                <span>📍 المقر بالمحمدية · مباشرة القضايا بمختلف محاكم المغرب</span>
+                <span className={styles.heroPracticalDivider}>·</span>
+                <span>🕒 من الاثنين إلى السبت: 09:00–19:30</span>
+              </div>
               <ContactButtons position="hero" />
               <p className={styles.directNumber}>للاتصال مباشرة: <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
               <div className={styles.heroEvidence}>
-                <p>ممارسة قانونية وترافع منذ <bdi>1992</bdi> · تقييم <bdi>5,0/5</bdi> على Google (<bdi>24</bdi> تقييماً موثقاً)</p>
-                <p>مقر المكتب بالمحمدية · نيابة وترافع أمام كافة محاكم المملكة</p>
+                <p>الأستاذ عبد الرزاق الرويسي · ممارسة مهنية منذ <bdi>1992</bdi> (<bdi>+32</bdi> سنة)</p>
+                <p>تقييم <bdi>5,0/5</bdi> على Google Maps · <bdi>24</bdi> تقييماً موثقاً · هيئة المحامين بالدار البيضاء</p>
               </div>
             </div>
             <div id="consultation" className={styles.consultation}>
