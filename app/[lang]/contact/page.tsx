@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Clock3, MapPin, MessageCircle, Phone, Route, Accessibility } from "lucide-react";
+import { Clock3, MapPin, MessageCircle, Phone, Route, Accessibility, Mail } from "lucide-react";
 import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { firm, siteUrl } from "@/lib/site";
@@ -16,7 +16,9 @@ const content = {
     lead: "Exposez brièvement votre situation et convenez d’un rendez-vous avec le cabinet de Maître Abderrazak Errouissi, avocat depuis 1992.",
     call: "Appeler le cabinet",
     whatsapp: "Écrire sur WhatsApp",
+    email: "Envoyer un e-mail",
     detailsTitle: "Le cabinet, simplement",
+    emailLabel: "Courriel direct",
     addressLabel: "Adresse",
     address: "127 Boulevard de Palestine, 1er étage, au-dessus du café Montreal, Mohammédia 28830",
     hoursLabel: "Horaires",
@@ -51,7 +53,9 @@ const content = {
     lead: "يمكنكم عرض عناصر قضيتكم بإيجاز وحجز موعد للاستشارة مع مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء ممارس منذ سنة 1992 ومقبول لدى محكمة النقض.",
     call: "الاتصال بالمكتب",
     whatsapp: "التواصل عبر واتساب",
+    email: "مراسلة عبر البريد الإلكتروني",
     detailsTitle: "بيانات المكتب وولوج المقر",
+    emailLabel: "البريد الإلكتروني المباشر",
     addressLabel: "العنوان",
     address: "127 شارع فلسطين، الطابق الأول، فوق مقهى مونتريال، المحمدية 28830",
     hoursLabel: "أوقات العمل",
@@ -117,6 +121,7 @@ export default async function ContactPage({ params }: PageProps) {
             <div className="mt-10 flex w-full flex-col flex-wrap gap-3 sm:w-auto sm:flex-row">
               <a href={`tel:${firm.telephone}`} className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl bg-gold px-6 py-3 font-semibold text-navy shadow-[0_14px_36px_rgba(197,160,89,0.18)] transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-brass active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"><Phone aria-hidden="true" size={18} />{copy.call}</a>
               <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold backdrop-blur-md transition-[transform,background-color,border-color] duration-300 hover:-translate-y-0.5 hover:border-amber-500/35 hover:bg-white/[0.08] active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"><MessageCircle aria-hidden="true" size={18} />{copy.whatsapp}</a>
+              <a href={`mailto:${firm.email}`} className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold backdrop-blur-md transition-[transform,background-color,border-color] duration-300 hover:-translate-y-0.5 hover:border-gold/50 hover:bg-white/[0.08] hover:text-gold active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"><Mail aria-hidden="true" size={18} />{copy.email}</a>
             </div>
           </div>
           <aside className="border-y border-white/10 bg-white/[0.035] px-7 py-9 shadow-2xl backdrop-blur-md">
@@ -127,6 +132,7 @@ export default async function ContactPage({ params }: PageProps) {
             <div className="my-7 h-px bg-white/10" />
             <p className="font-display text-3xl font-semibold text-gold">{copy.detailsTitle}</p>
             <dl className="mt-8 space-y-6 text-sm leading-7 text-slate-300">
+              <div className="grid grid-cols-[1.5rem_1fr] gap-3"><Mail className="mt-1 text-gold" size={18} /><div><dt className="font-semibold text-white">{copy.emailLabel}</dt><dd><a href={`mailto:${firm.email}`} className="font-medium text-amber-200 transition-colors hover:text-white hover:underline break-all">{firm.email}</a></dd></div></div>
               <div className="grid grid-cols-[1.5rem_1fr] gap-3"><MapPin className="mt-1 text-gold" size={18} /><div><dt className="font-semibold text-white">{copy.addressLabel}</dt><dd>{copy.address}</dd></div></div>
               <div className="grid grid-cols-[1.5rem_1fr] gap-3"><Clock3 className="mt-1 text-gold" size={18} /><div><dt className="font-semibold text-white">{copy.hoursLabel}</dt><dd>{copy.hours}</dd></div></div>
               <div className="grid grid-cols-[1.5rem_1fr] gap-3"><Accessibility className="mt-1 text-gold" size={18} /><div><dt className="font-semibold text-white">{copy.accessLabel}</dt><dd>{copy.access}</dd></div></div>
@@ -163,11 +169,19 @@ export default async function ContactPage({ params }: PageProps) {
         <div className="mx-auto flex max-w-[86rem] flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <a href={`tel:${firm.telephone}`} dir="ltr" className="inline-block whitespace-nowrap font-brand text-3xl font-semibold tabular-nums tracking-[-0.02em] transition-colors hover:text-navy/80">{firm.displayTelephone}</a>
-            <p className="mt-2 text-navy/80">{copy.hours}</p>
+            <p className="mt-1.5 flex items-center gap-2 text-base font-semibold text-navy/90">
+              <Mail size={16} /><a href={`mailto:${firm.email}`} className="underline-offset-4 hover:underline">{firm.email}</a>
+            </p>
+            <p className="mt-1 text-sm text-navy/75">{copy.hours}</p>
           </div>
-          <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-14 w-full items-center justify-center gap-4 rounded-xl bg-navy px-7 py-4 font-semibold text-white shadow-2xl transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 active:translate-y-0 motion-reduce:transform-none motion-reduce:transition-none sm:w-auto">
-            <MessageCircle aria-hidden="true" size={19} />{copy.whatsapp}
-          </a>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a href={`mailto:${firm.email}`} className="inline-flex min-h-14 w-full items-center justify-center gap-3 rounded-xl border border-navy/20 bg-navy/10 px-6 py-4 font-semibold text-navy transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-navy/20 active:translate-y-0 motion-reduce:transform-none motion-reduce:transition-none sm:w-auto">
+              <Mail aria-hidden="true" size={19} />{copy.email}
+            </a>
+            <a href={firm.whatsappUrl} rel="noopener noreferrer" className="inline-flex min-h-14 w-full items-center justify-center gap-4 rounded-xl bg-navy px-7 py-4 font-semibold text-white shadow-2xl transition-[transform,background-color] duration-300 hover:-translate-y-0.5 hover:bg-slate-900 active:translate-y-0 motion-reduce:transform-none motion-reduce:transition-none sm:w-auto">
+              <MessageCircle aria-hidden="true" size={19} />{copy.whatsapp}
+            </a>
+          </div>
         </div>
       </section>
     </main>

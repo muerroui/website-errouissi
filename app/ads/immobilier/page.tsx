@@ -98,7 +98,6 @@ export default function FrenchPropertyCampaignPage() {
                 alt="Illustration sans personne : dossier de litige immobilier, balance de justice et plan de propriété aux limites contestées"
                 width={1200} height={800}
                 sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1100px) 36vw, 34vw" loading="lazy" />
-              <figcaption>Illustration générée, ne représentant ni le cabinet ni un dossier réel.</figcaption>
             </figure>
           </div>
           <div className={styles.issueList}>
@@ -159,7 +158,6 @@ export default function FrenchPropertyCampaignPage() {
       <footer className={`${styles.container} ${styles.footer}`}>
         <div><p>Cabinet de Maître Abderrazak Errouissi</p><span>Mohammedia · Avocat depuis 1992</span></div>
         <div className={styles.footerLinks}><a href="/fr">Site principal</a><a href="/ar/ads/immobilier" hrefLang="ar-MA" lang="ar">العربية</a></div>
-        <p className={styles.disclaimer}>Cette page présente les services du cabinet et ne remplace pas une consultation ni l’examen des documents. Aucun accompagnement ne garantit une issue particulière.</p>
       </footer>
 
       <nav className={styles.mobileContact} aria-label="Contacter rapidement le cabinet"><ContactButtons position="mobile_bar" compact /></nav>

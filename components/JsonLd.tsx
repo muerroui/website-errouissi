@@ -18,6 +18,7 @@ export function JsonLd({ locale }: { locale: Locale }) {
     foundingDate: firm.founded,
     slogan: locale === "ar" ? "أكثر من 32 سنة من الممارسة القانونية الرصينة" : "Plus de 32 ans d'expérience juridique",
     telephone: firm.telephone,
+    email: firm.email,
     address: {
       "@type": "PostalAddress",
       streetAddress: firm.address.street,
@@ -44,6 +45,7 @@ export function JsonLd({ locale }: { locale: Locale }) {
     contactPoint: [
       { "@type": "ContactPoint", telephone: firm.telephone, contactType: "customer service", availableLanguage: ["French", "Arabic", "English"], areaServed: "MA" },
       { "@type": "ContactPoint", telephone: firm.whatsappNumber, url: firm.whatsappUrl, contactType: "WhatsApp", availableLanguage: ["French", "Arabic", "English"], areaServed: "MA" },
+      { "@type": "ContactPoint", email: firm.email, contactType: "customer service", availableLanguage: ["French", "Arabic", "English"], areaServed: "MA" },
     ],
     employee: {
       "@type": "Person",

@@ -30,6 +30,7 @@ const homeContentAr = {
 const contactContentAr = {
   h1: "الاتصال بمكتب المحاماة بالمحمدية",
   lead: "يمكنكم عرض عناصر قضيتكم بإيجاز وحجز موعد للاستشارة مع مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء ممارس منذ سنة 1992 ومقبول لدى محكمة النقض.",
+  email: "errouissi.abderazzak@gmail.com",
   address: "127 شارع فلسطين، الطابق الأول، فوق مقهى مونتريال، المحمدية 28830",
   hours: "من الاثنين إلى السبت، من 09:00 إلى 19:30",
   access: "موقف سيارات بالمكان وولوج ميسر لذوي الحركية المحدودة",
@@ -144,6 +145,7 @@ function buildArabicSections(): ArabicDocumentSection[] {
       <h1>${escapeHtml(contactContentAr.h1)}</h1>
       <p class="lead">${escapeHtml(contactContentAr.lead)}</p>
 
+      <p><strong>البريد الإلكتروني المباشر :</strong> ${escapeHtml(contactContentAr.email)}</p>
       <p><strong>العنوان :</strong> ${escapeHtml(contactContentAr.address)}</p>
       <p><strong>أوقات العمل :</strong> ${escapeHtml(contactContentAr.hours)}</p>
       <p><strong>الولوج :</strong> ${escapeHtml(contactContentAr.access)}</p>
@@ -467,28 +469,44 @@ async function main() {
   const page = await browser.newPage();
   await page.setContent(htmlContent, { waitUntil: "load" });
 
+  let finalPdfPath = pdfPath;
+  const pdfOptions = {
+    format: "A4" as const,
+    margin: { top: "18mm", bottom: "18mm", left: "16mm", right: "16mm" },
+    printBackground: true,
+    displayHeaderFooter: true,
+    headerTemplate: `
+      <div style="font-size: 8pt; color: #666; width: 100%; text-align: right; padding-right: 16mm; font-family: sans-serif; direction: rtl;">
+        مكتب الأستاذ عبد الرزاق الرويسي — محتوى الموقع للمراجعة والتصحيح
+      </div>
+    `,
+    footerTemplate: `
+      <div style="font-size: 8pt; color: #666; width: 100%; text-align: center; font-family: sans-serif;">
+        <span class="pageNumber"></span> / <span class="totalPages"></span>
+      </div>
+    `,
+  };
+
   try {
     await page.pdf({
-      path: pdfPath,
-      format: "A4",
-      margin: { top: "18mm", bottom: "18mm", left: "16mm", right: "16mm" },
-      printBackground: true,
-      displayHeaderFooter: true,
-      headerTemplate: `
-        <div style="font-size: 8pt; color: #666; width: 100%; text-align: right; padding-right: 16mm; font-family: sans-serif; direction: rtl;">
-          مكتب الأستاذ عبد الرزاق الرويسي — محتوى الموقع للمراجعة والتصحيح
-        </div>
-      `,
-      footerTemplate: `
-        <div style="font-size: 8pt; color: #666; width: 100%; text-align: center; font-family: sans-serif;">
-          <span class="pageNumber"></span> / <span class="totalPages"></span>
-        </div>
-      `,
+      path: finalPdfPath,
+      ...pdfOptions,
     });
-    console.log(`   ✓ PDF créé avec succès : ${pdfPath}`);
+    console.log(`   ✓ PDF créé avec succès : ${finalPdfPath}`);
   } catch (err: any) {
-    console.error("   ⚠️ Erreur lors de la création du PDF :", err?.message);
-    throw err;
+    if (err?.code === "EBUSY" || err?.message?.includes("EBUSY")) {
+      console.warn("   ⚠️ Le fichier CONTENU_ARABE_COMPLET.pdf est actuellement ouvert et verrouillé sous Windows.");
+      finalPdfPath = path.join(outputDir, "CONTENU_ARABE_COMPLET_NOUVEAU.pdf");
+      await page.pdf({
+        path: finalPdfPath,
+        ...pdfOptions,
+      });
+      console.log(`   ✓ PDF généré sous le nom : ${finalPdfPath}`);
+      console.log("   (Pensez à fermer le PDF dans votre lecteur pour écraser le fichier d'origine si souhaité).");
+    } else {
+      console.error("   ⚠️ Erreur lors de la création du PDF :", err?.message);
+      throw err;
+    }
   }
 
   await page.close();

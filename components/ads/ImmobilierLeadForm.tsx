@@ -17,7 +17,6 @@ const formCopy = {
     phone: "رقم الهاتف", optional: "(اختياري)", opening: "جارٍ تسجيل طلبكم…", submit: "متابعة عبر واتساب",
     nameError: "يرجى كتابة اسمكم (حرفين على الأقل).", topicError: "يرجى اختيار موضوع النزاع لتهيئة رسالة الاستشارة.",
     phoneError: "يرجى إدخال رقم هاتف صحيح أو ترك الخانة فارغة.",
-    privacy: "بالنقر، تُسجّل بياناتكم لتنظيم الموعد ثم يُفتح تطبيق واتساب. حفاظاً على السر المهني، يُرجى عدم إرسال نسخ وثائق الملكية الأصلية قبل موعد الاستشارة.",
     saveError: "تعذّر حفظ بياناتكم حالياً. حاولوا مجدداً أو تواصلوا مباشرة عبر واتساب.",
     rateError: "طلبات كثيرة في وقت قصير. انتظروا دقيقة أو تواصلوا مباشرة عبر واتساب دون تسجيل.",
     withoutSaving: "التواصل عبر واتساب مباشرة", savedStatus: "تم تسجيل طلبكم بنجاح. جارٍ فتح واتساب لإرسال معطيات الملف.",
@@ -30,7 +29,6 @@ const formCopy = {
     phone: "Téléphone", optional: "(facultatif)", opening: "Enregistrement de votre demande…", submit: "Continuer sur WhatsApp",
     nameError: "Indiquez votre nom avec au moins deux caractères.", topicError: "Choisissez un sujet pour préparer votre message.",
     phoneError: "Saisissez un numéro valide ou laissez ce champ vide.",
-    privacy: "Au clic, vos coordonnées sont enregistrées pour le suivi de votre demande, puis WhatsApp s’ouvre. N’envoyez pas de documents sensibles dans le premier message.",
     saveError: "Votre demande n’a pas pu être enregistrée. Réessayez ou ouvrez WhatsApp sans enregistrement.",
     rateError: "Trop de demandes rapprochées. Attendez une minute ou ouvrez WhatsApp sans enregistrement.",
     withoutSaving: "Ouvrir WhatsApp sans enregistrement", savedStatus: "Demande enregistrée. Ouverture de WhatsApp pour relire votre message.",
@@ -177,7 +175,6 @@ export function ImmobilierLeadForm({ locale = "ar" }: { locale?: Locale }) {
           onChange={() => errors.phone && setErrors((current) => ({ ...current, phone: undefined }))} />
         {errors.phone && <p className={styles.error} id="phone-error">{errors.phone}</p>}
       </div>
-      <p className={styles.formPrivacy}><LockKeyhole size={15} aria-hidden="true" />{copy.privacy}</p>
       <button className={`${styles.button} ${styles.formButton}`} type="submit" disabled={!ready || opening}>
         {opening ? copy.opening : copy.submit}<DirectionArrow size={20} aria-hidden="true" />
       </button>

@@ -102,7 +102,6 @@ export default function PropertyCampaignPage() {
                 sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1100px) 36vw, 34vw"
                 loading="lazy"
               />
-              <figcaption>مشهد توضيحي مولّد، لا يمثل المكتب أو ملفاً حقيقياً.</figcaption>
             </figure>
           </div>
           <div className={styles.issueList}>
