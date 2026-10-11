@@ -28,10 +28,22 @@ const issues: { topic: PropertyTopic; title: string; text: string }[] = [
 ];
 
 const faqs = [
-  { question: "Puis-je vous contacter pour un bien hors de Mohammedia ?", answer: "Le cabinet se situe à Mohammedia et accompagne des dossiers à Casablanca, Benslimane, dans la Chaouia et, selon leur nature, dans d’autres régions du Maroc. Appelez pour préciser le lieu du bien et le sujet du différend, puis vérifier les possibilités d’accompagnement." },
-  { question: "Quelles informations donner lors du premier contact ?", answer: "Précisez le lieu du bien, le sujet du différend et l’avancement du dossier. Si vous avez reçu une convocation ou une notification avec un délai, signalez-le dès le premier contact. Le cabinet vous indiquera ensuite les documents utiles à votre situation." },
-  { question: "Faut-il avoir tous les documents pour prendre rendez-vous ?", answer: "Vous pouvez demander un rendez-vous avec les informations dont vous disposez. Le cabinet précisera les pièces à apporter : titre de propriété, titre foncier ou documents successoraux, selon le sujet de votre dossier." },
-  { question: "Comment les honoraires sont-ils définis ?", answer: "Les honoraires sont discutés directement avec le cabinet après identification du dossier et du travail demandé. Un contact via cette page ne constitue ni un accord sur les honoraires, ni une acceptation du mandat, ni une promesse de résultat." },
+  {
+    question: "La première consultation au cabinet est-elle gratuite ?",
+    answer: "Oui, la première consultation au cabinet est gratuite. Elle vous permet d'exposer les faits de votre dossier et de comprendre comment il peut être accompagné. Veuillez réserver votre rendez-vous au préalable.",
+  },
+  {
+    question: "Le cabinet intervient-il pour des litiges partout au Maroc ?",
+    answer: "Oui, le cabinet prend en charge les dossiers immobiliers et fonciers dans tout le Maroc, et représente ses clients devant les tribunaux de première instance, les cours d'appel et la Cour de cassation.",
+  },
+  {
+    question: "Le cabinet accompagne-t-il les Marocains résidant à l'étranger (MRE) ?",
+    answer: "Oui, le cabinet accompagne les Marocains résidant à l'étranger pour leurs biens immobiliers, immatriculations foncières et successions au Maroc, avec un suivi rigoureux des démarches et pièces requises.",
+  },
+  {
+    question: "Peut-on consulter le cabinet avant d'acheter un bien immobilier ou un terrain ?",
+    answer: "Oui, vous pouvez consulter le cabinet avant l'achat afin d'auditer la situation juridique du bien et les documents disponibles, et d'identifier les points de vigilance avant la conclusion de la transaction.",
+  },
 ];
 
 function ContactButtons({ position, light = false, compact = false }: { position: string; light?: boolean; compact?: boolean }) {
@@ -153,17 +165,8 @@ export default function FrenchPropertyCampaignPage() {
           </div>
         </section>
 
-        <section className={`${styles.container} ${styles.processSection}`} aria-labelledby="process-heading">
-          <div className={styles.processIntro}><h2 id="process-heading">Du premier contact<br />à un dossier plus clair.</h2><p>Un parcours simple. Prendre contact ne vous engage pas à confier un mandat.</p></div>
-          <ol className={styles.processList}>
-            <li><span aria-hidden="true">1</span><div><h3>Présentez votre situation</h3><p>Appelez ou envoyez un court message sur le bien, le différend et sa localisation.</p></div></li>
-            <li><span aria-hidden="true">2</span><div><h3>Préparez votre rendez-vous</h3><p>Le cabinet précise avec vous les modalités de rencontre et les documents à réunir.</p></div></li>
-            <li><span aria-hidden="true">3</span><div><h3>Discutez des options et des honoraires</h3><p>Après examen des faits et des pièces, les démarches possibles et les conditions d’accompagnement sont discutées.</p></div></li>
-          </ol>
-        </section>
-
         <section className={`${styles.container} ${styles.faqSection}`} aria-labelledby="faq-heading">
-          <h2 id="faq-heading">Avant de contacter<br />le cabinet.</h2>
+          <h2 id="faq-heading">Questions fréquentes</h2>
           <div className={styles.faqList}>
             {faqs.map((faq) => <details key={faq.question}><summary>{faq.question}<Plus size={20} aria-hidden="true" /></summary><p>{faq.answer}</p></details>)}
           </div>

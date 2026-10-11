@@ -169,17 +169,8 @@ export default function PropertyCampaignPage() {
           </div>
         </section>
 
-        <section className={`${styles.container} ${styles.processSection}`} aria-labelledby="process-heading">
-          <div className={styles.processIntro}><h2 id="process-heading">من الاتصال الأولي<br />إلى مباشرة الإجراءات القانونية.</h2><p>مسار مهني واضح في احترام تام لأخلاقيات المهنة والسر المهني.</p></div>
-          <ol className={styles.processList}>
-            <li><span aria-hidden="true">1</span><div><h3>عرض عناصر النزاع</h3><p>اتصال هاتفي أو إرسال ملخص موجز بموضوع العقار والنزاع والمركز القانوني.</p></div></li>
-            <li><span aria-hidden="true">2</span><div><h3>تحديد الموعد ودراسة الوثائق</h3><p>فحص الرسوم العقارية أو العدلية، الوثائق الثبوتية، والآجال القانونية بالمكتب.</p></div></li>
-            <li><span aria-hidden="true">3</span><div><h3>رسم الخطة الإجرائية وتحديد الأتعاب</h3><p>تحديد مسطرة الترافع أو الإجراء التحفظي المناسب والاتفاق على الأتعاب بشفافية.</p></div></li>
-          </ol>
-        </section>
-
         <section className={`${styles.container} ${styles.faqSection}`} aria-labelledby="faq-heading">
-          <h2 id="faq-heading">قبل التواصل<br />مع المكتب.</h2>
+          <h2 id="faq-heading">أسئلة شائعة</h2>
           <div className={styles.faqList}>
             {faqs.map((faq) => <details key={faq.question}><summary>{faq.question}<Plus size={20} aria-hidden="true" /></summary><p>{faq.answer}</p></details>)}
           </div>
