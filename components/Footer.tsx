@@ -1,6 +1,6 @@
 import { firm } from "@/lib/site";
 import type { Locale } from "@/lib/i18n";
-import { Clock3, Mail, MapPin, Phone, Scale } from "lucide-react";
+import { Clock3, MapPin, Phone, Scale } from "lucide-react";
 import Link from "next/link";
 
 export function Footer({ locale }: { locale: Locale }) {
@@ -42,7 +42,6 @@ export function Footer({ locale }: { locale: Locale }) {
         <address className="space-y-4 border-t border-white/10 pt-8 not-italic text-sm leading-7 text-slate-300 md:border-s md:border-t-0 md:ps-10 md:pt-1 lg:ps-14">
           <div className="flex items-start gap-3"><MapPin className="mt-0.5 shrink-0 text-gold" size={18} />{locale === "ar" ? <p>127 شارع فلسطين، الطابق الأول (فوق مقهى مونتريال)<br />المحمدية 28830</p> : <p>{firm.address.street}<br />{firm.address.city} {firm.address.postalCode}</p>}</div>
           <a className="flex min-h-11 items-center gap-3 transition-colors hover:text-gold" href={`tel:${firm.telephone}`}><Phone className="shrink-0 text-gold" size={18} /><span dir="ltr" className="whitespace-nowrap tabular-nums">{firm.displayTelephone}</span></a>
-          <a className="flex min-h-11 items-center gap-3 transition-colors hover:text-gold" href={`mailto:${firm.email}`}><Mail className="shrink-0 text-gold" size={18} /><span className="break-all">{firm.email}</span></a>
           <p className="flex items-center gap-3"><Clock3 className="shrink-0 text-gold" size={18} />{locale === "ar" ? <span>الاثنين–السبت: <span dir="ltr" className="inline-block whitespace-nowrap tabular-nums">09:00–19:30</span></span> : "Lundi–samedi : 09:00–19:30"}</p>
           <div className="flex flex-wrap gap-3">
             <Link href={`/${locale}/guides`} className="inline-flex min-h-11 items-center rounded-full border border-white/20 px-5 py-2.5 font-semibold text-white transition-colors hover:border-gold hover:text-gold motion-reduce:transition-none">{locale === "ar" ? "الدليل القانوني" : "Guides juridiques"}</Link>

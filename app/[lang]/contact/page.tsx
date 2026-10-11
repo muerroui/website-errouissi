@@ -83,23 +83,6 @@ const content = {
         href: "/fr/services/droit-administratif",
       },
     ],
-    prepareTitle: "Préparer votre premier échange",
-    prepareIntro:
-      "Quelques éléments permettent au cabinet de comprendre rapidement l’urgence, les parties concernées et les premières mesures à envisager.",
-    prepare: [
-      {
-        title: "Résumez les faits",
-        text: "Indiquez les dates, les personnes ou sociétés impliquées et l’objectif recherché.",
-      },
-      {
-        title: "Réunissez les documents",
-        text: "Contrats, titres, décisions, courriers, factures ou pièces d’état civil selon le dossier.",
-      },
-      {
-        title: "Signalez les délais",
-        text: "Mentionnez toute audience, convocation, mise en demeure ou échéance déjà reçue.",
-      },
-    ],
     mapTitle: "Votre avocat au centre de Mohammedia",
     mapText:
       "Le cabinet se trouve boulevard de Palestine, au 1er étage au-dessus du café Montreal. Sa situation permet de recevoir les clients de Mohammedia et de l’axe Casablanca–Rabat.",
@@ -194,23 +177,6 @@ const content = {
         title: "القانون الإداري والمنازعات العمومية",
         text: "دعاوى الإلغاء لتجاوز السلطة، دعاوى التعويض والمسؤولية الإدارية للدولة والجماعات الترابية، ومباشرة التظلمات الاستعطافية والرئاسية.",
         href: "/ar/services/القانون-الإداري",
-      },
-    ],
-    prepareTitle: "إعداد ملف الاستشارة القانونية الأولى",
-    prepareIntro:
-      "يُرجى إعداد عناصر الملف مسبقاً لتمكين المكتب من دراسة الوقائع بدقة، وتحديد درجات الاستعجال والإجراءات التحفظية اللازمة.",
-    prepare: [
-      {
-        title: "عرض التسلسل الزمني للوقائع",
-        text: "بيان تواريخ النزاع بدقة، أسماء وصفات الأطراف المعنية، والمطالب أو الأهداف القانونية المنشودة.",
-      },
-      {
-        title: "حصر الوثائق والمستندات الثبوتية",
-        text: "شهادات الملكية العقارية، عقود التفويت والصلح، الرسوم العدلية، الأحكام والقرارات القضائية، والمراسلات الرسمية ذات الصلة.",
-      },
-      {
-        title: "بيان الآجال القانونية والإجراءات الجارية",
-        text: "الإشارة فوراً إلى أي استدعاء لجلسة، تبليغ إنذار، إشعار ضريبي، أو أجل قانوني وشيك لتفادي سقوط الحقوق أو فوات مواعيد الطعن.",
       },
     ],
     mapTitle: "مقر المكتب في قلب المحمدية",
@@ -335,13 +301,6 @@ export default async function ContactPage({ params }: PageProps) {
               >
                 <MessageCircle aria-hidden="true" size={18} />
                 {copy.whatsapp}
-              </a>
-              <a
-                href={`mailto:${firm.email}`}
-                className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold backdrop-blur-md transition-[transform,background-color,border-color] duration-300 hover:-translate-y-0.5 hover:border-gold/50 hover:bg-white/[0.08] hover:text-gold active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"
-              >
-                <Mail aria-hidden="true" size={18} />
-                {copy.email}
               </a>
             </div>
 
@@ -469,35 +428,6 @@ export default async function ContactPage({ params }: PageProps) {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Preparation Steps */}
-      <section className="px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto grid max-w-[86rem] gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
-          <div>
-            <p className="font-display text-[5.5rem] leading-none text-gold-ink">01</p>
-            <h2 className="font-display mt-6 max-w-[13ch] text-[clamp(2.5rem,4.5vw,4.2rem)] font-semibold leading-[1.06] tracking-[-0.03em] text-balance">
-              {copy.prepareTitle}
-            </h2>
-            <p className="mt-6 max-w-[55ch] text-lg leading-8 text-slate-600">
-              {copy.prepareIntro}
-            </p>
-          </div>
-          <ol className="border-t border-slate-900/15">
-            {copy.prepare.map((item, index) => (
-              <li
-                key={item.title}
-                className="grid gap-4 border-b border-slate-900/15 py-8 sm:grid-cols-[4rem_1fr]"
-              >
-                <span className="font-display text-lg text-gold-ink">0{index + 1} /</span>
-                <div>
-                  <h3 className="font-display text-2xl font-semibold">{item.title}</h3>
-                  <p className="mt-3 leading-7 text-slate-600">{item.text}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 

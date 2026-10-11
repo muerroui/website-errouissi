@@ -29,8 +29,8 @@ const issues: { topic: PropertyTopic; title: string; text: string }[] = [
 
 const faqs = [
   {
-    question: "La première consultation au cabinet est-elle gratuite ?",
-    answer: "Oui, la première consultation au cabinet est gratuite. Elle vous permet d'exposer les faits de votre dossier et de comprendre comment il peut être accompagné. Veuillez réserver votre rendez-vous au préalable.",
+    question: "Pourquoi prendre un premier rendez-vous avec notre cabinet ?",
+    answer: "Bénéficiez d'un premier échange personnalisé pour présenter votre situation, obtenir une première orientation juridique et découvrir les démarches envisageables. Notre cabinet vous accueille dans un cadre professionnel et confidentiel.",
   },
   {
     question: "Le cabinet intervient-il pour des litiges partout au Maroc ?",
