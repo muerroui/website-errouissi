@@ -5,6 +5,7 @@ import { agriculturalRegistrationGuide, indivisionGuide, melkiyaGuide, agrarianR
 import { expropriationGuide, immatriculationGuide, oppositionGuide } from "@/lib/guides/property";
 import { inheritanceGuide, taxDisputeGuide } from "@/lib/guides/tax-and-inheritance";
 import { caveatGuide, dispossessionGuide, encroachmentGuide, ownershipClaimGuide, saleOthersPropertyGuide, shufaaGuide } from "@/lib/guides/land-disputes";
+import { propertyCertificateGuide, conservatorySeizureGuide } from "@/lib/guides/property-protection";
 
 export const guides: Record<GuideKey, GuideDefinition> = {
   immatriculation: immatriculationGuide,
@@ -22,6 +23,8 @@ export const guides: Record<GuideKey, GuideDefinition> = {
   encroachment: encroachmentGuide,
   "sale-others-property": saleOthersPropertyGuide,
   "ownership-claim": ownershipClaimGuide,
+  "property-certificate": propertyCertificateGuide,
+  "conservatory-seizure": conservatorySeizureGuide,
 };
 
 export function getGuideBySlug(locale: Locale, slug: string) {

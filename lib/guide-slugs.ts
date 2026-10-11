@@ -16,6 +16,8 @@ export const guideSlugPairs = [
   { key: "encroachment", fr: "empietement-terrain-autrui-maroc", ar: "الترامي-على-ملك-الغير-في-المغرب" },
   { key: "sale-others-property", fr: "vente-bien-autrui-maroc", ar: "بيع-ملك-الغير-في-القانون-المغربي" },
   { key: "ownership-claim", fr: "action-revendication-propriete-maroc", ar: "دعوى-الاستحقاق-في-القانون-المغربي" },
+  { key: "property-certificate", fr: "certificat-propriete-conservation-fonciere-maroc", ar: "شهادة-الملكية-العقارية-وحماية-الرسم-العقاري" },
+  { key: "conservatory-seizure", fr: "saisie-conservatoire-immobiliere-mainlevee-maroc", ar: "الحجز-التحفظي-على-العقار-ورفعه-بالمغرب" },
 ] as const;
 
 export type GuideKey = (typeof guideSlugPairs)[number]["key"];
