@@ -16,6 +16,7 @@ import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { ContactLeadForm } from "@/components/contact/ContactLeadForm";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { firm, siteUrl } from "@/lib/site";
+import { ClarityScript } from "@/components/ClarityScript";
 
 type PageProps = { params: Promise<{ lang: string }> };
 
@@ -538,6 +539,7 @@ export default async function ContactPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+      <ClarityScript />
     </main>
   );
 }
