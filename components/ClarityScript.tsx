@@ -3,6 +3,10 @@ import Script from "next/script";
 const CLARITY_ID = "yw85y06ax4";
 
 export function ClarityScript() {
+  if (process.env.NODE_ENV !== "production") {
+    return null;
+  }
+
   return (
     <Script id="microsoft-clarity" strategy="afterInteractive">
       {`

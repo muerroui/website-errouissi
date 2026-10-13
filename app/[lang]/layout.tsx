@@ -53,6 +53,8 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
 export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
+  const isProduction = process.env.NODE_ENV === "production";
+
   return (
     <html lang={lang === "ar" ? "ar-MA" : "fr-MA"} dir={lang === "ar" ? "rtl" : "ltr"} data-scroll-behavior="smooth">
       <head><JsonLd locale={lang} /></head>
@@ -61,48 +63,52 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         {children}
         <Footer locale={lang} />
         <FloatingWhatsApp locale={lang} />
-        <ClarityScript />
+        {isProduction && <ClarityScript />}
       </body>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-QKRLHX88W9"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-QKRLHX88W9');
-          gtag('config', 'G-Q8VVZ5F10M');
-        `}
-      </Script>
-      <Script id="google-analytics-lead-events" strategy="afterInteractive">
-        {`
-          document.addEventListener('click', function (event) {
-            var link = event.target instanceof Element
-              ? event.target.closest('a[href]')
-              : null;
+      {isProduction && (
+        <>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-QKRLHX88W9"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QKRLHX88W9');
+              gtag('config', 'G-Q8VVZ5F10M');
+            `}
+          </Script>
+          <Script id="google-analytics-lead-events" strategy="afterInteractive">
+            {`
+              document.addEventListener('click', function (event) {
+                var link = event.target instanceof Element
+                  ? event.target.closest('a[href]')
+                  : null;
 
-            if (!link || typeof window.gtag !== 'function') return;
+                if (!link || typeof window.gtag !== 'function') return;
 
-            var href = link.getAttribute('href') || '';
-            var eventName = href.indexOf('tel:') === 0
-              ? 'phone_click'
-              : href.indexOf('https://wa.me/') === 0
-                ? 'whatsapp_click'
-                : null;
+                var href = link.getAttribute('href') || '';
+                var eventName = href.indexOf('tel:') === 0
+                  ? 'phone_click'
+                  : href.indexOf('https://wa.me/') === 0
+                    ? 'whatsapp_click'
+                    : null;
 
-            if (!eventName) return;
+                if (!eventName) return;
 
-            window.gtag('event', eventName, {
-              event_category: 'lead',
-              link_url: link.href,
-              page_location: window.location.href,
-              page_language: document.documentElement.lang
-            });
-          });
-        `}
-      </Script>
+                window.gtag('event', eventName, {
+                  event_category: 'lead',
+                  link_url: link.href,
+                  page_location: window.location.href,
+                  page_language: document.documentElement.lang
+                });
+              });
+            `}
+          </Script>
+        </>
+      )}
     </html>
   );
 }
