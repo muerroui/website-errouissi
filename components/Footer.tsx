@@ -43,9 +43,10 @@ export function Footer({ locale }: { locale: Locale }) {
           <div className="flex items-start gap-3"><MapPin className="mt-0.5 shrink-0 text-gold" size={18} />{locale === "ar" ? <p>127 شارع فلسطين، الطابق الأول (فوق مقهى مونتريال)<br />المحمدية 28830</p> : <p>{firm.address.street}<br />{firm.address.city} {firm.address.postalCode}</p>}</div>
           <a className="flex min-h-11 items-center gap-3 transition-colors hover:text-gold" href={`tel:${firm.telephone}`}><Phone className="shrink-0 text-gold" size={18} /><span dir="ltr" className="whitespace-nowrap tabular-nums">{firm.displayTelephone}</span></a>
           <p className="flex items-center gap-3"><Clock3 className="shrink-0 text-gold" size={18} />{locale === "ar" ? <span>الاثنين–السبت: <span dir="ltr" className="inline-block whitespace-nowrap tabular-nums">09:00–19:30</span></span> : "Lundi–samedi : 09:00–19:30"}</p>
-          <div className="flex flex-wrap gap-3">
-            <Link href={`/${locale}/guides`} className="inline-flex min-h-11 items-center rounded-full border border-white/20 px-5 py-2.5 font-semibold text-white transition-colors hover:border-gold hover:text-gold motion-reduce:transition-none">{locale === "ar" ? "الدليل القانوني" : "Guides juridiques"}</Link>
-            <Link href={`/${locale}/contact`} className="inline-flex min-h-11 items-center rounded-full border border-gold/50 px-5 py-2.5 font-semibold text-gold transition-colors hover:bg-gold hover:text-navy motion-reduce:transition-none">{locale === "ar" ? "مقر المكتب والتواصل" : "Adresse et contact"}</Link>
+          <div className="flex flex-wrap items-center gap-2 pt-1">
+            <Link href={`/${locale}/guides`} className="inline-flex items-center rounded-full border border-white/20 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:border-gold hover:text-gold motion-reduce:transition-none whitespace-nowrap">{locale === "ar" ? "الدليل القانوني" : "Guides juridiques"}</Link>
+            <Link href={`/${locale}/contact`} className="inline-flex items-center rounded-full border border-gold/50 px-3 py-1.5 text-xs font-medium text-gold transition-colors hover:bg-gold hover:text-navy motion-reduce:transition-none whitespace-nowrap">{locale === "ar" ? "مقر المكتب والتواصل" : "Adresse et contact"}</Link>
+            <Link href={`/${locale}/mre`} className="inline-flex items-center rounded-full border border-white/15 px-2.5 py-1.5 text-xs font-medium text-slate-300 transition-colors hover:border-gold/60 hover:text-gold motion-reduce:transition-none whitespace-nowrap">{locale === "ar" ? "مغاربة العالم (MRE)" : "Espace MRE"}</Link>
           </div>
         </address>
       </div>

@@ -116,6 +116,8 @@ export function Header({ locale }: { locale: Locale }) {
     "/ar": "/fr",
     "/fr/contact": "/ar/contact",
     "/ar/contact": "/fr/contact",
+    "/fr/mre": "/ar/mre",
+    "/ar/mre": "/fr/mre",
     "/fr/services/droit-immobilier": "/ar/services/القانون-العقاري",
     "/ar/services/القانون-العقاري": "/fr/services/droit-immobilier",
     "/fr/services/succession-heritage": "/ar/services/الميراث-والتركات",
