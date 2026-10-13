@@ -32,7 +32,7 @@
 | P1 | Créer une page profil factuelle de Maître Errouissi avec photo originale | Page indexée et liée depuis chaque guide |
 | P1 | Ajouter une signature/relecture visible aux guides | Auteur clairement identifiable sur 100 % des guides |
 | P1 | Ajouter 2–3 liens service → guides et guide → guides voisins | Aucun actif stratégique orphelin |
-| P1 | Remplacer « +32 ans » par « depuis 1992 » | Cohérence temporelle totale |
+| P1 | Remplacer « +34 ans » par « depuis 1992 » | Cohérence temporelle totale |
 | P1 | Ajouter photos originales accueil/profil/contact et GBP | 4 à 10 photos authentiques, légères et géographiquement cohérentes |
 | P1 | Raccourcir les six titres FR trop longs | Titres lisibles sans troncature excessive |
 | P2 | Corriger l'`@id` du cabinet, le `lastmod` et la redirection Netlify | Une entité stable, dates honnêtes, un seul saut |

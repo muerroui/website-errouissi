@@ -16,7 +16,6 @@ import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { ContactLeadForm } from "@/components/contact/ContactLeadForm";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { firm, siteUrl } from "@/lib/site";
-import { ClarityScript } from "@/components/ClarityScript";
 
 type PageProps = { params: Promise<{ lang: string }> };
 
@@ -35,7 +34,7 @@ const content = {
     whatsapp: "Écrire sur WhatsApp",
     email: "Envoyer un e-mail",
     badgeExperienceLabel: "Expérience professionnelle",
-    badgeExperience: "Depuis 1992 (+32 ans)",
+    badgeExperience: "Depuis 1992 (+34 ans)",
     badgeBarreauLabel: "Barreau & juridictions",
     badgeBarreau: "Barreau de Casablanca · Cour de cassation",
     detailsTitle: "Le cabinet, simplement",
@@ -131,7 +130,7 @@ const content = {
     whatsapp: "التواصل عبر واتساب",
     email: "مراسلة عبر البريد الإلكتروني",
     badgeExperienceLabel: "الممارسة المهنية",
-    badgeExperience: "منذ 1992 (+32 سنة)",
+    badgeExperience: "منذ 1992 (+34 سنة)",
     badgeBarreauLabel: "الصفة المهنية",
     badgeBarreau: "هيئة المحامين بالدار البيضاء · محكمة النقض",
     detailsTitle: "بيانات المكتب وولوج المقر",
@@ -539,7 +538,6 @@ export default async function ContactPage({ params }: PageProps) {
           </div>
         </div>
       </section>
-      <ClarityScript />
     </main>
   );
 }

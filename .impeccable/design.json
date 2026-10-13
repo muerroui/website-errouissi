@@ -66,7 +66,7 @@
       "name": "Experience Evidence Panel",
       "kind": "card",
       "description": "Elevated proof surface pairing foundation year with experience.",
-      "html": "<aside class=\"ds-evidence\"><small>DEPUIS JANVIER</small><strong>1992</strong><hr><b>+32</b><span>ans d’expérience</span></aside>",
+      "html": "<aside class=\"ds-evidence\"><small>DEPUIS JANVIER</small><strong>1992</strong><hr><b>+34</b><span>ans d’expérience</span></aside>",
       "css": ".ds-evidence{display:grid;padding:36px 28px;border-block:1px solid rgba(255,255,255,.1);border-inline-start:1px solid rgba(197,160,89,.7);background:rgba(255,255,255,.035);color:#fff;box-shadow:0 30px 80px rgba(2,8,23,.22);backdrop-filter:blur(12px)}.ds-evidence small{color:rgba(253,230,138,.75);font:600 12px/1.25 Inter,Arial,sans-serif;letter-spacing:.2em}.ds-evidence strong,.ds-evidence b{font:600 76px/.95 \"Playfair Display\",Georgia,serif;letter-spacing:-.04em}.ds-evidence b{color:#C5A059}.ds-evidence hr{width:100%;margin:28px 0;border:0;border-top:1px solid rgba(255,255,255,.1)}.ds-evidence span{margin-top:8px;color:#CBD5E1;font:400 18px/1.5 Inter,Arial,sans-serif}.ds-evidence:focus-within{outline:3px solid #C5A059;outline-offset:3px}"
     },
     {

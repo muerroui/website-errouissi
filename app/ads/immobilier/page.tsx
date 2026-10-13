@@ -5,7 +5,6 @@ import { ImmobilierLeadForm } from "@/components/ads/ImmobilierLeadForm";
 import { GoogleHeroBadge, GoogleReviewsSection } from "@/components/ads/GoogleSocialProof";
 import { propertyWhatsAppUrl, type PropertyTopic } from "@/lib/ads-immobilier";
 import { firm, siteUrl } from "@/lib/site";
-import { ClarityScript } from "@/components/ClarityScript";
 import styles from "./landing.module.css";
 
 const title = "Litige immobilier ou foncier au Maroc | Maître Errouissi";
@@ -121,7 +120,7 @@ export default function FrenchPropertyCampaignPage() {
               <ContactButtons position="hero" />
               <p className={styles.directNumber}>Appel direct : <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
               <div className={styles.heroEvidence}>
-                <p>Maître Abderrazak Errouissi · Avocat depuis <bdi>1992</bdi> (<bdi>+32</bdi> ans)</p>
+                <p>Maître Abderrazak Errouissi · Avocat depuis <bdi>1992</bdi> (<bdi>+34</bdi> ans)</p>
                 <p>Note <bdi>5,0/5</bdi> sur Google Maps · <bdi>24</bdi> avis clients vérifiés · Barreau de Casablanca</p>
               </div>
             </div>
@@ -197,7 +196,6 @@ export default function FrenchPropertyCampaignPage() {
       </footer>
 
       <nav className={styles.mobileContact} aria-label="Contacter rapidement le cabinet"><ContactButtons position="mobile_bar" compact /></nav>
-      <ClarityScript />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     </div>
   );

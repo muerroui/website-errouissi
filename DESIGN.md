@@ -141,7 +141,7 @@ The palette pairs institutional navy with tactile paper neutrals; matte gold mar
 
 Use a centered 86–90rem content frame with responsive side padding (20px mobile, 32px tablet, 48px desktop). Sections follow a 96px mobile / 128–144px desktop vertical rhythm. Desktop layouts are intentionally asymmetric—typically 0.8/1.2 columns or a dominant content field with a narrow evidence rail—while mobile collapses to a single clear reading order.
 
-Thin, tinted one-pixel rules establish alignment and chapters. The first viewport pairs the dominant headline with the 1992 / +32 evidence anchor; future hero treatments should preserve that relationship without cloning the exact composition. Use logical properties and direction-aware transforms so the same hierarchy survives RTL. No element may introduce horizontal overflow.
+Thin, tinted one-pixel rules establish alignment and chapters. The first viewport pairs the dominant headline with the 1992 / +34 evidence anchor; future hero treatments should preserve that relationship without cloning the exact composition. Use logical properties and direction-aware transforms so the same hierarchy survives RTL. No element may introduce horizontal overflow.
 
 **The Evidence Rail Rule.** Narrow columns carry provenance, numbering, or practical facts; primary prose owns the wider column.
 

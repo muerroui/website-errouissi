@@ -18,7 +18,7 @@ Résumé du système, en cinq lignes :
 4. Interactions : boutons adoucis de 12 px, cibles d’au moins 48 px, focus visible, présélection du dossier et focus sur le nom ; mouvement réduit respecté dans les deux langues.
 5. Image : même scène de litige immobilier sans humain, visible intégralement sous les premiers contacts, avec une légende déclarant sa génération et son caractère illustratif dans chaque langue.
 
-Les exemples préexistants `+32` et les mentions d’eyebrows dans `DESIGN.md` et le sidecar n’ont pas été repris ni réparés hors périmètre. Les pages utilisent la date stable « depuis 1992 », sans kicker au-dessus des titres. Les tailles responsives et nuances de soutien restent locales à la campagne, sans redéfinir le système global : titre principal arabe de `3.5–5.2rem` sur grand écran et `2.8–3.8rem` sur mobile ; titre français de `3–4.1rem` et `2.5–3.25rem` respectivement. Le texte de base est de `1.125rem` en arabe et `1rem` en français.
+Les exemples préexistants `+34` et les mentions d’eyebrows dans `DESIGN.md` et le sidecar n’ont pas été repris ni réparés hors périmètre. Les pages utilisent la date stable « depuis 1992 », sans kicker au-dessus des titres. Les tailles responsives et nuances de soutien restent locales à la campagne, sans redéfinir le système global : titre principal arabe de `3.5–5.2rem` sur grand écran et `2.8–3.8rem` sur mobile ; titre français de `3–4.1rem` et `2.5–3.25rem` respectivement. Le texte de base est de `1.125rem` en arabe et `1rem` en français.
 
 ## Architecture et contacts
 

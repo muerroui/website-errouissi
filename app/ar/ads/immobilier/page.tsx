@@ -5,7 +5,6 @@ import { GoogleHeroBadge, GoogleReviewsSection } from "@/components/ads/GoogleSo
 import { ImmobilierLeadForm } from "@/components/ads/ImmobilierLeadForm";
 import { propertyWhatsAppUrl, type PropertyTopic } from "@/lib/ads-immobilier";
 import { firm, siteUrl } from "@/lib/site";
-import { ClarityScript } from "@/components/ClarityScript";
 import styles from "@/app/ads/immobilier/landing.module.css";
 
 const title = "نزاع حول عقار، أرض فلاحية أو تركة موروثة | الأستاذ الرويسي";
@@ -121,7 +120,7 @@ export default function PropertyCampaignPage() {
               <ContactButtons position="hero" />
               <p className={styles.directNumber}>للاتصال مباشرة: <a href={`tel:${firm.telephone}`} data-contact-position="hero_number" dir="ltr">{firm.displayTelephone}</a></p>
               <div className={styles.heroEvidence}>
-                <p>الأستاذ عبد الرزاق الرويسي · ممارسة مهنية منذ <bdi>1992</bdi> (<bdi>+32</bdi> سنة)</p>
+                <p>الأستاذ عبد الرزاق الرويسي · ممارسة مهنية منذ <bdi>1992</bdi> (<bdi>+34</bdi> سنة)</p>
                 <p>تقييم <bdi>5,0/5</bdi> على Google Maps · <bdi>24</bdi> تقييماً موثقاً · هيئة المحامين بالدار البيضاء</p>
               </div>
             </div>
@@ -201,7 +200,6 @@ export default function PropertyCampaignPage() {
       </footer>
 
       <nav className={styles.mobileContact} aria-label="تواصل سريع مع المكتب"><ContactButtons position="mobile_bar" compact /></nav>
-      <ClarityScript />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     </div>
   );

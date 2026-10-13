@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowDownRight, MessageCircle, Phone } from "lucide-react";
@@ -117,7 +118,7 @@ export default async function HomePage({ params }: PageProps) {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300/75">{lang === "ar" ? "منذ يناير" : "Depuis janvier"}</p>
             <p className="font-display mt-3 text-[5.5rem] font-semibold leading-none tracking-[-0.04em] text-white">1992</p>
             <div className="my-8 h-px bg-white/10" />
-            <p className="font-display text-[4.75rem] font-semibold leading-none tracking-[-0.04em] text-gold">+32</p>
+            <p className="font-display text-[4.75rem] font-semibold leading-none tracking-[-0.04em] text-gold">+34</p>
             <p className="mt-2 text-lg text-slate-200">{lang === "ar" ? "سنة من الخبرة" : "ans d’expérience"}</p>
             <p className="mt-8 max-w-[28ch] text-sm leading-7 text-slate-400">{lang === "ar" ? "ممارسة قانونية رصينة في مؤازرة الخواص، المقاولات، والفاعلين العقاريين والفلاحيين عبر كافة ربوع المملكة." : "Une pratique au service des particuliers, des entreprises et des agriculteurs dans tout le Maroc."}</p>
             <dl className="mt-8 space-y-4 border-t border-white/10 pt-6 text-sm">
@@ -130,10 +131,31 @@ export default async function HomePage({ params }: PageProps) {
 
       <section className="relative px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
         <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-24">
-          <div className="relative min-h-[12rem] border-t border-slate-900/15 pt-5 sm:min-h-72">
+          <div className="relative border-t border-slate-900/15 pt-5">
             <p className="font-display text-[clamp(5rem,12vw,10rem)] font-semibold leading-none tracking-[-0.04em] text-gold-ink">32</p>
             <p className="mt-2 max-w-48 text-xs font-semibold uppercase leading-5 tracking-[0.2em] text-slate-600">{lang === "ar" ? "عاماً من الممارسة القانونية" : "années de pratique juridique"}</p>
-            <span aria-hidden="true" className="absolute bottom-0 end-0 h-28 w-px bg-slate-900/15" />
+
+            {/* Authentic Photographic Proof Card */}
+            <div className="group mt-8 overflow-hidden rounded-2xl border border-slate-900/10 bg-white p-2.5 shadow-xl transition-all duration-300 hover:shadow-2xl">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
+                <Image
+                  src="/images/cabinet/avocat-mohammedia-cabinet-errouissi.jpg"
+                  alt={lang === "ar" ? "بذلة المحاماة، ملفات الترافع والبطاقة المهنية للأستاذ عبد الرزاق الرويسي بمكتبه بالمحمدية" : "Cartable d'avocat, robe d'audience et carte professionnelle de Maître Abderrazak Errouissi à Mohammedia"}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 420px"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              </div>
+              <div className="px-2 pt-3 pb-1">
+                <p className="font-display text-sm font-semibold text-slate-900">
+                  {lang === "ar" ? "الأستاذ عبد الرزاق الرويسي" : "Maître Abderrazak Errouissi"}
+                </p>
+                <p className="mt-0.5 text-xs text-slate-500">
+                  {lang === "ar" ? "مقبول لدى محكمة النقض · هيئة المحامين بالدار البيضاء" : "Agréé près la Cour de Cassation · Barreau de Casablanca"}
+                </p>
+              </div>
+            </div>
           </div>
           <div className="lg:pt-16">
             <h2 className="font-display max-w-[15ch] text-[clamp(2.7rem,5vw,4.7rem)] font-semibold leading-[1.04] tracking-[-0.03em] text-slate-950 text-balance">{copy.proofTitle}</h2>

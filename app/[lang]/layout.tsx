@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { JsonLd } from "@/components/JsonLd";
+import { ClarityScript } from "@/components/ClarityScript";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 import { siteUrl } from "@/lib/site";
 
@@ -60,6 +61,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         {children}
         <Footer locale={lang} />
         <FloatingWhatsApp locale={lang} />
+        <ClarityScript />
       </body>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-QKRLHX88W9"
