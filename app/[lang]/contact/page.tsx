@@ -432,7 +432,7 @@ export default async function ContactPage({ params }: PageProps) {
       </section>
 
       {/* Map Section */}
-      <section className="bg-slate-950 px-5 py-20 text-white sm:px-8 lg:px-12 lg:py-28">
+      <section id="map" className="scroll-mt-20 bg-slate-950 px-5 py-20 text-white sm:px-8 lg:px-12 lg:py-28">
         <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-20">
           <div>
             <p className="font-display text-[4.5rem] text-gold">MA</p>
