@@ -6,6 +6,7 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL("/fr", request.url), 308);
   }
 
+
   return NextResponse.next();
 }
 
