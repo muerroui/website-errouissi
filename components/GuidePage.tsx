@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpLeft, ArrowUpRight, Clock3, FileCheck2, MessageCircle } from "lucide-react";
+import { ArrowUpLeft, ArrowUpRight, Clock3, FileCheck2, MessageCircle, PhoneCall } from "lucide-react";
 import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { GuideJsonLd } from "@/components/GuideJsonLd";
 import type { GuideDefinition } from "@/lib/guide-types";
@@ -29,6 +29,10 @@ const ui = {
     contact: "Présenter votre dossier",
     related: "Guides à consulter ensuite",
     relatedRead: "Consulter",
+    midCtaTitle: "Dossier urgent ou délai légal en cours ?",
+    midCtaDesc: "Les délais de forclusion ou d'opposition au Maroc sont stricts (souvent 15 à 60 jours). Maître Abderrazak Errouissi analyse vos pièces sous 24h à 48h au cabinet à Mohammedia ou à distance.",
+    midCtaCall: "Appeler le cabinet",
+    midCtaWhatsapp: "Échange direct sur WhatsApp",
   },
   ar: {
     home: "الرئيسية",
@@ -48,6 +52,10 @@ const ui = {
     contact: "عرض الملف على المكتب",
     related: "أدلة مرتبطة بالموضوع",
     relatedRead: "قراءة الدليل",
+    midCtaTitle: "ملف مستعجل أو سريان أجل قانوني حاسم؟",
+    midCtaDesc: "آجال التعرض والطعن القضائي بالمغرب قصيرة وحاسمة (غالباً بين 15 و60 يوماً). يتولى الأستاذ عبد الرزاق الرويسي فحص وثائقكم خلال 24 إلى 48 ساعة بالمكتب بالمحمدية أو عن بعد.",
+    midCtaCall: "الاتصال بالمكتب",
+    midCtaWhatsapp: "مراسلة فورية عبر واتساب",
   },
 } as const;
 
@@ -123,19 +131,56 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
             </section>
 
             <div className="space-y-20">
-              {copy.sections.map((section) => (
-                <section id={section.id} key={section.id} className="scroll-mt-28">
-                  <h2 className="font-display max-w-[20ch] text-[clamp(2.25rem,4vw,3.6rem)] font-semibold leading-[1.05] tracking-[-0.03em] text-balance">{section.title}</h2>
-                  <div className="mt-8 max-w-[72ch] space-y-6 text-[1.06rem] leading-8 text-slate-700 sm:text-lg">
-                    {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                  </div>
-                  {section.bullets?.length ? (
-                    <ul className="mt-8 max-w-[72ch] border-t border-slate-900/15">
-                      {section.bullets.map((item) => <li key={item} className="grid grid-cols-[1.25rem_1fr] gap-4 border-b border-slate-900/15 py-4 leading-7 text-slate-700"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 rounded-full bg-gold-ink" /><span>{item}</span></li>)}
-                    </ul>
+              {copy.sections.map((section, idx) => (
+                <div key={section.id} className="space-y-20">
+                  <section id={section.id} className="scroll-mt-28">
+                    <h2 className="font-display max-w-[20ch] text-[clamp(2.25rem,4vw,3.6rem)] font-semibold leading-[1.05] tracking-[-0.03em] text-balance">{section.title}</h2>
+                    <div className="mt-8 max-w-[72ch] space-y-6 text-[1.06rem] leading-8 text-slate-700 sm:text-lg">
+                      {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                    </div>
+                    {section.bullets?.length ? (
+                      <ul className="mt-8 max-w-[72ch] border-t border-slate-900/15">
+                        {section.bullets.map((item) => <li key={item} className="grid grid-cols-[1.25rem_1fr] gap-4 border-b border-slate-900/15 py-4 leading-7 text-slate-700"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 rounded-full bg-gold-ink" /><span>{item}</span></li>)}
+                      </ul>
+                    ) : null}
+                    {section.note ? <p className="mt-8 max-w-[72ch] bg-warm-paper px-6 py-5 leading-7 text-slate-800">{section.note}</p> : null}
+                  </section>
+
+                  {idx === 1 ? (
+                    <aside className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-navy via-slate-900 to-navy p-8 text-white shadow-xl ring-1 ring-gold/30 sm:p-10">
+                      <div aria-hidden="true" className="absolute -end-10 -top-10 h-40 w-40 rounded-full bg-gold/10 blur-2xl" />
+                      <div className="relative">
+                        <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-amber-300">
+                          {locale === "ar" ? "استشارة قانونية عاجلة" : "Urgence & Délais légaux"}
+                        </span>
+                        <h3 className="font-display mt-4 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+                          {labels.midCtaTitle}
+                        </h3>
+                        <p className="mt-3 max-w-[60ch] text-base leading-relaxed text-slate-300 sm:text-lg">
+                          {labels.midCtaDesc}
+                        </p>
+                        <div className="mt-6 flex flex-wrap items-center gap-3">
+                          <a
+                            href={`tel:${firm.telephone}`}
+                            className="inline-flex min-h-12 items-center gap-2.5 rounded-xl bg-gold px-5 py-3 text-sm font-semibold text-navy shadow-md transition-all hover:bg-amber-400 active:scale-[0.98]"
+                          >
+                            <PhoneCall size={18} aria-hidden="true" />
+                            <span>{labels.midCtaCall} : {firm.displayTelephone}</span>
+                          </a>
+                          <a
+                            href={firm.whatsappUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex min-h-12 items-center gap-2.5 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20 active:scale-[0.98]"
+                          >
+                            <MessageCircle size={18} aria-hidden="true" className="text-emerald-400" />
+                            <span>{labels.midCtaWhatsapp}</span>
+                          </a>
+                        </div>
+                      </div>
+                    </aside>
                   ) : null}
-                  {section.note ? <p className="mt-8 max-w-[72ch] bg-warm-paper px-6 py-5 leading-7 text-slate-800">{section.note}</p> : null}
-                </section>
+                </div>
               ))}
             </div>
           </div>

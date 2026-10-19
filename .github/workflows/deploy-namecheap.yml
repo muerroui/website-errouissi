@@ -36,7 +36,7 @@ jobs:
       - run: npm run build
       - name: Package application (no secrets)
         run: |
-          tar --exclude=.next/cache -czf deploy.tgz .next public package.json package-lock.json next.config.ts server.js
+          tar --exclude=.next/cache -czf deploy.tgz .next public package.json package-lock.json next.config.ts server.js app.js
       - name: Configure SSH
         env:
           PRIVATE_KEY: ${{ secrets.NAMECHEAP_SSH_PRIVATE_KEY }}

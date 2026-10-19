@@ -23,6 +23,7 @@ cp "$staging/package.json" "$staging/package-lock.json" .
 # npm install preserves the node_modules link managed by CloudLinux/cPanel.
 npm install --include=dev --no-audit --no-fund
 cp "$staging/next.config.ts" "$staging/server.js" .
+if [ -f "$staging/app.js" ]; then cp "$staging/app.js" .; fi
 if [ -d public ]; then cp -a "$staging/public/." public/; else mv "$staging/public" public; fi
 if [ -d .next ]; then mv .next "$staging/previous-next"; fi
 mv "$staging/.next" .next
