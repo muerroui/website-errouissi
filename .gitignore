@@ -4,3 +4,8 @@ dist/
 .next/
 .seo-cache/
 .agents/
+
+.env
+.env.*
+!.env.example
+deploy.tgz
