@@ -27,6 +27,9 @@ if [ -f "$staging/app.js" ]; then cp "$staging/app.js" .; fi
 if [ -d public ]; then cp -a "$staging/public/." public/; else mv "$staging/public" public; fi
 if [ -d .next ]; then mv .next "$staging/previous-next"; fi
 mv "$staging/.next" .next
+if [ ! -f .next/server/preview-props.json ] && [ -f .next/prerender-manifest.json ]; then
+  node -e "const p='.next/server/preview-props.json',m='.next/prerender-manifest.json';const j=JSON.parse(require('fs').readFileSync(m));require('fs').writeFileSync(p,JSON.stringify(j.preview||{}));"
+fi
 mkdir -p tmp
 touch tmp/restart.txt
 printf '%s\n' 'Deployment installed; Passenger will restart on the next request.'

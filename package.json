@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node -e \"const p='.next/server/preview-props.json',m='.next/prerender-manifest.json';if(!require('fs').existsSync(p)&&require('fs').existsSync(m)){const j=JSON.parse(require('fs').readFileSync(m));require('fs').writeFileSync(p,JSON.stringify(j.preview||{}));}\",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
