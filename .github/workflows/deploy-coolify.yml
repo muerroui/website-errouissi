@@ -1,0 +1,61 @@
+name: CI & Coolify Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Typecheck & Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run TypeScript typecheck
+        run: npm run typecheck
+
+      - name: Run ESLint
+        run: npm run lint
+        continue-on-error: true
+
+  deploy:
+    name: Trigger Coolify Deployment
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Webhook on Coolify VPS
+        env:
+          COOLIFY_WEBHOOK: ${{ secrets.COOLIFY_WEBHOOK_URL }}
+        run: |
+          if [ -z "$COOLIFY_WEBHOOK" ]; then
+            echo "::notice ::COOLIFY_WEBHOOK_URL secret not set in GitHub repository settings. If you use Coolify auto-deploy via GitHub integration, this step can be skipped."
+            exit 0
+          fi
+          echo "Triggering deployment on Coolify VPS (162.35.31.73)..."
+          HTTP_RESPONSE=$(curl -s -o response.txt -w "%{http_code}" -X GET "$COOLIFY_WEBHOOK")
+          echo "HTTP Response: $HTTP_RESPONSE"
+          cat response.txt
+          if [ "$HTTP_RESPONSE" -ge 200 ] && [ "$HTTP_RESPONSE" -lt 300 ]; then
+            echo "Coolify deployment triggered successfully!"
+          else
+            echo "Coolify deploy trigger failed with HTTP $HTTP_RESPONSE"
+            exit 1
+          fi

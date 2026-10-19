@@ -52,18 +52,19 @@ SUPABASE_SECRET_KEY=ton_service_role_key
 
 ---
 
-## 5. Déploiement Automatique via GitLab CI/CD
+## 5. Déploiement Automatique via GitHub Actions
 
-Le fichier `.gitlab-ci.yml` a été créé à la racine du projet.
+Le workflow `.github/workflows/deploy-coolify.yml` a été configuré :
 
 1. Dans Coolify, va sur ton application -> Onglet **Webhooks**.
 2. Copie l'URL du **Deploy Webhook** (ex: `http://162.35.31.73:8000/api/v1/deploy?uuid=...`).
-3. Dans ton projet GitLab :
-   - Va dans **Settings** -> **CI/CD** -> **Variables**.
-   - Ajoute une variable nommée : `COOLIFY_WEBHOOK_URL` avec l'URL copiée.
-4. À chaque `git push` sur `main`, GitLab CI valide le code (`typecheck` et `lint`) puis déclenche instantanément le déploiement sur ton VPS !
+3. Dans ton dépôt GitHub :
+   - Va dans **Settings** -> **Secrets and variables** -> **Actions** -> **New repository secret**.
+   - Nom : `COOLIFY_WEBHOOK_URL`
+   - Valeur : L'URL copiée depuis Coolify.
+4. À chaque `git push` sur `main`, GitHub Actions valide le code (`typecheck` et `lint`) puis ordonne à Coolify de déployer !
 
-*(Alternative : Tu peux aussi activer le webhook automatique dans Coolify pour qu'il écoute directement les commits GitLab/GitHub).*
+*(Tu peux aussi laisser Coolify écouter directement GitHub si tu as connecté la GitHub App dans Coolify).*
 
 ---
 
