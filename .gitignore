@@ -4,6 +4,7 @@ dist/
 .seo-cache/
 .agents/
 scratch/
+*.tsbuildinfo
 
 .env
 .env.*

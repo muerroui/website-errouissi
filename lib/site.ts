@@ -1,6 +1,13 @@
-export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://errouissi.ma"
-).replace(/\/$/, "");
+function normalizeSiteUrl(url: string | undefined): string {
+  if (!url) return "https://errouissi.ma";
+  const trimmed = url.trim();
+  if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
+    return trimmed.replace(/\/$/, "");
+  }
+  return `https://${trimmed}`.replace(/\/$/, "");
+}
+
+export const siteUrl = normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
 
 export const firm = {
   name: "Maître Abderrazak Errouissi – Avocat Mohammedia",
