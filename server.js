@@ -2,18 +2,29 @@ const { createServer } = require('node:http');
 const next = require('next');
 
 process.env.NODE_ENV = 'production';
-const port = Number(process.env.PORT || 3000);
-const app = next({ dev: false, dir: __dirname, hostname: '0.0.0.0', port });
+
+// In Phusion Passenger on cPanel, process.env.PORT can be 'passenger', a unix socket path, or a port number.
+// Do NOT wrap with Number(), which evaluates to NaN for non-numeric strings and crashes Next.js.
+const rawPort = process.env.PORT;
+const port = rawPort && !isNaN(Number(rawPort)) ? Number(rawPort) : (rawPort || 3000);
+
+const app = next({ dev: false, dir: __dirname });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-  createServer((req, res) => {
-    handle(req, res).catch(() => {
+  const server = createServer((req, res) => {
+    handle(req, res).catch((err) => {
+      console.error('Request error:', err);
       if (!res.headersSent) res.statusCode = 500;
       res.end();
     });
-  }).listen(port);
+  });
+
+  server.listen(port, () => {
+    console.log(`> Ready on ${port}`);
+  });
 }).catch((error) => {
-  console.error('Next.js startup failed:', error.message);
+  console.error('Next.js startup failed:', error);
   process.exit(1);
 });
+
