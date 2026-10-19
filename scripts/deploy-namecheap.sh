@@ -6,7 +6,10 @@ activate="$2"
 archive="$HOME/$3"
 test -f "$activate"
 test -d "$app_root"
+# CloudLinux's activation script reads optional variables that may be unset.
+set +u
 source "$activate"
+set -u
 node -e 'if (Number(process.versions.node.split(".")[0]) !== 22) process.exit(1)'
 
 staging="$(mktemp -d "$app_root/.deploy-XXXXXXXX")"
