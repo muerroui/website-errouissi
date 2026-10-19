@@ -10,7 +10,7 @@ test -d "$app_root"
 set +u
 source "$activate"
 set -u
-node -e 'if (Number(process.versions.node.split(".")[0]) !== 22) process.exit(1)'
+node -e 'const major = Number(process.versions.node.split(".")[0]); if (major < 20) process.exit(1); console.log("Using Node " + process.version)'
 
 staging="$(mktemp -d "$app_root/.deploy-XXXXXXXX")"
 tar -xzf "$archive" -C "$staging"
