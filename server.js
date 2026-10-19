@@ -1,4 +1,5 @@
 const { createServer } = require('node:http');
+const { parse } = require('node:url');
 const next = require('next');
 
 process.env.NODE_ENV = 'production';
@@ -13,7 +14,8 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
   const server = createServer((req, res) => {
-    handle(req, res).catch((err) => {
+    const parsedUrl = parse(req.url, true);
+    handle(req, res, parsedUrl).catch((err) => {
       console.error('Request error:', err);
       if (!res.headersSent) res.statusCode = 500;
       res.end();
