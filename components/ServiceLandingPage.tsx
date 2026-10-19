@@ -7,7 +7,7 @@ import type { ServiceKey, ServicePageDefinition } from "@/lib/service-page-types
 import { getServicePath } from "@/lib/services";
 
 const ui = {
-  fr: { home: "Accueil", expertise: "Expertises juridique", since: "Depuis", years: "+34 ans", scope: "Mohammedia · Casablanca · Maroc", call: "Appeler le cabinet", whatsapp: "Écrire sur WhatsApp", related: "Expertises complémentaires", faqNumber: "FAQ" },
+  fr: { home: "Accueil", expertise: "Expertise juridique", since: "Depuis", years: "+34 ans", scope: "Mohammedia · Casablanca · Maroc", call: "Appeler le cabinet", whatsapp: "Écrire sur WhatsApp", related: "Expertises complémentaires", faqNumber: "FAQ" },
   ar: { home: "الرئيسية", expertise: "مجال الممارسة", since: "منذ", years: "+34 سنة", scope: "المحمدية · الدار البيضاء · المغرب", call: "الاتصال بالمكتب", whatsapp: "التواصل عبر واتساب", related: "اختصاصات مرتبطة", faqNumber: "س / ج" },
 } as const;
 
