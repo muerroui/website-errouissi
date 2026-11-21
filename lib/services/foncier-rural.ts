@@ -7,11 +7,11 @@ export const foncierRuralPage: ServicePageDefinition = {
     fr: {
       slug: "droit-foncier-rural",
       seo: {
-        title: "Avocat terres agricoles et foncier rural au Maroc",
-        description: "Avocat en foncier rural au Maroc : terres agricoles, terres des coopératives de la réforme agraire, indivision, bornage et expropriation à Benslimane, Chaouia et Mohammedia.",
+        title: "Avocat terres agricoles et foncier rural | Mohammedia",
+        description: "Avocat foncier rural au Maroc : terres agricoles, coopératives de la réforme agraire, indivision, bornage et expropriation à Mohammedia et Benslimane.",
       },
       eyebrow: "Foncier rural · Terres agricoles · Maroc",
-      h1: "Avocat en terres agricoles et foncier rural au Maroc",
+      h1: "Avocat en terres agricoles et foncier rural à Mohammedia et au Maroc",
       lead: "Maître Abderrazak Errouissi accompagne familles, agriculteurs et exploitants dans les conflits de propriété, d’héritage, de bornage et d’usage touchant les terres rurales.",
       summary: [
         "Un terrain agricole ne peut pas être traité comme un simple bien urbain. Avant toute action, il faut identifier son statut, l’origine des droits, les actes disponibles, l’occupation réelle, les limites physiques et les éventuelles décisions administratives qui l’affectent.",
@@ -55,11 +55,11 @@ export const foncierRuralPage: ServicePageDefinition = {
     ar: {
       slug: "العقار-الفلاحي-وأراضي-تعاونيات-الإصلاح-الزراعي",
       seo: {
-        title: "محامٍ في قضايا العقار الفلاحي وأراضي تعاونيات الإصلاح الزراعي بالمغرب",
-        description: "محامٍ في منازعات العقار الفلاحي وأراضي تعاونيات الإصلاح الزراعي بالمغرب: تصفية الشياع، دعاوى التحديد والترامي، مساطر نزع الملكية، وقضايا انتقال الحقوق والإرث بالمحمدية وبنسليمان والشاوية.",
+        title: "محامٍ في العقار الفلاحي والإصلاح الزراعي بالمحمدية",
+        description: "محامٍ في منازعات العقار الفلاحي وأراضي تعاونيات الإصلاح الزراعي: تصفية الشياع، التحديد، الترامي، نزع الملكية والإرث بالمحمدية وبنسليمان والشاوية.",
       },
       eyebrow: "العقار الفلاحي · أراضي تعاونيات الإصلاح الزراعي · المغرب",
-      h1: "محامٍ في قضايا العقار الفلاحي وأراضي تعاونيات الإصلاح الزراعي بالمغرب",
+      h1: "محامٍ في العقار الفلاحي وأراضي تعاونيات الإصلاح الزراعي بالمحمدية والمغرب",
       lead: "يؤازر الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض، الفلاحين والمستغلين والورثة في قضايا الأراضي الفلاحية، منازعات أراضي تعاونيات الإصلاح الزراعي، تصفية الشياع، ومساطر نزع الملكية للمنفعة العامة بالمغرب.",
       summary: [
         "تخضع الأراضي الفلاحية في التشريع المغربي لمنظومة عقارية مركبة تجمع بين الملك الخاص، أراضي تعاونيات الإصلاح الزراعي الخاضعة لنظامها القانوني الخاص، والأراضي الفلاحية المسترجعة. ويتطلب تدبير هذه الأصول فحصاً دقيقاً للرسوم والضوابط العقارية، ومطابقة السندات مع واقع الاستغلال الميداني.",

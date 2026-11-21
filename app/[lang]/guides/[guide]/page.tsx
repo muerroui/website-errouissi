@@ -5,7 +5,7 @@ import { getGuideBySlug, guides } from "@/lib/guides";
 import { getGuidePath } from "@/lib/guide-slugs";
 import type { GuideKey } from "@/lib/guide-slugs";
 import { isLocale } from "@/lib/i18n";
-import { siteUrl } from "@/lib/site";
+import { firm, getDefaultOgImage, siteUrl } from "@/lib/site";
 
 type PageProps = { params: Promise<{ lang: string; guide: string }> };
 
@@ -39,6 +39,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: copy.seo.description,
       publishedTime: guide.publishedAt,
       modifiedTime: guide.updatedAt,
+      images: [getDefaultOgImage(lang)],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: copy.seo.title,
+      description: copy.seo.description,
+      images: [firm.defaultOgImage],
     },
   };
 }

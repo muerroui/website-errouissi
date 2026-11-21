@@ -6,12 +6,13 @@ import { guides } from "@/lib/guides";
 import { getGuidePath } from "@/lib/guide-slugs";
 import type { GuideKey } from "@/lib/guide-slugs";
 import { isLocale, type Locale } from "@/lib/i18n";
+import { firm, getDefaultOgImage } from "@/lib/site";
 
 type PageProps = { params: Promise<{ lang: string }> };
 
 const copy = {
   fr: {
-    title: "Guides juridiques du cabinet Errouissi",
+    title: "Guides juridiques au Maroc",
     description: "Guides pratiques en droit immobilier, foncier rural, successions, expropriation et fiscalité au Maroc, rédigés pour comprendre avant d’agir.",
     h1: "Comprendre le droit avant de choisir une démarche",
     lead: "Des dossiers pratiques consacrés aux questions foncières, rurales, successorales, administratives et fiscales rencontrées au Maroc.",
@@ -21,7 +22,7 @@ const copy = {
     note: "Ces contenus fournissent des repères généraux. Une décision juridique nécessite l’examen des pièces, des délais et des circonstances propres au dossier.",
   },
   ar: {
-    title: "الأدلة القانونية والتوجيهية | مكتب الأستاذ عبد الرزاق الرويسي بالمحمدية",
+    title: "الأدلة القانونية في المغرب",
     description: "أدلة قانونية وعملية في التحفيظ العقاري، أراضي تعاونيات الإصلاح الزراعي، الشفعة، نزع الملكية، المنازعات الضريبية، وقسمة التركات بالمغرب صاغها محامٍ ممارس.",
     h1: "الإحاطة بالأحكام القانونية والمساطر القضائية قبل مباشرة الإجراءات",
     lead: "دراسات ومذكرات توجيهية عملية في منازعات التحفيظ، أراضي تعاونيات الإصلاح الزراعي والأراضي المشاعة، التركات، القضاء الإداري والتحصيل الضريبي بالمغرب.",
@@ -40,7 +41,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: page.title,
     description: page.description,
     alternates: { canonical: `/${lang}/guides`, languages: { "fr-MA": "/fr/guides", "ar-MA": "/ar/guides", "x-default": "/fr/guides" } },
-    openGraph: { type: "website", url: `/${lang}/guides`, title: page.title, description: page.description },
+    openGraph: {
+      type: "website",
+      url: `/${lang}/guides`,
+      locale: lang === "ar" ? "ar_MA" : "fr_MA",
+      title: page.title,
+      description: page.description,
+      images: [getDefaultOgImage(lang)],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.title,
+      description: page.description,
+      images: [firm.defaultOgImage],
+    },
   };
 }
 

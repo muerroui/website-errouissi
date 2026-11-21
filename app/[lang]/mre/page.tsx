@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -22,7 +23,7 @@ import {
 } from "lucide-react";
 import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { isLocale, type Locale } from "@/lib/i18n";
-import { firm, siteUrl } from "@/lib/site";
+import { firm, getDefaultOgImage, siteUrl, yearsExperience } from "@/lib/site";
 
 type PageProps = { params: Promise<{ lang: string }> };
 
@@ -33,9 +34,9 @@ export function generateStaticParams() {
 const content = {
   fr: {
     seo: {
-      title: "Avocat pour Marocains du Monde (MRE) | Litiges Fonciers & Successions au Maroc",
+      title: "Avocat MRE au Maroc : Immobilier & Successions | Errouissi",
       description:
-        "Cabinet de Maître Abderrazak Errouissi : défense du patrimoine et des droits des Marocains résidant à l'étranger (France, Belgique, Canada...). Consultation confidentielle au cabinet par mandataire familial et représentation par procuration consulaire.",
+        "Défense du patrimoine des MRE au Maroc : immobilier, foncier et successions. Consultation par proche à Mohammedia et procuration consulaire.",
     },
     breadcrumbs: {
       home: "Accueil",
@@ -43,10 +44,10 @@ const content = {
     },
     hero: {
       badge: "Marocains Résidant à l'Étranger · Europe & Amérique du Nord",
-      h1: "Défense de vos droits et de votre patrimoine au Maroc",
+      h1: "Avocat pour les MRE : défense de vos droits et de votre patrimoine au Maroc",
       lead:
         "Vous résidez en France, en Belgique, au Canada ou ailleurs dans le monde, et vous faites face à un litige successoral, une spoliation, ou une contestation foncière au Maroc ? Maître Abderrazak Errouissi, avocat au Barreau de Casablanca agréé près la Cour de cassation (depuis 1992), sécurise vos intérêts sans allers-retours inutiles.",
-      experience: "Plus de 34 ans d'exercice",
+      experience: `Plus de ${yearsExperience} ans d'exercice`,
       jurisdiction: "Barreau de Casablanca · Cour de cassation",
       officeCity: "Cabinet à Mohammedia (Axe Casablanca – Rabat)",
       ctaWhatsApp: "Échanger sur WhatsApp",
@@ -177,9 +178,9 @@ const content = {
   },
   ar: {
     seo: {
-      title: "محامي مغاربة العالم بالخارج | قضايا العقار، التركات والتمثيل القضائي بالمغرب",
+      title: "محامي مغاربة العالم بالمغرب | العقار والتركات — الرويسي",
       description:
-        "مكتب الأستاذ عبد الرزاق الرويسي لمواكبة مغاربة العالم (فرنسا، بلجيكا، كندا...): حماية العقارات، قسمة التركات، ومنازعات التحفيظ بالمغرب. استشارة حضورية بالمكتب عبر أحد أفراد العائلة وتمثيل بالوكالة القنصلية.",
+        "مكتب الأستاذ عبد الرزاق الرويسي بالمحمدية لمواكبة مغاربة العالم: حماية العقارات وقسمة التركات بالمغرب عبر قريب بالمكتب والوكالة القنصلية.",
     },
     breadcrumbs: {
       home: "الرئيسية",
@@ -187,10 +188,10 @@ const content = {
     },
     hero: {
       badge: "مغاربة العالم المقيمون بالخارج · أوروبا وأمريكا الشمالية",
-      h1: "حماية حقوقكم وأملاككم العقارية بالمغرب دون عناء السفر والتنقل",
+      h1: "محامي مغاربة العالم : حماية حقوقكم وأملاككم العقارية بالمغرب",
       lead:
-        "هل تقيمون بفرنسا، بلجيكا، كندا أو أي بلد آخر وتواجهون نزاعاً في تركة، أو محاولة ترامٍ على عقار، أو إشكالاً في التحفيظ العقاري بالمغرب؟ يضع الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء ومقبول لدى محكمة النقض (أكثر من 34 سنة من الممارسة)، خبرته القضائية لضمان حقوقكم أمام محاكم المملكة.",
-      experience: "أكثر من 34 سنة من الممارسة",
+        `هل تقيمون بفرنسا، بلجيكا، كندا أو أي بلد آخر وتواجهون نزاعاً في تركة، أو محاولة ترامٍ على عقار، أو إشكالاً في التحفيظ العقاري بالمغرب؟ يضع الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء ومقبول لدى محكمة النقض (أكثر من ${yearsExperience} سنة من الممارسة)، خبرته القضائية لضمان حقوقكم أمام محاكم المملكة.`,
+      experience: `أكثر من ${yearsExperience} سنة من الممارسة`,
       jurisdiction: "هيئة المحامين بالدار البيضاء · مقبول لدى محكمة النقض",
       officeCity: "مقر المكتب بالمحمدية (محور الدار البيضاء – الرباط)",
       ctaWhatsApp: "التواصل عبر واتساب",
@@ -327,7 +328,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const c = content[lang];
 
   return {
-    title: c.seo.title,
+    title: { absolute: c.seo.title },
     description: c.seo.description,
     alternates: {
       canonical: `/${lang}/mre`,
@@ -340,8 +341,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       type: "website",
       url: `/${lang}/mre`,
+      locale: lang === "ar" ? "ar_MA" : "fr_MA",
       title: c.seo.title,
       description: c.seo.description,
+      images: [getDefaultOgImage(lang)],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: c.seo.title,
+      description: c.seo.description,
+      images: [firm.defaultOgImage],
     },
   };
 }
@@ -357,18 +366,16 @@ export default async function MrePage({ params }: PageProps) {
 
   const jsonLdService = {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    name: firm.name,
+    "@type": "Service",
+    "@id": `${siteUrl}/${locale}/mre#service`,
+    name: c.seo.title,
+    serviceType: isAr
+      ? "التمثيل القضائي ومواكبة مغاربة العالم (العقار والتركات)"
+      : "Accompagnement juridique MRE (immobilier, foncier et successions)",
     description: c.seo.description,
     url: `${siteUrl}/${locale}/mre`,
-    telephone: firm.telephone,
-    email: firm.email,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: firm.address.street,
-      addressLocality: firm.address.city,
-      postalCode: firm.address.postalCode,
-      addressCountry: firm.address.country,
+    provider: {
+      "@id": `${siteUrl}/${locale}#cabinet`,
     },
     areaServed: [
       { "@type": "Country", name: "France" },
@@ -753,6 +760,15 @@ export default async function MrePage({ params }: PageProps) {
             </div>
 
             <div className="rounded-3xl border border-slate-200 bg-[#FAF9F5] p-8 shadow-sm">
+              <div className="relative mb-6 aspect-[16/10] w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <Image
+                  src={firm.defaultOgImage}
+                  alt={isAr ? "مقر مكتب الأستاذ عبد الرزاق الرويسي للمحاماة بالمحمدية" : "Cabinet d'avocat Maître Abderrazak Errouissi à Mohammedia"}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 520px"
+                  className="object-cover"
+                />
+              </div>
               <h3 className="font-display text-xl font-bold text-slate-950">
                 {isAr ? "الوثائق الموصى بإحضارها للاستشارة" : "Pièces recommandées lors du rendez-vous"}
               </h3>

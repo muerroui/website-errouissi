@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpLeft, ArrowUpRight, Clock3, FileCheck2, MessageCircle, PhoneCall } from "lucide-react";
 import { FaqJsonLd } from "@/components/FaqJsonLd";
@@ -15,11 +16,15 @@ const ui = {
     home: "Accueil",
     guides: "Guides juridiques",
     summary: "Dans ce guide",
+    quickAnswer: "Réponse rapide · 3 points clés",
     essentials: "L’essentiel à retenir",
     documents: "Préparer votre dossier",
     sources: "Sources institutionnelles",
     legalNote: "Information générale",
     legalText: "Ce guide présente des repères généraux en droit marocain. Les documents, les délais et la situation du bien doivent être examinés avant de choisir une démarche.",
+    authorLabel: "Rédigé par",
+    authorName: "Maître Abderrazak Errouissi",
+    authorRole: "Barreau de Casablanca · Cour de Cassation (depuis 1992)",
     updated: "Mis à jour le",
     read: "Lecture",
     minutes: "min",
@@ -38,11 +43,15 @@ const ui = {
     home: "الرئيسية",
     guides: "الدليل القانوني",
     summary: "محتويات الدليل",
+    quickAnswer: "خلاصة سريعة · 3 نقاط أساسية",
     essentials: "أهم ما ينبغي معرفته",
     documents: "إعداد وثائق الملف",
     sources: "المصادر الرسمية",
     legalNote: "معلومات عامة",
     legalText: "يقدم هذا الدليل معلومات عامة في إطار القانون المغربي. ويظل فحص الوثائق والآجال والوضعية الخاصة بالعقار ضرورياً قبل اختيار أي إجراء.",
+    authorLabel: "إعداد وتحرير",
+    authorName: "الأستاذ عبد الرزاق الرويسي",
+    authorRole: "هيئة المحامين بالدار البيضاء · محكمة النقض (منذ 1992)",
     updated: "آخر تحيين",
     read: "مدة القراءة",
     minutes: "دقائق",
@@ -104,7 +113,18 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
               </div>
 
               <aside className="self-end border-y border-white/10 py-7 text-sm text-slate-300">
-                <div className="flex items-center justify-between gap-6 border-b border-white/10 pb-5">
+                <div className="border-b border-white/10 pb-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-amber-300/85">
+                    {labels.authorLabel}
+                  </p>
+                  <p className="mt-1.5 font-display text-base font-semibold text-white">
+                    {labels.authorName}
+                  </p>
+                  <p className="mt-1 text-xs leading-5 text-slate-400">
+                    {labels.authorRole}
+                  </p>
+                </div>
+                <div className="flex items-center justify-between gap-6 border-b border-white/10 py-5">
                   <span>{labels.updated}</span>
                   <time dateTime={guide.updatedAt} className="font-medium text-white">{date}</time>
                 </div>
@@ -119,16 +139,17 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
 
         <div className="mx-auto grid max-w-[86rem] gap-16 px-5 py-20 sm:px-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-24 lg:px-12 lg:py-28">
           <div className="min-w-0">
-            <div className="max-w-[72ch] space-y-6 text-[1.06rem] leading-8 text-slate-700 sm:text-lg">
-              {copy.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-            </div>
-
-            <section aria-labelledby="guide-essentials" className="my-16 border-y border-gold/45 py-9">
-              <h2 id="guide-essentials" className="font-display text-3xl font-semibold tracking-[-0.02em]">{labels.essentials}</h2>
+            <section aria-labelledby="guide-essentials" className="mb-14 border-y border-gold/45 py-9">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold-ink">{labels.quickAnswer}</p>
+              <h2 id="guide-essentials" className="font-display mt-2 text-3xl font-semibold tracking-[-0.02em]">{labels.essentials}</h2>
               <ul className="mt-7 grid gap-5 sm:grid-cols-3">
                 {copy.takeaways.map((item) => <li key={item} className="border-t border-slate-900/15 pt-4 leading-7 text-slate-700">{item}</li>)}
               </ul>
             </section>
+
+            <div className="mb-16 max-w-[72ch] space-y-6 text-[1.06rem] leading-8 text-slate-700 sm:text-lg">
+              {copy.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            </div>
 
             <div className="space-y-20">
               {copy.sections.map((section, idx) => (
@@ -196,6 +217,15 @@ export function GuidePage({ locale, guide }: { locale: Locale; guide: GuideDefin
               </nav>
 
               <div className="bg-navy p-6 text-white shadow-[0_22px_55px_rgba(11,19,43,0.16)]">
+                <div className="relative mb-5 aspect-[4/3] w-full overflow-hidden rounded-lg border border-white/10">
+                  <Image
+                    src={firm.defaultOgImage}
+                    alt={locale === "ar" ? "مكتب الأستاذ عبد الرزاق الرويسي للمحاماة بالمحمدية" : "Cabinet d’avocat Maître Abderrazak Errouissi à Mohammedia"}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 280px"
+                    className="object-cover"
+                  />
+                </div>
                 <p className="font-display text-xl font-semibold">{labels.legalNote}</p>
                 <p className="mt-4 text-sm leading-6 text-slate-300">{labels.legalText}</p>
                 <Link href={getServicePath(locale, guide.serviceKey)} className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-brass underline decoration-gold/50 underline-offset-4 hover:decoration-gold">

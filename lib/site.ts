@@ -9,6 +9,8 @@ function normalizeSiteUrl(url: string | undefined): string {
 
 export const siteUrl = normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
 
+export const yearsExperience = new Date().getFullYear() - 1992;
+
 export const firm = {
   name: "Maître Abderrazak Errouissi – Avocat Mohammedia",
   shortName: "Cabinet Errouissi",
@@ -17,6 +19,11 @@ export const firm = {
   displayTelephone: "05 23 28 32 58",
   whatsappNumber: "+212668075213",
   whatsappUrl: "https://wa.me/212668075213",
+  defaultOgImage: "/images/cabinet/avocat-mohammedia-cabinet-errouissi.jpg",
+  geo: {
+    latitude: 33.6889696,
+    longitude: -7.3816358,
+  },
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/abderrazak-errouissi-407a53348",
     facebook: "https://web.facebook.com/profile.php?id=61559589686731",
@@ -24,7 +31,7 @@ export const firm = {
   googleReviewsUrl: "https://www.google.com/maps/place/Ma%C3%AEtre+Abderrazak+Errouissi+%E2%80%93+Avocat+Mohammedia/data=!4m2!3m1!1s0x0:0xe5b926ae4d6d05ce?sa=X&ved=1t:2428&ictx=111",
   rating: {
     score: "5,0",
-    reviewCount: 24,
+    reviewCount: 25,
   },
   address: {
     street: "127 Boulevard de Palestine, 1er étage (au-dessus du café Montreal)",
@@ -34,3 +41,15 @@ export const firm = {
   },
   founded: "1992-01",
 } as const;
+
+export function getDefaultOgImage(locale: "fr" | "ar") {
+  return {
+    url: firm.defaultOgImage,
+    width: 1024,
+    height: 768,
+    alt:
+      locale === "ar"
+        ? "مكتب الأستاذ عبد الرزاق الرويسي للمحاماة بالمحمدية"
+        : "Cabinet d'avocat Maître Abderrazak Errouissi à Mohammedia",
+  };
+}

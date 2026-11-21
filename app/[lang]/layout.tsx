@@ -9,7 +9,7 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { JsonLd } from "@/components/JsonLd";
 import { ClarityScript } from "@/components/ClarityScript";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
-import { siteUrl } from "@/lib/site";
+import { firm, getDefaultOgImage, siteUrl } from "@/lib/site";
 
 type LayoutProps = { children: ReactNode; params: Promise<{ lang: string }> };
 
@@ -19,8 +19,8 @@ const defaults: Record<Locale, { title: string; description: string }> = {
     description: "Maître Abderrazak Errouissi, avocat à Mohammedia depuis 1992. Foncier rural, terres agricoles, immobilier et successions partout au Maroc.",
   },
   ar: {
-    title: "محامٍ بهيئة الدار البيضاء بالمحمدية منذ 1992 | الأستاذ عبد الرزاق الرويسي",
-    description: "الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء يمارس بالمحمدية منذ 1992 (مقبول لدى محكمة النقض). تجربة راسخة في قضايا العقار، والأراضي الفلاحية، وأراضي تعاونيات الإصلاح الزراعي، وقسمة التركات بالمغرب.",
+    title: "محامٍ بالمحمدية منذ 1992 | الأستاذ عبد الرزاق الرويسي",
+    description: "الأستاذ عبد الرزاق الرويسي، محامٍ بالمحمدية منذ 1992 ومقبول لدى محكمة النقض: العقار، الأراضي الفلاحية، تعاونيات الإصلاح الزراعي، التركات والضرائب بالمغرب.",
   },
 };
 
@@ -45,6 +45,13 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       siteName: "Cabinet Errouissi",
       title: copy.title,
       description: copy.description,
+      images: [getDefaultOgImage(lang)],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: copy.title,
+      description: copy.description,
+      images: [firm.defaultOgImage],
     },
     robots: { index: true, follow: true },
   };

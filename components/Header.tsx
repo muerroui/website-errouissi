@@ -63,6 +63,12 @@ const servicesMenu = {
       desc: "Recours pour excès de pouvoir et litiges publics",
       href: "/fr/services/droit-administratif",
     },
+    {
+      num: "06",
+      title: "Marocains du Monde (MRE)",
+      desc: "Immobilier, successions et représentation par procuration consulaire",
+      href: "/fr/mre",
+    },
   ],
   ar: [
     {
@@ -94,6 +100,12 @@ const servicesMenu = {
       title: "القانون الإداري والمنازعات العمومية",
       desc: "دعاوى الإلغاء لتجاوز السلطة والمسؤولية الإدارية",
       href: "/ar/services/القانون-الإداري",
+    },
+    {
+      num: "06",
+      title: "مغاربة العالم (MRE)",
+      desc: "حماية العقارات، التركات والتمثيل القضائي بالوكالة القنصلية",
+      href: "/ar/mre",
     },
   ],
 } as const;

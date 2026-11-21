@@ -7,11 +7,11 @@ export const fiscalPage: ServicePageDefinition = {
     fr: {
       slug: "droit-fiscal",
       seo: {
-        title: "Avocat fiscaliste à Casablanca et au Maroc",
-        description: "Avocat fiscaliste près de Casablanca : contrôle, redressement, réclamation et contentieux fiscal pour particuliers et entreprises au Maroc.",
+        title: "Avocat fiscaliste à Mohammedia, Casablanca et au Maroc",
+        description: "Avocat fiscaliste à Mohammedia et Casablanca : contrôle, redressement, réclamation et contentieux fiscal pour particuliers et entreprises au Maroc.",
       },
       eyebrow: "Fiscalité · Contrôle · Contentieux",
-      h1: "Avocat fiscaliste à Casablanca et au Maroc",
+      h1: "Avocat fiscaliste à Mohammedia, Casablanca et au Maroc",
       lead: "Maître Abderrazak Errouissi accompagne particuliers, entreprises et détenteurs de patrimoine lors des contrôles, redressements et litiges avec l’administration fiscale marocaine.",
       summary: [
         "Un dossier fiscal se joue souvent dès le premier avis ou la première notification. Les pièces comptables, actes, déclarations, échanges et délais doivent être examinés ensemble afin de comprendre la méthode retenue par l’administration et de préparer une réponse documentée.",
@@ -54,11 +54,11 @@ export const fiscalPage: ServicePageDefinition = {
     ar: {
       slug: "القانون-الضريبي",
       seo: {
-        title: "محامٍ في المنازعات والتحصيل الضريبي بالمغرب | الأستاذ عبد الرزاق الرويسي",
-        description: "محامٍ في القضايا والمنازعات الضريبية بالمغرب: المراقبة الجبائية، مساطر التصحيح التواجهية، الطعن أمام اللجان الضريبية والمحاكم الإدارية، وإيقاف إجراءات التحصيل الجبري.",
+        title: "محامٍ في المنازعات الضريبية بالمحمدية والدار البيضاء",
+        description: "محامٍ في المنازعات الضريبية بالمغرب: المراقبة الجبائية، التصحيح الضريبي، الطعن أمام اللجان والمحاكم الإدارية وإيقاف التحصيل بالمحمدية والدار البيضاء.",
       },
       eyebrow: "القانون الضريبي · المراقبة الجبائية · القضاء الإداري",
-      h1: "محامٍ في المنازعات والتحصيل الضريبي بالمغرب",
+      h1: "محامٍ في المنازعات والتحصيل الضريبي بالمحمدية والدار البيضاء والمغرب",
       lead: "يؤازر مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض، المقاولات والأفراد في مساطر المراقبة الجبائية، التبليغات والتصحيحات الضريبية، ومنازعات الوعاء والتحصيل أمام اللجان المختصة والمحاكم الإدارية.",
       summary: [
         "تتسم المنازعة الجبائية بصرامة شكلية مطلقة تحت طائلة سقوط الحق؛ حيث يتعين التفاعل مع الإشعار بالتحقيق ورسائل التبليغ الأولى والثانية داخل أجل 30 يوماً الصارم طبقاً للمادتين 220 و221 من المدونة العامة للضرائب، والتدقيق في أسس الفحص المحاسبي وتقديرات الإدارة.",

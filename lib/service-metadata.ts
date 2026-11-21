@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { Locale } from "@/lib/i18n";
 import type { ServicePageDefinition } from "@/lib/service-page-types";
 import { getServicePath } from "@/lib/services";
-import { siteUrl } from "@/lib/site";
+import { firm, getDefaultOgImage, siteUrl } from "@/lib/site";
 
 export function buildServiceMetadata(locale: Locale, page: ServicePageDefinition): Metadata {
   const copy = page.content[locale];
@@ -24,6 +24,13 @@ export function buildServiceMetadata(locale: Locale, page: ServicePageDefinition
       title: copy.seo.title,
       description: copy.seo.description,
       locale: locale === "ar" ? "ar_MA" : "fr_MA",
+      images: [getDefaultOgImage(locale)],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: copy.seo.title,
+      description: copy.seo.description,
+      images: [firm.defaultOgImage],
     },
   };
 }

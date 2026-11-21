@@ -1,23 +1,48 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Phone } from "lucide-react";
 import { FaqJsonLd } from "@/components/FaqJsonLd";
 import type { Locale } from "@/lib/i18n";
-import { firm } from "@/lib/site";
-import type { ServiceKey, ServicePageDefinition } from "@/lib/service-page-types";
+import { firm, siteUrl, yearsExperience } from "@/lib/site";
+import type { ServicePageDefinition } from "@/lib/service-page-types";
 import { getServicePath } from "@/lib/services";
 
 const ui = {
-  fr: { home: "Accueil", expertise: "Expertises juridique", since: "Depuis", years: "+34 ans", scope: "Mohammedia · Casablanca · Maroc", call: "Appeler le cabinet", whatsapp: "Écrire sur WhatsApp", related: "Expertises complémentaires", faqNumber: "FAQ" },
-  ar: { home: "الرئيسية", expertise: "مجال الممارسة", since: "منذ", years: "+34 سنة", scope: "المحمدية · الدار البيضاء · المغرب", call: "الاتصال بالمكتب", whatsapp: "التواصل عبر واتساب", related: "اختصاصات مرتبطة", faqNumber: "س / ج" },
-} as const;
+  fr: { home: "Accueil", expertise: "Expertise juridique", since: "Depuis", years: `+${yearsExperience} ans`, scope: "Mohammedia · Casablanca · Maroc", call: "Appeler le cabinet", whatsapp: "Écrire sur WhatsApp", related: "Expertises complémentaires", faqNumber: "FAQ" },
+  ar: { home: "الرئيسية", expertise: "مجال الممارسة", since: "منذ", years: `+${yearsExperience} سنة`, scope: "المحمدية · الدار البيضاء · المغرب", call: "الاتصال بالمكتب", whatsapp: "التواصل عبر واتساب", related: "اختصاصات مرتبطة", faqNumber: "س / ج" },
+};
 
 export function ServiceLandingPage({ locale, page }: { locale: Locale; page: ServicePageDefinition }) {
   const copy = page.content[locale];
   const labels = ui[locale];
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: labels.home,
+        item: `${siteUrl}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: copy.h1,
+        item: `${siteUrl}${getServicePath(locale, page.key)}`,
+      },
+    ],
+  };
 
   return (
     <main className="overflow-hidden bg-paper text-slate-950">
       <FaqJsonLd faqs={copy.faqs} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
 
       <section className="relative isolate overflow-hidden bg-navy text-white">
         <div aria-hidden="true" className="absolute inset-y-0 start-[8%] hidden w-px bg-white/[0.06] lg:block" />
@@ -52,7 +77,29 @@ export function ServiceLandingPage({ locale, page }: { locale: Locale; page: Ser
 
       <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
         <div className="mx-auto grid max-w-[86rem] gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
-          <div className="border-t border-slate-900/15 pt-5"><p className="font-display text-[6rem] leading-none text-gold-ink">{page.index}</p><p className="mt-3 text-xs font-semibold tracking-[0.18em] text-slate-600">{copy.eyebrow}</p></div>
+          <div className="border-t border-slate-900/15 pt-5">
+            <p className="font-display text-[6rem] leading-none text-gold-ink">{page.index}</p>
+            <p className="mt-3 text-xs font-semibold tracking-[0.18em] text-slate-600">{copy.eyebrow}</p>
+            <div className="mt-8 overflow-hidden rounded-2xl border border-slate-900/10 bg-white p-2 shadow-lg">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
+                <Image
+                  src={firm.defaultOgImage}
+                  alt={locale === "ar" ? "مكتب الأستاذ عبد الرزاق الرويسي للمحاماة بالمحمدية" : "Cabinet d’avocat Maître Abderrazak Errouissi à Mohammedia"}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 380px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="px-2 pt-2.5 pb-1">
+                <p className="font-display text-sm font-semibold text-slate-900">
+                  {locale === "ar" ? "الأستاذ عبد الرزاق الرويسي" : "Maître Abderrazak Errouissi"}
+                </p>
+                <p className="mt-0.5 text-xs text-slate-500">
+                  {locale === "ar" ? "هيئة الدار البيضاء · مقبول لدى محكمة النقض" : "Barreau de Casablanca · Cour de Cassation"}
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="space-y-6 text-lg leading-8 text-slate-700">{copy.summary.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
         </div>
       </section>

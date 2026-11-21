@@ -7,11 +7,11 @@ export const successionPage: ServicePageDefinition = {
     fr: {
       slug: "succession-heritage",
       seo: {
-        title: "Avocat succession et héritage au Maroc",
+        title: "Avocat succession et héritage à Mohammedia et au Maroc",
         description: "Avocat en succession au Maroc : héritage, partage, indivision et conflits entre héritiers à Mohammedia et Casablanca. Cabinet depuis 1992.",
       },
       eyebrow: "Succession · Héritage · Partage",
-      h1: "Avocat en succession et héritage au Maroc",
+      h1: "Avocat en succession et héritage à Mohammedia et au Maroc",
       lead: "Le cabinet accompagne les héritiers dans l’identification des droits, la liquidation de la succession, le partage des biens et la résolution des conflits familiaux ou patrimoniaux.",
       summary: [
         "Une succession peut réunir des questions familiales, immobilières, bancaires et fiscales. L’inventaire des biens, l’établissement de la qualité d’héritier et l’analyse des actes permettent de distinguer ce qui peut être réglé amiablement de ce qui nécessite une procédure.",
@@ -57,11 +57,11 @@ export const successionPage: ServicePageDefinition = {
     ar: {
       slug: "الميراث-والتركات",
       seo: {
-        title: "محامٍ في قضايا الميراث وقسمة التركات بالمغرب | الأستاذ عبد الرزاق الرويسي",
-        description: "محامٍ في تصفية التركات وقسمة الميراث بالمغرب: الخروج من الشياع، دعاوى القسمة القضائية، تصفية العقارات والضيعات الموروثة، وحل النزاعات بين الورثة بالمحمدية والدار البيضاء.",
+        title: "محامٍ في الميراث وقسمة التركات بالمحمدية والمغرب",
+        description: "محامٍ في تصفية التركات وقسمة الميراث بالمغرب: الخروج من الشياع، القسمة القضائية وحل نزاعات الورثة بالمحمدية والدار البيضاء. مكتب منذ 1992.",
       },
       eyebrow: "قضايا الميراث · تصفية التركات · القسمة القضائية",
-      h1: "محامٍ في قضايا الميراث وقسمة التركات بالمغرب",
+      h1: "محامٍ في قضايا الميراث وقسمة التركات بالمحمدية والمغرب",
       lead: "يؤازر مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض، الورثة وذوي الحقوق في حصر التركات وتصفيتها، دعاوى القسمة الرضائية والقضائية، وفض النزاعات العائلية والعقارية المعقدة بالمغرب.",
       summary: [
         "تتطلب قضايا التركات إلماماً دقيقاً بأحكام الفقه المالكي ومدونة الأسرة (المادة 322 وما بعدها)، وقواعد التحفيظ العقاري ومدونة الحقوق العينية (المواد 27 إلى 315). ويتولى المكتب إعداد جرد شرعي وقانوني شامل للحقوق العينية، الديون التوثيقية، والودائع البنكية والشركات التجارية التابعة للتركة.",

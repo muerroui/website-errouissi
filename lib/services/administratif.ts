@@ -7,11 +7,11 @@ export const administratifPage: ServicePageDefinition = {
     fr: {
       slug: "droit-administratif",
       seo: {
-        title: "Avocat en droit administratif au Maroc",
-        description: "Avocat en droit administratif au Maroc : recours contre une décision, excès de pouvoir et litiges avec les administrations publiques.",
+        title: "Avocat en droit administratif à Mohammedia et au Maroc",
+        description: "Avocat en droit administratif à Mohammedia, Casablanca et Rabat : recours, excès de pouvoir, expropriation et litiges avec les administrations.",
       },
       eyebrow: "Administration · Recours · Juridictions",
-      h1: "Avocat en droit administratif au Maroc",
+      h1: "Avocat en droit administratif à Mohammedia et au Maroc",
       lead: "Maître Abderrazak Errouissi accompagne particuliers, agriculteurs et entreprises dans leurs démarches, recours et litiges avec les administrations et organismes publics marocains.",
       summary: [
         "Une décision administrative peut produire des effets immédiats sur un terrain, une autorisation, une activité ou une situation personnelle. Avant d’agir, il faut identifier l’auteur de la décision, sa date de notification, ses motifs et la voie de recours applicable.",
@@ -54,11 +54,11 @@ export const administratifPage: ServicePageDefinition = {
     ar: {
       slug: "القانون-الإداري",
       seo: {
-        title: "محامٍ في القضاء والمنازعات الإدارية بالمغرب | الأستاذ عبد الرزاق الرويسي",
-        description: "محامٍ في المنازعات الإدارية وقضايا القضاء الإداري بالمغرب: دعاوى الإلغاء للشطط في استعمال السلطة، التعويض عن نزع الملكية، والاعتداء المادي بالمحمدية والدار البيضاء والرباط.",
+        title: "محامٍ في القضاء الإداري بالمحمدية والدار البيضاء",
+        description: "محامٍ في المنازعات الإدارية بالمغرب: دعاوى الإلغاء للشطط في استعمال السلطة، التعويض عن نزع الملكية والاعتداء المادي بالمحمدية والدار البيضاء والرباط.",
       },
       eyebrow: "القضاء الإداري · دعاوى الإلغاء · المحاكم الإدارية",
-      h1: "محامٍ في القضاء والمنازعات الإدارية بالمغرب",
+      h1: "محامٍ في القضاء والمنازعات الإدارية بالمحمدية والدار البيضاء والمغرب",
       lead: "يؤازر مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض، الخواص والشركات والفلاحين في مواجهة القرارات الإدارية المعيبة، دعاوى الإلغاء لتجاوز السلطة، والمسؤولية الإدارية والتعويض أمام المحاكم الإدارية ومحاكم الاستئناف الإدارية ومحكمة النقض.",
       summary: [
         "تخضع المنازعة الإدارية لمقتضيات القانون رقم 41.90 المحدث للمحاكم الإدارية؛ حيث يتعين رفع دعوى الإلغاء بسبب تجاوز السلطة داخل أجل 60 يوماً من تاريخ التبليغ أو النشر (الفصل 23)، أو بعد رفض التظلم الاستعطافي، مع تدقيق عيوب القرار الإداري (عيب الاختصاص، الشكل، انعدام التعليل، مخالفة القانون، والانحراف في استعمال السلطة).",

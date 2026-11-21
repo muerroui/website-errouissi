@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -15,7 +16,7 @@ import {
 import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { ContactLeadForm } from "@/components/contact/ContactLeadForm";
 import { isLocale, type Locale } from "@/lib/i18n";
-import { firm, siteUrl } from "@/lib/site";
+import { firm, getDefaultOgImage, siteUrl, yearsExperience } from "@/lib/site";
 
 type PageProps = { params: Promise<{ lang: string }> };
 
@@ -23,8 +24,7 @@ const content = {
   fr: {
     seo: {
       title: "Contact avocat Mohammedia | Cabinet Errouissi",
-      description:
-        "Contactez Maître Abderrazak Errouissi, avocat à Mohammedia : formulaire de contact, téléphone, WhatsApp, horaires et itinéraire. Cabinet près de Casablanca.",
+      description: "Contactez Maître Abderrazak Errouissi, avocat à Mohammedia : formulaire, téléphone, WhatsApp, horaires et itinéraire. Cabinet près de Casablanca.",
     },
     eyebrow: "Contact · Rendez-vous · Mohammedia",
     h1: "Contacter un avocat à Mohammedia",
@@ -34,7 +34,7 @@ const content = {
     whatsapp: "Écrire sur WhatsApp",
     email: "Envoyer un e-mail",
     badgeExperienceLabel: "Expérience professionnelle",
-    badgeExperience: "Depuis 1992 (+34 ans)",
+    badgeExperience: `Depuis 1992 (+${yearsExperience} ans)`,
     badgeBarreauLabel: "Barreau & juridictions",
     badgeBarreau: "Barreau de Casablanca · Cour de cassation",
     detailsTitle: "Le cabinet, simplement",
@@ -118,9 +118,8 @@ const content = {
   },
   ar: {
     seo: {
-      title: "الاتصال بمكتب الأستاذ عبد الرزاق الرويسي | محامٍ بهيئة الدار البيضاء",
-      description:
-        "تواصلوا مع مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بهيئة الدار البيضاء مقبول لدى محكمة النقض (المحمدية): استمارة عرض المعطيات، الهاتف، واتساب، العنوان، ومسار الوصول.",
+      title: "الاتصال بمكتب الأستاذ الرويسي | محامٍ بالمحمدية",
+      description: "تواصلوا مع مكتب الأستاذ عبد الرزاق الرويسي، محامٍ بالمحمدية مقبول لدى محكمة النقض: استمارة التواصل، الهاتف، واتساب، العنوان ومسار الوصول.",
     },
     eyebrow: "الاتصال · حجز موعد استشارة · المحمدية",
     h1: "الاتصال بمكتب المحاماة بالمحمدية",
@@ -130,7 +129,7 @@ const content = {
     whatsapp: "التواصل عبر واتساب",
     email: "مراسلة عبر البريد الإلكتروني",
     badgeExperienceLabel: "الممارسة المهنية",
-    badgeExperience: "منذ 1992 (+34 سنة)",
+    badgeExperience: `منذ 1992 (+${yearsExperience} سنة)`,
     badgeBarreauLabel: "الصفة المهنية",
     badgeBarreau: "هيئة المحامين بالدار البيضاء · محكمة النقض",
     detailsTitle: "بيانات المكتب وولوج المقر",
@@ -236,6 +235,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: copy.seo.title,
       description: copy.seo.description,
       locale: lang === "ar" ? "ar_MA" : "fr_MA",
+      images: [getDefaultOgImage(lang)],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: copy.seo.title,
+      description: copy.seo.description,
+      images: [firm.defaultOgImage],
     },
   };
 }
@@ -442,8 +448,20 @@ export default async function ContactPage({ params }: PageProps) {
             <p className="mt-6 max-w-[56ch] text-lg leading-8 text-slate-300">
               {copy.mapText}
             </p>
+            <div className="mt-6 max-w-sm overflow-hidden rounded-xl border border-white/10 bg-white/5 p-1.5">
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg bg-navy">
+                <Image
+                  src={firm.defaultOgImage}
+                  alt={isAr ? "مكتب الأستاذ عبد الرزاق الرويسي بالمحمدية" : "Cabinet d'avocat Maître Abderrazak Errouissi à Mohammedia"}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 384px"
+                  className="object-cover"
+                />
+              </div>
+            </div>
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+              href={firm.googleReviewsUrl}
+              target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-xl border border-amber-500/35 px-6 py-3 font-semibold text-amber-200 transition-colors hover:bg-amber-500/10 motion-reduce:transition-none sm:w-auto"
             >
