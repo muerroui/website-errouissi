@@ -14,7 +14,7 @@ export const yearsExperience = new Date().getFullYear() - 1992;
 export const firm = {
   name: "Maître Abderrazak Errouissi – Avocat Mohammedia",
   shortName: "Cabinet Errouissi",
-  email: "errouissi.abderazzak@gmail.com",
+  email: "errouissi.abderrazak@gmail.com",
   telephone: "+212523283258",
   displayTelephone: "05 23 28 32 58",
   whatsappNumber: "+212668075213",
